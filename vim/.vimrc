@@ -1,6 +1,6 @@
 " -----------------------------------------------------------------------------
 " Filename: .vimrc
-" Modified: Do 08 Okt 2015, 22:27
+" Modified: So 25 Okt 2015, 20:41
 " See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 
@@ -11,20 +11,22 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Bundle 'gmarik/Vundle.vim'
-Bundle 'bling/vim-airline'
+Bundle 'chriskempson/base16-vim'
 Bundle 'scrooloose/nerdtree'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'vim-scripts/taglist.vim'
-Bundle 'derekwyatt/vim-fswitch'
-Bundle 'qpkorr/vim-bufkill'
-Bundle 'tpope/vim-fugitive'
-Bundle 'godlygeek/tabular'
-Bundle 'tpope/vim-sensible'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'SirVer/ultisnips'
-Bundle 'honza/vim-snippets'
 Bundle 'ervandew/supertab'
+Bundle 'godlygeek/tabular'
+Bundle 'vim-scripts/taglist.vim'
+Bundle 'SirVer/ultisnips'
+Bundle 'bling/vim-airline'
+Bundle 'qpkorr/vim-bufkill'
+Bundle 'derekwyatt/vim-fswitch'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-sensible'
+Bundle 'honza/vim-snippets'
+Bundle 'gmarik/Vundle.vim'
+Bundle 'Valloric/YouCompleteMe'
+
+"Bundle 'altercation/vim-colors-solarized'
 
 call vundle#end()            " required
 
@@ -102,11 +104,12 @@ let g:UltiSnipsEditSplit="vertical"
 
 " ---------------------------------------------------------------------- Colors
 syntax enable
-set bg=light
+set bg=dark
 set t_Co=256
-set rtp+=~/.vim/bundle/vim-colors-solarized
-colorscheme solarized
-call togglebg#map("<F4>")
+colorscheme base16-eighties 
+"set rtp+=~/.vim/bundle/vim-colors-solarized
+"colorscheme solarized
+"call togglebg#map("<F4>")
 " Mark columns 80 and 120+
 "let &colorcolumn=join(range(81,999),",")
 let &colorcolumn="80,".join(range(120,999),",")
