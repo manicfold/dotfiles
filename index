@@ -1,0 +1,13 @@
+bash: ~
+bin: ~
+byobu: ~
+config: ~
+conky: ~
+dircolors: ~
+fonts: ~
+git: ~
+latex: ~
+signature: ~
+terminator: ~/.config/terminator
+vim: ~
+zsh: ~
