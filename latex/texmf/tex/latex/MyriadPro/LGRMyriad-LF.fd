@@ -1,0 +1,18 @@
+\ProvidesFile{LGRMyriad-LF.fd}[2004/11/16 font definitions for LGR/Myriad-LF.]
+\DeclareFontFamily{LGR}{Myriad-LF}{}
+\DeclareFontShape{LGR}{Myriad-LF}{m}{n}{
+   <-> MyriadPro-Regular-k}{}
+\DeclareFontShape{LGR}{Myriad-LF}{m}{it}{
+   <-> MyriadPro-It-k}{}
+\DeclareFontShape{LGR}{Myriad-LF}{b}{n}{
+   <-> MyriadPro-Bold-k}{}
+\DeclareFontShape{LGR}{Myriad-LF}{b}{it}{
+   <-> MyriadPro-BoldIt-k}{}
+
+\DeclareFontShape{LGR}{Myriad-LF}{m}{sl}{<->ssub * Myriad-LF/m/it}{}
+\DeclareFontShape{LGR}{Myriad-LF}{b}{sl}{<->ssub * Myriad-LF/b/it}{}
+\DeclareFontShape{LGR}{Myriad-LF}{bx}{n}{<->ssub * Myriad-LF/b/n}{}
+\DeclareFontShape{LGR}{Myriad-LF}{bx}{it}{<->ssub * Myriad-LF/b/it}{}
+\DeclareFontShape{LGR}{Myriad-LF}{bx}{sl}{<->ssub * Myriad-LF/b/it}{}
+\endinput
+% vim:set ft=tex:

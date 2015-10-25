@@ -1,0 +1,133 @@
+% T1-SC.enc
+% Created by ttf2tex v0.7 on 2009-09-04 21:00:59
+% This file should be put in a tex inputs directory
+%
+% Note: This encoding vector was installed by ttf2tex
+%       v0.7. It is based on the T1-WGL4.enc file
+%       distributed with FreeType versions 1.3.x and 1.4.
+%
+%       Future versions of ttf2tex may ship with an
+%       updated version of this file.
+%
+% Derived from T1-WGL4.enc by Bruce D\'Arcus <darcusb@muohio.edu>
+% Modified and enhanced by Philipp Lehman <lehman@gmx.net>
+%
+% Version 1.3  2002-05-20
+%
+% LaTeX T1 mapping for Unicode encoded TrueType fonts (WGL4),
+% using small caps instead of lowercase glyphs
+%
+% Note that /hyphen appears twice: at the T1 code points
+% 0x2d (hyphen) and 0x7f (hyphenchar)
+%
+% LIGKERN space Lsmall =: Lslashsmall ;
+% LIGKERN space L =: Lslash ;
+% LIGKERN question quoteleft =: questiondown ;
+% LIGKERN exclam quoteleft =: exclamdown ;
+% LIGKERN hyphen hyphen =: endash ;
+% LIGKERN endash hyphen =: emdash ;
+% LIGKERN quoteleft quoteleft =: quotedblleft ;
+% LIGKERN quoteright quoteright =: quotedblright ;
+% LIGKERN comma comma =: quotedblbase ;
+% LIGKERN less less =: guillemotleft ;
+% LIGKERN greater greater =: guillemotright ;
+%
+% Remove kerns to and from spaces and remove any kerns from
+% the numbers.
+%
+% LIGKERN space {} * ; * {} space ;
+% LIGKERN zero {} * ; * {} zero ;
+% LIGKERN one {} * ; * {} one ;
+% LIGKERN two {} * ; * {} two ;
+% LIGKERN three {} * ; * {} three ;
+% LIGKERN four {} * ; * {} four ;
+% LIGKERN five {} * ; * {} five ;
+% LIGKERN six {} * ; * {} six ;
+% LIGKERN seven {} * ; * {} seven ;
+% LIGKERN eight {} * ; * {} eight ;
+% LIGKERN nine {} * ; * {} nine ;
+
+/T1Encoding [          % now 256 chars follow
+% 0x00
+  /grave /acute /circumflex /tilde
+  /dieresis /hungarumlaut /ring /caron
+  /breve /macron /dotaccent /cedilla
+  /ogonek /quotesinglbase /guilsinglleft /guilsinglright
+% 0x10
+  /quotedblleft /quotedblright /quotedblbase /guillemotleft
+  /guillemotright /endash /emdash /compwordmark
+  /perthousandzero /dotlessIsmall /dotlessJsmall /ff
+  /fi /fl /ffi /ffl
+% 0x20
+  /visualspace /exclam /quotedbl /numbersign
+  /dollaroldstyle /percentsmall /ampersandsmall /quoteright
+  /parenleft /parenright /asterisk /plus
+  /comma /hyphen /period /slash
+% 0x30
+  /zero /one /two /three
+  /four /five /six /seven
+  /eight /nine /colon /semicolon
+  /less /equal /greater /question
+% 0x40
+  /at /A /B /C
+  /D /E /F /G
+  /H /I /J /K
+  /L /M /N /O
+% 0x50
+  /P /Q /R /S
+  /T /U /V /W
+  /X /Y /Z /bracketleft
+  /backslash /bracketright /asciicircum /underscore
+% 0x60
+  /quoteleft /Asmall /Bsmall /Csmall
+  /Dsmall /Esmall /Fsmall /Gsmall
+  /Hsmall /Ismall /Jsmall /Ksmall
+  /Lsmall /Msmall /Nsmall /Osmall
+% 0x70
+  /Psmall /Qsmall /Rsmall /Ssmall
+  /Tsmall /Usmall /Vsmall /Wsmall
+  /Xsmall /Ysmall /Zsmall /braceleft
+  /bar /braceright /asciitilde /hyphen
+% 0x80
+  /Abreve /Aogonek /Cacute /Ccaron
+  /Dcaron /Ecaron /Eogonek /Gbreve
+  /Lacute /Lcaron /Lslash /Nacute
+  /Ncaron /Eng /Odblacute /Racute
+% 0x90
+  /Rcaron /Sacute /Scaron /Scedilla
+  /Tcaron /Tcedilla /Udblacute /Uring
+  /Ydieresis /Zacute /Zcaron /Zdotaccent
+  /IJ /Idot /Dmacronsmall /section
+% 0xA0
+  /Abrevesmall /Aogoneksmall /Cacutesmall /Ccaronsmall
+  /Dcaronsmall /Ecaronsmall /Eogoneksmall /Gbrevesmall
+  /Lacutesmall /Lcaronsmall /Lslashsmall /Nacutesmall
+  /Ncaronsmall /Engsmall /Odblacutesmall /Racutesmall
+% 0xB0
+  /Rcaronsmall /Sacutesmall /Scaronsmall /Scedillasmall
+  /Tcaronsmall /Tcedillasmall /Udblacutesmall /Uringsmall
+  /Ydieresissmall /Zacutesmall /Zcaronsmall /Zdotaccentsmall
+  /IJsmall /exclamdown /questiondown /sterling
+% 0xC0
+  /Agrave /Aacute /Acircumflex /Atilde
+  /Adieresis /Aring /AE /Ccedilla
+  /Egrave /Eacute /Ecircumflex /Edieresis
+  /Igrave /Iacute /Icircumflex /Idieresis
+% 0xD0
+  /Eth /Ntilde /Ograve /Oacute
+  /Ocircumflex /Otilde /Odieresis /OE
+  /Oslash /Ugrave /Uacute /Ucircumflex
+  /Udieresis /Yacute /Thorn /Germandbls
+% 0xE0
+  /Agravesmall /Aacutesmall /Acircumflexsmall /Atildesmall
+  /Adieresissmall /Aringsmall /AEsmall /Ccedillasmall
+  /Egravesmall /Eacutesmall /Ecircumflexsmall /Edieresissmall
+  /Igravesmall /Iacutesmall /Icircumflexsmall /Idieresissmall
+% 0xF0
+  /Ethsmall /Ntildesmall /Ogravesmall /Oacutesmall
+  /Ocircumflexsmall /Otildesmall /Odieresissmall /OEsmall
+  /Oslashsmall /Ugravesmall /Uacutesmall /Ucircumflexsmall
+  /Udieresissmall /Yacutesmall /Thornsmall /germandbls
+] def
+
+% eof

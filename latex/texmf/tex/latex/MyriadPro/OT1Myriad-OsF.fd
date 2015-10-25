@@ -1,0 +1,24 @@
+\ProvidesFile{OT1Myriad-OsF.fd}[2004/10/15 font definitions for OT1/Myriad-OsF.]
+
+\DeclareFontFamily{OT1}{Myriad-OsF}{}
+
+\DeclareFontShape{OT1}{Myriad-OsF}{m}{n}{
+   <-> MyriadPro-Regular-OSF-7t}{}
+\DeclareFontShape{OT1}{Myriad-OsF}{m}{it}{
+   <-> MyriadPro-It-OSF-7t}{}
+\DeclareFontShape{OT1}{Myriad-OsF}{b}{n}{
+   <-> MyriadPro-Bold-OSF-7t}{}
+\DeclareFontShape{OT1}{Myriad-OsF}{b}{it}{
+   <-> MyriadPro-BoldIt-OSF-7t}{}
+
+\DeclareFontShape{OT1}{Myriad-OsF}{m}{sl}{<->ssub * Myriad-OsF/m/it}{}
+\DeclareFontShape{OT1}{Myriad-OsF}{m}{sc}{<->ssub * Myriad-OsF/m/n}{}
+\DeclareFontShape{OT1}{Myriad-OsF}{b}{sl}{<->ssub * Myriad-OsF/b/it}{}
+\DeclareFontShape{OT1}{Myriad-OsF}{b}{sc}{<->ssub * Myriad-OsF/b/n}{}
+
+\DeclareFontShape{OT1}{Myriad-OsF}{bx}{n}{<->ssub * Myriad-OsF/b/n}{}
+\DeclareFontShape{OT1}{Myriad-OsF}{bx}{it}{<->ssub * Myriad-OsF/b/it}{}
+\DeclareFontShape{OT1}{Myriad-OsF}{bx}{sl}{<->ssub * Myriad-OsF/b/it}{}
+\DeclareFontShape{OT1}{Myriad-OsF}{bx}{sc}{<->ssub * Myriad-OsF/b/n}{}
+\endinput
+

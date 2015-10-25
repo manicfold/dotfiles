@@ -1,0 +1,16 @@
+\ProvidesFile{TS1Myriad-OsF.fd}[2004/10/15 font definitions for TS1/Myriad-OsF.]
+\DeclareFontFamily{TS1}{Myriad-OsF}{}
+\DeclareFontShape{TS1}{Myriad-OsF}{m}{n}{
+   <-> MyriadPro-Regular-OSF-8c}{}
+\DeclareFontShape{TS1}{Myriad-OsF}{m}{it}{
+   <-> MyriadPro-It-OSF-8c}{}
+\DeclareFontShape{TS1}{Myriad-OsF}{b}{n}{
+   <-> MyriadPro-Bold-OSF-8c}{}
+\DeclareFontShape{TS1}{Myriad-OsF}{b}{it}{
+   <-> MyriadPro-BoldIt-OSF-8c}{}
+
+\DeclareFontShape{TS1}{Myriad-OsF}{m} {sl}{<->ssub * Myriad-OsF/m/it}{}
+\DeclareFontShape{TS1}{Myriad-OsF}{b} {sl}{<->ssub * Myriad-OsF/b/it}{}
+
+\endinput
+% vim:set ft=tex:

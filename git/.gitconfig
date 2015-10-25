@@ -1,0 +1,14 @@
+[user]
+	name = manicfold
+	email = philipp.blanke@gmail.com
+[push]
+	default = simple
+[diff]
+    tool = meld
+[merge]
+    tool = meld
+[alias]
+	co = checkout
+	ci = commit
+	br = branch
+	st = status

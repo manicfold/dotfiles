@@ -1,0 +1,7800 @@
+StartFontMetrics 2.0
+Comment Converted at Fri Sep  4 21:01:36 2009 by ttf2afm from font file `./hftextri16.ttf'
+FontName HoeflerText-Italic
+FullName Hoefler Text Italic
+FamilyName Hoefler Text
+Weight Normal
+ItalicAngle -13
+IsFixedPitch false
+FontBBox -500 -531 1668 931
+UnderlinePosition -100
+UnderlineThickness 50
+Version 2.0
+Notice © 1992-1997 Apple Computer, Inc.
+EncodingScheme FontSpecific
+Ascender 721
+Descender -279
+StartCharMetrics 870
+C -1 ; WX 800 ; N .notdef ; B 50 0 750 800 ;
+C -1 ; WX 0 ; N .null ; B 0 -22 247 683 ;
+C -1 ; WX 500 ; N CR ; B 0 -22 247 683 ;
+C -1 ; WX 205 ; N space ; B 0 -22 247 683 ;
+C -1 ; WX 227 ; N exclam ; B 0 -22 247 683 ;
+C -1 ; WX 405 ; N quotedbl ; B 129 422 424 700 ;
+C -1 ; WX 715 ; N numbersign ; B 14 -25 689 718 ;
+C -1 ; WX 513 ; N dollar ; B 41 -70 470 684 ;
+C -1 ; WX 848 ; N percent ; B 30 -38 777 641 ;
+C -1 ; WX 716 ; N ampersand ; B 40 -21 773 785 ;
+C -1 ; WX 225 ; N quotesingle ; B 129 422 247 700 ;
+C -1 ; WX 320 ; N parenleft ; B 55 -142 440 720 ;
+C -1 ; WX 320 ; N parenright ; B -134 -143 250 719 ;
+C -1 ; WX 369 ; N asterisk ; B 20 328 364 676 ;
+C -1 ; WX 421 ; N plus ; B 35 38 401 404 ;
+C -1 ; WX 228 ; N comma ; B -27 -174 138 84 ;
+C -1 ; WX 301 ; N hyphen ; B 10 194 261 249 ;
+C -1 ; WX 228 ; N period ; B 25 -22 130 84 ;
+C -1 ; WX 313 ; N slash ; B -46 -23 405 716 ;
+C -1 ; WX 469 ; N zero ; B 21 -21 403 455 ;
+C -1 ; WX 402 ; N one ; B 4 -6 377 441 ;
+C -1 ; WX 462 ; N two ; B -29 -7 380 455 ;
+C -1 ; WX 385 ; N three ; B -96 -225 322 455 ;
+C -1 ; WX 513 ; N four ; B -48 -225 444 452 ;
+C -1 ; WX 407 ; N five ; B -35 -225 381 457 ;
+C -1 ; WX 482 ; N six ; B 31 -21 505 681 ;
+C -1 ; WX 397 ; N seven ; B -33 -225 392 449 ;
+C -1 ; WX 465 ; N eight ; B 11 -21 451 681 ;
+C -1 ; WX 488 ; N nine ; B -39 -225 412 455 ;
+C -1 ; WX 231 ; N colon ; B -9 -22 195 388 ;
+C -1 ; WX 231 ; N semicolon ; B -59 -174 195 388 ;
+C -1 ; WX 495 ; N less ; B 35 -17 466 437 ;
+C -1 ; WX 474 ; N equal ; B 35 119 401 324 ;
+C -1 ; WX 495 ; N greater ; B 61 -17 492 437 ;
+C -1 ; WX 339 ; N question ; B 0 -22 377 683 ;
+C -1 ; WX 764 ; N at ; B 44 -22 737 704 ;
+C -1 ; WX 767 ; N A ; B -61 -6 680 704 ;
+C -1 ; WX 622 ; N B ; B -37 -6 597 689 ;
+C -1 ; WX 669 ; N C ; B 55 -22 673 704 ;
+C -1 ; WX 790 ; N D ; B -33 -6 765 690 ;
+C -1 ; WX 623 ; N E ; B -33 -6 614 689 ;
+C -1 ; WX 586 ; N F ; B -33 -6 625 689 ;
+C -1 ; WX 747 ; N G ; B 55 -22 755 704 ;
+C -1 ; WX 808 ; N H ; B -33 -6 872 689 ;
+C -1 ; WX 431 ; N I ; B -3 -6 465 689 ;
+C -1 ; WX 496 ; N J ; B -151 -274 508 704 ;
+C -1 ; WX 716 ; N K ; B -33 -24 765 689 ;
+C -1 ; WX 613 ; N L ; B -34 -6 594 689 ;
+C -1 ; WX 958 ; N M ; B -33 -22 981 689 ;
+C -1 ; WX 776 ; N N ; B -23 -22 845 689 ;
+C -1 ; WX 730 ; N O ; B 55 -22 704 704 ;
+C -1 ; WX 585 ; N P ; B -33 -6 611 689 ;
+C -1 ; WX 692 ; N Q ; B 32 -274 1043 704 ;
+C -1 ; WX 698 ; N R ; B -33 -24 647 689 ;
+C -1 ; WX 525 ; N S ; B 25 -22 498 704 ;
+C -1 ; WX 670 ; N T ; B 66 -6 736 697 ;
+C -1 ; WX 737 ; N U ; B 96 -22 822 689 ;
+C -1 ; WX 756 ; N V ; B 86 -22 851 689 ;
+C -1 ; WX 1001 ; N W ; B 86 -22 1091 689 ;
+C -1 ; WX 752 ; N X ; B -33 -6 816 689 ;
+C -1 ; WX 707 ; N Y ; B 47 -6 795 704 ;
+C -1 ; WX 655 ; N Z ; B -13 -10 657 693 ;
+C -1 ; WX 375 ; N bracketleft ; B 14 -142 455 718 ;
+C -1 ; WX 609 ; N backslash ; B 92 -23 543 716 ;
+C -1 ; WX 375 ; N bracketright ; B -94 -141 346 719 ;
+C -1 ; WX 315 ; N asciicircum ; B 61 528 377 704 ;
+C -1 ; WX 464 ; N underscore ; B -42 -55 457 0 ;
+C -1 ; WX 350 ; N grave ; B 148 491 322 653 ;
+C -1 ; WX 464 ; N a ; B -12 -22 455 448 ;
+C -1 ; WX 450 ; N b ; B 1 -22 422 724 ;
+C -1 ; WX 349 ; N c ; B 6 -22 347 440 ;
+C -1 ; WX 478 ; N d ; B -3 -22 558 724 ;
+C -1 ; WX 354 ; N e ; B 6 -22 325 440 ;
+C -1 ; WX 315 ; N f ; B -186 -280 501 733 ;
+C -1 ; WX 415 ; N g ; B -83 -280 448 440 ;
+C -1 ; WX 492 ; N h ; B -17 -22 448 724 ;
+C -1 ; WX 286 ; N i ; B 7 -22 310 684 ;
+C -1 ; WX 315 ; N j ; B -201 -280 331 684 ;
+C -1 ; WX 470 ; N k ; B -17 -22 436 724 ;
+C -1 ; WX 268 ; N l ; B -2 -22 334 724 ;
+C -1 ; WX 722 ; N m ; B -12 -22 689 440 ;
+C -1 ; WX 480 ; N n ; B -3 -22 442 440 ;
+C -1 ; WX 417 ; N o ; B 6 -22 377 440 ;
+C -1 ; WX 459 ; N p ; B -163 -266 419 541 ;
+C -1 ; WX 461 ; N q ; B -12 -266 474 444 ;
+C -1 ; WX 382 ; N r ; B -3 -10 405 440 ;
+C -1 ; WX 296 ; N s ; B -34 -22 292 440 ;
+C -1 ; WX 316 ; N t ; B 16 -22 333 541 ;
+C -1 ; WX 490 ; N u ; B 11 -22 456 440 ;
+C -1 ; WX 542 ; N v ; B 13 -22 512 440 ;
+C -1 ; WX 756 ; N w ; B 13 -22 726 440 ;
+C -1 ; WX 477 ; N x ; B -13 -22 478 440 ;
+C -1 ; WX 437 ; N y ; B -95 -280 400 440 ;
+C -1 ; WX 420 ; N z ; B -25 -22 407 440 ;
+C -1 ; WX 320 ; N braceleft ; B 39 -142 376 718 ;
+C -1 ; WX 157 ; N bar ; B 25 -25 82 718 ;
+C -1 ; WX 320 ; N braceright ; B -66 -142 270 718 ;
+C -1 ; WX 381 ; N asciitilde ; B 5 134 341 305 ;
+C -1 ; WX 767 ; N Adieresis ; B -61 -6 801 880 ;
+C -1 ; WX 767 ; N Aring ; B -61 -6 733 886 ;
+C -1 ; WX 669 ; N Ccedilla ; B 55 -225 673 704 ;
+C -1 ; WX 623 ; N Eacute ; B -33 -6 614 925 ;
+C -1 ; WX 776 ; N Ntilde ; B -23 -22 845 919 ;
+C -1 ; WX 730 ; N Odieresis ; B 55 -22 704 880 ;
+C -1 ; WX 737 ; N Udieresis ; B 96 -22 822 880 ;
+C -1 ; WX 464 ; N aacute ; B -12 -22 455 657 ;
+C -1 ; WX 464 ; N agrave ; B -12 -22 455 653 ;
+C -1 ; WX 464 ; N acircumflex ; B -12 -22 455 680 ;
+C -1 ; WX 464 ; N adieresis ; B -12 -22 455 616 ;
+C -1 ; WX 464 ; N atilde ; B -12 -22 455 655 ;
+C -1 ; WX 464 ; N aring ; B -12 -22 455 687 ;
+C -1 ; WX 349 ; N ccedilla ; B -4 -225 347 440 ;
+C -1 ; WX 354 ; N eacute ; B 6 -22 376 657 ;
+C -1 ; WX 354 ; N egrave ; B 6 -22 325 653 ;
+C -1 ; WX 354 ; N ecircumflex ; B 6 -22 360 680 ;
+C -1 ; WX 354 ; N edieresis ; B 6 -22 400 616 ;
+C -1 ; WX 286 ; N iacute ; B 7 -22 360 657 ;
+C -1 ; WX 286 ; N igrave ; B 7 -22 302 653 ;
+C -1 ; WX 286 ; N icircumflex ; B 7 -22 338 680 ;
+C -1 ; WX 286 ; N idieresis ; B 7 -22 380 616 ;
+C -1 ; WX 480 ; N ntilde ; B -3 -22 442 655 ;
+C -1 ; WX 417 ; N oacute ; B 6 -22 402 657 ;
+C -1 ; WX 417 ; N ograve ; B 6 -22 377 653 ;
+C -1 ; WX 417 ; N ocircumflex ; B 6 -22 377 680 ;
+C -1 ; WX 417 ; N odieresis ; B 6 -22 406 616 ;
+C -1 ; WX 417 ; N otilde ; B 6 -22 423 655 ;
+C -1 ; WX 490 ; N uacute ; B 11 -22 456 657 ;
+C -1 ; WX 490 ; N ugrave ; B 11 -22 456 653 ;
+C -1 ; WX 490 ; N ucircumflex ; B 11 -22 456 680 ;
+C -1 ; WX 490 ; N udieresis ; B 11 -22 456 616 ;
+C -1 ; WX 470 ; N dagger ; B 23 -200 517 799 ;
+C -1 ; WX 255 ; N degree ; B 108 507 316 704 ;
+C -1 ; WX 349 ; N cent ; B 6 -75 347 494 ;
+C -1 ; WX 686 ; N sterling ; B 9 -199 688 629 ;
+C -1 ; WX 553 ; N section ; B 13 -280 525 735 ;
+C -1 ; WX 340 ; N bullet ; B 55 215 325 483 ;
+C -1 ; WX 691 ; N paragraph ; B 94 -285 772 683 ;
+C -1 ; WX 467 ; N germandbls ; B -226 -280 477 734 ;
+C -1 ; WX 807 ; N registered ; B 55 -22 781 704 ;
+C -1 ; WX 809 ; N copyright ; B 55 -22 781 704 ;
+C -1 ; WX 995 ; N trademark ; B 28 284 971 693 ;
+C -1 ; WX 350 ; N acute ; B 126 490 328 657 ;
+C -1 ; WX 350 ; N dieresis ; B 97 511 378 616 ;
+C -1 ; WX 474 ; N notequal ; B 20 -25 386 467 ;
+C -1 ; WX 989 ; N AE ; B -61 -6 980 689 ;
+C -1 ; WX 730 ; N Oslash ; B 55 -43 704 727 ;
+C -1 ; WX 780 ; N infinity ; B 25 84 704 357 ;
+C -1 ; WX 406 ; N plusminus ; B -3 0 363 468 ;
+C -1 ; WX 442 ; N lessequal ; B 20 0 362 470 ;
+C -1 ; WX 442 ; N greaterequal ; B 33 0 375 470 ;
+C -1 ; WX 554 ; N yen ; B 47 -6 621 636 ;
+C -1 ; WX 523 ; N mu ; B -23 -279 487 435 ;
+C -1 ; WX 518 ; N partialdiff ; B 10 -21 462 721 ;
+C -1 ; WX 669 ; N Sigma ; B 15 -10 598 693 ;
+C -1 ; WX 817 ; N Pi ; B 3 -6 763 689 ;
+C -1 ; WX 551 ; N pi ; B -9 -21 532 451 ;
+C -1 ; WX 260 ; N integral ; B -93 -278 305 721 ;
+C -1 ; WX 271 ; N ordfeminine ; B 56 434 330 709 ;
+C -1 ; WX 264 ; N ordmasculine ; B 86 434 304 704 ;
+C -1 ; WX 805 ; N Omega ; B -3 -6 763 704 ;
+C -1 ; WX 546 ; N ae ; B -12 -22 517 440 ;
+C -1 ; WX 417 ; N oslash ; B -9 -44 390 461 ;
+C -1 ; WX 339 ; N questiondown ; B -87 -318 289 388 ;
+C -1 ; WX 227 ; N exclamdown ; B -69 -318 177 388 ;
+C -1 ; WX 481 ; N logicalnot ; B -4 16 421 249 ;
+C -1 ; WX 474 ; N radical ; B -18 -22 415 718 ;
+C -1 ; WX 481 ; N florin ; B -68 -198 526 629 ;
+C -1 ; WX 406 ; N approxequal ; B 6 97 358 349 ;
+C -1 ; WX 709 ; N Delta ; B -4 -6 664 704 ;
+C -1 ; WX 376 ; N guillemotleft ; B 15 40 360 382 ;
+C -1 ; WX 376 ; N guillemotright ; B -34 38 311 380 ;
+C -1 ; WX 694 ; N ellipsis ; B 35 -22 595 84 ;
+C -1 ; WX 102 ; N nbspace ; B -61 -6 680 925 ;
+C -1 ; WX 767 ; N Agrave ; B -61 -6 680 925 ;
+C -1 ; WX 767 ; N Atilde ; B -61 -6 812 919 ;
+C -1 ; WX 730 ; N Otilde ; B 55 -22 704 919 ;
+C -1 ; WX 1059 ; N OE ; B 55 -6 1048 690 ;
+C -1 ; WX 614 ; N oe ; B 6 -22 584 440 ;
+C -1 ; WX 464 ; N endash ; B -32 194 467 249 ;
+C -1 ; WX 964 ; N emdash ; B -32 194 967 249 ;
+C -1 ; WX 315 ; N quotedblleft ; B 54 454 390 711 ;
+C -1 ; WX 315 ; N quotedblright ; B 49 443 385 700 ;
+C -1 ; WX 145 ; N quoteleft ; B 54 454 220 711 ;
+C -1 ; WX 145 ; N quoteright ; B 49 443 215 700 ;
+C -1 ; WX 393 ; N divide ; B -4 58 348 383 ;
+C -1 ; WX 504 ; N lozenge ; B 20 -20 434 695 ;
+C -1 ; WX 437 ; N ydieresis ; B -95 -280 400 616 ;
+C -1 ; WX 707 ; N Ydieresis ; B 47 -6 795 880 ;
+C -1 ; WX 76 ; N fraction ; B -225 -25 276 718 ;
+C -1 ; WX 626 ; N currency ; B 45 -25 530 459 ;
+C -1 ; WX 225 ; N guilsinglleft ; B 15 40 209 382 ;
+C -1 ; WX 225 ; N guilsinglright ; B -34 38 160 380 ;
+C -1 ; WX 546 ; N fi ; B -186 -280 572 734 ;
+C -1 ; WX 546 ; N fl ; B -186 -280 612 735 ;
+C -1 ; WX 485 ; N daggerdbl ; B -64 -200 563 799 ;
+C -1 ; WX 231 ; N periodcentered ; B 90 282 195 388 ;
+C -1 ; WX 228 ; N quotesinglbase ; B -27 -174 138 84 ;
+C -1 ; WX 398 ; N quotedblbase ; B -27 -174 308 84 ;
+C -1 ; WX 1208 ; N perthousand ; B 30 -38 1137 641 ;
+C -1 ; WX 767 ; N Acircumflex ; B -61 -6 791 930 ;
+C -1 ; WX 623 ; N Ecircumflex ; B -33 -6 614 930 ;
+C -1 ; WX 767 ; N Aacute ; B -61 -6 848 925 ;
+C -1 ; WX 623 ; N Edieresis ; B -33 -6 614 880 ;
+C -1 ; WX 623 ; N Egrave ; B -33 -6 614 925 ;
+C -1 ; WX 431 ; N Iacute ; B -3 -6 518 925 ;
+C -1 ; WX 431 ; N Icircumflex ; B -3 -6 485 930 ;
+C -1 ; WX 431 ; N Idieresis ; B -3 -6 499 880 ;
+C -1 ; WX 431 ; N Igrave ; B -3 -6 465 925 ;
+C -1 ; WX 730 ; N Oacute ; B 55 -22 704 925 ;
+C -1 ; WX 730 ; N Ocircumflex ; B 55 -22 704 930 ;
+C -1 ; WX 829 ; N applelogo ; B 39 -22 737 810 ;
+C -1 ; WX 730 ; N Ograve ; B 55 -22 704 925 ;
+C -1 ; WX 737 ; N Uacute ; B 96 -22 822 925 ;
+C -1 ; WX 737 ; N Ucircumflex ; B 96 -22 822 930 ;
+C -1 ; WX 737 ; N Ugrave ; B 96 -22 822 925 ;
+C -1 ; WX 286 ; N dotlessi ; B 7 -22 251 440 ;
+C -1 ; WX 350 ; N circumflex ; B 75 500 308 680 ;
+C -1 ; WX 350 ; N tilde ; B 41 484 363 655 ;
+C -1 ; WX 350 ; N macron ; B 60 530 338 585 ;
+C -1 ; WX 350 ; N breve ; B 92 498 363 645 ;
+C -1 ; WX 350 ; N dotaccent ; B 149 507 254 612 ;
+C -1 ; WX 350 ; N ring ; B 120 490 328 687 ;
+C -1 ; WX 350 ; N cedilla ; B -13 -225 158 15 ;
+C -1 ; WX 500 ; N hungarumlaut ; B 92 489 455 656 ;
+C -1 ; WX 350 ; N ogonek ; B 4 -225 192 27 ;
+C -1 ; WX 350 ; N caron ; B 108 504 371 671 ;
+C -1 ; WX 548 ; N spacingcommaaccent ; B 205 -279 322 -62 ;
+C -1 ; WX 157 ; N brokenbar ; B 25 -25 81 691 ;
+C -1 ; WX 356 ; N minus ; B 10 194 296 249 ;
+C -1 ; WX 389 ; N multiply ; B 28 78 311 361 ;
+C -1 ; WX 633 ; N colonsign ; B 55 -70 618 684 ;
+C -1 ; WX 633 ; N cruzeiro ; B 55 -22 618 629 ;
+C -1 ; WX 571 ; N franc ; B -23 -6 580 624 ;
+C -1 ; WX 648 ; N peseta ; B -24 -6 668 624 ;
+C -1 ; WX 1022 ; N rupiah ; B -24 -249 982 624 ;
+C -1 ; WX 767 ; N Amacron ; B -61 -6 820 844 ;
+C -1 ; WX 767 ; N Abreve ; B -61 -6 791 893 ;
+C -1 ; WX 767 ; N Aogonek ; B -61 -225 690 705 ;
+C -1 ; WX 669 ; N Cacute ; B 55 -22 685 925 ;
+C -1 ; WX 669 ; N Ccaron ; B 55 -22 693 928 ;
+C -1 ; WX 790 ; N Dcaron ; B -33 -6 765 928 ;
+C -1 ; WX 790 ; N Dcroat ; B -33 -6 765 691 ;
+C -1 ; WX 790 ; N Eth ; B -33 -6 765 691 ;
+C -1 ; WX 623 ; N Emacron ; B -33 -6 614 844 ;
+C -1 ; WX 623 ; N Edotaccent ; B -33 -6 614 873 ;
+C -1 ; WX 623 ; N Eogonek ; B -33 -225 614 690 ;
+C -1 ; WX 623 ; N Ecaron ; B -33 -6 614 928 ;
+C -1 ; WX 747 ; N Gbreve ; B 55 -22 755 893 ;
+C -1 ; WX 747 ; N Gcedilla ; B 55 -225 756 705 ;
+C -1 ; WX 431 ; N Imacron ; B -3 -6 507 844 ;
+C -1 ; WX 431 ; N Idot ; B -3 -6 465 873 ;
+C -1 ; WX 431 ; N Iogonek ; B -3 -225 465 690 ;
+C -1 ; WX 431 ; N dotlessIturk ; B -3 -6 465 689 ;
+C -1 ; WX 716 ; N Kcedilla ; B -33 -225 765 690 ;
+C -1 ; WX 613 ; N Lacute ; B -34 -6 594 925 ;
+C -1 ; WX 613 ; N Lcedilla ; B -34 -225 594 689 ;
+C -1 ; WX 613 ; N Lcaron ; B -34 -6 594 700 ;
+C -1 ; WX 613 ; N Ldotaccent ; B -34 -6 594 689 ;
+C -1 ; WX 613 ; N Lslash ; B -34 -6 596 690 ;
+C -1 ; WX 776 ; N Nacute ; B -23 -22 845 925 ;
+C -1 ; WX 776 ; N Ncedilla ; B -23 -225 845 690 ;
+C -1 ; WX 776 ; N Ncaron ; B -23 -22 845 928 ;
+C -1 ; WX 730 ; N Omacron ; B 55 -22 704 844 ;
+C -1 ; WX 730 ; N Ohungarumlaut ; B 55 -22 753 924 ;
+C -1 ; WX 698 ; N Racute ; B -33 -24 647 925 ;
+C -1 ; WX 698 ; N Rcedilla ; B -33 -225 647 690 ;
+C -1 ; WX 698 ; N Rcaron ; B -33 -24 647 928 ;
+C -1 ; WX 525 ; N Sacute ; B 25 -22 537 925 ;
+C -1 ; WX 525 ; N Scedilla ; B 25 -225 499 705 ;
+C -1 ; WX 525 ; N Scommaaccent ; B 25 -279 498 704 ;
+C -1 ; WX 525 ; N Scaron ; B 25 -22 549 928 ;
+C -1 ; WX 670 ; N Tcedilla ; B 66 -225 737 698 ;
+C -1 ; WX 670 ; N Tcommaaccent ; B 66 -274 736 697 ;
+C -1 ; WX 670 ; N Tcaron ; B 66 -6 736 928 ;
+C -1 ; WX 737 ; N Uring ; B 96 -22 822 931 ;
+C -1 ; WX 737 ; N Umacron ; B 96 -22 822 844 ;
+C -1 ; WX 737 ; N Uogonek ; B 96 -225 823 690 ;
+C -1 ; WX 737 ; N Uhungarumlaut ; B 96 -22 822 924 ;
+C -1 ; WX 707 ; N Yacute ; B 47 -6 795 925 ;
+C -1 ; WX 655 ; N Zacute ; B -13 -10 657 925 ;
+C -1 ; WX 655 ; N Zdotaccent ; B -13 -10 657 873 ;
+C -1 ; WX 655 ; N Zcaron ; B -13 -10 657 928 ;
+C -1 ; WX 601 ; N Thorn ; B -2 -6 591 690 ;
+C -1 ; WX 808 ; N Grave ; B 338 749 528 925 ;
+C -1 ; WX 808 ; N Acute ; B 451 749 665 925 ;
+C -1 ; WX 808 ; N Dieresis ; B 358 770 683 880 ;
+C -1 ; WX 808 ; N Circumflex ; B 349 754 665 930 ;
+C -1 ; WX 808 ; N Tilde ; B 372 748 702 919 ;
+C -1 ; WX 808 ; N Macron ; B 344 789 697 844 ;
+C -1 ; WX 808 ; N Breve ; B 389 746 659 893 ;
+C -1 ; WX 808 ; N Dotaccent ; B 449 763 560 873 ;
+C -1 ; WX 808 ; N Ring ; B 401 734 608 931 ;
+C -1 ; WX 808 ; N Hungarumlaut ; B 360 748 765 924 ;
+C -1 ; WX 808 ; N Caron ; B 374 761 673 928 ;
+C -1 ; WX 301 ; N hyphenlining ; B 45 311 296 366 ;
+C -1 ; WX 464 ; N endashlining ; B 2 311 502 366 ;
+C -1 ; WX 964 ; N emdashlining ; B 2 311 1001 366 ;
+C -1 ; WX 339 ; N questiondownlining ; B -11 -18 365 687 ;
+C -1 ; WX 227 ; N exclamdownlining ; B 6 -18 253 688 ;
+C -1 ; WX 320 ; N parenleftlining ; B 70 -94 455 770 ;
+C -1 ; WX 320 ; N parenrightlining ; B -119 -95 265 769 ;
+C -1 ; WX 375 ; N bracketleftlining ; B 29 -93 470 767 ;
+C -1 ; WX 375 ; N bracketrightlining ; B -79 -92 361 768 ;
+C -1 ; WX 320 ; N braceleftlining ; B 54 -93 391 767 ;
+C -1 ; WX 320 ; N bracerightlining ; B -51 -93 286 768 ;
+C -1 ; WX 889 ; N percentlining ; B 25 -39 854 718 ;
+C -1 ; WX 1289 ; N perthousandlining ; B 25 -39 1254 718 ;
+C -1 ; WX 525 ; N dollarlining ; B 25 -75 499 769 ;
+C -1 ; WX 669 ; N colonsignlining ; B 55 -72 674 761 ;
+C -1 ; WX 669 ; N cruzeirolining ; B 55 -22 674 705 ;
+C -1 ; WX 315 ; N florinlining ; B -186 -280 501 734 ;
+C -1 ; WX 586 ; N franclining ; B -33 -6 625 690 ;
+C -1 ; WX 655 ; N pesetalining ; B -33 -6 716 690 ;
+C -1 ; WX 617 ; N sterlinglining ; B 12 -203 759 705 ;
+C -1 ; WX 1082 ; N rupiahlining ; B -33 -264 1042 690 ;
+C -1 ; WX 707 ; N yenlining ; B 47 -6 795 705 ;
+C -1 ; WX 644 ; N zerolining ; B 70 -22 604 701 ;
+C -1 ; WX 407 ; N onelining ; B 8 -7 352 704 ;
+C -1 ; WX 527 ; N twolining ; B 8 -6 509 701 ;
+C -1 ; WX 517 ; N threelining ; B -5 -90 472 700 ;
+C -1 ; WX 586 ; N fourlining ; B 9 -23 542 704 ;
+C -1 ; WX 484 ; N fivelining ; B -32 -90 515 710 ;
+C -1 ; WX 592 ; N sixlining ; B 60 -22 610 763 ;
+C -1 ; WX 471 ; N sevenlining ; B 61 -72 540 691 ;
+C -1 ; WX 552 ; N eightlining ; B 44 -22 522 700 ;
+C -1 ; WX 595 ; N ninelining ; B 38 -78 556 701 ;
+C -1 ; WX 570 ; N zeroliningfixed ; B 50 -22 544 700 ;
+C -1 ; WX 570 ; N oneliningfixed ; B 53 -7 433 704 ;
+C -1 ; WX 570 ; N twoliningfixed ; B -1 -6 499 701 ;
+C -1 ; WX 570 ; N threeliningfixed ; B -1 -90 494 700 ;
+C -1 ; WX 570 ; N fourliningfixed ; B 1 -23 531 703 ;
+C -1 ; WX 570 ; N fiveliningfixed ; B -1 -90 551 710 ;
+C -1 ; WX 570 ; N sixliningfixed ; B 49 -22 598 761 ;
+C -1 ; WX 570 ; N sevenliningfixed ; B 101 -73 587 691 ;
+C -1 ; WX 570 ; N eightliningfixed ; B 56 -22 534 700 ;
+C -1 ; WX 570 ; N nineliningfixed ; B 34 -78 547 701 ;
+C -1 ; WX 500 ; N zerofixed ; B 24 -21 430 456 ;
+C -1 ; WX 500 ; N onefixed ; B 33 -6 446 441 ;
+C -1 ; WX 500 ; N twofixed ; B -1 -7 408 456 ;
+C -1 ; WX 500 ; N threefixed ; B -38 -226 389 456 ;
+C -1 ; WX 500 ; N fourfixed ; B -28 -225 444 453 ;
+C -1 ; WX 500 ; N fivefixed ; B 3 -225 436 458 ;
+C -1 ; WX 500 ; N sixfixed ; B 41 -21 516 683 ;
+C -1 ; WX 500 ; N sevenfixed ; B 18 -226 476 450 ;
+C -1 ; WX 500 ; N eightfixed ; B 38 -21 478 682 ;
+C -1 ; WX 500 ; N ninefixed ; B -23 -226 428 456 ;
+C -1 ; WX 410 ; N zerofractiondiasuperior ; B 10 261 365 697 ;
+C -1 ; WX 271 ; N onefractiondiasuperior ; B -24 270 221 697 ;
+C -1 ; WX 358 ; N twofractiondiasuperior ; B -39 268 304 694 ;
+C -1 ; WX 318 ; N threefractiondiasuperior ; B -55 220 271 694 ;
+C -1 ; WX 387 ; N fourfractiondiasuperior ; B -22 261 344 698 ;
+C -1 ; WX 316 ; N fivefractiondiasuperior ; B -53 220 318 704 ;
+C -1 ; WX 376 ; N sixfractiondiasuperior ; B 6 261 384 731 ;
+C -1 ; WX 333 ; N sevenfractiondiasuperior ; B 8 231 344 689 ;
+C -1 ; WX 351 ; N eightfractiondiasuperior ; B -8 261 317 694 ;
+C -1 ; WX 375 ; N ninefractiondiasuperior ; B -25 227 336 694 ;
+C -1 ; WX 233 ; N parenleftfractiondiasuperior ; B 35 194 295 757 ;
+C -1 ; WX 178 ; N periodfractiondiasuperior ; B 9 261 88 340 ;
+C -1 ; WX 178 ; N commafractiondiasuperior ; B -33 147 93 340 ;
+C -1 ; WX 411 ; N plusfractiondiasuperior ; B 40 312 371 643 ;
+C -1 ; WX 337 ; N minusfractiondiasuperior ; B 28 274 285 506 ;
+C -1 ; WX 233 ; N parenrightfractiondiasuperior ; B -86 197 173 756 ;
+C -1 ; WX 410 ; N zerofractiondiainferior ; B 10 -13 365 423 ;
+C -1 ; WX 271 ; N onefractiondiainferior ; B -24 -4 221 423 ;
+C -1 ; WX 358 ; N twofractiondiainferior ; B -39 -6 304 420 ;
+C -1 ; WX 318 ; N threefractiondiainferior ; B -55 -54 271 420 ;
+C -1 ; WX 387 ; N fourfractiondiainferior ; B -22 -13 344 424 ;
+C -1 ; WX 316 ; N fivefractiondiainferior ; B -53 -54 318 430 ;
+C -1 ; WX 376 ; N sixfractiondiainferior ; B 6 -13 384 457 ;
+C -1 ; WX 333 ; N sevenfractiondiainferior ; B 8 -43 344 415 ;
+C -1 ; WX 351 ; N eightfractiondiainferior ; B -8 -13 317 420 ;
+C -1 ; WX 375 ; N ninefractiondiainferior ; B -25 -47 336 420 ;
+C -1 ; WX 233 ; N parenleftfractiondiainferior ; B 35 -80 295 483 ;
+C -1 ; WX 178 ; N periodfractiondiainferior ; B 9 -13 88 66 ;
+C -1 ; WX 178 ; N commafractiondiainferior ; B -33 -127 93 66 ;
+C -1 ; WX 411 ; N plusfractiondiainferior ; B 40 38 371 369 ;
+C -1 ; WX 337 ; N minusfractiondiainferior ; B 28 0 285 232 ;
+C -1 ; WX 233 ; N parenrightfractiondiainferior ; B -86 -76 173 482 ;
+C -1 ; WX 410 ; N zerosuperior ; B 105 382 460 818 ;
+C -1 ; WX 271 ; N onesuperior ; B 70 391 316 818 ;
+C -1 ; WX 358 ; N twosuperior ; B 55 389 399 815 ;
+C -1 ; WX 318 ; N threesuperior ; B 39 341 366 815 ;
+C -1 ; WX 387 ; N foursuperior ; B 72 382 439 819 ;
+C -1 ; WX 316 ; N fivesuperior ; B 41 341 413 825 ;
+C -1 ; WX 376 ; N sixsuperior ; B 101 382 479 852 ;
+C -1 ; WX 333 ; N sevensuperior ; B 103 352 439 810 ;
+C -1 ; WX 351 ; N eightsuperior ; B 86 382 412 815 ;
+C -1 ; WX 375 ; N ninesuperior ; B 69 348 431 815 ;
+C -1 ; WX 410 ; N zeroinferior ; B 10 -99 365 337 ;
+C -1 ; WX 271 ; N oneinferior ; B -24 -90 221 337 ;
+C -1 ; WX 358 ; N twoinferior ; B -39 -92 304 334 ;
+C -1 ; WX 318 ; N threeinferior ; B -55 -140 271 334 ;
+C -1 ; WX 387 ; N fourinferior ; B -22 -99 344 338 ;
+C -1 ; WX 316 ; N fiveinferior ; B -53 -140 318 344 ;
+C -1 ; WX 376 ; N sixinferior ; B 6 -99 384 371 ;
+C -1 ; WX 333 ; N seveninferior ; B 8 -129 344 329 ;
+C -1 ; WX 351 ; N eightinferior ; B -8 -99 317 334 ;
+C -1 ; WX 375 ; N nineinferior ; B -25 -133 336 334 ;
+C -1 ; WX 340 ; N ainferior ; B -6 -101 316 223 ;
+C -1 ; WX 330 ; N binferior ; B 3 -101 293 414 ;
+C -1 ; WX 261 ; N cinferior ; B 6 -101 241 217 ;
+C -1 ; WX 350 ; N dinferior ; B 0 -101 387 414 ;
+C -1 ; WX 264 ; N einferior ; B 6 -101 226 217 ;
+C -1 ; WX 237 ; N finferior ; B -126 -279 345 421 ;
+C -1 ; WX 306 ; N ginferior ; B -55 -280 312 217 ;
+C -1 ; WX 359 ; N hinferior ; B -9 -101 313 414 ;
+C -1 ; WX 217 ; N iinferior ; B 7 -101 216 387 ;
+C -1 ; WX 237 ; N jinferior ; B -137 -279 230 387 ;
+C -1 ; WX 344 ; N kinferior ; B -9 -101 304 414 ;
+C -1 ; WX 205 ; N linferior ; B 0 -101 233 414 ;
+C -1 ; WX 518 ; N minferior ; B -7 -101 478 217 ;
+C -1 ; WX 351 ; N ninferior ; B 0 -101 310 217 ;
+C -1 ; WX 308 ; N oinferior ; B 6 -101 262 217 ;
+C -1 ; WX 337 ; N pinferior ; B -109 -269 291 288 ;
+C -1 ; WX 338 ; N qinferior ; B -5 -269 329 221 ;
+C -1 ; WX 284 ; N rinferior ; B 0 -93 284 217 ;
+C -1 ; WX 224 ; N sinferior ; B -21 -101 202 217 ;
+C -1 ; WX 238 ; N tinferior ; B 13 -101 231 288 ;
+C -1 ; WX 358 ; N uinferior ; B 9 -101 319 217 ;
+C -1 ; WX 394 ; N vinferior ; B 11 -101 356 217 ;
+C -1 ; WX 542 ; N winferior ; B 11 -101 504 217 ;
+C -1 ; WX 349 ; N xinferior ; B -7 -101 332 217 ;
+C -1 ; WX 322 ; N yinferior ; B -67 -279 283 218 ;
+C -1 ; WX 310 ; N zinferior ; B -15 -101 283 217 ;
+C -1 ; WX 264 ; N egraveinferior ; B 6 -101 226 369 ;
+C -1 ; WX 340 ; N asuperior ; B -6 380 316 704 ;
+C -1 ; WX 330 ; N bsuperior ; B 3 380 293 895 ;
+C -1 ; WX 261 ; N csuperior ; B 6 380 241 698 ;
+C -1 ; WX 350 ; N dsuperior ; B 0 380 387 895 ;
+C -1 ; WX 264 ; N esuperior ; B 6 380 226 698 ;
+C -1 ; WX 237 ; N fsuperior ; B -126 202 345 902 ;
+C -1 ; WX 306 ; N gsuperior ; B -55 201 312 698 ;
+C -1 ; WX 359 ; N hsuperior ; B -9 380 313 895 ;
+C -1 ; WX 217 ; N isuperior ; B 7 380 216 868 ;
+C -1 ; WX 237 ; N jsuperior ; B -137 202 230 868 ;
+C -1 ; WX 344 ; N ksuperior ; B -9 380 304 895 ;
+C -1 ; WX 205 ; N lsuperior ; B 0 380 233 895 ;
+C -1 ; WX 518 ; N msuperior ; B -7 380 478 698 ;
+C -1 ; WX 351 ; N nsuperior ; B 0 380 310 698 ;
+C -1 ; WX 308 ; N osuperior ; B 6 380 262 698 ;
+C -1 ; WX 337 ; N psuperior ; B -109 211 291 769 ;
+C -1 ; WX 338 ; N qsuperior ; B -5 211 329 702 ;
+C -1 ; WX 284 ; N rsuperior ; B 0 388 284 698 ;
+C -1 ; WX 224 ; N ssuperior ; B -21 380 202 698 ;
+C -1 ; WX 238 ; N tsuperior ; B 13 380 231 769 ;
+C -1 ; WX 358 ; N usuperior ; B 9 380 319 698 ;
+C -1 ; WX 394 ; N vsuperior ; B 11 380 356 698 ;
+C -1 ; WX 542 ; N wsuperior ; B 11 380 504 698 ;
+C -1 ; WX 349 ; N xsuperior ; B -7 380 332 698 ;
+C -1 ; WX 322 ; N ysuperior ; B -67 202 283 699 ;
+C -1 ; WX 310 ; N zsuperior ; B -15 380 283 698 ;
+C -1 ; WX 264 ; N egravesuperior ; B 6 380 226 850 ;
+C -1 ; WX 244 ; N exclamsmall ; B 21 -22 221 471 ;
+C -1 ; WX 411 ; N dollarsmall ; B 32 -56 369 520 ;
+C -1 ; WX 616 ; N percentsmall ; B 37 -34 612 481 ;
+C -1 ; WX 606 ; N ampersandsmall ; B 27 -19 619 526 ;
+C -1 ; WX 258 ; N parenleftsmall ; B 47 -83 334 515 ;
+C -1 ; WX 258 ; N parenrightsmall ; B -89 -86 198 519 ;
+C -1 ; WX 301 ; N questionsmall ; B 35 -22 308 470 ;
+C -1 ; WX 277 ; N bracketleftsmall ; B 6 -83 332 514 ;
+C -1 ; WX 277 ; N bracketrightsmall ; B -67 -83 262 518 ;
+C -1 ; WX 473 ; N Asmall ; B -25 -6 477 468 ;
+C -1 ; WX 492 ; N Bsmall ; B 0 -6 450 456 ;
+C -1 ; WX 504 ; N Csmall ; B 36 -19 481 473 ;
+C -1 ; WX 573 ; N Dsmall ; B 1 -6 547 456 ;
+C -1 ; WX 481 ; N Esmall ; B 1 -6 453 456 ;
+C -1 ; WX 460 ; N Fsmall ; B 1 -6 464 456 ;
+C -1 ; WX 543 ; N Gsmall ; B 36 -19 529 473 ;
+C -1 ; WX 625 ; N Hsmall ; B 1 -6 626 456 ;
+C -1 ; WX 351 ; N Ismall ; B 11 -6 343 456 ;
+C -1 ; WX 437 ; N Jsmall ; B -30 -168 440 469 ;
+C -1 ; WX 542 ; N Ksmall ; B 1 -22 560 456 ;
+C -1 ; WX 470 ; N Lsmall ; B 1 -6 442 456 ;
+C -1 ; WX 698 ; N Msmall ; B -20 -19 695 456 ;
+C -1 ; WX 601 ; N Nsmall ; B 12 -19 606 455 ;
+C -1 ; WX 530 ; N Osmall ; B 36 -19 504 472 ;
+C -1 ; WX 482 ; N Psmall ; B 1 -6 475 456 ;
+C -1 ; WX 512 ; N Qsmall ; B 20 -250 911 472 ;
+C -1 ; WX 529 ; N Rsmall ; B 1 -18 505 455 ;
+C -1 ; WX 401 ; N Ssmall ; B 32 -19 369 473 ;
+C -1 ; WX 523 ; N Tsmall ; B 60 -6 554 463 ;
+C -1 ; WX 552 ; N Usmall ; B 75 -19 602 455 ;
+C -1 ; WX 505 ; N Vsmall ; B 57 -19 580 455 ;
+C -1 ; WX 714 ; N Wsmall ; B 45 -19 787 456 ;
+C -1 ; WX 515 ; N Xsmall ; B -19 -6 561 456 ;
+C -1 ; WX 530 ; N Ysmall ; B 48 -6 580 468 ;
+C -1 ; WX 482 ; N Zsmall ; B 20 -9 490 460 ;
+C -1 ; WX 249 ; N braceleftsmall ; B 12 -83 300 514 ;
+C -1 ; WX 257 ; N bracerightsmall ; B -60 -83 232 514 ;
+C -1 ; WX 419 ; N sterlingsmall ; B -29 -165 489 473 ;
+C -1 ; WX 550 ; N yensmall ; B 48 -5 580 470 ;
+C -1 ; WX 742 ; N AEsmall ; B -25 -5 704 456 ;
+C -1 ; WX 301 ; N questiondownsmall ; B 6 -22 279 470 ;
+C -1 ; WX 244 ; N exclamdownsmall ; B 20 -22 221 470 ;
+C -1 ; WX 411 ; N florinsmall ; B -92 -226 430 456 ;
+C -1 ; WX 746 ; N OEsmall ; B 41 -5 708 458 ;
+C -1 ; WX 902 ; N perthousandsmall ; B 37 -34 899 481 ;
+C -1 ; WX 518 ; N Aacutesmall ; B -25 -6 512 672 ;
+C -1 ; WX 518 ; N Agravesmall ; B -25 -6 477 668 ;
+C -1 ; WX 518 ; N Acircumflexsmall ; B -25 -6 477 695 ;
+C -1 ; WX 518 ; N Adieresissmall ; B -25 -6 502 631 ;
+C -1 ; WX 518 ; N Atildesmall ; B -25 -6 521 670 ;
+C -1 ; WX 518 ; N Aringsmall ; B -25 -6 477 687 ;
+C -1 ; WX 518 ; N Amacronsmall ; B -25 -6 495 600 ;
+C -1 ; WX 518 ; N Abrevesmall ; B -25 -6 516 660 ;
+C -1 ; WX 518 ; N Aogoneksmall ; B -25 -225 486 469 ;
+C -1 ; WX 489 ; N Ccedillasmall ; B 36 -225 480 472 ;
+C -1 ; WX 489 ; N Cacutesmall ; B 36 -19 504 672 ;
+C -1 ; WX 489 ; N Ccaronsmall ; B 36 -19 529 686 ;
+C -1 ; WX 573 ; N Dcaronsmall ; B 1 -6 547 686 ;
+C -1 ; WX 573 ; N Dcroatsmall ; B 1 -6 548 457 ;
+C -1 ; WX 573 ; N Ethsmall ; B 1 -6 548 457 ;
+C -1 ; WX 491 ; N Eacutesmall ; B 1 -6 453 672 ;
+C -1 ; WX 491 ; N Egravesmall ; B 1 -6 453 668 ;
+C -1 ; WX 491 ; N Ecircumflexsmall ; B 1 -6 453 692 ;
+C -1 ; WX 491 ; N Edieresissmall ; B 1 -6 453 631 ;
+C -1 ; WX 491 ; N Emacronsmall ; B 1 -6 453 600 ;
+C -1 ; WX 491 ; N Edotaccentsmall ; B 1 -6 453 627 ;
+C -1 ; WX 491 ; N Eogoneksmall ; B 1 -225 453 456 ;
+C -1 ; WX 491 ; N Ecaronsmall ; B 1 -6 469 686 ;
+C -1 ; WX 543 ; N Gbrevesmall ; B 36 -19 529 660 ;
+C -1 ; WX 543 ; N Gcedillasmall ; B 36 -225 529 473 ;
+C -1 ; WX 351 ; N Iacutesmall ; B 11 -6 388 672 ;
+C -1 ; WX 351 ; N Igravesmall ; B 11 -6 343 668 ;
+C -1 ; WX 351 ; N Icircumflexsmall ; B 11 -6 361 695 ;
+C -1 ; WX 351 ; N Idieresissmall ; B 11 -6 391 631 ;
+C -1 ; WX 351 ; N Imacronsmall ; B 11 -6 388 600 ;
+C -1 ; WX 351 ; N Idotaccentsmall ; B 11 -6 343 627 ;
+C -1 ; WX 351 ; N Iogoneksmall ; B 11 -225 343 456 ;
+C -1 ; WX 351 ; N dotlessIsmall ; B 11 -6 343 456 ;
+C -1 ; WX 542 ; N Kcedillasmall ; B 1 -225 560 456 ;
+C -1 ; WX 470 ; N Lacutesmall ; B 1 -6 442 672 ;
+C -1 ; WX 470 ; N Lcedillasmall ; B 1 -225 442 456 ;
+C -1 ; WX 470 ; N Lquoterightsmall ; B 1 -6 495 471 ;
+C -1 ; WX 470 ; N Ldotsmall ; B 1 -6 442 456 ;
+C -1 ; WX 470 ; N Lslashsmall ; B 1 -5 442 457 ;
+C -1 ; WX 601 ; N Nacutesmall ; B 12 -19 606 672 ;
+C -1 ; WX 601 ; N Ntildesmall ; B 12 -19 606 670 ;
+C -1 ; WX 601 ; N Ncedillasmall ; B -3 -225 607 456 ;
+C -1 ; WX 601 ; N Ncaronsmall ; B 12 -19 606 686 ;
+C -1 ; WX 530 ; N Oslashsmall ; B 36 -41 505 489 ;
+C -1 ; WX 530 ; N Oacutesmall ; B 36 -19 505 672 ;
+C -1 ; WX 530 ; N Ogravesmall ; B 36 -19 504 668 ;
+C -1 ; WX 530 ; N Ocircumflexsmall ; B 36 -19 504 695 ;
+C -1 ; WX 530 ; N Odieresissmall ; B 36 -19 508 631 ;
+C -1 ; WX 530 ; N Otildesmall ; B 36 -19 518 670 ;
+C -1 ; WX 530 ; N Omacronsmall ; B 36 -19 504 600 ;
+C -1 ; WX 530 ; N Ohungarumlautsmall ; B 36 -19 597 671 ;
+C -1 ; WX 529 ; N Racutesmall ; B 1 -18 505 672 ;
+C -1 ; WX 529 ; N Rcedillasmall ; B 1 -225 506 456 ;
+C -1 ; WX 529 ; N Rcaronsmall ; B 1 -18 505 686 ;
+C -1 ; WX 411 ; N Sacutesmall ; B 32 -19 441 672 ;
+C -1 ; WX 411 ; N Scedillasmall ; B 32 -225 369 472 ;
+C -1 ; WX 411 ; N Scommaaccentsmall ; B 32 -279 369 473 ;
+C -1 ; WX 411 ; N Scaronsmall ; B 32 -19 450 686 ;
+C -1 ; WX 538 ; N Tcedillasmall ; B 60 -225 554 463 ;
+C -1 ; WX 538 ; N Tcommaaccentsmall ; B 60 -279 554 463 ;
+C -1 ; WX 538 ; N Tcaronsmall ; B 60 -6 554 686 ;
+C -1 ; WX 562 ; N Uacutesmall ; B 75 -19 602 672 ;
+C -1 ; WX 562 ; N Ugravesmall ; B 75 -19 602 668 ;
+C -1 ; WX 562 ; N Ucircumflexsmall ; B 75 -19 602 695 ;
+C -1 ; WX 562 ; N Udieresissmall ; B 75 -19 602 631 ;
+C -1 ; WX 562 ; N Uringsmall ; B 75 -19 602 702 ;
+C -1 ; WX 562 ; N Umacronsmall ; B 75 -19 602 600 ;
+C -1 ; WX 562 ; N Uogoneksmall ; B 75 -225 602 455 ;
+C -1 ; WX 562 ; N Uhungarumlautsmall ; B 75 -19 609 671 ;
+C -1 ; WX 550 ; N Yacutesmall ; B 48 -6 580 672 ;
+C -1 ; WX 550 ; N Ydieresissmall ; B 48 -6 580 631 ;
+C -1 ; WX 497 ; N Zacutesmall ; B 20 -9 490 672 ;
+C -1 ; WX 497 ; N Zdotaccentsmall ; B 20 -9 490 627 ;
+C -1 ; WX 497 ; N Zcaronsmall ; B 20 -9 490 686 ;
+C -1 ; WX 463 ; N Thornsmall ; B 10 -5 455 455 ;
+C -1 ; WX 504 ; N colonsignsmall ; B 36 -56 480 528 ;
+C -1 ; WX 504 ; N cruzeirosmall ; B 36 -19 484 473 ;
+C -1 ; WX 460 ; N francsmall ; B 1 -5 463 456 ;
+C -1 ; WX 532 ; N pesetasmall ; B 0 -5 546 455 ;
+C -1 ; WX 898 ; N rupiahsmall ; B 1 -210 829 456 ;
+C -1 ; WX 464 ; N amacron ; B -12 -22 510 585 ;
+C -1 ; WX 464 ; N abreve ; B -12 -22 506 645 ;
+C -1 ; WX 464 ; N aogonek ; B -12 -225 455 448 ;
+C -1 ; WX 349 ; N cacute ; B 6 -22 449 657 ;
+C -1 ; WX 349 ; N ccaron ; B 6 -22 471 671 ;
+C -1 ; WX 595 ; N dcaron ; B -3 -22 710 724 ;
+C -1 ; WX 478 ; N dmacron ; B -3 -22 641 724 ;
+C -1 ; WX 407 ; N eth ; B 5 -22 413 738 ;
+C -1 ; WX 354 ; N emacron ; B 6 -22 414 585 ;
+C -1 ; WX 354 ; N edotaccent ; B 6 -22 332 612 ;
+C -1 ; WX 354 ; N eogonek ; B 6 -225 325 440 ;
+C -1 ; WX 354 ; N ecaron ; B 6 -22 438 671 ;
+C -1 ; WX 415 ; N gbreve ; B -83 -280 448 645 ;
+C -1 ; WX 415 ; N gacute ; B -83 -280 448 657 ;
+C -1 ; WX 286 ; N imacron ; B 7 -22 387 585 ;
+C -1 ; WX 286 ; N iturk ; B 7 -22 310 684 ;
+C -1 ; WX 286 ; N iogonek ; B -12 -225 310 685 ;
+C -1 ; WX 286 ; N index594 ; B 7 -22 251 440 ;
+C -1 ; WX 470 ; N kcedilla ; B -92 -225 437 724 ;
+C -1 ; WX 268 ; N lacute ; B -2 -22 449 929 ;
+C -1 ; WX 268 ; N lcedilla ; B -45 -225 334 724 ;
+C -1 ; WX 385 ; N lcaron ; B -2 -22 488 724 ;
+C -1 ; WX 423 ; N ldotaccent ; B -2 -22 397 724 ;
+C -1 ; WX 308 ; N lslash ; B -18 -22 382 724 ;
+C -1 ; WX 480 ; N nacute ; B -3 -22 458 657 ;
+C -1 ; WX 480 ; N ncedilla ; B -69 -225 444 440 ;
+C -1 ; WX 480 ; N ncaron ; B -3 -22 455 671 ;
+C -1 ; WX 417 ; N omacron ; B 6 -22 450 585 ;
+C -1 ; WX 417 ; N ohungarumlaut ; B 6 -22 527 656 ;
+C -1 ; WX 382 ; N racute ; B -3 -10 440 657 ;
+C -1 ; WX 382 ; N rcedilla ; B -76 -225 407 440 ;
+C -1 ; WX 382 ; N rcaron ; B -3 -10 425 671 ;
+C -1 ; WX 296 ; N sacute ; B -34 -22 414 657 ;
+C -1 ; WX 296 ; N scedilla ; B -34 -225 292 440 ;
+C -1 ; WX 296 ; N scommaaccent ; B -34 -279 292 440 ;
+C -1 ; WX 269 ; N scaron ; B -34 -22 412 671 ;
+C -1 ; WX 316 ; N tcedilla ; B -13 -225 333 542 ;
+C -1 ; WX 316 ; N tcommaaccent ; B -4 -279 333 541 ;
+C -1 ; WX 385 ; N tcaron ; B 16 -22 504 700 ;
+C -1 ; WX 490 ; N uring ; B 11 -22 456 687 ;
+C -1 ; WX 490 ; N umacron ; B 11 -22 462 585 ;
+C -1 ; WX 490 ; N uogonek ; B 11 -225 458 440 ;
+C -1 ; WX 490 ; N uhungarumlaut ; B 11 -22 578 656 ;
+C -1 ; WX 437 ; N yacute ; B -95 -280 416 657 ;
+C -1 ; WX 420 ; N zacute ; B -25 -22 430 657 ;
+C -1 ; WX 420 ; N zdotaccent ; B -25 -22 407 612 ;
+C -1 ; WX 420 ; N zcaron ; B -25 -22 424 671 ;
+C -1 ; WX 459 ; N thorn ; B -163 -267 419 724 ;
+C -1 ; WX 739 ; N fb ; B -186 -280 711 733 ;
+C -1 ; WX 579 ; N ff ; B -186 -280 765 735 ;
+C -1 ; WX 811 ; N fh ; B -186 -280 768 733 ;
+C -1 ; WX 544 ; N fj ; B -186 -280 571 733 ;
+C -1 ; WX 789 ; N fk ; B -186 -280 756 733 ;
+C -1 ; WX 789 ; N fklinefinalswash ; B -186 -280 1016 734 ;
+C -1 ; WX 651 ; N fr ; B -185 -280 676 734 ;
+C -1 ; WX 588 ; N ft ; B -186 -280 600 735 ;
+C -1 ; WX 844 ; N ftlinefinalswash ; B -186 -280 819 735 ;
+C -1 ; WX 1007 ; N ffb ; B -185 -280 978 735 ;
+C -1 ; WX 1078 ; N ffh ; B -185 -280 1036 734 ;
+C -1 ; WX 812 ; N ffi ; B -186 -280 837 734 ;
+C -1 ; WX 1056 ; N ffk ; B -185 -280 1023 735 ;
+C -1 ; WX 1056 ; N ffklinefinalswash ; B -185 -280 1283 735 ;
+C -1 ; WX 812 ; N ffl ; B -185 -280 878 734 ;
+C -1 ; WX 918 ; N ffr ; B -186 -280 943 735 ;
+C -1 ; WX 812 ; N gg ; B -92 -297 841 440 ;
+C -1 ; WX 533 ; N ij ; B 8 -280 578 684 ;
+C -1 ; WX 502 ; N ll ; B -2 -22 567 724 ;
+C -1 ; WX 1105 ; N Th ; B 59 -12 1062 732 ;
+C -1 ; WX 726 ; N as ; B -12 -22 712 448 ;
+C -1 ; WX 614 ; N es ; B 6 -22 600 439 ;
+C -1 ; WX 655 ; N ct ; B 6 -22 671 637 ;
+C -1 ; WX 911 ; N ctlinefinalswash ; B 6 -22 886 638 ;
+C -1 ; WX 530 ; N is ; B 6 -22 516 684 ;
+C -1 ; WX 530 ; N dotlessis ; B 6 -22 516 439 ;
+C -1 ; WX 753 ; N ns ; B -3 -22 739 439 ;
+C -1 ; WX 796 ; N nt ; B -3 -22 811 541 ;
+C -1 ; WX 1053 ; N ntlinefinalswash ; B -3 -22 1028 541 ;
+C -1 ; WX 611 ; N st ; B -34 -22 628 638 ;
+C -1 ; WX 867 ; N stlinefinalswash ; B -34 -22 842 638 ;
+C -1 ; WX 552 ; N tt ; B 16 -22 568 542 ;
+C -1 ; WX 809 ; N ttlinefinalswash ; B 16 -22 784 542 ;
+C -1 ; WX 852 ; N aelinefinalswash ; B -13 -28 858 440 ;
+C -1 ; WX 941 ; N oelinefinalswash ; B 6 -28 943 440 ;
+C -1 ; WX 224 ; N slong ; B -227 -280 459 734 ;
+C -1 ; WX 698 ; N slongb ; B -227 -280 670 733 ;
+C -1 ; WX 770 ; N slongh ; B -226 -280 728 734 ;
+C -1 ; WX 491 ; N slongi ; B -226 -280 531 734 ;
+C -1 ; WX 724 ; N slongk ; B -227 -280 691 734 ;
+C -1 ; WX 724 ; N slongklinefinalswash ; B -227 -280 951 734 ;
+C -1 ; WX 505 ; N slongl ; B -226 -280 571 734 ;
+C -1 ; WX 490 ; N dblslong ; B -226 -280 725 733 ;
+C -1 ; WX 542 ; N slongt ; B -227 -280 563 733 ;
+C -1 ; WX 802 ; N slongtlinefinalswash ; B -227 -280 777 734 ;
+C -1 ; WX 776 ; N dblslongi ; B -227 -280 796 734 ;
+C -1 ; WX 1369 ; N ampersandalt ; B 89 -22 1366 703 ;
+C -1 ; WX 1077 ; N Aaltone ; B -13 -44 1055 711 ;
+C -1 ; WX 850 ; N Baltone ; B 48 -6 807 704 ;
+C -1 ; WX 734 ; N Caltone ; B 30 -274 708 705 ;
+C -1 ; WX 1022 ; N Daltone ; B 73 -6 996 704 ;
+C -1 ; WX 570 ; N Ealtone ; B 57 -22 537 704 ;
+C -1 ; WX 723 ; N Faltone ; B -117 -275 820 765 ;
+C -1 ; WX 748 ; N Galtone ; B 55 -273 756 705 ;
+C -1 ; WX 1014 ; N Haltone ; B -24 -95 1135 739 ;
+C -1 ; WX 1017 ; N Kaltone ; B 55 -332 1354 740 ;
+C -1 ; WX 606 ; N Laltone ; B -31 -228 735 704 ;
+C -1 ; WX 1447 ; N Maltone ; B 20 -37 1639 789 ;
+C -1 ; WX 1387 ; N Naltone ; B 8 -330 1628 740 ;
+C -1 ; WX 779 ; N Oaltone ; B 55 -22 753 704 ;
+C -1 ; WX 835 ; N Paltone ; B 48 -6 818 704 ;
+C -1 ; WX 876 ; N Raltone ; B 48 -333 1349 705 ;
+C -1 ; WX 662 ; N Saltone ; B -98 -274 619 704 ;
+C -1 ; WX 705 ; N Taltone ; B 59 -6 812 766 ;
+C -1 ; WX 890 ; N Valtone ; B 70 -22 890 705 ;
+C -1 ; WX 1143 ; N Waltone ; B 70 -22 1143 705 ;
+C -1 ; WX 1204 ; N Xaltone ; B -13 -333 1556 704 ;
+C -1 ; WX 681 ; N Zaltone ; B 22 -332 952 705 ;
+C -1 ; WX 1392 ; N AEaltone ; B -13 -44 1382 690 ;
+C -1 ; WX 1186 ; N Halttwo ; B -14 -95 1307 739 ;
+C -1 ; WX 1728 ; N Malttwo ; B 20 -73 1668 707 ;
+C -1 ; WX 887 ; N ampersandalttwo ; B 56 -184 859 522 ;
+C -1 ; WX 599 ; N endashalt ; B 20 169 528 274 ;
+C -1 ; WX 1088 ; N emdashalt ; B 20 160 1018 283 ;
+C -1 ; WX 1077 ; N Aacutealtone ; B -13 -44 1229 925 ;
+C -1 ; WX 1077 ; N Agravealtone ; B -13 -44 1055 925 ;
+C -1 ; WX 1077 ; N Acircumflexaltone ; B -13 -44 1172 930 ;
+C -1 ; WX 1077 ; N Adieresisaltone ; B -13 -44 1183 880 ;
+C -1 ; WX 1077 ; N Atildealtone ; B -13 -44 1194 919 ;
+C -1 ; WX 1077 ; N Aringaltone ; B -13 -44 1107 886 ;
+C -1 ; WX 1077 ; N Amacronaltone ; B -13 -44 1183 844 ;
+C -1 ; WX 1077 ; N Abrevealtone ; B -13 -44 1174 893 ;
+C -1 ; WX 1077 ; N Aogonekaltone ; B -13 -225 1063 711 ;
+C -1 ; WX 734 ; N Ccedillaaltone ; B 30 -476 707 704 ;
+C -1 ; WX 734 ; N Cacutealtone ; B 30 -274 708 925 ;
+C -1 ; WX 734 ; N Ccaronaltone ; B 30 -274 729 928 ;
+C -1 ; WX 1022 ; N Dcaronaltone ; B 73 -6 996 928 ;
+C -1 ; WX 1082 ; N Dcroataltone ; B 73 -6 1056 704 ;
+C -1 ; WX 1082 ; N Ethaltone ; B 73 -6 1056 704 ;
+C -1 ; WX 570 ; N Eacutealtone ; B 57 -22 576 925 ;
+C -1 ; WX 570 ; N Egravealtone ; B 57 -22 537 925 ;
+C -1 ; WX 570 ; N Ecircumflexaltone ; B 57 -22 569 930 ;
+C -1 ; WX 570 ; N Edieresisaltone ; B 57 -22 566 880 ;
+C -1 ; WX 570 ; N Emacronaltone ; B 57 -22 563 844 ;
+C -1 ; WX 570 ; N Edotaccentaltone ; B 57 -22 537 873 ;
+C -1 ; WX 570 ; N Eogonekaltone ; B 57 -225 538 705 ;
+C -1 ; WX 570 ; N Ecaronaltone ; B 57 -22 577 928 ;
+C -1 ; WX 748 ; N Gbrevealtone ; B 55 -273 756 893 ;
+C -1 ; WX 1017 ; N Kcedillaaltone ; B 55 -332 1354 740 ;
+C -1 ; WX 606 ; N Lacutealtone ; B -31 -228 735 925 ;
+C -1 ; WX 606 ; N Lcedillaaltone ; B -31 -289 735 704 ;
+C -1 ; WX 606 ; N Lquoterightaltone ; B -31 -228 770 704 ;
+C -1 ; WX 606 ; N Ldotaltone ; B -31 -228 735 704 ;
+C -1 ; WX 606 ; N Lslashaltone ; B -31 -228 735 704 ;
+C -1 ; WX 1387 ; N Nacutealtone ; B 8 -330 1628 925 ;
+C -1 ; WX 1387 ; N Ntildealtone ; B 8 -330 1628 919 ;
+C -1 ; WX 1387 ; N Ncedillaaltone ; B 8 -330 1628 740 ;
+C -1 ; WX 1387 ; N Ncaronaltone ; B 8 -330 1628 928 ;
+C -1 ; WX 779 ; N Oslashaltone ; B 55 -43 753 727 ;
+C -1 ; WX 779 ; N Oacutealtone ; B 55 -22 753 925 ;
+C -1 ; WX 779 ; N Ogravealtone ; B 55 -22 753 925 ;
+C -1 ; WX 779 ; N Ocircumflexaltone ; B 55 -22 753 930 ;
+C -1 ; WX 779 ; N Odieresisaltone ; B 55 -22 753 880 ;
+C -1 ; WX 779 ; N Otildealtone ; B 55 -22 753 919 ;
+C -1 ; WX 779 ; N Omacronaltone ; B 55 -22 753 844 ;
+C -1 ; WX 779 ; N Ohungarumlautaltone ; B 55 -22 788 924 ;
+C -1 ; WX 876 ; N Racutealtone ; B 48 -333 1349 925 ;
+C -1 ; WX 876 ; N Rcedillaaltone ; B 48 -333 1349 705 ;
+C -1 ; WX 876 ; N Rcaronaltone ; B 48 -333 1349 928 ;
+C -1 ; WX 662 ; N Sacutealtone ; B -98 -274 669 925 ;
+C -1 ; WX 662 ; N Scedillaaltone ; B -98 -476 619 705 ;
+C -1 ; WX 662 ; N Scommaaccentaltone ; B -98 -531 619 704 ;
+C -1 ; WX 662 ; N Scaronaltone ; B -98 -274 689 928 ;
+C -1 ; WX 705 ; N Tcedillaaltone ; B 59 -225 812 766 ;
+C -1 ; WX 705 ; N Tcommaaccentaltone ; B 59 -275 812 766 ;
+C -1 ; WX 705 ; N Tcaronaltone ; B 59 -6 812 928 ;
+C -1 ; WX 681 ; N Zacutealtone ; B 22 -332 952 925 ;
+C -1 ; WX 681 ; N Zdotaccentaltone ; B 22 -332 952 873 ;
+C -1 ; WX 681 ; N Zcaronaltone ; B 22 -332 952 928 ;
+C -1 ; WX 703 ; N Thornaltone ; B 44 -6 687 690 ;
+C -1 ; WX 680 ; N elinefinalswash ; B 10 -28 686 440 ;
+C -1 ; WX 680 ; N eacutelinefinalswash ; B 10 -28 686 657 ;
+C -1 ; WX 680 ; N egravelinefinalswash ; B 10 -28 686 653 ;
+C -1 ; WX 680 ; N ecircumflexlinefinalswash ; B 10 -28 686 680 ;
+C -1 ; WX 680 ; N edieresislinefinalswash ; B 10 -28 686 616 ;
+C -1 ; WX 680 ; N emacronlinefinalswash ; B 10 -28 686 585 ;
+C -1 ; WX 680 ; N edotaccentlinefinalswash ; B 10 -28 686 612 ;
+C -1 ; WX 680 ; N eogoneklinefinalswash ; B 10 -225 686 440 ;
+C -1 ; WX 680 ; N ecaronlinefinalswash ; B 10 -28 686 671 ;
+C -1 ; WX 470 ; N klinefinalswash ; B -17 -244 697 725 ;
+C -1 ; WX 470 ; N kcedillalinefinalswash ; B -92 -244 697 725 ;
+C -1 ; WX 1011 ; N mlinefinalswash ; B -12 -22 986 440 ;
+C -1 ; WX 796 ; N nlinefinalswash ; B -3 -22 771 440 ;
+C -1 ; WX 796 ; N nacutelinefinalswash ; B -3 -22 771 657 ;
+C -1 ; WX 796 ; N ntildelinefinalswash ; B -3 -22 771 655 ;
+C -1 ; WX 796 ; N ncedillalinefinalswash ; B -69 -225 771 440 ;
+C -1 ; WX 796 ; N ncaronlinefinalswash ; B -3 -22 771 671 ;
+C -1 ; WX 572 ; N tlinefinalswash ; B 1 -22 547 542 ;
+C -1 ; WX 572 ; N tcedillalinefinalswash ; B -13 -225 547 542 ;
+C -1 ; WX 572 ; N tcommaaccentlinefinalswash ; B -4 -279 547 542 ;
+C -1 ; WX 572 ; N tquoterightlinefinalswash ; B 1 -22 547 700 ;
+C -1 ; WX 749 ; N vlineinitialswash ; B 13 -22 720 448 ;
+C -1 ; WX 963 ; N wlineinitialswash ; B 13 -22 934 448 ;
+C -1 ; WX 420 ; N zlinefinalswash ; B -25 -272 639 439 ;
+C -1 ; WX 420 ; N zacutelinefinalswash ; B -25 -272 639 657 ;
+C -1 ; WX 420 ; N zdotaccentlinefinalswash ; B -25 -272 639 612 ;
+C -1 ; WX 420 ; N zcaronlinefinalswash ; B -25 -272 639 671 ;
+C -1 ; WX 380 ; N Esmallalt ; B 36 -19 379 473 ;
+C -1 ; WX 400 ; N Eacutesmallalt ; B 36 -19 424 672 ;
+C -1 ; WX 400 ; N Egravesmallalt ; B 36 -19 379 668 ;
+C -1 ; WX 400 ; N Ecircumflexsmallalt ; B 36 -19 399 693 ;
+C -1 ; WX 400 ; N Edieresissmallalt ; B 36 -19 426 631 ;
+C -1 ; WX 400 ; N Emacronsmallalt ; B 36 -19 415 600 ;
+C -1 ; WX 400 ; N Edotaccentsmallalt ; B 36 -19 379 627 ;
+C -1 ; WX 400 ; N Eogoneksmallalt ; B 36 -225 379 473 ;
+C -1 ; WX 400 ; N Ecaronsmallalt ; B 36 -19 444 686 ;
+C -1 ; WX 470 ; N Lsmallalt ; B -19 -54 437 473 ;
+C -1 ; WX 470 ; N Lacutesmallalt ; B -19 -54 488 672 ;
+C -1 ; WX 470 ; N Lcedillasmallalt ; B -19 -225 437 472 ;
+C -1 ; WX 470 ; N Lquoterightsmallalt ; B -19 -54 583 473 ;
+C -1 ; WX 470 ; N Ldotsmallalt ; B -19 -54 437 473 ;
+C -1 ; WX 470 ; N Lslashsmallalt ; B -19 -54 437 472 ;
+C -1 ; WX 508 ; N Tsmallalt ; B 59 -6 568 535 ;
+C -1 ; WX 518 ; N Tcedillasmallalt ; B 59 -225 568 535 ;
+C -1 ; WX 518 ; N Tcommaaccentsmallalt ; B 59 -279 568 535 ;
+C -1 ; WX 518 ; N Tcaronsmallalt ; B 59 -6 568 686 ;
+C -1 ; WX 768 ; N dblslongl ; B -202 -280 859 734 ;
+C -1 ; WX 755 ; N sp ; B -10 -267 740 638 ;
+C -1 ; WX 770 ; N us ; B 36 -22 781 439 ;
+C -1 ; WX 747 ; N Gcommaaccent ; B 55 -279 755 704 ;
+C -1 ; WX 716 ; N Kcommaaccent ; B -33 -279 765 689 ;
+C -1 ; WX 613 ; N Lcommaaccent ; B -34 -279 594 689 ;
+C -1 ; WX 776 ; N Ncommaaccent ; B -23 -279 845 689 ;
+C -1 ; WX 698 ; N Rcommaaccent ; B -33 -279 647 689 ;
+C -1 ; WX 415 ; N gcommaaccent ; B -83 -522 448 440 ;
+C -1 ; WX 470 ; N kcommaaccent ; B -17 -279 436 724 ;
+C -1 ; WX 268 ; N lcommaaccent ; B -39 -279 334 724 ;
+C -1 ; WX 480 ; N ncommaaccent ; B -3 -279 442 440 ;
+C -1 ; WX 382 ; N rcommaaccent ; B -42 -279 405 440 ;
+C -1 ; WX 543 ; N Gcommaaccentsmall ; B 36 -279 529 473 ;
+C -1 ; WX 542 ; N Kcommaaccentsmall ; B 1 -279 560 456 ;
+C -1 ; WX 470 ; N Lcommaaccentsmall ; B 1 -279 442 456 ;
+C -1 ; WX 601 ; N Ncommaaccentsmall ; B 12 -279 606 455 ;
+C -1 ; WX 529 ; N Rcommaaccentsmall ; B 1 -279 505 455 ;
+C -1 ; WX 748 ; N Gcommaaccentaltone ; B 55 -518 756 705 ;
+C -1 ; WX 1017 ; N Kcommaaccentaltone ; B 55 -332 1354 740 ;
+C -1 ; WX 606 ; N Lcommaaccentaltone ; B -31 -279 735 704 ;
+C -1 ; WX 1387 ; N Ncommaaccentaltone ; B 8 -330 1628 740 ;
+C -1 ; WX 876 ; N Rcommaaccentaltone ; B 48 -333 1349 705 ;
+C -1 ; WX 470 ; N kcommaaccentlinefinalswash ; B -17 -279 697 725 ;
+C -1 ; WX 796 ; N ncommaaccentlinefinalswash ; B -3 -279 771 440 ;
+C -1 ; WX 470 ; N Lcommaaccentsmallalt ; B -19 -279 437 473 ;
+C -1 ; WX 340 ; N aordinal ; B -6 294 316 618 ;
+C -1 ; WX 330 ; N bordinal ; B 3 294 293 809 ;
+C -1 ; WX 261 ; N cordinal ; B 6 294 241 612 ;
+C -1 ; WX 350 ; N dordinal ; B 0 294 387 809 ;
+C -1 ; WX 264 ; N eordinal ; B 6 294 226 612 ;
+C -1 ; WX 237 ; N fordinal ; B -126 116 345 816 ;
+C -1 ; WX 306 ; N gordinal ; B -55 115 312 612 ;
+C -1 ; WX 359 ; N hordinal ; B -9 294 313 809 ;
+C -1 ; WX 217 ; N iordinal ; B 7 294 216 782 ;
+C -1 ; WX 237 ; N jordinal ; B -137 116 230 782 ;
+C -1 ; WX 344 ; N kordinal ; B -9 294 304 809 ;
+C -1 ; WX 205 ; N lordinal ; B 0 294 233 809 ;
+C -1 ; WX 518 ; N mordinal ; B -7 294 478 612 ;
+C -1 ; WX 351 ; N nordinal ; B 0 294 310 612 ;
+C -1 ; WX 308 ; N oordinal ; B 6 294 262 612 ;
+C -1 ; WX 337 ; N pordinal ; B -109 125 291 683 ;
+C -1 ; WX 338 ; N qordinal ; B -5 125 329 616 ;
+C -1 ; WX 284 ; N rordinal ; B 0 302 284 612 ;
+C -1 ; WX 224 ; N sordinal ; B -21 294 202 612 ;
+C -1 ; WX 238 ; N tordinal ; B 13 294 231 683 ;
+C -1 ; WX 358 ; N uordinal ; B 9 294 319 612 ;
+C -1 ; WX 394 ; N vordinal ; B 11 294 356 612 ;
+C -1 ; WX 542 ; N wordinal ; B 11 294 504 612 ;
+C -1 ; WX 349 ; N xordinal ; B -7 294 332 612 ;
+C -1 ; WX 322 ; N yordinal ; B -67 116 283 613 ;
+C -1 ; WX 310 ; N zordinal ; B -15 294 283 612 ;
+C -1 ; WX 264 ; N egraveordinal ; B 6 294 226 764 ;
+C -1 ; WX 233 ; N parenleftsuperior ; B 35 315 295 878 ;
+C -1 ; WX 178 ; N periodsuperior ; B 9 382 88 461 ;
+C -1 ; WX 178 ; N commasuperior ; B -33 268 93 461 ;
+C -1 ; WX 411 ; N plussuperior ; B 40 433 371 764 ;
+C -1 ; WX 337 ; N minussuperior ; B 28 395 285 627 ;
+C -1 ; WX 233 ; N parenrightsuperior ; B -86 318 173 877 ;
+C -1 ; WX 233 ; N parenleftinferior ; B 35 -166 295 397 ;
+C -1 ; WX 178 ; N periodinferior ; B 9 -99 88 -20 ;
+C -1 ; WX 178 ; N commainferior ; B -33 -213 93 -20 ;
+C -1 ; WX 411 ; N plusinferior ; B 40 -48 371 283 ;
+C -1 ; WX 337 ; N minusinferior ; B 28 -86 285 146 ;
+C -1 ; WX 233 ; N parenrightinferior ; B -86 -162 173 396 ;
+C -1 ; WX 0 ; N index866 ; B -500 -279 500 721 ;
+C -1 ; WX 755 ; N onehalf ; B -24 -25 666 718 ;
+C -1 ; WX 749 ; N onequarter ; B -24 -25 706 718 ;
+C -1 ; WX 799 ; N threequarters ; B -55 -25 756 718 ;
+EndCharMetrics
+StartKernData
+StartKernPairs 6907
+KPX space A -60
+KPX space T -50
+KPX space V -40
+KPX space W -40
+KPX space X -40
+KPX space Y -50
+KPX space AE -60
+KPX space Tsmall -20
+KPX space Vsmall -20
+KPX space Wsmall -20
+KPX ampersand A -50
+KPX ampersand J 55
+KPX ampersand Q 50
+KPX ampersand V -20
+KPX ampersand W -15
+KPX ampersand X -70
+KPX ampersand Y -40
+KPX ampersand a -40
+KPX ampersand d -30
+KPX ampersand f 60
+KPX ampersand n 40
+KPX ampersand p 20
+KPX ampersand q -30
+KPX ampersand r 50
+KPX ampersand t 60
+KPX ampersand u 40
+KPX ampersand v 30
+KPX ampersand w 30
+KPX ampersand x 20
+KPX ampersand y 30
+KPX ampersand z 30
+KPX ampersand AE -50
+KPX ampersand ae -40
+KPX ampersand fi 60
+KPX ampersand fl 60
+KPX ampersand Asmall -70
+KPX ampersand Csmall -20
+KPX ampersand Gsmall -20
+KPX ampersand Vsmall 40
+KPX ampersand Wsmall 40
+KPX ampersand Xsmall 30
+KPX ampersand AEsmall -70
+KPX ampersand thorn 20
+KPX ampersand fb 60
+KPX ampersand ff 60
+KPX ampersand fh 60
+KPX ampersand fj 60
+KPX ampersand fk 60
+KPX ampersand fklinefinalswash 60
+KPX ampersand fr 60
+KPX ampersand ft 60
+KPX ampersand ftlinefinalswash 60
+KPX ampersand ffb 60
+KPX ampersand ffh 60
+KPX ampersand ffi 60
+KPX ampersand ffk 60
+KPX ampersand ffklinefinalswash 60
+KPX ampersand ffl 60
+KPX ampersand ffr 60
+KPX ampersand Th 70
+KPX ampersand as -40
+KPX ampersand ns 40
+KPX ampersand nt 40
+KPX ampersand ntlinefinalswash 40
+KPX ampersand tt 60
+KPX ampersand ttlinefinalswash 60
+KPX ampersand aelinefinalswash -40
+KPX ampersand Baltone 60
+KPX ampersand Daltone 30
+KPX ampersand Ealtone 20
+KPX ampersand Faltone 40
+KPX ampersand Galtone 50
+KPX ampersand Haltone 60
+KPX ampersand Kaltone 75
+KPX ampersand Oaltone 30
+KPX ampersand Paltone 80
+KPX ampersand Raltone 80
+KPX ampersand Saltone -15
+KPX ampersand Taltone 70
+KPX ampersand Valtone 55
+KPX ampersand Waltone 55
+KPX ampersand Xaltone -40
+KPX ampersand Zaltone -20
+KPX ampersand Oslashaltone 30
+KPX ampersand nlinefinalswash 40
+KPX ampersand tlinefinalswash 60
+KPX ampersand zlinefinalswash 30
+KPX ampersand us 40
+KPX parenleft three 25
+KPX parenleft four -10
+KPX parenleft seven 20
+KPX parenleft B 40
+KPX parenleft D 40
+KPX parenleft E 40
+KPX parenleft F 40
+KPX parenleft H 40
+KPX parenleft I 40
+KPX parenleft J 80
+KPX parenleft K 40
+KPX parenleft L 40
+KPX parenleft N 50
+KPX parenleft P 40
+KPX parenleft Q 10
+KPX parenleft R 40
+KPX parenleft T 60
+KPX parenleft U 40
+KPX parenleft V 40
+KPX parenleft W 40
+KPX parenleft X 40
+KPX parenleft Y 50
+KPX parenleft Z 30
+KPX parenleft a -20
+KPX parenleft c -20
+KPX parenleft d -10
+KPX parenleft e -20
+KPX parenleft v -40
+KPX parenleft w -40
+KPX parenleft ae -20
+KPX parenleft Asmall -10
+KPX parenleft Bsmall -30
+KPX parenleft Csmall -50
+KPX parenleft Dsmall -30
+KPX parenleft Esmall -30
+KPX parenleft Fsmall -30
+KPX parenleft Gsmall -50
+KPX parenleft Hsmall -30
+KPX parenleft Ismall -30
+KPX parenleft Jsmall -20
+KPX parenleft Ksmall -30
+KPX parenleft Lsmall -30
+KPX parenleft Msmall -40
+KPX parenleft Nsmall -30
+KPX parenleft Osmall -50
+KPX parenleft Psmall -30
+KPX parenleft Qsmall -50
+KPX parenleft Rsmall -30
+KPX parenleft Ssmall -40
+KPX parenleft Tsmall -40
+KPX parenleft Usmall -40
+KPX parenleft Vsmall -40
+KPX parenleft Wsmall -40
+KPX parenleft Xsmall -30
+KPX parenleft Ysmall -50
+KPX parenleft Zsmall -50
+KPX parenleft AEsmall -10
+KPX parenleft OEsmall -50
+KPX parenleft Oslashsmall -50
+KPX parenleft as -20
+KPX parenleft es -20
+KPX parenleft ct -20
+KPX parenleft ctlinefinalswash -20
+KPX parenleft aelinefinalswash -20
+KPX parenleft Aaltone -60
+KPX parenleft Caltone -40
+KPX parenleft Daltone -40
+KPX parenleft Faltone 20
+KPX parenleft Haltone 10
+KPX parenleft Kaltone -10
+KPX parenleft Maltone -100
+KPX parenleft Naltone -100
+KPX parenleft Oaltone -30
+KPX parenleft Raltone -30
+KPX parenleft Saltone 40
+KPX parenleft Valtone -20
+KPX parenleft Waltone -20
+KPX parenleft Xaltone -40
+KPX parenleft AEaltone -60
+KPX parenleft Halttwo -50
+KPX parenleft Malttwo -100
+KPX parenleft Oslashaltone -30
+KPX parenleft elinefinalswash -20
+KPX parenleft Esmallalt -50
+KPX parenleft Lsmallalt -50
+KPX parenleft Tsmallalt -60
+KPX hyphen A -110
+KPX hyphen C 30
+KPX hyphen G 30
+KPX hyphen I -10
+KPX hyphen J -45
+KPX hyphen M -30
+KPX hyphen O 45
+KPX hyphen Q 20
+KPX hyphen S 5
+KPX hyphen T -95
+KPX hyphen V -90
+KPX hyphen W -95
+KPX hyphen X -140
+KPX hyphen Y -150
+KPX hyphen Z -30
+KPX hyphen f -20
+KPX hyphen x -25
+KPX hyphen z -15
+KPX hyphen AE -110
+KPX hyphen fi -20
+KPX hyphen fl -20
+KPX hyphen Asmall -20
+KPX hyphen Bsmall -15
+KPX hyphen Csmall 20
+KPX hyphen Dsmall -15
+KPX hyphen Esmall -15
+KPX hyphen Fsmall -15
+KPX hyphen Gsmall 20
+KPX hyphen Hsmall -15
+KPX hyphen Ismall -15
+KPX hyphen Jsmall -30
+KPX hyphen Ksmall -15
+KPX hyphen Lsmall -15
+KPX hyphen Msmall -15
+KPX hyphen Nsmall -15
+KPX hyphen Osmall 20
+KPX hyphen Psmall -15
+KPX hyphen Rsmall -15
+KPX hyphen Ssmall -15
+KPX hyphen Tsmall -30
+KPX hyphen Usmall -10
+KPX hyphen Vsmall -30
+KPX hyphen Wsmall -30
+KPX hyphen Xsmall -60
+KPX hyphen Ysmall -60
+KPX hyphen Zsmall -20
+KPX hyphen AEsmall -20
+KPX hyphen OEsmall 20
+KPX hyphen Oslashsmall 20
+KPX hyphen fb -20
+KPX hyphen ff -20
+KPX hyphen fh -20
+KPX hyphen fj -20
+KPX hyphen fk -20
+KPX hyphen fklinefinalswash -20
+KPX hyphen fr -20
+KPX hyphen ft -20
+KPX hyphen ftlinefinalswash -20
+KPX hyphen ffb -20
+KPX hyphen ffh -20
+KPX hyphen ffi -20
+KPX hyphen ffk -20
+KPX hyphen ffklinefinalswash -20
+KPX hyphen ffl -20
+KPX hyphen ffr -20
+KPX hyphen Th -90
+KPX hyphen Aaltone 40
+KPX hyphen Baltone -50
+KPX hyphen Daltone -50
+KPX hyphen Faltone -40
+KPX hyphen Haltone -120
+KPX hyphen Kaltone -110
+KPX hyphen Laltone -40
+KPX hyphen Maltone 30
+KPX hyphen Naltone 30
+KPX hyphen Oaltone 25
+KPX hyphen Raltone -70
+KPX hyphen Saltone -110
+KPX hyphen Taltone -90
+KPX hyphen Valtone -110
+KPX hyphen Waltone -110
+KPX hyphen Xaltone 30
+KPX hyphen Zaltone -20
+KPX hyphen AEaltone 40
+KPX hyphen Halttwo 40
+KPX hyphen Malttwo 20
+KPX hyphen Oslashaltone 25
+KPX hyphen zlinefinalswash -15
+KPX hyphen Esmallalt 40
+KPX hyphen Lsmallalt -10
+KPX zero parenrightsmall -30
+KPX zero bracketrightsmall -30
+KPX zero bracerightsmall -30
+KPX two five -15
+KPX two parenrightsmall -25
+KPX two bracketrightsmall -25
+KPX two bracerightsmall -25
+KPX three parenright 10
+KPX three five -20
+KPX three six -15
+KPX three bracketright 10
+KPX three parenrightsmall 5
+KPX three bracketrightsmall 5
+KPX three bracerightsmall 5
+KPX four parenright 20
+KPX four bracketright 20
+KPX four braceright 20
+KPX four tordinal -70
+KPX five parenright 20
+KPX five comma -30
+KPX five period -30
+KPX five bracketright 20
+KPX five ellipsis -30
+KPX five quotesinglbase -30
+KPX five quotedblbase -30
+KPX six parenright 30
+KPX six two -30
+KPX six eight 15
+KPX six bracketright 30
+KPX six braceright 30
+KPX six parenrightsmall -10
+KPX six bracketrightsmall -10
+KPX six bracerightsmall -10
+KPX seven comma -70
+KPX seven period -70
+KPX seven three 15
+KPX seven four -50
+KPX seven ellipsis -70
+KPX seven quotesinglbase -70
+KPX seven quotedblbase -70
+KPX nine comma -30
+KPX nine period -30
+KPX nine three 10
+KPX nine ellipsis -30
+KPX nine quotesinglbase -30
+KPX nine quotedblbase -30
+KPX nine parenrightsmall -20
+KPX nine bracketrightsmall -20
+KPX nine bracerightsmall -20
+KPX A space -40
+KPX A parenright 20
+KPX A hyphen -35
+KPX A C -60
+KPX A G -60
+KPX A O -40
+KPX A Q -40
+KPX A S -35
+KPX A T -80
+KPX A U -55
+KPX A V -80
+KPX A W -80
+KPX A Y -50
+KPX A a -30
+KPX A b -30
+KPX A c -55
+KPX A d -45
+KPX A e -55
+KPX A f -80
+KPX A g -55
+KPX A h -40
+KPX A i -35
+KPX A j -60
+KPX A k -40
+KPX A l -35
+KPX A m -35
+KPX A n -35
+KPX A o -55
+KPX A p -50
+KPX A q -35
+KPX A r -40
+KPX A s -40
+KPX A t -50
+KPX A u -45
+KPX A v -90
+KPX A w -95
+KPX A x -35
+KPX A y -75
+KPX A z -30
+KPX A ae -30
+KPX A oslash -55
+KPX A oe -55
+KPX A endash -35
+KPX A emdash -35
+KPX A quotedblright -60
+KPX A quoteright -60
+KPX A fi -80
+KPX A fl -80
+KPX A hyphenlining -35
+KPX A endashlining -35
+KPX A emdashlining -35
+KPX A parenrightlining 20
+KPX A Asmall -40
+KPX A Bsmall -50
+KPX A Csmall -60
+KPX A Dsmall -50
+KPX A Esmall -50
+KPX A Fsmall -50
+KPX A Gsmall -60
+KPX A Hsmall -50
+KPX A Ismall -50
+KPX A Jsmall -80
+KPX A Ksmall -50
+KPX A Lsmall -50
+KPX A Msmall -60
+KPX A Nsmall -50
+KPX A Osmall -55
+KPX A Psmall -50
+KPX A Qsmall -55
+KPX A Rsmall -50
+KPX A Ssmall -65
+KPX A Tsmall -80
+KPX A Usmall -65
+KPX A Vsmall -70
+KPX A Wsmall -70
+KPX A Xsmall -60
+KPX A Ysmall -90
+KPX A Zsmall -50
+KPX A AEsmall -40
+KPX A OEsmall -55
+KPX A Oslashsmall -55
+KPX A thorn -50
+KPX A fb -80
+KPX A ff -80
+KPX A fh -80
+KPX A fj -80
+KPX A fk -80
+KPX A fklinefinalswash -80
+KPX A fr -80
+KPX A ft -80
+KPX A ftlinefinalswash -80
+KPX A ffb -80
+KPX A ffh -80
+KPX A ffi -80
+KPX A ffk -80
+KPX A ffklinefinalswash -80
+KPX A ffl -80
+KPX A ffr -80
+KPX A gg -55
+KPX A ij -35
+KPX A ll -35
+KPX A Th -80
+KPX A as -30
+KPX A es -55
+KPX A ct -55
+KPX A ctlinefinalswash -55
+KPX A is -35
+KPX A dotlessis -35
+KPX A ns -35
+KPX A nt -35
+KPX A ntlinefinalswash -35
+KPX A st -40
+KPX A stlinefinalswash -40
+KPX A tt -50
+KPX A ttlinefinalswash -50
+KPX A aelinefinalswash -30
+KPX A oelinefinalswash -55
+KPX A Baltone -120
+KPX A Caltone -20
+KPX A Daltone -120
+KPX A Ealtone -50
+KPX A Galtone -45
+KPX A Haltone -40
+KPX A Kaltone -100
+KPX A Maltone -140
+KPX A Naltone -110
+KPX A Oaltone -40
+KPX A Paltone -75
+KPX A Raltone -80
+KPX A Taltone -80
+KPX A Valtone -120
+KPX A Waltone -120
+KPX A Xaltone -100
+KPX A Halttwo -90
+KPX A Malttwo -130
+KPX A Oslashaltone -40
+KPX A elinefinalswash -55
+KPX A klinefinalswash -40
+KPX A mlinefinalswash -35
+KPX A nlinefinalswash -35
+KPX A tlinefinalswash -50
+KPX A zlinefinalswash -30
+KPX A Esmallalt -60
+KPX A Lsmallalt -40
+KPX A Tsmallalt -90
+KPX A sp -40
+KPX A us -45
+KPX B parenright 20
+KPX B hyphen 30
+KPX B J 20
+KPX B M -20
+KPX B V -10
+KPX B W -20
+KPX B X -20
+KPX B v -20
+KPX B w -20
+KPX B endash 30
+KPX B emdash 30
+KPX B quotedblright -15
+KPX B quoteright -15
+KPX B hyphenlining 30
+KPX B endashlining 30
+KPX B emdashlining 30
+KPX B parenrightlining 20
+KPX B Csmall 10
+KPX B Gsmall 10
+KPX B Osmall 10
+KPX B OEsmall 10
+KPX B Oslashsmall 10
+KPX B Daltone -60
+KPX B Kaltone -40
+KPX B Naltone -50
+KPX B Raltone -70
+KPX B Valtone -50
+KPX B Waltone -50
+KPX B Xaltone -60
+KPX B Halttwo -50
+KPX B Malttwo -110
+KPX B Esmallalt 20
+KPX B Lsmallalt -20
+KPX C parenright 50
+KPX C hyphen 15
+KPX C J 40
+KPX C Z 10
+KPX C v -60
+KPX C w -60
+KPX C y -30
+KPX C endash 15
+KPX C emdash 15
+KPX C hyphenlining 15
+KPX C endashlining 15
+KPX C emdashlining 15
+KPX C parenrightlining 50
+KPX C Esmall -10
+KPX C Hsmall -10
+KPX C Ismall -10
+KPX C Jsmall -20
+KPX C Lsmall -10
+KPX C Msmall -10
+KPX C Nsmall -20
+KPX C Rsmall -10
+KPX C Tsmall -10
+KPX C Usmall -15
+KPX C Vsmall -20
+KPX C Wsmall -20
+KPX C Ysmall -40
+KPX C Zsmall -20
+KPX C Valtone 10
+KPX C Lsmallalt -20
+KPX C Tsmallalt -40
+KPX D parenright -20
+KPX D comma -90
+KPX D hyphen 30
+KPX D period -90
+KPX D A -75
+KPX D B -20
+KPX D D -20
+KPX D E -20
+KPX D F -20
+KPX D H -20
+KPX D I -20
+KPX D K -20
+KPX D L -20
+KPX D M -45
+KPX D N -20
+KPX D P -20
+KPX D R -20
+KPX D T -20
+KPX D U -10
+KPX D V -60
+KPX D W -60
+KPX D X -70
+KPX D Y -25
+KPX D Z -20
+KPX D a -35
+KPX D d -25
+KPX D e -10
+KPX D AE -75
+KPX D ae -35
+KPX D ellipsis -90
+KPX D endash 30
+KPX D emdash 30
+KPX D quotesinglbase -90
+KPX D quotedblbase -90
+KPX D hyphenlining 30
+KPX D endashlining 30
+KPX D emdashlining 30
+KPX D parenrightlining -20
+KPX D Asmall -40
+KPX D Esmall -20
+KPX D Hsmall -20
+KPX D Ismall -20
+KPX D Jsmall -10
+KPX D Msmall -15
+KPX D Rsmall -20
+KPX D Ssmall -10
+KPX D Zsmall -15
+KPX D AEsmall -40
+KPX D as -35
+KPX D es -10
+KPX D aelinefinalswash -35
+KPX D Aaltone -100
+KPX D Baltone -60
+KPX D Daltone -80
+KPX D Haltone -50
+KPX D Kaltone -80
+KPX D Laltone -70
+KPX D Maltone -120
+KPX D Naltone -80
+KPX D Paltone -40
+KPX D Raltone -40
+KPX D Valtone -100
+KPX D Waltone -100
+KPX D Xaltone -95
+KPX D Zaltone -70
+KPX D AEaltone -100
+KPX D Halttwo -75
+KPX D Malttwo -100
+KPX D elinefinalswash -10
+KPX D Lsmallalt -40
+KPX E parenright 40
+KPX E hyphen 10
+KPX E J 30
+KPX E V -10
+KPX E W -10
+KPX E Z 10
+KPX E f -25
+KPX E v -45
+KPX E w -45
+KPX E y -30
+KPX E endash 10
+KPX E emdash 10
+KPX E fi -25
+KPX E fl -25
+KPX E hyphenlining 10
+KPX E endashlining 10
+KPX E emdashlining 10
+KPX E parenrightlining 40
+KPX E Jsmall -10
+KPX E Qsmall -10
+KPX E Tsmall -20
+KPX E Usmall -10
+KPX E Vsmall -20
+KPX E Wsmall -20
+KPX E Ysmall -30
+KPX E fb -25
+KPX E ff -25
+KPX E fh -25
+KPX E fj -25
+KPX E fk -25
+KPX E fklinefinalswash -25
+KPX E fr -25
+KPX E ft -25
+KPX E ftlinefinalswash -25
+KPX E ffb -25
+KPX E ffh -25
+KPX E ffi -25
+KPX E ffk -25
+KPX E ffklinefinalswash -25
+KPX E ffl -25
+KPX E ffr -25
+KPX E Aaltone -65
+KPX E Daltone -75
+KPX E Maltone -110
+KPX E Raltone -70
+KPX E Valtone -80
+KPX E Waltone -80
+KPX E Xaltone -65
+KPX E AEaltone -65
+KPX E Malttwo -100
+KPX E Tsmallalt -20
+KPX F parenright 50
+KPX F comma -155
+KPX F hyphen -10
+KPX F period -155
+KPX F colon -30
+KPX F semicolon -30
+KPX F A -85
+KPX F J 40
+KPX F M -30
+KPX F a -90
+KPX F e -75
+KPX F f -30
+KPX F i -70
+KPX F j -70
+KPX F o -70
+KPX F r -55
+KPX F u -50
+KPX F y -40
+KPX F AE -85
+KPX F ae -90
+KPX F oslash -70
+KPX F ellipsis -155
+KPX F oe -70
+KPX F endash -10
+KPX F emdash -10
+KPX F quotedblright 40
+KPX F quoteright 40
+KPX F fi -30
+KPX F fl -30
+KPX F quotesinglbase -155
+KPX F quotedblbase -155
+KPX F hyphenlining -10
+KPX F endashlining -10
+KPX F emdashlining -10
+KPX F parenrightlining 50
+KPX F Asmall -80
+KPX F Esmall -40
+KPX F Fsmall -40
+KPX F Hsmall -40
+KPX F Ismall -40
+KPX F Jsmall -40
+KPX F Lsmall -40
+KPX F Msmall -60
+KPX F Nsmall -45
+KPX F Osmall -40
+KPX F Rsmall -40
+KPX F Ssmall -40
+KPX F Tsmall -40
+KPX F Usmall -40
+KPX F Ysmall -30
+KPX F AEsmall -80
+KPX F OEsmall -40
+KPX F Oslashsmall -40
+KPX F fb -30
+KPX F ff -30
+KPX F fh -30
+KPX F fj -30
+KPX F fk -30
+KPX F fklinefinalswash -30
+KPX F fr -30
+KPX F ft -30
+KPX F ftlinefinalswash -30
+KPX F ffb -30
+KPX F ffh -30
+KPX F ffi -30
+KPX F ffk -30
+KPX F ffklinefinalswash -30
+KPX F ffl -30
+KPX F ffr -30
+KPX F ij -70
+KPX F as -90
+KPX F es -75
+KPX F is -70
+KPX F dotlessis -70
+KPX F aelinefinalswash -90
+KPX F oelinefinalswash -70
+KPX F Aaltone -100
+KPX F Caltone -40
+KPX F Daltone -50
+KPX F Galtone -20
+KPX F Laltone -10
+KPX F Maltone -170
+KPX F Naltone -80
+KPX F Oaltone -20
+KPX F Raltone -60
+KPX F Saltone -50
+KPX F Valtone -70
+KPX F Waltone -70
+KPX F Xaltone -100
+KPX F AEaltone -100
+KPX F Malttwo -160
+KPX F Oslashaltone -20
+KPX F elinefinalswash -75
+KPX F Esmallalt -30
+KPX F Lsmallalt -70
+KPX F Tsmallalt -40
+KPX F us -50
+KPX G parenright 30
+KPX G comma -30
+KPX G hyphen 50
+KPX G period -30
+KPX G colon -15
+KPX G semicolon -15
+KPX G A -20
+KPX G M -10
+KPX G V -20
+KPX G W -20
+KPX G X -20
+KPX G a -20
+KPX G AE -20
+KPX G ae -20
+KPX G ellipsis -30
+KPX G endash 50
+KPX G emdash 50
+KPX G quotedblright -35
+KPX G quoteright -35
+KPX G quotesinglbase -30
+KPX G quotedblbase -30
+KPX G hyphenlining 50
+KPX G endashlining 50
+KPX G emdashlining 50
+KPX G parenrightlining 30
+KPX G Asmall -10
+KPX G Osmall 20
+KPX G AEsmall -10
+KPX G OEsmall 20
+KPX G Oslashsmall 20
+KPX G as -20
+KPX G aelinefinalswash -20
+KPX G Aaltone -80
+KPX G Kaltone -80
+KPX G Maltone -60
+KPX G Naltone -30
+KPX G Raltone -35
+KPX G Valtone -70
+KPX G Waltone -70
+KPX G AEaltone -80
+KPX G Malttwo -80
+KPX G Esmallalt 20
+KPX G Lsmallalt -20
+KPX H parenright 40
+KPX H a -35
+KPX H e -50
+KPX H i -40
+KPX H o -40
+KPX H s -20
+KPX H t -25
+KPX H u -35
+KPX H y -30
+KPX H ae -35
+KPX H oslash -40
+KPX H oe -40
+KPX H parenrightlining 40
+KPX H Asmall -40
+KPX H Csmall -20
+KPX H Esmall -25
+KPX H Gsmall -20
+KPX H Ismall -25
+KPX H Jsmall -20
+KPX H Msmall -30
+KPX H Nsmall -20
+KPX H Osmall -25
+KPX H Rsmall -25
+KPX H Ssmall -25
+KPX H Tsmall -30
+KPX H Usmall -30
+KPX H Wsmall -30
+KPX H Ysmall -35
+KPX H AEsmall -40
+KPX H OEsmall -25
+KPX H Oslashsmall -25
+KPX H ij -40
+KPX H as -35
+KPX H es -50
+KPX H is -40
+KPX H dotlessis -40
+KPX H st -20
+KPX H stlinefinalswash -20
+KPX H tt -25
+KPX H ttlinefinalswash -25
+KPX H aelinefinalswash -35
+KPX H oelinefinalswash -40
+KPX H Aaltone -125
+KPX H Baltone -55
+KPX H Daltone -120
+KPX H Ealtone -20
+KPX H Faltone -30
+KPX H Galtone -20
+KPX H Haltone -30
+KPX H Kaltone -45
+KPX H Maltone -175
+KPX H Naltone -115
+KPX H Paltone -60
+KPX H Raltone -90
+KPX H Saltone -40
+KPX H Valtone -60
+KPX H Waltone -60
+KPX H Xaltone -140
+KPX H Zaltone -20
+KPX H AEaltone -125
+KPX H Halttwo -90
+KPX H Malttwo -135
+KPX H elinefinalswash -50
+KPX H tlinefinalswash -25
+KPX H Esmallalt -25
+KPX H Lsmallalt -40
+KPX H Tsmallalt -30
+KPX H sp -20
+KPX H us -35
+KPX I parenright 40
+KPX I a -60
+KPX I b -50
+KPX I c -70
+KPX I d -60
+KPX I e -80
+KPX I f -65
+KPX I g -65
+KPX I h -30
+KPX I i -55
+KPX I j -50
+KPX I k -30
+KPX I l -50
+KPX I m -50
+KPX I n -50
+KPX I o -65
+KPX I p -50
+KPX I q -60
+KPX I r -50
+KPX I s -50
+KPX I t -50
+KPX I u -55
+KPX I v -90
+KPX I w -90
+KPX I x -65
+KPX I y -65
+KPX I z -50
+KPX I ae -60
+KPX I oslash -65
+KPX I oe -65
+KPX I fi -65
+KPX I fl -65
+KPX I parenrightlining 40
+KPX I Asmall -40
+KPX I Bsmall -35
+KPX I Csmall -45
+KPX I Dsmall -35
+KPX I Esmall -35
+KPX I Fsmall -35
+KPX I Gsmall -45
+KPX I Hsmall -35
+KPX I Ismall -35
+KPX I Jsmall -50
+KPX I Ksmall -35
+KPX I Lsmall -35
+KPX I Msmall -40
+KPX I Nsmall -30
+KPX I Osmall -45
+KPX I Psmall -35
+KPX I Qsmall -60
+KPX I Rsmall -35
+KPX I Ssmall -45
+KPX I Tsmall -50
+KPX I Usmall -45
+KPX I Vsmall -40
+KPX I Wsmall -30
+KPX I Xsmall -40
+KPX I Ysmall -65
+KPX I Zsmall -50
+KPX I AEsmall -40
+KPX I OEsmall -45
+KPX I Oslashsmall -45
+KPX I thorn -50
+KPX I fb -65
+KPX I ff -65
+KPX I fh -65
+KPX I fj -65
+KPX I fk -65
+KPX I fklinefinalswash -65
+KPX I fr -65
+KPX I ft -65
+KPX I ftlinefinalswash -65
+KPX I ffb -65
+KPX I ffh -65
+KPX I ffi -65
+KPX I ffk -65
+KPX I ffklinefinalswash -65
+KPX I ffl -65
+KPX I ffr -65
+KPX I gg -65
+KPX I ij -55
+KPX I ll -50
+KPX I as -60
+KPX I es -80
+KPX I ct -70
+KPX I ctlinefinalswash -70
+KPX I is -55
+KPX I dotlessis -55
+KPX I ns -50
+KPX I nt -50
+KPX I ntlinefinalswash -50
+KPX I st -50
+KPX I stlinefinalswash -50
+KPX I tt -50
+KPX I ttlinefinalswash -50
+KPX I aelinefinalswash -60
+KPX I oelinefinalswash -65
+KPX I Aaltone -70
+KPX I Baltone -50
+KPX I Daltone -120
+KPX I Kaltone -50
+KPX I Maltone -175
+KPX I Naltone -70
+KPX I Raltone -30
+KPX I Valtone -100
+KPX I Waltone -100
+KPX I Xaltone -60
+KPX I AEaltone -70
+KPX I Malttwo -165
+KPX I elinefinalswash -80
+KPX I klinefinalswash -30
+KPX I mlinefinalswash -50
+KPX I nlinefinalswash -50
+KPX I tlinefinalswash -50
+KPX I zlinefinalswash -50
+KPX I Esmallalt -50
+KPX I Lsmallalt -60
+KPX I Tsmallalt -70
+KPX I sp -50
+KPX I us -55
+KPX J parenright 20
+KPX J comma -90
+KPX J hyphen 10
+KPX J period -90
+KPX J colon -30
+KPX J semicolon -30
+KPX J A -60
+KPX J C -30
+KPX J E -25
+KPX J G -30
+KPX J I -40
+KPX J M -50
+KPX J O -15
+KPX J S -40
+KPX J U -20
+KPX J V -20
+KPX J W -20
+KPX J X -30
+KPX J Z -20
+KPX J a -85
+KPX J e -55
+KPX J i -40
+KPX J o -65
+KPX J u -35
+KPX J AE -60
+KPX J ae -85
+KPX J oslash -65
+KPX J ellipsis -90
+KPX J oe -65
+KPX J endash 10
+KPX J emdash 10
+KPX J quotesinglbase -90
+KPX J quotedblbase -90
+KPX J hyphenlining 10
+KPX J endashlining 10
+KPX J emdashlining 10
+KPX J Asmall -70
+KPX J Csmall -50
+KPX J Esmall -70
+KPX J Hsmall -50
+KPX J Ismall -50
+KPX J Msmall -50
+KPX J Nsmall -50
+KPX J Osmall -40
+KPX J Rsmall -50
+KPX J Ssmall -60
+KPX J Tsmall -20
+KPX J Usmall -50
+KPX J Vsmall -40
+KPX J Wsmall -40
+KPX J Ysmall -30
+KPX J AEsmall -70
+KPX J OEsmall -40
+KPX J Oslashsmall -40
+KPX J ij -40
+KPX J Th -40
+KPX J as -85
+KPX J es -55
+KPX J is -40
+KPX J dotlessis -40
+KPX J aelinefinalswash -85
+KPX J oelinefinalswash -65
+KPX J Aaltone -140
+KPX J Baltone -50
+KPX J Caltone -30
+KPX J Daltone -50
+KPX J Galtone -20
+KPX J Haltone -20
+KPX J Kaltone -60
+KPX J Laltone -20
+KPX J Maltone -80
+KPX J Naltone -30
+KPX J Paltone -40
+KPX J Raltone -60
+KPX J Saltone -40
+KPX J Taltone -40
+KPX J Valtone -80
+KPX J Waltone -80
+KPX J Xaltone -120
+KPX J Zaltone -60
+KPX J AEaltone -140
+KPX J Halttwo -40
+KPX J Malttwo -100
+KPX J elinefinalswash -55
+KPX J Esmallalt -55
+KPX J us -35
+KPX K ampersand -55
+KPX K parenright 50
+KPX K hyphen -105
+KPX K C -65
+KPX K G -65
+KPX K O -65
+KPX K Q -30
+KPX K S -20
+KPX K e -25
+KPX K o -20
+KPX K w -95
+KPX K y -60
+KPX K oslash -20
+KPX K oe -20
+KPX K endash -105
+KPX K emdash -105
+KPX K hyphenlining -105
+KPX K endashlining -105
+KPX K emdashlining -105
+KPX K parenrightlining 50
+KPX K Esmall -40
+KPX K Hsmall -40
+KPX K Ismall -40
+KPX K Lsmall -40
+KPX K Nsmall -50
+KPX K Osmall -70
+KPX K Rsmall -40
+KPX K Ssmall -40
+KPX K Tsmall -80
+KPX K Usmall -90
+KPX K Vsmall -90
+KPX K Wsmall -90
+KPX K Ysmall -80
+KPX K OEsmall -70
+KPX K Oslashsmall -70
+KPX K Th -80
+KPX K es -25
+KPX K oelinefinalswash -20
+KPX K Aaltone -150
+KPX K Baltone -150
+KPX K Caltone -50
+KPX K Daltone -150
+KPX K Ealtone -80
+KPX K Faltone -80
+KPX K Galtone -90
+KPX K Kaltone -90
+KPX K Maltone -180
+KPX K Naltone -100
+KPX K Oaltone -70
+KPX K Paltone -90
+KPX K Raltone -120
+KPX K Taltone -80
+KPX K Valtone -130
+KPX K Waltone -130
+KPX K Xaltone -80
+KPX K Zaltone -30
+KPX K AEaltone -150
+KPX K Halttwo -40
+KPX K Malttwo -150
+KPX K Oslashaltone -70
+KPX K elinefinalswash -25
+KPX K Esmallalt -50
+KPX K Tsmallalt -90
+KPX L parenright 20
+KPX L comma 20
+KPX L hyphen -15
+KPX L period 20
+KPX L colon 20
+KPX L semicolon 20
+KPX L C -20
+KPX L G -20
+KPX L J -10
+KPX L O -10
+KPX L T -90
+KPX L U -30
+KPX L V -70
+KPX L W -100
+KPX L Y -85
+KPX L a 15
+KPX L e 20
+KPX L o 15
+KPX L u 10
+KPX L ae 15
+KPX L oslash 15
+KPX L ellipsis 20
+KPX L oe 15
+KPX L endash -15
+KPX L emdash -15
+KPX L quotedblright -125
+KPX L quoteright -125
+KPX L quotesinglbase 20
+KPX L quotedblbase 20
+KPX L hyphenlining -15
+KPX L endashlining -15
+KPX L emdashlining -15
+KPX L parenrightlining 20
+KPX L Jsmall -20
+KPX L Tsmall -50
+KPX L Usmall -20
+KPX L Vsmall -30
+KPX L Wsmall -30
+KPX L Ysmall -40
+KPX L Th -100
+KPX L as 15
+KPX L es 20
+KPX L aelinefinalswash 15
+KPX L oelinefinalswash 15
+KPX L Aaltone -40
+KPX L Baltone -130
+KPX L Daltone -150
+KPX L Faltone -100
+KPX L Galtone -20
+KPX L Kaltone -160
+KPX L Maltone -80
+KPX L Naltone -60
+KPX L Oaltone -20
+KPX L Paltone -130
+KPX L Raltone -130
+KPX L Taltone -100
+KPX L Valtone -160
+KPX L Waltone -160
+KPX L Xaltone -30
+KPX L Zaltone -20
+KPX L AEaltone -40
+KPX L Malttwo -60
+KPX L Oslashaltone -20
+KPX L elinefinalswash 20
+KPX L Tsmallalt -50
+KPX L us 10
+KPX M parenright 30
+KPX M hyphen -20
+KPX M C -20
+KPX M G -20
+KPX M Q -10
+KPX M S -10
+KPX M T -10
+KPX M a -30
+KPX M b -30
+KPX M c -45
+KPX M d -40
+KPX M e -50
+KPX M g -40
+KPX M i -40
+KPX M m -25
+KPX M o -45
+KPX M r -25
+KPX M s -20
+KPX M u -40
+KPX M y -55
+KPX M ae -30
+KPX M oslash -45
+KPX M oe -45
+KPX M endash -20
+KPX M emdash -20
+KPX M quotedblright -30
+KPX M quoteright -30
+KPX M hyphenlining -20
+KPX M endashlining -20
+KPX M emdashlining -20
+KPX M parenrightlining 30
+KPX M Asmall -35
+KPX M Bsmall -30
+KPX M Csmall -30
+KPX M Dsmall -30
+KPX M Esmall -30
+KPX M Fsmall -30
+KPX M Gsmall -30
+KPX M Ismall -30
+KPX M Jsmall -35
+KPX M Ksmall -30
+KPX M Lsmall -30
+KPX M Msmall -35
+KPX M Nsmall -30
+KPX M Osmall -30
+KPX M Psmall -30
+KPX M Qsmall -40
+KPX M Rsmall -30
+KPX M Ssmall -40
+KPX M Tsmall -50
+KPX M Usmall -45
+KPX M Vsmall -45
+KPX M Wsmall -45
+KPX M Ysmall -40
+KPX M AEsmall -35
+KPX M OEsmall -30
+KPX M Oslashsmall -30
+KPX M gg -40
+KPX M ij -40
+KPX M Th -20
+KPX M as -30
+KPX M es -50
+KPX M ct -45
+KPX M ctlinefinalswash -45
+KPX M is -40
+KPX M dotlessis -40
+KPX M st -20
+KPX M stlinefinalswash -20
+KPX M aelinefinalswash -30
+KPX M oelinefinalswash -45
+KPX M Aaltone -145
+KPX M Baltone -70
+KPX M Caltone -30
+KPX M Daltone -90
+KPX M Ealtone -40
+KPX M Faltone -40
+KPX M Galtone -20
+KPX M Haltone -40
+KPX M Kaltone -100
+KPX M Maltone -175
+KPX M Naltone -60
+KPX M Oaltone -20
+KPX M Paltone -40
+KPX M Raltone -90
+KPX M Taltone -20
+KPX M Valtone -100
+KPX M Waltone -100
+KPX M Xaltone -60
+KPX M AEaltone -145
+KPX M Halttwo -40
+KPX M Malttwo -150
+KPX M Oslashaltone -20
+KPX M elinefinalswash -50
+KPX M mlinefinalswash -25
+KPX M Esmallalt -30
+KPX M Lsmallalt -30
+KPX M Tsmallalt -60
+KPX M sp -20
+KPX M us -40
+KPX N parenright 55
+KPX N comma -20
+KPX N hyphen 10
+KPX N period -20
+KPX N A -35
+KPX N a -40
+KPX N e -35
+KPX N g -50
+KPX N i -35
+KPX N o -35
+KPX N u -20
+KPX N y -10
+KPX N AE -35
+KPX N ae -40
+KPX N oslash -35
+KPX N ellipsis -20
+KPX N oe -35
+KPX N endash 10
+KPX N emdash 10
+KPX N quotesinglbase -20
+KPX N quotedblbase -20
+KPX N hyphenlining 10
+KPX N endashlining 10
+KPX N emdashlining 10
+KPX N parenrightlining 55
+KPX N Asmall -20
+KPX N Csmall -10
+KPX N Esmall -20
+KPX N Gsmall -10
+KPX N Hsmall -20
+KPX N Ismall -20
+KPX N Jsmall -10
+KPX N Ksmall -20
+KPX N Msmall -20
+KPX N Nsmall -5
+KPX N Osmall -10
+KPX N Qsmall -20
+KPX N Rsmall -20
+KPX N Ssmall -15
+KPX N Tsmall -10
+KPX N Usmall -15
+KPX N Vsmall -15
+KPX N Wsmall -15
+KPX N Ysmall -20
+KPX N Zsmall -20
+KPX N AEsmall -20
+KPX N OEsmall -10
+KPX N Oslashsmall -10
+KPX N gg -50
+KPX N ij -35
+KPX N as -40
+KPX N es -35
+KPX N is -35
+KPX N dotlessis -35
+KPX N aelinefinalswash -40
+KPX N oelinefinalswash -35
+KPX N Aaltone -120
+KPX N Baltone -110
+KPX N Caltone -30
+KPX N Daltone -120
+KPX N Kaltone -40
+KPX N Maltone -140
+KPX N Naltone -60
+KPX N Raltone -40
+KPX N Valtone -70
+KPX N Waltone -70
+KPX N Xaltone -140
+KPX N AEaltone -120
+KPX N Halttwo -50
+KPX N Malttwo -50
+KPX N elinefinalswash -35
+KPX N Lsmallalt -20
+KPX N Tsmallalt -30
+KPX N us -20
+KPX O comma -90
+KPX O hyphen 35
+KPX O period -90
+KPX O A -60
+KPX O M -20
+KPX O S -10
+KPX O T -20
+KPX O V -35
+KPX O W -30
+KPX O X -50
+KPX O a -35
+KPX O b -20
+KPX O c -25
+KPX O d -20
+KPX O e -25
+KPX O g -20
+KPX O h -20
+KPX O i -20
+KPX O k -20
+KPX O l -20
+KPX O q -20
+KPX O s -30
+KPX O t -15
+KPX O x -25
+KPX O AE -60
+KPX O ae -35
+KPX O ellipsis -90
+KPX O endash 35
+KPX O emdash 35
+KPX O quotesinglbase -90
+KPX O quotedblbase -90
+KPX O hyphenlining 35
+KPX O endashlining 35
+KPX O emdashlining 35
+KPX O Asmall -25
+KPX O Bsmall -20
+KPX O Dsmall -20
+KPX O Esmall -20
+KPX O Fsmall -20
+KPX O Hsmall -20
+KPX O Ismall -20
+KPX O Ksmall -20
+KPX O Lsmall -20
+KPX O Msmall -15
+KPX O Nsmall -15
+KPX O Psmall -20
+KPX O Qsmall -10
+KPX O Rsmall -20
+KPX O Ssmall -15
+KPX O Xsmall -10
+KPX O Zsmall -20
+KPX O AEsmall -25
+KPX O gg -20
+KPX O ij -20
+KPX O ll -20
+KPX O as -35
+KPX O es -25
+KPX O ct -25
+KPX O ctlinefinalswash -25
+KPX O is -20
+KPX O dotlessis -20
+KPX O st -30
+KPX O stlinefinalswash -30
+KPX O tt -15
+KPX O ttlinefinalswash -15
+KPX O aelinefinalswash -35
+KPX O Baltone -30
+KPX O Daltone -60
+KPX O Ealtone 20
+KPX O Haltone -50
+KPX O Kaltone -60
+KPX O Maltone -130
+KPX O Naltone -40
+KPX O Raltone -20
+KPX O Valtone -60
+KPX O Waltone -60
+KPX O Xaltone -110
+KPX O Halttwo -40
+KPX O Malttwo -50
+KPX O elinefinalswash -25
+KPX O klinefinalswash -20
+KPX O tlinefinalswash -15
+KPX O Lsmallalt -40
+KPX O sp -30
+KPX P parenright 30
+KPX P comma -180
+KPX P hyphen 40
+KPX P period -180
+KPX P A -90
+KPX P J 50
+KPX P M -40
+KPX P Q 30
+KPX P a -85
+KPX P d -60
+KPX P e -40
+KPX P g -35
+KPX P i -25
+KPX P o -40
+KPX P s -25
+KPX P AE -90
+KPX P ae -85
+KPX P oslash -40
+KPX P ellipsis -180
+KPX P oe -40
+KPX P endash 40
+KPX P emdash 40
+KPX P quotedblright 30
+KPX P quoteright 30
+KPX P quotesinglbase -180
+KPX P quotedblbase -180
+KPX P hyphenlining 40
+KPX P endashlining 40
+KPX P emdashlining 40
+KPX P parenrightlining 30
+KPX P Asmall -70
+KPX P Csmall -15
+KPX P Dsmall -10
+KPX P Esmall -10
+KPX P Fsmall -10
+KPX P Gsmall -15
+KPX P Hsmall -10
+KPX P Ismall -10
+KPX P Lsmall -10
+KPX P Msmall -25
+KPX P Osmall -15
+KPX P Psmall -10
+KPX P Rsmall -10
+KPX P Ssmall -15
+KPX P Zsmall -15
+KPX P AEsmall -70
+KPX P OEsmall -15
+KPX P Oslashsmall -15
+KPX P gg -35
+KPX P ij -25
+KPX P as -85
+KPX P es -40
+KPX P is -25
+KPX P dotlessis -25
+KPX P st -25
+KPX P stlinefinalswash -25
+KPX P aelinefinalswash -85
+KPX P oelinefinalswash -40
+KPX P Aaltone -180
+KPX P Baltone -40
+KPX P Caltone -10
+KPX P Daltone -60
+KPX P Maltone -170
+KPX P Naltone -120
+KPX P Saltone -30
+KPX P Valtone -20
+KPX P Waltone -20
+KPX P Xaltone -170
+KPX P Zaltone -30
+KPX P AEaltone -180
+KPX P Halttwo -50
+KPX P Malttwo -190
+KPX P elinefinalswash -40
+KPX P Lsmallalt -50
+KPX P sp -25
+KPX Q parenright 20
+KPX Q comma -130
+KPX Q hyphen 30
+KPX Q period -130
+KPX Q A -70
+KPX Q M -40
+KPX Q R -20
+KPX Q S -10
+KPX Q T -20
+KPX Q U -20
+KPX Q V -40
+KPX Q W -40
+KPX Q X -50
+KPX Q a -60
+KPX Q e -45
+KPX Q i -20
+KPX Q o -30
+KPX Q u -25
+KPX Q AE -70
+KPX Q ae -60
+KPX Q oslash -30
+KPX Q ellipsis -130
+KPX Q oe -30
+KPX Q endash 30
+KPX Q emdash 30
+KPX Q quotesinglbase -130
+KPX Q quotedblbase -130
+KPX Q hyphenlining 30
+KPX Q endashlining 30
+KPX Q emdashlining 30
+KPX Q parenrightlining 20
+KPX Q Asmall -50
+KPX Q Esmall -20
+KPX Q Ismall -20
+KPX Q AEsmall -50
+KPX Q ij -20
+KPX Q as -60
+KPX Q es -45
+KPX Q is -20
+KPX Q dotlessis -20
+KPX Q aelinefinalswash -60
+KPX Q oelinefinalswash -30
+KPX Q Aaltone -130
+KPX Q AEaltone -130
+KPX Q elinefinalswash -45
+KPX Q us -25
+KPX R hyphen -75
+KPX R C -60
+KPX R G -60
+KPX R J -20
+KPX R O -60
+KPX R Q -40
+KPX R S -50
+KPX R T -50
+KPX R U -60
+KPX R V -80
+KPX R W -85
+KPX R Y -45
+KPX R e -45
+KPX R o -55
+KPX R u -25
+KPX R y -70
+KPX R oslash -55
+KPX R oe -55
+KPX R endash -75
+KPX R emdash -75
+KPX R quotedblright -70
+KPX R quoteright -70
+KPX R hyphenlining -75
+KPX R endashlining -75
+KPX R emdashlining -75
+KPX R Asmall -50
+KPX R Esmall -70
+KPX R Hsmall -70
+KPX R Ismall -70
+KPX R Jsmall -70
+KPX R Lsmall -70
+KPX R Msmall -70
+KPX R Nsmall -75
+KPX R Osmall -80
+KPX R Psmall -70
+KPX R Rsmall -70
+KPX R Ssmall -80
+KPX R Tsmall -80
+KPX R Usmall -75
+KPX R Vsmall -75
+KPX R Wsmall -75
+KPX R Xsmall -70
+KPX R Ysmall -80
+KPX R Zsmall -80
+KPX R AEsmall -50
+KPX R OEsmall -80
+KPX R Oslashsmall -80
+KPX R Th -50
+KPX R es -45
+KPX R oelinefinalswash -55
+KPX R Aaltone -70
+KPX R Baltone -70
+KPX R Daltone -110
+KPX R Ealtone -70
+KPX R Faltone -50
+KPX R Galtone -60
+KPX R Haltone -10
+KPX R Kaltone -100
+KPX R Maltone -100
+KPX R Naltone -70
+KPX R Oaltone -60
+KPX R Paltone -50
+KPX R Raltone -100
+KPX R Taltone -50
+KPX R Valtone -130
+KPX R Waltone -130
+KPX R Xaltone -110
+KPX R Zaltone -60
+KPX R AEaltone -70
+KPX R Halttwo -40
+KPX R Malttwo -80
+KPX R Oslashaltone -60
+KPX R elinefinalswash -45
+KPX R Esmallalt -70
+KPX R Lsmallalt -50
+KPX R Tsmallalt -80
+KPX R us -25
+KPX S parenright 10
+KPX S hyphen 40
+KPX S A -20
+KPX S C -20
+KPX S G -20
+KPX S M -20
+KPX S S -15
+KPX S V -20
+KPX S W -20
+KPX S a -10
+KPX S b -5
+KPX S e -5
+KPX S f -25
+KPX S g -15
+KPX S h -5
+KPX S i -15
+KPX S j -15
+KPX S k -5
+KPX S l -5
+KPX S m -15
+KPX S n -15
+KPX S o -5
+KPX S p -10
+KPX S q -5
+KPX S r -5
+KPX S t -20
+KPX S u -10
+KPX S v -30
+KPX S w -30
+KPX S y -20
+KPX S z -15
+KPX S AE -20
+KPX S ae -10
+KPX S oslash -5
+KPX S oe -5
+KPX S endash 40
+KPX S emdash 40
+KPX S quotedblright -15
+KPX S quoteright -15
+KPX S fi -25
+KPX S fl -25
+KPX S parenrightlining 10
+KPX S Asmall -10
+KPX S Bsmall -25
+KPX S Esmall -25
+KPX S Fsmall -25
+KPX S Hsmall -25
+KPX S Ismall -25
+KPX S Jsmall -25
+KPX S Ksmall -25
+KPX S Lsmall -25
+KPX S Msmall -25
+KPX S Nsmall -25
+KPX S Psmall -25
+KPX S Qsmall -25
+KPX S Rsmall -25
+KPX S Ssmall -15
+KPX S Tsmall -30
+KPX S Usmall -25
+KPX S Vsmall -30
+KPX S Wsmall -30
+KPX S Ysmall -25
+KPX S Zsmall -30
+KPX S AEsmall -10
+KPX S thorn -10
+KPX S fb -25
+KPX S ff -25
+KPX S fh -25
+KPX S fj -25
+KPX S fk -25
+KPX S fklinefinalswash -25
+KPX S fr -25
+KPX S ft -25
+KPX S ftlinefinalswash -25
+KPX S ffb -25
+KPX S ffh -25
+KPX S ffi -25
+KPX S ffk -25
+KPX S ffklinefinalswash -25
+KPX S ffl -25
+KPX S ffr -25
+KPX S gg -15
+KPX S ij -15
+KPX S ll -5
+KPX S as -10
+KPX S es -5
+KPX S is -15
+KPX S dotlessis -15
+KPX S ns -15
+KPX S nt -15
+KPX S ntlinefinalswash -15
+KPX S tt -20
+KPX S ttlinefinalswash -20
+KPX S aelinefinalswash -10
+KPX S oelinefinalswash -5
+KPX S Aaltone -100
+KPX S Baltone -70
+KPX S Daltone -80
+KPX S Ealtone 30
+KPX S Kaltone -60
+KPX S Maltone -130
+KPX S Naltone -70
+KPX S Paltone -50
+KPX S Raltone -50
+KPX S Valtone -60
+KPX S Waltone -60
+KPX S AEaltone -100
+KPX S Malttwo -90
+KPX S elinefinalswash -5
+KPX S klinefinalswash -5
+KPX S mlinefinalswash -15
+KPX S nlinefinalswash -15
+KPX S tlinefinalswash -20
+KPX S zlinefinalswash -15
+KPX S Esmallalt 5
+KPX S Lsmallalt -20
+KPX S Tsmallalt -30
+KPX S us -10
+KPX T space -50
+KPX T ampersand -55
+KPX T parenright 60
+KPX T comma -120
+KPX T hyphen -95
+KPX T period -120
+KPX T colon -120
+KPX T semicolon -120
+KPX T A -100
+KPX T J 70
+KPX T M -30
+KPX T T 30
+KPX T Y 40
+KPX T a -135
+KPX T c -145
+KPX T e -145
+KPX T i -70
+KPX T l -20
+KPX T o -155
+KPX T r -120
+KPX T s -135
+KPX T u -140
+KPX T w -170
+KPX T y -150
+KPX T z -133
+KPX T AE -100
+KPX T ae -135
+KPX T oslash -155
+KPX T ellipsis -120
+KPX T oe -155
+KPX T endash -95
+KPX T emdash -95
+KPX T quotedblright 55
+KPX T quoteright 55
+KPX T quotesinglbase -120
+KPX T quotedblbase -120
+KPX T hyphenlining -95
+KPX T endashlining -95
+KPX T emdashlining -95
+KPX T parenrightlining 60
+KPX T Asmall -120
+KPX T Bsmall -90
+KPX T Csmall -110
+KPX T Esmall -90
+KPX T Hsmall -90
+KPX T Ismall -90
+KPX T Jsmall -100
+KPX T Lsmall -90
+KPX T Msmall -90
+KPX T Nsmall -110
+KPX T Osmall -110
+KPX T Rsmall -90
+KPX T Ssmall -100
+KPX T Usmall -100
+KPX T Vsmall -100
+KPX T Wsmall -100
+KPX T Xsmall -80
+KPX T Ysmall -120
+KPX T Zsmall -90
+KPX T AEsmall -120
+KPX T OEsmall -110
+KPX T Oslashsmall -110
+KPX T ij -70
+KPX T ll -20
+KPX T as -135
+KPX T es -145
+KPX T ct -145
+KPX T ctlinefinalswash -145
+KPX T is -70
+KPX T dotlessis -70
+KPX T st -135
+KPX T stlinefinalswash -135
+KPX T aelinefinalswash -135
+KPX T oelinefinalswash -155
+KPX T Aaltone -80
+KPX T Baltone -80
+KPX T Caltone -40
+KPX T Daltone -90
+KPX T Kaltone -50
+KPX T Laltone -40
+KPX T Maltone -160
+KPX T Naltone -130
+KPX T Raltone -40
+KPX T Saltone -40
+KPX T Xaltone -160
+KPX T AEaltone -80
+KPX T Halttwo -40
+KPX T Malttwo -150
+KPX T elinefinalswash -145
+KPX T zlinefinalswash -133
+KPX T Esmallalt -90
+KPX T Lsmallalt -120
+KPX T sp -135
+KPX T us -140
+KPX U parenright 60
+KPX U comma -100
+KPX U hyphen -10
+KPX U period -100
+KPX U colon -50
+KPX U semicolon -50
+KPX U A -80
+KPX U C -20
+KPX U G -20
+KPX U J 20
+KPX U M -20
+KPX U S -15
+KPX U a -80
+KPX U b -25
+KPX U c -60
+KPX U d -75
+KPX U e -65
+KPX U f -40
+KPX U g -60
+KPX U i -55
+KPX U j -55
+KPX U l -40
+KPX U m -55
+KPX U n -50
+KPX U o -60
+KPX U p -65
+KPX U q -65
+KPX U r -40
+KPX U s -75
+KPX U t -55
+KPX U u -35
+KPX U v -65
+KPX U w -65
+KPX U x -75
+KPX U y -50
+KPX U z -60
+KPX U AE -80
+KPX U ae -80
+KPX U oslash -60
+KPX U ellipsis -100
+KPX U oe -60
+KPX U endash -10
+KPX U emdash -10
+KPX U quotedblright 25
+KPX U quoteright 25
+KPX U fi -40
+KPX U fl -40
+KPX U quotesinglbase -100
+KPX U quotedblbase -100
+KPX U parenrightlining 60
+KPX U Asmall -60
+KPX U Bsmall -45
+KPX U Csmall -45
+KPX U Dsmall -45
+KPX U Esmall -45
+KPX U Fsmall -45
+KPX U Gsmall -45
+KPX U Hsmall -45
+KPX U Ismall -45
+KPX U Jsmall -45
+KPX U Ksmall -45
+KPX U Lsmall -45
+KPX U Msmall -50
+KPX U Nsmall -45
+KPX U Osmall -45
+KPX U Psmall -45
+KPX U Qsmall -50
+KPX U Rsmall -45
+KPX U Ssmall -50
+KPX U Tsmall -50
+KPX U Vsmall -45
+KPX U Wsmall -45
+KPX U Xsmall -45
+KPX U Ysmall -55
+KPX U Zsmall -45
+KPX U AEsmall -60
+KPX U OEsmall -45
+KPX U Oslashsmall -45
+KPX U thorn -65
+KPX U fb -40
+KPX U ff -40
+KPX U fh -40
+KPX U fj -40
+KPX U fk -40
+KPX U fklinefinalswash -40
+KPX U fr -40
+KPX U ft -40
+KPX U ftlinefinalswash -40
+KPX U ffb -40
+KPX U ffh -40
+KPX U ffi -40
+KPX U ffk -40
+KPX U ffklinefinalswash -40
+KPX U ffl -40
+KPX U ffr -40
+KPX U gg -60
+KPX U ij -55
+KPX U ll -40
+KPX U as -80
+KPX U es -65
+KPX U ct -60
+KPX U ctlinefinalswash -60
+KPX U is -55
+KPX U dotlessis -55
+KPX U ns -50
+KPX U nt -50
+KPX U ntlinefinalswash -50
+KPX U st -75
+KPX U stlinefinalswash -75
+KPX U tt -55
+KPX U ttlinefinalswash -55
+KPX U aelinefinalswash -80
+KPX U oelinefinalswash -60
+KPX U Aaltone -120
+KPX U Baltone -80
+KPX U Daltone -100
+KPX U Maltone -160
+KPX U Naltone -100
+KPX U Raltone -60
+KPX U Saltone -60
+KPX U Valtone -40
+KPX U Waltone -40
+KPX U Xaltone -100
+KPX U AEaltone -120
+KPX U Halttwo -70
+KPX U Malttwo -130
+KPX U elinefinalswash -65
+KPX U mlinefinalswash -55
+KPX U nlinefinalswash -50
+KPX U tlinefinalswash -55
+KPX U zlinefinalswash -60
+KPX U Esmallalt -45
+KPX U Lsmallalt -80
+KPX U Tsmallalt -50
+KPX U sp -75
+KPX U us -35
+KPX V space -50
+KPX V ampersand -115
+KPX V parenright 30
+KPX V comma -155
+KPX V hyphen -135
+KPX V period -155
+KPX V colon -155
+KPX V semicolon -155
+KPX V A -205
+KPX V C -70
+KPX V G -70
+KPX V M -40
+KPX V O -50
+KPX V Q -20
+KPX V S -20
+KPX V a -215
+KPX V c -195
+KPX V d -195
+KPX V e -175
+KPX V i -90
+KPX V l -20
+KPX V o -175
+KPX V r -140
+KPX V s -175
+KPX V t -115
+KPX V u -150
+KPX V y -135
+KPX V AE -205
+KPX V ae -215
+KPX V oslash -175
+KPX V ellipsis -155
+KPX V oe -175
+KPX V endash -135
+KPX V emdash -135
+KPX V quotedblright 35
+KPX V quoteright 35
+KPX V quotesinglbase -155
+KPX V quotedblbase -155
+KPX V hyphenlining -135
+KPX V endashlining -135
+KPX V emdashlining -135
+KPX V parenrightlining 30
+KPX V Asmall -200
+KPX V Csmall -140
+KPX V Dsmall -110
+KPX V Esmall -110
+KPX V Hsmall -110
+KPX V Ismall -110
+KPX V Jsmall -130
+KPX V Lsmall -110
+KPX V Msmall -135
+KPX V Nsmall -110
+KPX V Osmall -140
+KPX V Rsmall -110
+KPX V Ssmall -140
+KPX V Tsmall -120
+KPX V Usmall -110
+KPX V Xsmall -110
+KPX V Ysmall -120
+KPX V Zsmall -140
+KPX V AEsmall -200
+KPX V OEsmall -140
+KPX V Oslashsmall -140
+KPX V ij -90
+KPX V ll -20
+KPX V Th -60
+KPX V as -215
+KPX V es -175
+KPX V ct -195
+KPX V ctlinefinalswash -195
+KPX V is -90
+KPX V dotlessis -90
+KPX V st -175
+KPX V stlinefinalswash -175
+KPX V tt -115
+KPX V ttlinefinalswash -115
+KPX V aelinefinalswash -215
+KPX V oelinefinalswash -175
+KPX V Aaltone -250
+KPX V Baltone -120
+KPX V Caltone -80
+KPX V Daltone -160
+KPX V Ealtone -70
+KPX V Faltone -30
+KPX V Galtone -70
+KPX V Haltone -40
+KPX V Kaltone -110
+KPX V Laltone -50
+KPX V Maltone -260
+KPX V Naltone -150
+KPX V Oaltone -50
+KPX V Paltone -50
+KPX V Raltone -120
+KPX V Saltone -125
+KPX V Taltone -60
+KPX V Valtone -60
+KPX V Waltone -60
+KPX V Xaltone -220
+KPX V Zaltone -50
+KPX V AEaltone -250
+KPX V Halttwo -90
+KPX V Malttwo -210
+KPX V Oslashaltone -50
+KPX V elinefinalswash -175
+KPX V tlinefinalswash -115
+KPX V Esmallalt -130
+KPX V Lsmallalt -180
+KPX V Tsmallalt -120
+KPX V sp -175
+KPX V us -150
+KPX W space -30
+KPX W ampersand -115
+KPX W parenright 30
+KPX W comma -150
+KPX W hyphen -130
+KPX W period -150
+KPX W colon -150
+KPX W semicolon -150
+KPX W A -190
+KPX W C -75
+KPX W G -75
+KPX W M -40
+KPX W O -50
+KPX W Q -20
+KPX W S -35
+KPX W a -200
+KPX W d -170
+KPX W e -170
+KPX W i -80
+KPX W m -160
+KPX W n -140
+KPX W o -170
+KPX W r -130
+KPX W s -175
+KPX W t -125
+KPX W u -140
+KPX W y -110
+KPX W AE -190
+KPX W ae -200
+KPX W oslash -170
+KPX W ellipsis -150
+KPX W oe -170
+KPX W endash -130
+KPX W emdash -130
+KPX W quotedblright 35
+KPX W quoteright 35
+KPX W quotesinglbase -150
+KPX W quotedblbase -150
+KPX W hyphenlining -130
+KPX W endashlining -130
+KPX W emdashlining -130
+KPX W parenrightlining 30
+KPX W Asmall -200
+KPX W Csmall -140
+KPX W Dsmall -110
+KPX W Esmall -110
+KPX W Gsmall -140
+KPX W Hsmall -110
+KPX W Ismall -110
+KPX W Jsmall -130
+KPX W Lsmall -110
+KPX W Msmall -135
+KPX W Nsmall -110
+KPX W Osmall -140
+KPX W Rsmall -110
+KPX W Ssmall -140
+KPX W Tsmall -120
+KPX W Usmall -110
+KPX W Xsmall -110
+KPX W Ysmall -120
+KPX W Zsmall -140
+KPX W AEsmall -200
+KPX W OEsmall -140
+KPX W Oslashsmall -140
+KPX W ij -80
+KPX W Th -60
+KPX W as -200
+KPX W es -170
+KPX W is -80
+KPX W dotlessis -80
+KPX W ns -140
+KPX W nt -140
+KPX W ntlinefinalswash -140
+KPX W st -175
+KPX W stlinefinalswash -175
+KPX W tt -125
+KPX W ttlinefinalswash -125
+KPX W aelinefinalswash -200
+KPX W oelinefinalswash -170
+KPX W Aaltone -250
+KPX W Baltone -120
+KPX W Caltone -80
+KPX W Daltone -160
+KPX W Ealtone -70
+KPX W Faltone -30
+KPX W Galtone -70
+KPX W Haltone -40
+KPX W Kaltone -120
+KPX W Laltone -50
+KPX W Maltone -260
+KPX W Naltone -150
+KPX W Oaltone -50
+KPX W Paltone -50
+KPX W Raltone -120
+KPX W Saltone -70
+KPX W Taltone -60
+KPX W Valtone -50
+KPX W Waltone -50
+KPX W Xaltone -220
+KPX W Zaltone -50
+KPX W AEaltone -250
+KPX W Halttwo -90
+KPX W Malttwo -210
+KPX W Oslashaltone -50
+KPX W elinefinalswash -170
+KPX W mlinefinalswash -160
+KPX W nlinefinalswash -140
+KPX W tlinefinalswash -125
+KPX W Esmallalt -130
+KPX W Lsmallalt -180
+KPX W Tsmallalt -120
+KPX W sp -175
+KPX W us -140
+KPX X ampersand -70
+KPX X parenright 40
+KPX X hyphen -155
+KPX X equal -50
+KPX X C -65
+KPX X G -65
+KPX X O -55
+KPX X Q -15
+KPX X S -20
+KPX X a -15
+KPX X e -44
+KPX X u -25
+KPX X y -90
+KPX X ae -15
+KPX X endash -155
+KPX X emdash -155
+KPX X hyphenlining -155
+KPX X endashlining -155
+KPX X emdashlining -155
+KPX X parenrightlining 40
+KPX X Asmall -50
+KPX X Csmall -70
+KPX X Esmall -50
+KPX X Ismall -50
+KPX X Jsmall -70
+KPX X Msmall -60
+KPX X Nsmall -60
+KPX X Osmall -70
+KPX X Rsmall -50
+KPX X Ssmall -60
+KPX X Tsmall -80
+KPX X Usmall -80
+KPX X Ysmall -80
+KPX X AEsmall -50
+KPX X OEsmall -70
+KPX X Oslashsmall -70
+KPX X Th -60
+KPX X as -15
+KPX X es -44
+KPX X aelinefinalswash -15
+KPX X Aaltone -150
+KPX X Baltone -140
+KPX X Caltone -30
+KPX X Daltone -150
+KPX X Ealtone -70
+KPX X Faltone -40
+KPX X Galtone -65
+KPX X Kaltone -100
+KPX X Maltone -180
+KPX X Naltone -100
+KPX X Oaltone -55
+KPX X Paltone -70
+KPX X Raltone -150
+KPX X Taltone -60
+KPX X Valtone -110
+KPX X Waltone -110
+KPX X Xaltone -110
+KPX X Zaltone -30
+KPX X AEaltone -150
+KPX X Halttwo -70
+KPX X Malttwo -150
+KPX X Oslashaltone -55
+KPX X elinefinalswash -44
+KPX X Esmallalt -50
+KPX X Tsmallalt -80
+KPX X us -25
+KPX Y space -50
+KPX Y ampersand -121
+KPX Y parenright 40
+KPX Y comma -150
+KPX Y hyphen -160
+KPX Y period -150
+KPX Y colon -150
+KPX Y semicolon -150
+KPX Y A -140
+KPX Y C -20
+KPX Y G -20
+KPX Y J 30
+KPX Y M -50
+KPX Y O -20
+KPX Y T 30
+KPX Y a -170
+KPX Y c -190
+KPX Y d -180
+KPX Y e -180
+KPX Y g -190
+KPX Y i -65
+KPX Y o -185
+KPX Y p -180
+KPX Y q -175
+KPX Y r -180
+KPX Y s -175
+KPX Y t -145
+KPX Y u -175
+KPX Y v -200
+KPX Y AE -140
+KPX Y ae -170
+KPX Y oslash -185
+KPX Y ellipsis -150
+KPX Y oe -185
+KPX Y endash -160
+KPX Y emdash -160
+KPX Y quotedblright 65
+KPX Y quoteright 65
+KPX Y quotesinglbase -150
+KPX Y quotedblbase -150
+KPX Y hyphenlining -160
+KPX Y endashlining -160
+KPX Y emdashlining -160
+KPX Y parenrightlining 40
+KPX Y Asmall -170
+KPX Y Bsmall -150
+KPX Y Csmall -160
+KPX Y Dsmall -150
+KPX Y Esmall -150
+KPX Y Hsmall -150
+KPX Y Ismall -150
+KPX Y Lsmall -150
+KPX Y Msmall -165
+KPX Y Nsmall -160
+KPX Y Osmall -160
+KPX Y Psmall -150
+KPX Y Qsmall -180
+KPX Y Rsmall -150
+KPX Y Ssmall -170
+KPX Y Tsmall -170
+KPX Y Usmall -155
+KPX Y Vsmall -160
+KPX Y Wsmall -160
+KPX Y Xsmall -160
+KPX Y AEsmall -170
+KPX Y OEsmall -160
+KPX Y Oslashsmall -160
+KPX Y thorn -180
+KPX Y gg -190
+KPX Y ij -65
+KPX Y Th -20
+KPX Y as -170
+KPX Y es -180
+KPX Y ct -190
+KPX Y ctlinefinalswash -190
+KPX Y is -65
+KPX Y dotlessis -65
+KPX Y st -175
+KPX Y stlinefinalswash -175
+KPX Y tt -145
+KPX Y ttlinefinalswash -145
+KPX Y aelinefinalswash -170
+KPX Y oelinefinalswash -185
+KPX Y Aaltone -290
+KPX Y Baltone -50
+KPX Y Caltone -60
+KPX Y Daltone -80
+KPX Y Galtone -20
+KPX Y Haltone 60
+KPX Y Kaltone -20
+KPX Y Laltone -60
+KPX Y Maltone -220
+KPX Y Naltone -80
+KPX Y Oaltone -20
+KPX Y Paltone -40
+KPX Y Raltone -60
+KPX Y Saltone -60
+KPX Y Taltone -20
+KPX Y Valtone -40
+KPX Y Waltone -40
+KPX Y Xaltone -210
+KPX Y AEaltone -290
+KPX Y Halttwo -50
+KPX Y Malttwo -220
+KPX Y Oslashaltone -20
+KPX Y elinefinalswash -180
+KPX Y tlinefinalswash -145
+KPX Y Esmallalt -170
+KPX Y Lsmallalt -190
+KPX Y Tsmallalt -170
+KPX Y sp -175
+KPX Y us -175
+KPX Z parenright 30
+KPX Z hyphen -50
+KPX Z C -30
+KPX Z G -30
+KPX Z O -20
+KPX Z Q -20
+KPX Z V -20
+KPX Z W -20
+KPX Z i -20
+KPX Z l -20
+KPX Z v -75
+KPX Z w -75
+KPX Z y -45
+KPX Z endash -50
+KPX Z emdash -50
+KPX Z quotedblright -40
+KPX Z quoteright -40
+KPX Z hyphenlining -50
+KPX Z endashlining -50
+KPX Z emdashlining -50
+KPX Z parenrightlining 30
+KPX Z Bsmall -30
+KPX Z Csmall -10
+KPX Z Esmall -30
+KPX Z Hsmall -30
+KPX Z Ismall -30
+KPX Z Jsmall -40
+KPX Z Lsmall -30
+KPX Z Msmall -10
+KPX Z Nsmall -15
+KPX Z Osmall -10
+KPX Z Rsmall -30
+KPX Z Ssmall -25
+KPX Z Tsmall -60
+KPX Z Usmall -35
+KPX Z Vsmall -60
+KPX Z Wsmall -70
+KPX Z Ysmall -60
+KPX Z OEsmall -10
+KPX Z Oslashsmall -10
+KPX Z ij -20
+KPX Z ll -20
+KPX Z Th -40
+KPX Z is -20
+KPX Z dotlessis -20
+KPX Z Baltone -80
+KPX Z Daltone -100
+KPX Z Ealtone 15
+KPX Z Galtone -10
+KPX Z Kaltone -90
+KPX Z Maltone -120
+KPX Z Naltone -100
+KPX Z Oaltone -20
+KPX Z Paltone -40
+KPX Z Raltone -90
+KPX Z Taltone -40
+KPX Z Valtone -40
+KPX Z Waltone -50
+KPX Z Zaltone -10
+KPX Z Malttwo -100
+KPX Z Oslashaltone -20
+KPX Z Esmallalt -10
+KPX Z Lsmallalt -20
+KPX Z Tsmallalt -70
+KPX bracketleft three 25
+KPX bracketleft four -10
+KPX bracketleft seven 20
+KPX a comma -40
+KPX a period -40
+KPX a ellipsis -40
+KPX a quotedblright 45
+KPX a quoteright 45
+KPX a quotesinglbase -40
+KPX a quotedblbase -40
+KPX b comma -85
+KPX b period -85
+KPX b colon -15
+KPX b semicolon -15
+KPX b a -20
+KPX b d -10
+KPX b ae -20
+KPX b ellipsis -85
+KPX b quotesinglbase -85
+KPX b quotedblbase -85
+KPX b as -20
+KPX b aelinefinalswash -20
+KPX c comma -50
+KPX c hyphen -20
+KPX c period -50
+KPX c a -10
+KPX c ae -10
+KPX c ellipsis -50
+KPX c endash -20
+KPX c emdash -20
+KPX c quotedblright 35
+KPX c quoteright 35
+KPX c quotesinglbase -50
+KPX c quotedblbase -50
+KPX c as -10
+KPX c aelinefinalswash -10
+KPX d parenright 50
+KPX d asterisk 60
+KPX d quotedblright 85
+KPX d quoteright 85
+KPX e comma -30
+KPX e hyphen -10
+KPX e period -30
+KPX e colon -10
+KPX e semicolon -10
+KPX e ellipsis -30
+KPX e endash -10
+KPX e emdash -10
+KPX e quotesinglbase -30
+KPX e quotedblbase -30
+KPX f exclam 90
+KPX f parenright 170
+KPX f asterisk 140
+KPX f comma -85
+KPX f hyphen -40
+KPX f period -85
+KPX f question 80
+KPX f a -40
+KPX f ae -40
+KPX f ellipsis -85
+KPX f endash -40
+KPX f emdash -40
+KPX f quotedblright 140
+KPX f quoteright 140
+KPX f quotesinglbase -85
+KPX f quotedblbase -85
+KPX f as -40
+KPX f aelinefinalswash -40
+KPX g parenright 30
+KPX g comma -50
+KPX g period -50
+KPX g a -20
+KPX g n 20
+KPX g r 20
+KPX g y 35
+KPX g ae -20
+KPX g ellipsis -50
+KPX g quotedblright 20
+KPX g quoteright 20
+KPX g quotesinglbase -50
+KPX g quotedblbase -50
+KPX g as -20
+KPX g ns 20
+KPX g nt 20
+KPX g ntlinefinalswash 20
+KPX g aelinefinalswash -20
+KPX g nlinefinalswash 20
+KPX h comma -75
+KPX h period -75
+KPX h colon -25
+KPX h semicolon -25
+KPX h a -20
+KPX h ae -20
+KPX h ellipsis -75
+KPX h quotesinglbase -75
+KPX h quotedblbase -75
+KPX h as -20
+KPX h aelinefinalswash -20
+KPX i parenright 20
+KPX i asterisk 30
+KPX i comma -30
+KPX i period -30
+KPX i ellipsis -30
+KPX i quotedblright 35
+KPX i quoteright 35
+KPX i quotesinglbase -30
+KPX i quotedblbase -30
+KPX j asterisk 30
+KPX j comma -80
+KPX j period -80
+KPX j colon -45
+KPX j semicolon -45
+KPX j ellipsis -80
+KPX j quotedblright 35
+KPX j quoteright 35
+KPX j quotesinglbase -80
+KPX j quotedblbase -80
+KPX l parenright 50
+KPX l asterisk 60
+KPX l comma -30
+KPX l period -30
+KPX l ellipsis -30
+KPX l quotedblright 55
+KPX l quoteright 55
+KPX l quotesinglbase -30
+KPX l quotedblbase -30
+KPX o comma -45
+KPX o period -45
+KPX o colon -30
+KPX o semicolon -30
+KPX o ellipsis -45
+KPX o quotesinglbase -45
+KPX o quotedblbase -45
+KPX p comma -55
+KPX p period -55
+KPX p colon -25
+KPX p semicolon -25
+KPX p ellipsis -55
+KPX p quotedblright -15
+KPX p quoteright -15
+KPX p quotesinglbase -55
+KPX p quotedblbase -55
+KPX q comma -60
+KPX q period -60
+KPX q colon -5
+KPX q semicolon -5
+KPX q ellipsis -60
+KPX q quotedblright 35
+KPX q quoteright 35
+KPX q quotesinglbase -60
+KPX q quotedblbase -60
+KPX r asterisk 50
+KPX r comma -135
+KPX r hyphen -45
+KPX r period -135
+KPX r a -55
+KPX r d -20
+KPX r f 30
+KPX r n 20
+KPX r q -30
+KPX r u 20
+KPX r v 20
+KPX r w 20
+KPX r y 20
+KPX r ae -55
+KPX r ellipsis -135
+KPX r endash -45
+KPX r emdash -45
+KPX r quotedblright 40
+KPX r quoteright 40
+KPX r fi 30
+KPX r fl 30
+KPX r quotesinglbase -135
+KPX r quotedblbase -135
+KPX r fb 30
+KPX r ff 30
+KPX r fh 30
+KPX r fj 30
+KPX r fk 30
+KPX r fklinefinalswash 30
+KPX r fr 30
+KPX r ft 30
+KPX r ftlinefinalswash 30
+KPX r ffb 30
+KPX r ffh 30
+KPX r ffi 30
+KPX r ffk 30
+KPX r ffklinefinalswash 30
+KPX r ffl 30
+KPX r ffr 30
+KPX r as -55
+KPX r ns 20
+KPX r nt 20
+KPX r ntlinefinalswash 20
+KPX r aelinefinalswash -55
+KPX r nlinefinalswash 20
+KPX r us 20
+KPX s comma -30
+KPX s period -30
+KPX s ellipsis -30
+KPX s quotedblright 35
+KPX s quoteright 35
+KPX s quotesinglbase -30
+KPX s quotedblbase -30
+KPX t asterisk 50
+KPX t comma -30
+KPX t period -30
+KPX t ellipsis -30
+KPX t quotedblright 20
+KPX t quoteright 20
+KPX t quotesinglbase -30
+KPX t quotedblbase -30
+KPX v comma -75
+KPX v period -75
+KPX v colon -15
+KPX v semicolon -15
+KPX v ellipsis -75
+KPX v quotesinglbase -75
+KPX v quotedblbase -75
+KPX w comma -75
+KPX w period -75
+KPX w colon -15
+KPX w semicolon -15
+KPX w ellipsis -75
+KPX w quotesinglbase -75
+KPX w quotedblbase -75
+KPX x comma -20
+KPX x hyphen -30
+KPX x period -20
+KPX x ellipsis -20
+KPX x endash -30
+KPX x emdash -30
+KPX x quotedblright 20
+KPX x quoteright 20
+KPX x quotesinglbase -20
+KPX x quotedblbase -20
+KPX y comma -90
+KPX y period -90
+KPX y colon -30
+KPX y semicolon -30
+KPX y a -35
+KPX y c -20
+KPX y e -20
+KPX y i -25
+KPX y o -25
+KPX y q -25
+KPX y s -20
+KPX y ae -35
+KPX y oslash -25
+KPX y ellipsis -90
+KPX y oe -25
+KPX y quotesinglbase -90
+KPX y quotedblbase -90
+KPX y ij -25
+KPX y as -35
+KPX y es -20
+KPX y ct -20
+KPX y ctlinefinalswash -20
+KPX y is -25
+KPX y dotlessis -25
+KPX y st -20
+KPX y stlinefinalswash -20
+KPX y aelinefinalswash -35
+KPX y oelinefinalswash -25
+KPX y elinefinalswash -20
+KPX y sp -20
+KPX z hyphen -30
+KPX z endash -30
+KPX z emdash -30
+KPX braceleft three 15
+KPX braceleft four -10
+KPX braceleft seven 20
+KPX sterling three 130
+KPX sterling five 40
+KPX sterling six -30
+KPX sterling seven 70
+KPX sterling eight -30
+KPX sterling nine 40
+KPX germandbls comma -30
+KPX germandbls period -30
+KPX germandbls ellipsis -30
+KPX germandbls quotedblright 35
+KPX germandbls quoteright 35
+KPX germandbls quotesinglbase -30
+KPX germandbls quotedblbase -30
+KPX AE parenright 40
+KPX AE hyphen 10
+KPX AE J 30
+KPX AE V -10
+KPX AE W -10
+KPX AE Z 10
+KPX AE f -25
+KPX AE v -45
+KPX AE w -45
+KPX AE y -30
+KPX AE endash 10
+KPX AE emdash 10
+KPX AE fi -25
+KPX AE fl -25
+KPX AE hyphenlining 10
+KPX AE endashlining 10
+KPX AE emdashlining 10
+KPX AE parenrightlining 40
+KPX AE Jsmall -10
+KPX AE Qsmall -10
+KPX AE Tsmall -20
+KPX AE Usmall -10
+KPX AE Vsmall -20
+KPX AE Wsmall -20
+KPX AE Ysmall -30
+KPX AE fb -25
+KPX AE ff -25
+KPX AE fh -25
+KPX AE fj -25
+KPX AE fk -25
+KPX AE fklinefinalswash -25
+KPX AE fr -25
+KPX AE ft -25
+KPX AE ftlinefinalswash -25
+KPX AE ffb -25
+KPX AE ffh -25
+KPX AE ffi -25
+KPX AE ffk -25
+KPX AE ffklinefinalswash -25
+KPX AE ffl -25
+KPX AE ffr -25
+KPX AE Aaltone -65
+KPX AE Daltone -75
+KPX AE Maltone -110
+KPX AE Raltone -70
+KPX AE Valtone -80
+KPX AE Waltone -80
+KPX AE Xaltone -65
+KPX AE AEaltone -65
+KPX AE Malttwo -100
+KPX AE Tsmallalt -20
+KPX Oslash comma -90
+KPX Oslash hyphen 35
+KPX Oslash period -90
+KPX Oslash A -60
+KPX Oslash M -20
+KPX Oslash S -10
+KPX Oslash T -20
+KPX Oslash V -35
+KPX Oslash W -30
+KPX Oslash X -50
+KPX Oslash a -35
+KPX Oslash b -20
+KPX Oslash c -25
+KPX Oslash d -20
+KPX Oslash e -25
+KPX Oslash g -20
+KPX Oslash h -20
+KPX Oslash i -20
+KPX Oslash k -20
+KPX Oslash l -20
+KPX Oslash q -20
+KPX Oslash s -30
+KPX Oslash t -15
+KPX Oslash x -25
+KPX Oslash AE -60
+KPX Oslash ae -35
+KPX Oslash ellipsis -90
+KPX Oslash endash 35
+KPX Oslash emdash 35
+KPX Oslash quotesinglbase -90
+KPX Oslash quotedblbase -90
+KPX Oslash hyphenlining 35
+KPX Oslash endashlining 35
+KPX Oslash emdashlining 35
+KPX Oslash Asmall -25
+KPX Oslash Bsmall -20
+KPX Oslash Dsmall -20
+KPX Oslash Esmall -20
+KPX Oslash Fsmall -20
+KPX Oslash Hsmall -20
+KPX Oslash Ismall -20
+KPX Oslash Ksmall -20
+KPX Oslash Lsmall -20
+KPX Oslash Msmall -15
+KPX Oslash Nsmall -15
+KPX Oslash Psmall -20
+KPX Oslash Qsmall -10
+KPX Oslash Rsmall -20
+KPX Oslash Ssmall -15
+KPX Oslash Xsmall -10
+KPX Oslash Zsmall -20
+KPX Oslash AEsmall -25
+KPX Oslash gg -20
+KPX Oslash ij -20
+KPX Oslash ll -20
+KPX Oslash as -35
+KPX Oslash es -25
+KPX Oslash ct -25
+KPX Oslash ctlinefinalswash -25
+KPX Oslash is -20
+KPX Oslash dotlessis -20
+KPX Oslash st -30
+KPX Oslash stlinefinalswash -30
+KPX Oslash tt -15
+KPX Oslash ttlinefinalswash -15
+KPX Oslash aelinefinalswash -35
+KPX Oslash Baltone -30
+KPX Oslash Daltone -60
+KPX Oslash Ealtone 20
+KPX Oslash Haltone -50
+KPX Oslash Kaltone -60
+KPX Oslash Maltone -130
+KPX Oslash Naltone -40
+KPX Oslash Raltone -20
+KPX Oslash Valtone -60
+KPX Oslash Waltone -60
+KPX Oslash Xaltone -110
+KPX Oslash Halttwo -40
+KPX Oslash Malttwo -50
+KPX Oslash elinefinalswash -25
+KPX Oslash klinefinalswash -20
+KPX Oslash tlinefinalswash -15
+KPX Oslash Lsmallalt -40
+KPX Oslash sp -30
+KPX ae comma -30
+KPX ae hyphen -10
+KPX ae period -30
+KPX ae colon -10
+KPX ae semicolon -10
+KPX ae ellipsis -30
+KPX ae endash -10
+KPX ae emdash -10
+KPX ae quotesinglbase -30
+KPX ae quotedblbase -30
+KPX oslash comma -45
+KPX oslash period -45
+KPX oslash colon -30
+KPX oslash semicolon -30
+KPX oslash ellipsis -45
+KPX oslash quotesinglbase -45
+KPX oslash quotedblbase -45
+KPX florin four -40
+KPX florin five -40
+KPX florin nine -30
+KPX OE parenright 40
+KPX OE hyphen 10
+KPX OE J 30
+KPX OE V -10
+KPX OE W -10
+KPX OE Z 10
+KPX OE f -25
+KPX OE v -45
+KPX OE w -45
+KPX OE y -30
+KPX OE endash 10
+KPX OE emdash 10
+KPX OE fi -25
+KPX OE fl -25
+KPX OE hyphenlining 10
+KPX OE endashlining 10
+KPX OE emdashlining 10
+KPX OE parenrightlining 40
+KPX OE Jsmall -10
+KPX OE Qsmall -10
+KPX OE Tsmall -20
+KPX OE Usmall -10
+KPX OE Vsmall -20
+KPX OE Wsmall -20
+KPX OE Ysmall -30
+KPX OE fb -25
+KPX OE ff -25
+KPX OE fh -25
+KPX OE fj -25
+KPX OE fk -25
+KPX OE fklinefinalswash -25
+KPX OE fr -25
+KPX OE ft -25
+KPX OE ftlinefinalswash -25
+KPX OE ffb -25
+KPX OE ffh -25
+KPX OE ffi -25
+KPX OE ffk -25
+KPX OE ffklinefinalswash -25
+KPX OE ffl -25
+KPX OE ffr -25
+KPX OE Aaltone -65
+KPX OE Daltone -75
+KPX OE Maltone -110
+KPX OE Raltone -70
+KPX OE Valtone -80
+KPX OE Waltone -80
+KPX OE Xaltone -65
+KPX OE AEaltone -65
+KPX OE Malttwo -100
+KPX OE Tsmallalt -20
+KPX oe comma -30
+KPX oe hyphen -10
+KPX oe period -30
+KPX oe colon -10
+KPX oe semicolon -10
+KPX oe ellipsis -30
+KPX oe endash -10
+KPX oe emdash -10
+KPX oe quotesinglbase -30
+KPX oe quotedblbase -30
+KPX endash A -110
+KPX endash C 30
+KPX endash G 30
+KPX endash I -10
+KPX endash J -45
+KPX endash M -30
+KPX endash O 45
+KPX endash Q 20
+KPX endash S 5
+KPX endash T -95
+KPX endash V -90
+KPX endash W -95
+KPX endash X -140
+KPX endash Y -150
+KPX endash Z -30
+KPX endash f -20
+KPX endash x -25
+KPX endash z -15
+KPX endash AE -110
+KPX endash fi -20
+KPX endash fl -20
+KPX endash Asmall -20
+KPX endash Bsmall -15
+KPX endash Csmall 20
+KPX endash Dsmall -15
+KPX endash Esmall -15
+KPX endash Fsmall -15
+KPX endash Gsmall 20
+KPX endash Hsmall -15
+KPX endash Ismall -15
+KPX endash Jsmall -30
+KPX endash Ksmall -15
+KPX endash Lsmall -15
+KPX endash Msmall -15
+KPX endash Nsmall -15
+KPX endash Osmall 20
+KPX endash Psmall -15
+KPX endash Rsmall -15
+KPX endash Ssmall -15
+KPX endash Tsmall -30
+KPX endash Usmall -10
+KPX endash Vsmall -30
+KPX endash Wsmall -30
+KPX endash Xsmall -60
+KPX endash Ysmall -60
+KPX endash Zsmall -20
+KPX endash AEsmall -20
+KPX endash OEsmall 20
+KPX endash Oslashsmall 20
+KPX endash fb -20
+KPX endash ff -20
+KPX endash fh -20
+KPX endash fj -20
+KPX endash fk -20
+KPX endash fklinefinalswash -20
+KPX endash fr -20
+KPX endash ft -20
+KPX endash ftlinefinalswash -20
+KPX endash ffb -20
+KPX endash ffh -20
+KPX endash ffi -20
+KPX endash ffk -20
+KPX endash ffklinefinalswash -20
+KPX endash ffl -20
+KPX endash ffr -20
+KPX endash Th -90
+KPX endash Aaltone 40
+KPX endash Baltone -50
+KPX endash Daltone -50
+KPX endash Faltone -40
+KPX endash Haltone -120
+KPX endash Kaltone -110
+KPX endash Laltone -40
+KPX endash Maltone 30
+KPX endash Naltone 30
+KPX endash Oaltone 25
+KPX endash Raltone -70
+KPX endash Saltone -110
+KPX endash Taltone -90
+KPX endash Valtone -110
+KPX endash Waltone -110
+KPX endash Xaltone 30
+KPX endash Zaltone -20
+KPX endash AEaltone 40
+KPX endash Halttwo 40
+KPX endash Malttwo 20
+KPX endash Oslashaltone 25
+KPX endash zlinefinalswash -15
+KPX endash Esmallalt 40
+KPX endash Lsmallalt -10
+KPX emdash A -110
+KPX emdash C 30
+KPX emdash G 30
+KPX emdash I -10
+KPX emdash J -45
+KPX emdash M -30
+KPX emdash O 45
+KPX emdash Q 20
+KPX emdash S 5
+KPX emdash T -95
+KPX emdash V -90
+KPX emdash W -95
+KPX emdash X -140
+KPX emdash Y -150
+KPX emdash Z -30
+KPX emdash f -20
+KPX emdash x -25
+KPX emdash z -15
+KPX emdash AE -110
+KPX emdash fi -20
+KPX emdash fl -20
+KPX emdash Asmall -20
+KPX emdash Bsmall -15
+KPX emdash Csmall 20
+KPX emdash Dsmall -15
+KPX emdash Esmall -15
+KPX emdash Fsmall -15
+KPX emdash Gsmall 20
+KPX emdash Hsmall -15
+KPX emdash Ismall -15
+KPX emdash Jsmall -30
+KPX emdash Ksmall -15
+KPX emdash Lsmall -15
+KPX emdash Msmall -15
+KPX emdash Nsmall -15
+KPX emdash Osmall 20
+KPX emdash Psmall -15
+KPX emdash Rsmall -15
+KPX emdash Ssmall -15
+KPX emdash Tsmall -30
+KPX emdash Usmall -10
+KPX emdash Vsmall -30
+KPX emdash Wsmall -30
+KPX emdash Xsmall -60
+KPX emdash Ysmall -60
+KPX emdash Zsmall -20
+KPX emdash AEsmall -20
+KPX emdash OEsmall 20
+KPX emdash Oslashsmall 20
+KPX emdash fb -20
+KPX emdash ff -20
+KPX emdash fh -20
+KPX emdash fj -20
+KPX emdash fk -20
+KPX emdash fklinefinalswash -20
+KPX emdash fr -20
+KPX emdash ft -20
+KPX emdash ftlinefinalswash -20
+KPX emdash ffb -20
+KPX emdash ffh -20
+KPX emdash ffi -20
+KPX emdash ffk -20
+KPX emdash ffklinefinalswash -20
+KPX emdash ffl -20
+KPX emdash ffr -20
+KPX emdash Th -90
+KPX emdash Aaltone 40
+KPX emdash Baltone -50
+KPX emdash Daltone -50
+KPX emdash Faltone -40
+KPX emdash Haltone -120
+KPX emdash Kaltone -110
+KPX emdash Laltone -40
+KPX emdash Maltone 30
+KPX emdash Naltone 30
+KPX emdash Oaltone 25
+KPX emdash Raltone -70
+KPX emdash Saltone -110
+KPX emdash Taltone -90
+KPX emdash Valtone -110
+KPX emdash Waltone -110
+KPX emdash Xaltone 30
+KPX emdash Zaltone -20
+KPX emdash AEaltone 40
+KPX emdash Halttwo 40
+KPX emdash Malttwo 20
+KPX emdash Oslashaltone 25
+KPX emdash zlinefinalswash -15
+KPX emdash Esmallalt 40
+KPX emdash Lsmallalt -10
+KPX quotedblleft A -145
+KPX quotedblleft C -25
+KPX quotedblleft G -25
+KPX quotedblleft J 55
+KPX quotedblleft M -50
+KPX quotedblleft O -25
+KPX quotedblleft T 25
+KPX quotedblleft U 25
+KPX quotedblleft V 35
+KPX quotedblleft W 35
+KPX quotedblleft Y 65
+KPX quotedblleft a -115
+KPX quotedblleft c -55
+KPX quotedblleft d -80
+KPX quotedblleft e -55
+KPX quotedblleft g -40
+KPX quotedblleft o -40
+KPX quotedblleft q -65
+KPX quotedblleft s -35
+KPX quotedblleft y 30
+KPX quotedblleft AE -145
+KPX quotedblleft ae -115
+KPX quotedblleft oslash -40
+KPX quotedblleft oe -40
+KPX quotedblleft Asmall -70
+KPX quotedblleft Csmall -40
+KPX quotedblleft Gsmall -50
+KPX quotedblleft Msmall -20
+KPX quotedblleft Osmall -40
+KPX quotedblleft Qsmall -30
+KPX quotedblleft Ssmall -30
+KPX quotedblleft Tsmall 10
+KPX quotedblleft Usmall 20
+KPX quotedblleft Vsmall 20
+KPX quotedblleft Wsmall 20
+KPX quotedblleft Ysmall 20
+KPX quotedblleft Zsmall -10
+KPX quotedblleft AEsmall -70
+KPX quotedblleft OEsmall -40
+KPX quotedblleft Oslashsmall -40
+KPX quotedblleft gg -40
+KPX quotedblleft Th 35
+KPX quotedblleft as -115
+KPX quotedblleft es -55
+KPX quotedblleft ct -55
+KPX quotedblleft ctlinefinalswash -55
+KPX quotedblleft st -35
+KPX quotedblleft stlinefinalswash -35
+KPX quotedblleft aelinefinalswash -115
+KPX quotedblleft oelinefinalswash -40
+KPX quotedblleft Aaltone -615
+KPX quotedblleft Baltone 60
+KPX quotedblleft Caltone -45
+KPX quotedblleft Daltone 20
+KPX quotedblleft Faltone 30
+KPX quotedblleft Galtone -25
+KPX quotedblleft Haltone 30
+KPX quotedblleft Kaltone 30
+KPX quotedblleft Laltone -30
+KPX quotedblleft Maltone -270
+KPX quotedblleft Naltone -120
+KPX quotedblleft Oaltone -25
+KPX quotedblleft Paltone 40
+KPX quotedblleft Raltone 60
+KPX quotedblleft Saltone -90
+KPX quotedblleft Taltone 35
+KPX quotedblleft Valtone 35
+KPX quotedblleft Waltone 35
+KPX quotedblleft Xaltone -240
+KPX quotedblleft Zaltone -30
+KPX quotedblleft AEaltone -615
+KPX quotedblleft Halttwo -80
+KPX quotedblleft Malttwo -310
+KPX quotedblleft Oslashaltone -25
+KPX quotedblleft elinefinalswash -55
+KPX quotedblleft Esmallalt -30
+KPX quotedblleft Lsmallalt -70
+KPX quotedblleft sp -35
+KPX quotedblright A -100
+KPX quotedblright J 90
+KPX quotedblright N 30
+KPX quotedblright T 50
+KPX quotedblright U 40
+KPX quotedblright V 50
+KPX quotedblright W 50
+KPX quotedblright X 30
+KPX quotedblright Y 90
+KPX quotedblright a -90
+KPX quotedblright c -60
+KPX quotedblright d -100
+KPX quotedblright e -60
+KPX quotedblright g -60
+KPX quotedblright i -30
+KPX quotedblright j -50
+KPX quotedblright o -60
+KPX quotedblright q -100
+KPX quotedblright s -60
+KPX quotedblright AE -100
+KPX quotedblright ae -90
+KPX quotedblright oslash -60
+KPX quotedblright oe -60
+KPX quotedblright Asmall -140
+KPX quotedblright Csmall -70
+KPX quotedblright Gsmall -70
+KPX quotedblright Jsmall -30
+KPX quotedblright Msmall -50
+KPX quotedblright Osmall -70
+KPX quotedblright Qsmall -40
+KPX quotedblright Ssmall -50
+KPX quotedblright Ysmall -20
+KPX quotedblright AEsmall -140
+KPX quotedblright OEsmall -70
+KPX quotedblright Oslashsmall -70
+KPX quotedblright gg -60
+KPX quotedblright ij -30
+KPX quotedblright Th 50
+KPX quotedblright as -90
+KPX quotedblright es -60
+KPX quotedblright ct -60
+KPX quotedblright ctlinefinalswash -60
+KPX quotedblright is -30
+KPX quotedblright dotlessis -30
+KPX quotedblright st -60
+KPX quotedblright stlinefinalswash -60
+KPX quotedblright aelinefinalswash -90
+KPX quotedblright oelinefinalswash -60
+KPX quotedblright Aaltone -100
+KPX quotedblright Naltone 30
+KPX quotedblright Taltone 50
+KPX quotedblright Valtone 50
+KPX quotedblright Waltone 50
+KPX quotedblright Xaltone 30
+KPX quotedblright AEaltone -100
+KPX quotedblright elinefinalswash -60
+KPX quotedblright sp -60
+KPX quoteleft A -145
+KPX quoteleft C -25
+KPX quoteleft G -25
+KPX quoteleft J 55
+KPX quoteleft M -50
+KPX quoteleft O -25
+KPX quoteleft T 25
+KPX quoteleft U 25
+KPX quoteleft V 35
+KPX quoteleft W 35
+KPX quoteleft Y 65
+KPX quoteleft a -115
+KPX quoteleft c -55
+KPX quoteleft d -80
+KPX quoteleft e -55
+KPX quoteleft g -40
+KPX quoteleft o -40
+KPX quoteleft q -65
+KPX quoteleft s -35
+KPX quoteleft y 30
+KPX quoteleft AE -145
+KPX quoteleft ae -115
+KPX quoteleft oslash -40
+KPX quoteleft oe -40
+KPX quoteleft Asmall -70
+KPX quoteleft Csmall -40
+KPX quoteleft Gsmall -50
+KPX quoteleft Msmall -20
+KPX quoteleft Osmall -40
+KPX quoteleft Qsmall -30
+KPX quoteleft Ssmall -30
+KPX quoteleft Tsmall 10
+KPX quoteleft Usmall 20
+KPX quoteleft Vsmall 20
+KPX quoteleft Wsmall 20
+KPX quoteleft Ysmall 20
+KPX quoteleft Zsmall -10
+KPX quoteleft AEsmall -70
+KPX quoteleft OEsmall -40
+KPX quoteleft Oslashsmall -40
+KPX quoteleft gg -40
+KPX quoteleft Th 35
+KPX quoteleft as -115
+KPX quoteleft es -55
+KPX quoteleft ct -55
+KPX quoteleft ctlinefinalswash -55
+KPX quoteleft st -35
+KPX quoteleft stlinefinalswash -35
+KPX quoteleft aelinefinalswash -115
+KPX quoteleft oelinefinalswash -40
+KPX quoteleft Aaltone -615
+KPX quoteleft Baltone 60
+KPX quoteleft Caltone -45
+KPX quoteleft Daltone 20
+KPX quoteleft Faltone 30
+KPX quoteleft Galtone -25
+KPX quoteleft Haltone 30
+KPX quoteleft Kaltone 30
+KPX quoteleft Laltone -30
+KPX quoteleft Maltone -270
+KPX quoteleft Naltone -120
+KPX quoteleft Oaltone -25
+KPX quoteleft Paltone 40
+KPX quoteleft Raltone 60
+KPX quoteleft Saltone -90
+KPX quoteleft Taltone 35
+KPX quoteleft Valtone 35
+KPX quoteleft Waltone 35
+KPX quoteleft Xaltone -240
+KPX quoteleft Zaltone -30
+KPX quoteleft AEaltone -615
+KPX quoteleft Halttwo -80
+KPX quoteleft Malttwo -310
+KPX quoteleft Oslashaltone -25
+KPX quoteleft elinefinalswash -55
+KPX quoteleft Esmallalt -30
+KPX quoteleft Lsmallalt -70
+KPX quoteleft sp -35
+KPX quoteright A -100
+KPX quoteright J 90
+KPX quoteright N 30
+KPX quoteright T 50
+KPX quoteright U 40
+KPX quoteright V 50
+KPX quoteright W 50
+KPX quoteright X 30
+KPX quoteright Y 90
+KPX quoteright a -90
+KPX quoteright c -60
+KPX quoteright d -100
+KPX quoteright e -60
+KPX quoteright g -60
+KPX quoteright i -30
+KPX quoteright j -50
+KPX quoteright o -60
+KPX quoteright q -100
+KPX quoteright s -60
+KPX quoteright AE -100
+KPX quoteright ae -90
+KPX quoteright oslash -60
+KPX quoteright oe -60
+KPX quoteright Asmall -140
+KPX quoteright Csmall -70
+KPX quoteright Gsmall -70
+KPX quoteright Jsmall -30
+KPX quoteright Msmall -50
+KPX quoteright Osmall -70
+KPX quoteright Qsmall -40
+KPX quoteright Ssmall -50
+KPX quoteright Ysmall -20
+KPX quoteright AEsmall -140
+KPX quoteright OEsmall -70
+KPX quoteright Oslashsmall -70
+KPX quoteright gg -60
+KPX quoteright ij -30
+KPX quoteright Th 50
+KPX quoteright as -90
+KPX quoteright es -60
+KPX quoteright ct -60
+KPX quoteright ctlinefinalswash -60
+KPX quoteright is -30
+KPX quoteright dotlessis -30
+KPX quoteright st -60
+KPX quoteright stlinefinalswash -60
+KPX quoteright aelinefinalswash -90
+KPX quoteright oelinefinalswash -60
+KPX quoteright Aaltone -100
+KPX quoteright Naltone 30
+KPX quoteright Taltone 50
+KPX quoteright Valtone 50
+KPX quoteright Waltone 50
+KPX quoteright Xaltone 30
+KPX quoteright AEaltone -100
+KPX quoteright elinefinalswash -60
+KPX quoteright sp -60
+KPX fraction zerofractiondiainferior 20
+KPX fraction onefractiondiainferior 30
+KPX fraction twofractiondiainferior 20
+KPX fraction threefractiondiainferior 20
+KPX fraction fourfractiondiainferior -35
+KPX fraction sixfractiondiainferior -25
+KPX fraction sevenfractiondiainferior 50
+KPX fraction eightfractiondiainferior 25
+KPX fraction ninefractiondiainferior 20
+KPX fi parenright 20
+KPX fi asterisk 30
+KPX fi comma -30
+KPX fi period -30
+KPX fi ellipsis -30
+KPX fi quotedblright 35
+KPX fi quoteright 35
+KPX fi quotesinglbase -30
+KPX fi quotedblbase -30
+KPX fl parenright 50
+KPX fl asterisk 60
+KPX fl comma -30
+KPX fl period -30
+KPX fl ellipsis -30
+KPX fl quotedblright 55
+KPX fl quoteright 55
+KPX fl quotesinglbase -30
+KPX fl quotedblbase -30
+KPX franc four -50
+KPX peseta four -80
+KPX rupiah three 30
+KPX rupiah seven 30
+KPX rupiah eight 20
+KPX rupiah nine 40
+KPX Gbreve eight 40
+KPX hyphenlining A -110
+KPX hyphenlining C 30
+KPX hyphenlining G 30
+KPX hyphenlining I -10
+KPX hyphenlining J -45
+KPX hyphenlining M -30
+KPX hyphenlining O 45
+KPX hyphenlining Q 20
+KPX hyphenlining S 5
+KPX hyphenlining T -95
+KPX hyphenlining V -90
+KPX hyphenlining W -95
+KPX hyphenlining X -140
+KPX hyphenlining Y -150
+KPX hyphenlining Z -30
+KPX hyphenlining AE -110
+KPX hyphenlining onelining -30
+KPX hyphenlining twolining -70
+KPX hyphenlining threelining -20
+KPX hyphenlining fourlining 10
+KPX hyphenlining fivelining -40
+KPX hyphenlining sevenlining -100
+KPX hyphenlining eightlining -15
+KPX hyphenlining ninelining -20
+KPX hyphenlining Haltone -80
+KPX hyphenlining Naltone -40
+KPX hyphenlining Saltone -100
+KPX hyphenlining Valtone -60
+KPX hyphenlining Waltone -60
+KPX endashlining A -110
+KPX endashlining C 30
+KPX endashlining G 30
+KPX endashlining I -10
+KPX endashlining J -45
+KPX endashlining M -30
+KPX endashlining O 45
+KPX endashlining Q 20
+KPX endashlining S 5
+KPX endashlining T -95
+KPX endashlining V -90
+KPX endashlining W -95
+KPX endashlining X -140
+KPX endashlining Y -150
+KPX endashlining Z -30
+KPX endashlining AE -110
+KPX endashlining onelining -30
+KPX endashlining twolining -70
+KPX endashlining threelining -20
+KPX endashlining fourlining 10
+KPX endashlining fivelining -40
+KPX endashlining sevenlining -100
+KPX endashlining eightlining -15
+KPX endashlining ninelining -20
+KPX endashlining Haltone -80
+KPX endashlining Naltone -40
+KPX endashlining Saltone -100
+KPX endashlining Valtone -60
+KPX endashlining Waltone -60
+KPX emdashlining A -110
+KPX emdashlining C 30
+KPX emdashlining G 30
+KPX emdashlining I -10
+KPX emdashlining J -45
+KPX emdashlining M -30
+KPX emdashlining O 45
+KPX emdashlining Q 20
+KPX emdashlining S 5
+KPX emdashlining T -95
+KPX emdashlining V -90
+KPX emdashlining W -95
+KPX emdashlining X -140
+KPX emdashlining Y -150
+KPX emdashlining Z -30
+KPX emdashlining AE -110
+KPX emdashlining onelining -30
+KPX emdashlining twolining -70
+KPX emdashlining threelining -20
+KPX emdashlining fourlining 10
+KPX emdashlining fivelining -40
+KPX emdashlining sevenlining -100
+KPX emdashlining eightlining -15
+KPX emdashlining ninelining -20
+KPX emdashlining Haltone -80
+KPX emdashlining Naltone -40
+KPX emdashlining Saltone -100
+KPX emdashlining Valtone -60
+KPX emdashlining Waltone -60
+KPX parenleftlining B 40
+KPX parenleftlining D 40
+KPX parenleftlining E 40
+KPX parenleftlining F 40
+KPX parenleftlining H 40
+KPX parenleftlining I 40
+KPX parenleftlining J 80
+KPX parenleftlining K 40
+KPX parenleftlining L 40
+KPX parenleftlining N 50
+KPX parenleftlining P 40
+KPX parenleftlining Q 10
+KPX parenleftlining R 40
+KPX parenleftlining T 60
+KPX parenleftlining U 40
+KPX parenleftlining V 40
+KPX parenleftlining W 40
+KPX parenleftlining X 40
+KPX parenleftlining Y 50
+KPX parenleftlining Z 30
+KPX parenleftlining twolining 10
+KPX parenleftlining fourlining -20
+KPX parenleftlining fivelining 10
+KPX parenleftlining sixlining -30
+KPX parenleftlining sevenlining 40
+KPX parenleftlining ninelining 10
+KPX parenleftlining Aaltone -60
+KPX parenleftlining Caltone -40
+KPX parenleftlining Daltone -40
+KPX parenleftlining Galtone -30
+KPX parenleftlining Haltone -10
+KPX parenleftlining Kaltone -40
+KPX parenleftlining Maltone -120
+KPX parenleftlining Naltone -100
+KPX parenleftlining Oaltone -30
+KPX parenleftlining Raltone -30
+KPX parenleftlining Valtone -40
+KPX parenleftlining Waltone -40
+KPX parenleftlining Xaltone -60
+KPX parenleftlining AEaltone -60
+KPX parenleftlining Halttwo -70
+KPX parenleftlining Malttwo -120
+KPX parenleftlining Oslashaltone -30
+KPX bracketleftlining twolining 10
+KPX bracketleftlining fourlining -20
+KPX bracketleftlining fivelining 10
+KPX bracketleftlining sixlining -30
+KPX bracketleftlining sevenlining 40
+KPX bracketleftlining ninelining 10
+KPX braceleftlining twolining 10
+KPX braceleftlining fourlining -20
+KPX braceleftlining fivelining 10
+KPX braceleftlining sixlining -30
+KPX braceleftlining sevenlining 40
+KPX braceleftlining ninelining 10
+KPX dollarlining sixlining -20
+KPX dollarlining ninelining -20
+KPX florinlining zerolining 70
+KPX florinlining onelining 110
+KPX florinlining twolining 90
+KPX florinlining threelining 70
+KPX florinlining fivelining 80
+KPX florinlining sixlining 50
+KPX florinlining sevenlining 130
+KPX florinlining eightlining 80
+KPX florinlining ninelining 90
+KPX franclining sevenlining 50
+KPX pesetalining onelining 70
+KPX pesetalining fourlining -30
+KPX pesetalining sevenlining 50
+KPX sterlinglining zerolining 80
+KPX sterlinglining onelining 100
+KPX sterlinglining twolining 100
+KPX sterlinglining threelining 200
+KPX sterlinglining fourlining 40
+KPX sterlinglining fivelining 200
+KPX sterlinglining sixlining 70
+KPX sterlinglining sevenlining 120
+KPX sterlinglining eightlining 100
+KPX sterlinglining ninelining 120
+KPX rupiahlining threelining -30
+KPX rupiahlining fivelining -20
+KPX rupiahlining sevenlining -40
+KPX rupiahlining ninelining -30
+KPX yenlining fourlining -50
+KPX yenlining sixlining -30
+KPX yenlining sevenlining 50
+KPX threelining threelining -30
+KPX fourlining hyphenlining -10
+KPX fourlining endashlining -10
+KPX fourlining emdashlining -10
+KPX fivelining parenrightlining 10
+KPX fivelining bracketrightlining 10
+KPX fivelining bracerightlining 10
+KPX fivelining tsuperior 40
+KPX sixlining hyphenlining -40
+KPX sixlining endashlining -40
+KPX sixlining emdashlining -40
+KPX sixlining parenrightlining 15
+KPX sixlining bracketrightlining 15
+KPX sixlining bracerightlining 15
+KPX sixlining sixlining -30
+KPX sevenlining comma -120
+KPX sevenlining period -120
+KPX sevenlining cent -30
+KPX sevenlining ellipsis -120
+KPX sevenlining quotesinglbase -120
+KPX sevenlining quotedblbase -120
+KPX sevenlining parenrightlining 40
+KPX sevenlining bracketrightlining 40
+KPX sevenlining bracerightlining 40
+KPX sevenlining onelining 20
+KPX sevenlining twolining 10
+KPX sevenlining fourlining -30
+KPX sevenlining sevenlining 10
+KPX sevenlining ninelining 15
+KPX sevenlining tsuperior 135
+KPX eightlining hyphenlining -20
+KPX eightlining endashlining -20
+KPX eightlining emdashlining -20
+KPX eightlining threelining -20
+KPX eightlining eightlining -20
+KPX ninelining parenrightlining -5
+KPX ninelining bracketrightlining -5
+KPX ninelining bracerightlining -5
+KPX ninelining twolining -30
+KPX ninelining threelining -25
+KPX ninelining fivelining -30
+KPX ninelining ninelining -30
+KPX onefractiondiasuperior fraction 30
+KPX sixfractiondiasuperior fraction 5
+KPX sevenfractiondiasuperior fraction -40
+KPX sevenfractiondiasuperior fourfractiondiasuperior -20
+KPX eightfractiondiasuperior fraction 30
+KPX eightfractiondiasuperior threefractiondiasuperior 10
+KPX ninefractiondiasuperior fraction -30
+KPX ninefractiondiasuperior twofractiondiasuperior -10
+KPX ninefractiondiasuperior fivefractiondiasuperior -10
+KPX sevenfractiondiainferior fourfractiondiainferior -20
+KPX eightfractiondiainferior threefractiondiainferior 10
+KPX ninefractiondiainferior twofractiondiainferior -10
+KPX ninefractiondiainferior fivefractiondiainferior -10
+KPX ampersandsmall Asmall -20
+KPX ampersandsmall Csmall 20
+KPX ampersandsmall Msmall -20
+KPX ampersandsmall Qsmall 10
+KPX ampersandsmall Tsmall 30
+KPX ampersandsmall Xsmall -20
+KPX ampersandsmall Ysmall 20
+KPX ampersandsmall AEsmall -20
+KPX ampersandsmall Tsmallalt 30
+KPX parenleftsmall zero 20
+KPX parenleftsmall two 10
+KPX parenleftsmall three 35
+KPX parenleftsmall six 20
+KPX parenleftsmall seven 40
+KPX parenleftsmall eight 20
+KPX parenleftsmall nine 10
+KPX parenleftsmall Ssmall -5
+KPX parenleftsmall Vsmall 20
+KPX parenleftsmall Wsmall 20
+KPX parenleftsmall Lsmallalt -10
+KPX bracketleftsmall zero 20
+KPX bracketleftsmall two 10
+KPX bracketleftsmall three 35
+KPX bracketleftsmall six 20
+KPX bracketleftsmall seven 40
+KPX bracketleftsmall eight 20
+KPX bracketleftsmall nine 10
+KPX Asmall parenright 40
+KPX Asmall hyphen 10
+KPX Asmall endash 10
+KPX Asmall emdash 10
+KPX Asmall quotedblright -10
+KPX Asmall quoteright -10
+KPX Asmall ampersandsmall 20
+KPX Asmall Jsmall -30
+KPX Asmall Tsmall -30
+KPX Asmall Usmall -10
+KPX Asmall Vsmall -40
+KPX Asmall Wsmall -40
+KPX Asmall Ysmall -20
+KPX Asmall Tsmallalt -40
+KPX Bsmall comma -20
+KPX Bsmall hyphen 10
+KPX Bsmall period -20
+KPX Bsmall ellipsis -20
+KPX Bsmall endash 10
+KPX Bsmall emdash 10
+KPX Bsmall quotedblright -10
+KPX Bsmall quoteright -10
+KPX Bsmall quotesinglbase -20
+KPX Bsmall quotedblbase -20
+KPX Bsmall ampersandsmall 30
+KPX Bsmall Msmall -10
+KPX Bsmall Lsmallalt -15
+KPX Csmall parenright 10
+KPX Csmall comma 10
+KPX Csmall hyphen 20
+KPX Csmall period 10
+KPX Csmall ellipsis 10
+KPX Csmall endash 20
+KPX Csmall emdash 20
+KPX Csmall quotedblright 20
+KPX Csmall quoteright 20
+KPX Csmall quotesinglbase 10
+KPX Csmall quotedblbase 10
+KPX Csmall ampersandsmall 30
+KPX Csmall parenrightsmall 20
+KPX Csmall Csmall -10
+KPX Csmall Gsmall -10
+KPX Csmall Osmall -10
+KPX Csmall OEsmall -10
+KPX Csmall Oslashsmall -10
+KPX Dsmall comma -40
+KPX Dsmall hyphen 50
+KPX Dsmall period -40
+KPX Dsmall ellipsis -40
+KPX Dsmall endash 50
+KPX Dsmall emdash 50
+KPX Dsmall quotedblright -10
+KPX Dsmall quoteright -10
+KPX Dsmall quotesinglbase -40
+KPX Dsmall quotedblbase -40
+KPX Dsmall ampersandsmall 30
+KPX Dsmall Msmall -10
+KPX Dsmall Lsmallalt -10
+KPX Esmall parenright 20
+KPX Esmall hyphen 20
+KPX Esmall endash 20
+KPX Esmall emdash 20
+KPX Esmall quotedblright 10
+KPX Esmall quoteright 10
+KPX Esmall ampersandsmall 30
+KPX Fsmall comma -70
+KPX Fsmall hyphen 20
+KPX Fsmall period -70
+KPX Fsmall ellipsis -70
+KPX Fsmall endash 20
+KPX Fsmall emdash 20
+KPX Fsmall quotedblright 30
+KPX Fsmall quoteright 30
+KPX Fsmall quotesinglbase -70
+KPX Fsmall quotedblbase -70
+KPX Fsmall Asmall -20
+KPX Fsmall Msmall -20
+KPX Fsmall AEsmall -20
+KPX Fsmall Lsmallalt -20
+KPX Gsmall parenright 10
+KPX Gsmall comma -30
+KPX Gsmall hyphen 30
+KPX Gsmall period -30
+KPX Gsmall ellipsis -30
+KPX Gsmall endash 30
+KPX Gsmall emdash 30
+KPX Gsmall quotesinglbase -30
+KPX Gsmall quotedblbase -30
+KPX Gsmall ampersandsmall 20
+KPX Gsmall parenrightsmall 10
+KPX Gsmall Jsmall -20
+KPX Gsmall Ysmall -20
+KPX Hsmall comma -30
+KPX Hsmall period -30
+KPX Hsmall colon -30
+KPX Hsmall semicolon -30
+KPX Hsmall ellipsis -30
+KPX Hsmall quotedblright 30
+KPX Hsmall quoteright 30
+KPX Hsmall quotesinglbase -30
+KPX Hsmall quotedblbase -30
+KPX Ismall comma -30
+KPX Ismall period -30
+KPX Ismall ellipsis -30
+KPX Ismall quotedblright 30
+KPX Ismall quoteright 30
+KPX Ismall quotesinglbase -30
+KPX Ismall quotedblbase -30
+KPX Jsmall comma -70
+KPX Jsmall hyphen 40
+KPX Jsmall period -70
+KPX Jsmall colon -20
+KPX Jsmall semicolon -20
+KPX Jsmall ellipsis -70
+KPX Jsmall endash 40
+KPX Jsmall emdash 40
+KPX Jsmall quotedblright 10
+KPX Jsmall quoteright 10
+KPX Jsmall quotesinglbase -70
+KPX Jsmall quotedblbase -70
+KPX Jsmall parenrightsmall -10
+KPX Jsmall Usmall -10
+KPX Jsmall Lsmallalt -20
+KPX Jsmall Tsmallalt -10
+KPX Ksmall ampersand -20
+KPX Ksmall parenright 10
+KPX Ksmall hyphen -40
+KPX Ksmall endash -40
+KPX Ksmall emdash -40
+KPX Ksmall quotedblright 50
+KPX Ksmall quoteright 50
+KPX Ksmall parenrightsmall 50
+KPX Ksmall Csmall -20
+KPX Ksmall Gsmall -20
+KPX Ksmall Osmall -10
+KPX Ksmall Ssmall -20
+KPX Ksmall Usmall -10
+KPX Ksmall OEsmall -10
+KPX Ksmall Oslashsmall -10
+KPX Ksmall Esmallalt -10
+KPX Lsmall parenright 10
+KPX Lsmall quotedblright -80
+KPX Lsmall quoteright -80
+KPX Lsmall ampersandsmall 30
+KPX Lsmall Jsmall -50
+KPX Lsmall Tsmall -60
+KPX Lsmall Usmall -20
+KPX Lsmall Vsmall -40
+KPX Lsmall Wsmall -40
+KPX Lsmall Ysmall -50
+KPX Lsmall Tsmallalt -60
+KPX Msmall ampersand -5
+KPX Msmall comma -20
+KPX Msmall period -20
+KPX Msmall ellipsis -20
+KPX Msmall quotedblright 30
+KPX Msmall quoteright 30
+KPX Msmall quotesinglbase -20
+KPX Msmall quotedblbase -20
+KPX Msmall Csmall -10
+KPX Msmall Gsmall -10
+KPX Msmall Jsmall -30
+KPX Msmall Osmall -10
+KPX Msmall Ssmall -10
+KPX Msmall Tsmall -20
+KPX Msmall Usmall -10
+KPX Msmall Ysmall -20
+KPX Msmall OEsmall -10
+KPX Msmall Oslashsmall -10
+KPX Msmall Tsmallalt -10
+KPX Nsmall comma -55
+KPX Nsmall period -55
+KPX Nsmall colon -10
+KPX Nsmall semicolon -10
+KPX Nsmall ellipsis -55
+KPX Nsmall quotedblright 20
+KPX Nsmall quoteright 20
+KPX Nsmall quotesinglbase -55
+KPX Nsmall quotedblbase -55
+KPX Nsmall Asmall -10
+KPX Nsmall Jsmall -20
+KPX Nsmall Msmall -10
+KPX Nsmall Nsmall -10
+KPX Nsmall Qsmall -20
+KPX Nsmall Ssmall -20
+KPX Nsmall Tsmall -20
+KPX Nsmall Usmall -10
+KPX Nsmall Ysmall -10
+KPX Nsmall Zsmall -10
+KPX Nsmall AEsmall -10
+KPX Nsmall Lsmallalt -20
+KPX Nsmall Tsmallalt -15
+KPX Osmall comma -40
+KPX Osmall hyphen 50
+KPX Osmall period -40
+KPX Osmall ellipsis -40
+KPX Osmall endash 50
+KPX Osmall emdash 50
+KPX Osmall quotedblright -10
+KPX Osmall quoteright -10
+KPX Osmall quotesinglbase -40
+KPX Osmall quotedblbase -40
+KPX Psmall comma -110
+KPX Psmall hyphen 20
+KPX Psmall period -110
+KPX Psmall colon -10
+KPX Psmall semicolon -10
+KPX Psmall ellipsis -110
+KPX Psmall endash 20
+KPX Psmall emdash 20
+KPX Psmall quotesinglbase -110
+KPX Psmall quotedblbase -110
+KPX Psmall Asmall -20
+KPX Psmall Msmall -20
+KPX Psmall Ssmall -10
+KPX Psmall AEsmall -20
+KPX Psmall Lsmallalt -10
+KPX Qsmall comma -70
+KPX Qsmall hyphen 45
+KPX Qsmall period -70
+KPX Qsmall ellipsis -70
+KPX Qsmall endash 45
+KPX Qsmall emdash 45
+KPX Qsmall quotedblright -20
+KPX Qsmall quoteright -20
+KPX Qsmall quotesinglbase -70
+KPX Qsmall quotedblbase -70
+KPX Qsmall ampersandsmall 20
+KPX Qsmall Lsmallalt -20
+KPX Rsmall ampersand -10
+KPX Rsmall comma 10
+KPX Rsmall hyphen -10
+KPX Rsmall period 10
+KPX Rsmall ellipsis 10
+KPX Rsmall endash -10
+KPX Rsmall emdash -10
+KPX Rsmall quotedblright -20
+KPX Rsmall quoteright -20
+KPX Rsmall quotesinglbase 10
+KPX Rsmall quotedblbase 10
+KPX Rsmall Csmall -15
+KPX Rsmall Gsmall -15
+KPX Rsmall Osmall -15
+KPX Rsmall Ssmall -15
+KPX Rsmall Tsmall -20
+KPX Rsmall Usmall -15
+KPX Rsmall Vsmall -15
+KPX Rsmall Wsmall -15
+KPX Rsmall Ysmall -20
+KPX Rsmall OEsmall -15
+KPX Rsmall Oslashsmall -15
+KPX Rsmall Tsmallalt -20
+KPX Ssmall comma -20
+KPX Ssmall hyphen 30
+KPX Ssmall period -20
+KPX Ssmall ellipsis -20
+KPX Ssmall endash 30
+KPX Ssmall emdash 30
+KPX Ssmall quotedblright 20
+KPX Ssmall quoteright 20
+KPX Ssmall quotesinglbase -20
+KPX Ssmall quotedblbase -20
+KPX Ssmall ampersandsmall 20
+KPX Ssmall parenrightsmall 10
+KPX Ssmall Jsmall -10
+KPX Ssmall Esmallalt 20
+KPX Ssmall Tsmallalt -5
+KPX Tsmall space -30
+KPX Tsmall parenright 10
+KPX Tsmall comma -80
+KPX Tsmall hyphen -30
+KPX Tsmall period -80
+KPX Tsmall ellipsis -80
+KPX Tsmall endash -30
+KPX Tsmall emdash -30
+KPX Tsmall quotedblright 50
+KPX Tsmall quoteright 50
+KPX Tsmall quotesinglbase -80
+KPX Tsmall quotedblbase -80
+KPX Tsmall Asmall -35
+KPX Tsmall Msmall -20
+KPX Tsmall Ssmall -15
+KPX Tsmall AEsmall -35
+KPX Tsmall Lsmallalt -30
+KPX Usmall comma -75
+KPX Usmall hyphen 10
+KPX Usmall period -75
+KPX Usmall colon -10
+KPX Usmall semicolon -10
+KPX Usmall ellipsis -75
+KPX Usmall endash 10
+KPX Usmall emdash 10
+KPX Usmall quotedblright 60
+KPX Usmall quoteright 60
+KPX Usmall quotesinglbase -75
+KPX Usmall quotedblbase -75
+KPX Usmall Asmall -10
+KPX Usmall Msmall -5
+KPX Usmall AEsmall -10
+KPX Usmall Esmallalt 10
+KPX Usmall Lsmallalt -10
+KPX Vsmall space -20
+KPX Vsmall ampersand -10
+KPX Vsmall comma -180
+KPX Vsmall hyphen -15
+KPX Vsmall period -180
+KPX Vsmall colon -10
+KPX Vsmall semicolon -10
+KPX Vsmall ellipsis -180
+KPX Vsmall endash -15
+KPX Vsmall emdash -15
+KPX Vsmall quotedblright 80
+KPX Vsmall quoteright 80
+KPX Vsmall quotesinglbase -180
+KPX Vsmall quotedblbase -180
+KPX Vsmall parenrightsmall 10
+KPX Vsmall Asmall -50
+KPX Vsmall Csmall -20
+KPX Vsmall Gsmall -20
+KPX Vsmall Msmall -20
+KPX Vsmall Ssmall -15
+KPX Vsmall AEsmall -50
+KPX Vsmall Lsmallalt -30
+KPX Wsmall space -20
+KPX Wsmall ampersand -10
+KPX Wsmall comma -160
+KPX Wsmall hyphen -15
+KPX Wsmall period -160
+KPX Wsmall colon -10
+KPX Wsmall semicolon -10
+KPX Wsmall ellipsis -160
+KPX Wsmall endash -15
+KPX Wsmall emdash -15
+KPX Wsmall quotedblright 80
+KPX Wsmall quoteright 80
+KPX Wsmall quotesinglbase -160
+KPX Wsmall quotedblbase -160
+KPX Wsmall parenrightsmall 10
+KPX Wsmall Asmall -50
+KPX Wsmall Csmall -20
+KPX Wsmall Gsmall -20
+KPX Wsmall Msmall -20
+KPX Wsmall Ssmall -15
+KPX Wsmall AEsmall -50
+KPX Wsmall Lsmallalt -30
+KPX Xsmall ampersand -20
+KPX Xsmall parenright 20
+KPX Xsmall comma -20
+KPX Xsmall hyphen -40
+KPX Xsmall period -20
+KPX Xsmall ellipsis -20
+KPX Xsmall endash -40
+KPX Xsmall emdash -40
+KPX Xsmall quotedblright 40
+KPX Xsmall quoteright 40
+KPX Xsmall quotesinglbase -20
+KPX Xsmall quotedblbase -20
+KPX Xsmall Csmall -15
+KPX Xsmall Gsmall -15
+KPX Xsmall Osmall -20
+KPX Xsmall Qsmall -15
+KPX Xsmall Ssmall -20
+KPX Xsmall OEsmall -20
+KPX Xsmall Oslashsmall -20
+KPX Ysmall comma -100
+KPX Ysmall hyphen -60
+KPX Ysmall period -100
+KPX Ysmall ellipsis -100
+KPX Ysmall endash -60
+KPX Ysmall emdash -60
+KPX Ysmall quotedblright 40
+KPX Ysmall quoteright 40
+KPX Ysmall quotesinglbase -100
+KPX Ysmall quotedblbase -100
+KPX Ysmall ampersandsmall -10
+KPX Ysmall Asmall -30
+KPX Ysmall Msmall -30
+KPX Ysmall Ssmall -15
+KPX Ysmall AEsmall -30
+KPX Ysmall Lsmallalt -30
+KPX Zsmall parenright 30
+KPX Zsmall hyphen 30
+KPX Zsmall colon 15
+KPX Zsmall semicolon 15
+KPX Zsmall endash 30
+KPX Zsmall emdash 30
+KPX Zsmall quotedblright 30
+KPX Zsmall quoteright 30
+KPX Zsmall ampersandsmall 20
+KPX braceleftsmall zero 20
+KPX braceleftsmall two 10
+KPX braceleftsmall three 35
+KPX braceleftsmall six 20
+KPX braceleftsmall seven 40
+KPX braceleftsmall eight 20
+KPX braceleftsmall nine 10
+KPX sterlingsmall three 140
+KPX sterlingsmall five 50
+KPX sterlingsmall seven 110
+KPX sterlingsmall nine 70
+KPX yensmall three 30
+KPX yensmall four -40
+KPX yensmall seven 50
+KPX AEsmall parenright 20
+KPX AEsmall hyphen 20
+KPX AEsmall endash 20
+KPX AEsmall emdash 20
+KPX AEsmall quotedblright 10
+KPX AEsmall quoteright 10
+KPX AEsmall ampersandsmall 30
+KPX florinsmall seven 50
+KPX OEsmall parenright 20
+KPX OEsmall hyphen 20
+KPX OEsmall endash 20
+KPX OEsmall emdash 20
+KPX OEsmall quotedblright 10
+KPX OEsmall quoteright 10
+KPX OEsmall ampersandsmall 30
+KPX Oslashsmall comma -40
+KPX Oslashsmall hyphen 50
+KPX Oslashsmall period -40
+KPX Oslashsmall ellipsis -40
+KPX Oslashsmall endash 50
+KPX Oslashsmall emdash 50
+KPX Oslashsmall quotedblright -10
+KPX Oslashsmall quoteright -10
+KPX Oslashsmall quotesinglbase -40
+KPX Oslashsmall quotedblbase -40
+KPX francsmall four -30
+KPX francsmall seven 50
+KPX pesetasmall four -70
+KPX pesetasmall six 20
+KPX pesetasmall seven 50
+KPX thorn comma -55
+KPX thorn period -55
+KPX thorn colon -25
+KPX thorn semicolon -25
+KPX thorn ellipsis -55
+KPX thorn quotedblright -15
+KPX thorn quoteright -15
+KPX thorn quotesinglbase -55
+KPX thorn quotedblbase -55
+KPX fb comma -85
+KPX fb period -85
+KPX fb colon -15
+KPX fb semicolon -15
+KPX fb a -20
+KPX fb d -10
+KPX fb ae -20
+KPX fb ellipsis -85
+KPX fb quotesinglbase -85
+KPX fb quotedblbase -85
+KPX fb as -20
+KPX fb aelinefinalswash -20
+KPX ff exclam 90
+KPX ff parenright 170
+KPX ff asterisk 140
+KPX ff comma -85
+KPX ff hyphen -40
+KPX ff period -85
+KPX ff question 80
+KPX ff a -40
+KPX ff ae -40
+KPX ff ellipsis -85
+KPX ff endash -40
+KPX ff emdash -40
+KPX ff quotedblright 140
+KPX ff quoteright 140
+KPX ff quotesinglbase -85
+KPX ff quotedblbase -85
+KPX ff as -40
+KPX ff aelinefinalswash -40
+KPX fh comma -75
+KPX fh period -75
+KPX fh colon -25
+KPX fh semicolon -25
+KPX fh a -20
+KPX fh ae -20
+KPX fh ellipsis -75
+KPX fh quotesinglbase -75
+KPX fh quotedblbase -75
+KPX fh as -20
+KPX fh aelinefinalswash -20
+KPX fj asterisk 30
+KPX fj comma -80
+KPX fj period -80
+KPX fj colon -45
+KPX fj semicolon -45
+KPX fj ellipsis -80
+KPX fj quotedblright 35
+KPX fj quoteright 35
+KPX fj quotesinglbase -80
+KPX fj quotedblbase -80
+KPX fr asterisk 50
+KPX fr comma -135
+KPX fr hyphen -45
+KPX fr period -135
+KPX fr a -55
+KPX fr d -20
+KPX fr f 30
+KPX fr n 20
+KPX fr q -30
+KPX fr u 20
+KPX fr v 20
+KPX fr w 20
+KPX fr y 20
+KPX fr ae -55
+KPX fr ellipsis -135
+KPX fr endash -45
+KPX fr emdash -45
+KPX fr quotedblright 40
+KPX fr quoteright 40
+KPX fr fi 30
+KPX fr fl 30
+KPX fr quotesinglbase -135
+KPX fr quotedblbase -135
+KPX fr fb 30
+KPX fr ff 30
+KPX fr fh 30
+KPX fr fj 30
+KPX fr fk 30
+KPX fr fklinefinalswash 30
+KPX fr fr 30
+KPX fr ft 30
+KPX fr ftlinefinalswash 30
+KPX fr ffb 30
+KPX fr ffh 30
+KPX fr ffi 30
+KPX fr ffk 30
+KPX fr ffklinefinalswash 30
+KPX fr ffl 30
+KPX fr ffr 30
+KPX fr as -55
+KPX fr ns 20
+KPX fr nt 20
+KPX fr ntlinefinalswash 20
+KPX fr aelinefinalswash -55
+KPX fr nlinefinalswash 20
+KPX fr us 20
+KPX ft asterisk 50
+KPX ft comma -30
+KPX ft period -30
+KPX ft ellipsis -30
+KPX ft quotedblright 20
+KPX ft quoteright 20
+KPX ft quotesinglbase -30
+KPX ft quotedblbase -30
+KPX ffb comma -85
+KPX ffb period -85
+KPX ffb colon -15
+KPX ffb semicolon -15
+KPX ffb a -20
+KPX ffb d -10
+KPX ffb ae -20
+KPX ffb ellipsis -85
+KPX ffb quotesinglbase -85
+KPX ffb quotedblbase -85
+KPX ffb as -20
+KPX ffb aelinefinalswash -20
+KPX ffh comma -75
+KPX ffh period -75
+KPX ffh colon -25
+KPX ffh semicolon -25
+KPX ffh a -20
+KPX ffh ae -20
+KPX ffh ellipsis -75
+KPX ffh quotesinglbase -75
+KPX ffh quotedblbase -75
+KPX ffh as -20
+KPX ffh aelinefinalswash -20
+KPX ffi parenright 20
+KPX ffi asterisk 30
+KPX ffi comma -30
+KPX ffi period -30
+KPX ffi ellipsis -30
+KPX ffi quotedblright 35
+KPX ffi quoteright 35
+KPX ffi quotesinglbase -30
+KPX ffi quotedblbase -30
+KPX ffl parenright 50
+KPX ffl asterisk 60
+KPX ffl comma -30
+KPX ffl period -30
+KPX ffl ellipsis -30
+KPX ffl quotedblright 55
+KPX ffl quoteright 55
+KPX ffl quotesinglbase -30
+KPX ffl quotedblbase -30
+KPX ffr asterisk 50
+KPX ffr comma -135
+KPX ffr hyphen -45
+KPX ffr period -135
+KPX ffr a -55
+KPX ffr d -20
+KPX ffr f 30
+KPX ffr n 20
+KPX ffr q -30
+KPX ffr u 20
+KPX ffr v 20
+KPX ffr w 20
+KPX ffr y 20
+KPX ffr ae -55
+KPX ffr ellipsis -135
+KPX ffr endash -45
+KPX ffr emdash -45
+KPX ffr quotedblright 40
+KPX ffr quoteright 40
+KPX ffr fi 30
+KPX ffr fl 30
+KPX ffr quotesinglbase -135
+KPX ffr quotedblbase -135
+KPX ffr fb 30
+KPX ffr ff 30
+KPX ffr fh 30
+KPX ffr fj 30
+KPX ffr fk 30
+KPX ffr fklinefinalswash 30
+KPX ffr fr 30
+KPX ffr ft 30
+KPX ffr ftlinefinalswash 30
+KPX ffr ffb 30
+KPX ffr ffh 30
+KPX ffr ffi 30
+KPX ffr ffk 30
+KPX ffr ffklinefinalswash 30
+KPX ffr ffl 30
+KPX ffr ffr 30
+KPX ffr as -55
+KPX ffr ns 20
+KPX ffr nt 20
+KPX ffr ntlinefinalswash 20
+KPX ffr aelinefinalswash -55
+KPX ffr nlinefinalswash 20
+KPX ffr us 20
+KPX gg parenright 30
+KPX gg comma -50
+KPX gg period -50
+KPX gg a -20
+KPX gg n 20
+KPX gg r 20
+KPX gg y 35
+KPX gg ae -20
+KPX gg ellipsis -50
+KPX gg quotedblright 20
+KPX gg quoteright 20
+KPX gg quotesinglbase -50
+KPX gg quotedblbase -50
+KPX gg as -20
+KPX gg ns 20
+KPX gg nt 20
+KPX gg ntlinefinalswash 20
+KPX gg aelinefinalswash -20
+KPX gg nlinefinalswash 20
+KPX ij asterisk 30
+KPX ij comma -80
+KPX ij period -80
+KPX ij colon -45
+KPX ij semicolon -45
+KPX ij ellipsis -80
+KPX ij quotedblright 35
+KPX ij quoteright 35
+KPX ij quotesinglbase -80
+KPX ij quotedblbase -80
+KPX ll parenright 50
+KPX ll asterisk 60
+KPX ll comma -30
+KPX ll period -30
+KPX ll ellipsis -30
+KPX ll quotedblright 55
+KPX ll quoteright 55
+KPX ll quotesinglbase -30
+KPX ll quotedblbase -30
+KPX Th comma -75
+KPX Th period -75
+KPX Th colon -25
+KPX Th semicolon -25
+KPX Th a -20
+KPX Th ae -20
+KPX Th ellipsis -75
+KPX Th quotesinglbase -75
+KPX Th quotedblbase -75
+KPX Th as -20
+KPX Th aelinefinalswash -20
+KPX as comma -30
+KPX as period -30
+KPX as ellipsis -30
+KPX as quotedblright 35
+KPX as quoteright 35
+KPX as quotesinglbase -30
+KPX as quotedblbase -30
+KPX es comma -30
+KPX es period -30
+KPX es ellipsis -30
+KPX es quotedblright 35
+KPX es quoteright 35
+KPX es quotesinglbase -30
+KPX es quotedblbase -30
+KPX ct asterisk 50
+KPX ct comma -30
+KPX ct period -30
+KPX ct ellipsis -30
+KPX ct quotedblright 20
+KPX ct quoteright 20
+KPX ct quotesinglbase -30
+KPX ct quotedblbase -30
+KPX is comma -30
+KPX is period -30
+KPX is ellipsis -30
+KPX is quotedblright 35
+KPX is quoteright 35
+KPX is quotesinglbase -30
+KPX is quotedblbase -30
+KPX dotlessis comma -30
+KPX dotlessis period -30
+KPX dotlessis ellipsis -30
+KPX dotlessis quotedblright 35
+KPX dotlessis quoteright 35
+KPX dotlessis quotesinglbase -30
+KPX dotlessis quotedblbase -30
+KPX ns comma -30
+KPX ns period -30
+KPX ns ellipsis -30
+KPX ns quotedblright 35
+KPX ns quoteright 35
+KPX ns quotesinglbase -30
+KPX ns quotedblbase -30
+KPX nt asterisk 50
+KPX nt comma -30
+KPX nt period -30
+KPX nt ellipsis -30
+KPX nt quotedblright 20
+KPX nt quoteright 20
+KPX nt quotesinglbase -30
+KPX nt quotedblbase -30
+KPX st asterisk 50
+KPX st comma -30
+KPX st period -30
+KPX st ellipsis -30
+KPX st quotedblright 20
+KPX st quoteright 20
+KPX st quotesinglbase -30
+KPX st quotedblbase -30
+KPX tt asterisk 50
+KPX tt comma -30
+KPX tt period -30
+KPX tt ellipsis -30
+KPX tt quotedblright 20
+KPX tt quoteright 20
+KPX tt quotesinglbase -30
+KPX tt quotedblbase -30
+KPX slongb comma -85
+KPX slongb period -85
+KPX slongb colon -15
+KPX slongb semicolon -15
+KPX slongb a -20
+KPX slongb d -10
+KPX slongb ae -20
+KPX slongb ellipsis -85
+KPX slongb quotesinglbase -85
+KPX slongb quotedblbase -85
+KPX slongb as -20
+KPX slongb aelinefinalswash -20
+KPX slongh comma -75
+KPX slongh period -75
+KPX slongh colon -25
+KPX slongh semicolon -25
+KPX slongh a -20
+KPX slongh ae -20
+KPX slongh ellipsis -75
+KPX slongh quotesinglbase -75
+KPX slongh quotedblbase -75
+KPX slongh as -20
+KPX slongh aelinefinalswash -20
+KPX slongi parenright 20
+KPX slongi asterisk 30
+KPX slongi comma -30
+KPX slongi period -30
+KPX slongi ellipsis -30
+KPX slongi quotedblright 35
+KPX slongi quoteright 35
+KPX slongi quotesinglbase -30
+KPX slongi quotedblbase -30
+KPX slongl parenright 50
+KPX slongl asterisk 60
+KPX slongl comma -30
+KPX slongl period -30
+KPX slongl ellipsis -30
+KPX slongl quotedblright 55
+KPX slongl quoteright 55
+KPX slongl quotesinglbase -30
+KPX slongl quotedblbase -30
+KPX slongt asterisk 50
+KPX slongt comma -30
+KPX slongt period -30
+KPX slongt ellipsis -30
+KPX slongt quotedblright 20
+KPX slongt quoteright 20
+KPX slongt quotesinglbase -30
+KPX slongt quotedblbase -30
+KPX dblslongi parenright 20
+KPX dblslongi asterisk 30
+KPX dblslongi comma -30
+KPX dblslongi period -30
+KPX dblslongi ellipsis -30
+KPX dblslongi quotedblright 35
+KPX dblslongi quoteright 35
+KPX dblslongi quotesinglbase -30
+KPX dblslongi quotedblbase -30
+KPX Aaltone exclam 50
+KPX Aaltone parenright 40
+KPX Aaltone colon 30
+KPX Aaltone semicolon 30
+KPX Aaltone question 10
+KPX Aaltone C -20
+KPX Aaltone G -30
+KPX Aaltone T -10
+KPX Aaltone V -40
+KPX Aaltone W -40
+KPX Aaltone a 35
+KPX Aaltone b 35
+KPX Aaltone c 10
+KPX Aaltone d 15
+KPX Aaltone e -10
+KPX Aaltone f -15
+KPX Aaltone g 10
+KPX Aaltone h 25
+KPX Aaltone i 15
+KPX Aaltone j 5
+KPX Aaltone k 25
+KPX Aaltone l 30
+KPX Aaltone m 30
+KPX Aaltone n 30
+KPX Aaltone o -10
+KPX Aaltone p 15
+KPX Aaltone r 25
+KPX Aaltone s 25
+KPX Aaltone t 15
+KPX Aaltone u -10
+KPX Aaltone v -55
+KPX Aaltone w -60
+KPX Aaltone y -40
+KPX Aaltone z 15
+KPX Aaltone ae 35
+KPX Aaltone oslash -10
+KPX Aaltone oe -10
+KPX Aaltone quotedblright -20
+KPX Aaltone quoteright -20
+KPX Aaltone fi -15
+KPX Aaltone fl -15
+KPX Aaltone parenrightlining 40
+KPX Aaltone Asmall 25
+KPX Aaltone Bsmall 15
+KPX Aaltone Csmall 5
+KPX Aaltone Dsmall 15
+KPX Aaltone Esmall 15
+KPX Aaltone Fsmall 15
+KPX Aaltone Gsmall 5
+KPX Aaltone Hsmall 15
+KPX Aaltone Ismall 15
+KPX Aaltone Jsmall -15
+KPX Aaltone Ksmall 15
+KPX Aaltone Lsmall 15
+KPX Aaltone Msmall 5
+KPX Aaltone Nsmall 15
+KPX Aaltone Osmall 10
+KPX Aaltone Psmall 15
+KPX Aaltone Qsmall 10
+KPX Aaltone Rsmall 15
+KPX Aaltone Tsmall -15
+KPX Aaltone Vsmall -5
+KPX Aaltone Wsmall -5
+KPX Aaltone Xsmall 5
+KPX Aaltone Ysmall -25
+KPX Aaltone Zsmall 15
+KPX Aaltone AEsmall 25
+KPX Aaltone OEsmall 10
+KPX Aaltone Oslashsmall 10
+KPX Aaltone thorn 15
+KPX Aaltone fb -15
+KPX Aaltone ff -15
+KPX Aaltone fh -15
+KPX Aaltone fj -15
+KPX Aaltone fk -15
+KPX Aaltone fklinefinalswash -15
+KPX Aaltone fr -15
+KPX Aaltone ft -15
+KPX Aaltone ftlinefinalswash -15
+KPX Aaltone ffb -15
+KPX Aaltone ffh -15
+KPX Aaltone ffi -15
+KPX Aaltone ffk -15
+KPX Aaltone ffklinefinalswash -15
+KPX Aaltone ffl -15
+KPX Aaltone ffr -15
+KPX Aaltone gg 10
+KPX Aaltone ij 15
+KPX Aaltone ll 30
+KPX Aaltone Th -15
+KPX Aaltone as 35
+KPX Aaltone es -10
+KPX Aaltone ct 10
+KPX Aaltone ctlinefinalswash 10
+KPX Aaltone is 15
+KPX Aaltone dotlessis 15
+KPX Aaltone ns 30
+KPX Aaltone nt 30
+KPX Aaltone ntlinefinalswash 30
+KPX Aaltone st 25
+KPX Aaltone stlinefinalswash 25
+KPX Aaltone tt 15
+KPX Aaltone ttlinefinalswash 15
+KPX Aaltone aelinefinalswash 35
+KPX Aaltone oelinefinalswash -10
+KPX Aaltone Aaltone -70
+KPX Aaltone Baltone -80
+KPX Aaltone Daltone -90
+KPX Aaltone Ealtone -10
+KPX Aaltone Faltone -20
+KPX Aaltone Haltone -60
+KPX Aaltone Kaltone -110
+KPX Aaltone Maltone -115
+KPX Aaltone Naltone -100
+KPX Aaltone Paltone -20
+KPX Aaltone Raltone -80
+KPX Aaltone Taltone -15
+KPX Aaltone Valtone -120
+KPX Aaltone Waltone -120
+KPX Aaltone Xaltone -85
+KPX Aaltone Zaltone -10
+KPX Aaltone AEaltone -70
+KPX Aaltone elinefinalswash -10
+KPX Aaltone klinefinalswash 25
+KPX Aaltone mlinefinalswash 30
+KPX Aaltone nlinefinalswash 30
+KPX Aaltone tlinefinalswash 15
+KPX Aaltone zlinefinalswash 15
+KPX Aaltone Esmallalt 5
+KPX Aaltone Lsmallalt 25
+KPX Aaltone Tsmallalt -25
+KPX Aaltone sp 25
+KPX Aaltone us -10
+KPX Baltone parenright 40
+KPX Baltone comma -35
+KPX Baltone period -35
+KPX Baltone A -60
+KPX Baltone C -20
+KPX Baltone G -20
+KPX Baltone J 20
+KPX Baltone M -30
+KPX Baltone O -25
+KPX Baltone Q -25
+KPX Baltone T -30
+KPX Baltone U -10
+KPX Baltone V -30
+KPX Baltone W -70
+KPX Baltone X -20
+KPX Baltone a -15
+KPX Baltone b -15
+KPX Baltone c -15
+KPX Baltone d -15
+KPX Baltone e -15
+KPX Baltone h -15
+KPX Baltone i -15
+KPX Baltone j -15
+KPX Baltone l -15
+KPX Baltone o -15
+KPX Baltone r -15
+KPX Baltone u -15
+KPX Baltone v -20
+KPX Baltone w -35
+KPX Baltone y -15
+KPX Baltone AE -60
+KPX Baltone ae -15
+KPX Baltone oslash -15
+KPX Baltone ellipsis -35
+KPX Baltone oe -15
+KPX Baltone quotedblright -15
+KPX Baltone quoteright -15
+KPX Baltone quotesinglbase -35
+KPX Baltone quotedblbase -35
+KPX Baltone hyphenlining -50
+KPX Baltone endashlining -50
+KPX Baltone emdashlining -50
+KPX Baltone Asmall -15
+KPX Baltone Esmall -15
+KPX Baltone Hsmall -15
+KPX Baltone Ismall -15
+KPX Baltone Jsmall -70
+KPX Baltone Lsmall -15
+KPX Baltone Osmall -5
+KPX Baltone Rsmall -15
+KPX Baltone Usmall -15
+KPX Baltone Wsmall -20
+KPX Baltone Ysmall -15
+KPX Baltone AEsmall -15
+KPX Baltone OEsmall -5
+KPX Baltone Oslashsmall -5
+KPX Baltone ij -15
+KPX Baltone ll -15
+KPX Baltone Th -50
+KPX Baltone as -15
+KPX Baltone es -15
+KPX Baltone ct -15
+KPX Baltone ctlinefinalswash -15
+KPX Baltone is -15
+KPX Baltone dotlessis -15
+KPX Baltone aelinefinalswash -15
+KPX Baltone oelinefinalswash -15
+KPX Baltone Aaltone -100
+KPX Baltone Baltone -65
+KPX Baltone Daltone -90
+KPX Baltone Ealtone -20
+KPX Baltone Faltone -30
+KPX Baltone Galtone -20
+KPX Baltone Haltone -70
+KPX Baltone Kaltone -105
+KPX Baltone Maltone -120
+KPX Baltone Naltone -110
+KPX Baltone Oaltone -25
+KPX Baltone Paltone -50
+KPX Baltone Raltone -100
+KPX Baltone Taltone -50
+KPX Baltone Valtone -120
+KPX Baltone Waltone -120
+KPX Baltone Xaltone -80
+KPX Baltone Zaltone -20
+KPX Baltone AEaltone -100
+KPX Baltone Halttwo -50
+KPX Baltone Malttwo -120
+KPX Baltone Oslashaltone -25
+KPX Baltone elinefinalswash -15
+KPX Baltone Esmallalt 35
+KPX Baltone Lsmallalt -55
+KPX Baltone us -15
+KPX Caltone parenright 40
+KPX Caltone V -40
+KPX Caltone W -40
+KPX Caltone a -20
+KPX Caltone e -20
+KPX Caltone h -20
+KPX Caltone i -20
+KPX Caltone l -20
+KPX Caltone o -20
+KPX Caltone r -20
+KPX Caltone t -20
+KPX Caltone u -20
+KPX Caltone v -60
+KPX Caltone w -60
+KPX Caltone y -50
+KPX Caltone z -20
+KPX Caltone ae -20
+KPX Caltone oslash -20
+KPX Caltone oe -20
+KPX Caltone parenrightlining 40
+KPX Caltone Esmall -30
+KPX Caltone Hsmall -30
+KPX Caltone Ismall -30
+KPX Caltone Jsmall -20
+KPX Caltone Lsmall -30
+KPX Caltone Msmall -10
+KPX Caltone Nsmall -30
+KPX Caltone Osmall -30
+KPX Caltone Rsmall -30
+KPX Caltone Ssmall -30
+KPX Caltone Tsmall -35
+KPX Caltone Usmall -40
+KPX Caltone Vsmall -30
+KPX Caltone Wsmall -30
+KPX Caltone Ysmall -50
+KPX Caltone Zsmall -30
+KPX Caltone OEsmall -30
+KPX Caltone Oslashsmall -30
+KPX Caltone ij -20
+KPX Caltone ll -20
+KPX Caltone as -20
+KPX Caltone es -20
+KPX Caltone is -20
+KPX Caltone dotlessis -20
+KPX Caltone tt -20
+KPX Caltone ttlinefinalswash -20
+KPX Caltone aelinefinalswash -20
+KPX Caltone oelinefinalswash -20
+KPX Caltone Aaltone -80
+KPX Caltone Baltone -50
+KPX Caltone Daltone -70
+KPX Caltone Kaltone -90
+KPX Caltone Maltone -110
+KPX Caltone Naltone -90
+KPX Caltone Paltone -20
+KPX Caltone Raltone -50
+KPX Caltone Valtone -100
+KPX Caltone Waltone -80
+KPX Caltone Xaltone -100
+KPX Caltone Zaltone -20
+KPX Caltone AEaltone -80
+KPX Caltone Malttwo -40
+KPX Caltone elinefinalswash -20
+KPX Caltone tlinefinalswash -20
+KPX Caltone zlinefinalswash -20
+KPX Caltone Esmallalt -15
+KPX Caltone Lsmallalt -20
+KPX Caltone Tsmallalt -40
+KPX Caltone us -20
+KPX Daltone comma -90
+KPX Daltone hyphen 50
+KPX Daltone period -90
+KPX Daltone question 20
+KPX Daltone A -75
+KPX Daltone B -20
+KPX Daltone D -20
+KPX Daltone E -20
+KPX Daltone F -20
+KPX Daltone H -20
+KPX Daltone I -20
+KPX Daltone K -20
+KPX Daltone L -20
+KPX Daltone M -45
+KPX Daltone N -20
+KPX Daltone P -20
+KPX Daltone R -20
+KPX Daltone T -20
+KPX Daltone U -10
+KPX Daltone V -60
+KPX Daltone W -60
+KPX Daltone X -70
+KPX Daltone Y -25
+KPX Daltone Z -20
+KPX Daltone a -35
+KPX Daltone d -25
+KPX Daltone e -10
+KPX Daltone AE -75
+KPX Daltone ae -35
+KPX Daltone ellipsis -90
+KPX Daltone endash 50
+KPX Daltone emdash 50
+KPX Daltone quotesinglbase -90
+KPX Daltone quotedblbase -90
+KPX Daltone Asmall -40
+KPX Daltone Esmall -20
+KPX Daltone Hsmall -20
+KPX Daltone Ismall -20
+KPX Daltone Jsmall -10
+KPX Daltone Msmall -15
+KPX Daltone Rsmall -20
+KPX Daltone Ssmall -10
+KPX Daltone Zsmall -15
+KPX Daltone AEsmall -40
+KPX Daltone as -35
+KPX Daltone es -10
+KPX Daltone aelinefinalswash -35
+KPX Daltone Aaltone -100
+KPX Daltone Baltone -60
+KPX Daltone Daltone -80
+KPX Daltone Haltone -50
+KPX Daltone Kaltone -80
+KPX Daltone Laltone -70
+KPX Daltone Maltone -120
+KPX Daltone Naltone -80
+KPX Daltone Paltone -40
+KPX Daltone Raltone -40
+KPX Daltone Valtone -60
+KPX Daltone Waltone -60
+KPX Daltone Xaltone -95
+KPX Daltone Zaltone -70
+KPX Daltone AEaltone -100
+KPX Daltone Halttwo -75
+KPX Daltone Malttwo -100
+KPX Daltone elinefinalswash -10
+KPX Daltone Lsmallalt -40
+KPX Ealtone parenright 40
+KPX Ealtone hyphen 10
+KPX Ealtone V -40
+KPX Ealtone W -40
+KPX Ealtone f -25
+KPX Ealtone v -45
+KPX Ealtone w -45
+KPX Ealtone y -30
+KPX Ealtone endash 10
+KPX Ealtone emdash 10
+KPX Ealtone fi -25
+KPX Ealtone fl -25
+KPX Ealtone hyphenlining -40
+KPX Ealtone endashlining -40
+KPX Ealtone emdashlining -40
+KPX Ealtone parenrightlining 40
+KPX Ealtone Csmall -20
+KPX Ealtone Gsmall -20
+KPX Ealtone Jsmall -10
+KPX Ealtone Qsmall -10
+KPX Ealtone Tsmall -20
+KPX Ealtone Usmall -10
+KPX Ealtone Vsmall -20
+KPX Ealtone Wsmall -20
+KPX Ealtone Ysmall -30
+KPX Ealtone Zsmall -50
+KPX Ealtone fb -25
+KPX Ealtone ff -25
+KPX Ealtone fh -25
+KPX Ealtone fj -25
+KPX Ealtone fk -25
+KPX Ealtone fklinefinalswash -25
+KPX Ealtone fr -25
+KPX Ealtone ft -25
+KPX Ealtone ftlinefinalswash -25
+KPX Ealtone ffb -25
+KPX Ealtone ffh -25
+KPX Ealtone ffi -25
+KPX Ealtone ffk -25
+KPX Ealtone ffklinefinalswash -25
+KPX Ealtone ffl -25
+KPX Ealtone ffr -25
+KPX Ealtone Aaltone -70
+KPX Ealtone Baltone -45
+KPX Ealtone Daltone -50
+KPX Ealtone Kaltone -40
+KPX Ealtone Maltone -110
+KPX Ealtone Naltone -30
+KPX Ealtone Paltone -20
+KPX Ealtone Raltone -35
+KPX Ealtone Valtone -70
+KPX Ealtone Waltone -70
+KPX Ealtone AEaltone -70
+KPX Ealtone Malttwo -100
+KPX Ealtone Tsmallalt -20
+KPX Faltone parenright 80
+KPX Faltone comma -155
+KPX Faltone hyphen 10
+KPX Faltone period -155
+KPX Faltone colon -30
+KPX Faltone semicolon -30
+KPX Faltone question 40
+KPX Faltone A -120
+KPX Faltone C -40
+KPX Faltone G -40
+KPX Faltone M -25
+KPX Faltone O -20
+KPX Faltone Q -20
+KPX Faltone a -90
+KPX Faltone e -75
+KPX Faltone f -50
+KPX Faltone i -70
+KPX Faltone j -70
+KPX Faltone o -70
+KPX Faltone r -55
+KPX Faltone u -50
+KPX Faltone y -40
+KPX Faltone AE -120
+KPX Faltone ae -90
+KPX Faltone oslash -70
+KPX Faltone ellipsis -155
+KPX Faltone oe -70
+KPX Faltone endash 10
+KPX Faltone emdash 10
+KPX Faltone quotedblright 40
+KPX Faltone quoteright 40
+KPX Faltone fi -50
+KPX Faltone fl -50
+KPX Faltone quotesinglbase -155
+KPX Faltone quotedblbase -155
+KPX Faltone hyphenlining 10
+KPX Faltone endashlining 10
+KPX Faltone emdashlining 10
+KPX Faltone parenrightlining 60
+KPX Faltone Asmall -130
+KPX Faltone Esmall -90
+KPX Faltone Fsmall -90
+KPX Faltone Hsmall -90
+KPX Faltone Ismall -90
+KPX Faltone Jsmall -100
+KPX Faltone Lsmall -90
+KPX Faltone Msmall -70
+KPX Faltone Nsmall -55
+KPX Faltone Osmall -80
+KPX Faltone Rsmall -90
+KPX Faltone Ssmall -50
+KPX Faltone Tsmall -50
+KPX Faltone Usmall -80
+KPX Faltone Ysmall -80
+KPX Faltone AEsmall -130
+KPX Faltone OEsmall -80
+KPX Faltone Oslashsmall -80
+KPX Faltone fb -50
+KPX Faltone ff -50
+KPX Faltone fh -50
+KPX Faltone fj -50
+KPX Faltone fk -50
+KPX Faltone fklinefinalswash -50
+KPX Faltone fr -50
+KPX Faltone ft -50
+KPX Faltone ftlinefinalswash -50
+KPX Faltone ffb -50
+KPX Faltone ffh -50
+KPX Faltone ffi -50
+KPX Faltone ffk -50
+KPX Faltone ffklinefinalswash -50
+KPX Faltone ffl -50
+KPX Faltone ffr -50
+KPX Faltone ij -70
+KPX Faltone as -90
+KPX Faltone es -75
+KPX Faltone is -70
+KPX Faltone dotlessis -70
+KPX Faltone aelinefinalswash -90
+KPX Faltone oelinefinalswash -70
+KPX Faltone Aaltone -100
+KPX Faltone Baltone -110
+KPX Faltone Caltone -30
+KPX Faltone Daltone -90
+KPX Faltone Galtone -20
+KPX Faltone Laltone -40
+KPX Faltone Maltone -70
+KPX Faltone Naltone -140
+KPX Faltone Oaltone -20
+KPX Faltone Raltone -60
+KPX Faltone Valtone -30
+KPX Faltone Waltone -30
+KPX Faltone Xaltone -170
+KPX Faltone AEaltone -100
+KPX Faltone Malttwo -140
+KPX Faltone Oslashaltone -20
+KPX Faltone elinefinalswash -75
+KPX Faltone Esmallalt -50
+KPX Faltone Lsmallalt -140
+KPX Faltone Tsmallalt -40
+KPX Faltone us -50
+KPX Galtone exclam 30
+KPX Galtone ampersand 30
+KPX Galtone parenright 50
+KPX Galtone comma -30
+KPX Galtone hyphen 40
+KPX Galtone period -30
+KPX Galtone colon -15
+KPX Galtone semicolon -15
+KPX Galtone question 30
+KPX Galtone A -20
+KPX Galtone M -10
+KPX Galtone V -20
+KPX Galtone W -20
+KPX Galtone X -20
+KPX Galtone a -20
+KPX Galtone AE -20
+KPX Galtone ae -20
+KPX Galtone ellipsis -30
+KPX Galtone endash 40
+KPX Galtone emdash 40
+KPX Galtone quotedblright -25
+KPX Galtone quoteright -25
+KPX Galtone quotesinglbase -30
+KPX Galtone quotedblbase -30
+KPX Galtone hyphenlining 30
+KPX Galtone endashlining 30
+KPX Galtone emdashlining 30
+KPX Galtone parenrightlining 30
+KPX Galtone Asmall -10
+KPX Galtone Esmall -30
+KPX Galtone Hsmall -30
+KPX Galtone Ismall -30
+KPX Galtone Lsmall -30
+KPX Galtone Osmall 20
+KPX Galtone Rsmall -30
+KPX Galtone Usmall -30
+KPX Galtone Wsmall -30
+KPX Galtone AEsmall -10
+KPX Galtone OEsmall 20
+KPX Galtone Oslashsmall 20
+KPX Galtone Th -40
+KPX Galtone as -20
+KPX Galtone aelinefinalswash -20
+KPX Galtone Baltone -55
+KPX Galtone Daltone -50
+KPX Galtone Kaltone -60
+KPX Galtone Maltone -60
+KPX Galtone Raltone -30
+KPX Galtone Saltone -20
+KPX Galtone Taltone -40
+KPX Galtone Valtone -70
+KPX Galtone Waltone -70
+KPX Galtone Malttwo -60
+KPX Galtone Esmallalt 20
+KPX Galtone Lsmallalt -20
+KPX Haltone ampersand -55
+KPX Haltone parenright 100
+KPX Haltone comma -85
+KPX Haltone hyphen -60
+KPX Haltone period -85
+KPX Haltone colon -85
+KPX Haltone semicolon -85
+KPX Haltone question 40
+KPX Haltone A -110
+KPX Haltone C -70
+KPX Haltone G -70
+KPX Haltone H -60
+KPX Haltone M -30
+KPX Haltone O -70
+KPX Haltone Q -70
+KPX Haltone a -110
+KPX Haltone e -125
+KPX Haltone i -115
+KPX Haltone n -75
+KPX Haltone o -115
+KPX Haltone s -95
+KPX Haltone t -95
+KPX Haltone u -110
+KPX Haltone y -105
+KPX Haltone AE -110
+KPX Haltone ae -110
+KPX Haltone oslash -115
+KPX Haltone ellipsis -85
+KPX Haltone oe -115
+KPX Haltone endash -60
+KPX Haltone emdash -60
+KPX Haltone quotedblright 90
+KPX Haltone quoteright 90
+KPX Haltone quotesinglbase -85
+KPX Haltone quotedblbase -85
+KPX Haltone dotlessi -115
+KPX Haltone hyphenlining -80
+KPX Haltone endashlining -80
+KPX Haltone emdashlining -80
+KPX Haltone parenrightlining 50
+KPX Haltone Asmall -150
+KPX Haltone Csmall -110
+KPX Haltone Esmall -125
+KPX Haltone Gsmall -110
+KPX Haltone Hsmall -100
+KPX Haltone Ismall -125
+KPX Haltone Jsmall -110
+KPX Haltone Msmall -100
+KPX Haltone Nsmall -100
+KPX Haltone Osmall -115
+KPX Haltone Rsmall -100
+KPX Haltone Ssmall -115
+KPX Haltone Tsmall -130
+KPX Haltone Usmall -130
+KPX Haltone Wsmall -115
+KPX Haltone Ysmall -105
+KPX Haltone AEsmall -150
+KPX Haltone OEsmall -115
+KPX Haltone Oslashsmall -115
+KPX Haltone ij -115
+KPX Haltone as -110
+KPX Haltone es -125
+KPX Haltone is -115
+KPX Haltone dotlessis -115
+KPX Haltone ns -75
+KPX Haltone nt -75
+KPX Haltone ntlinefinalswash -75
+KPX Haltone st -95
+KPX Haltone stlinefinalswash -95
+KPX Haltone tt -95
+KPX Haltone ttlinefinalswash -95
+KPX Haltone aelinefinalswash -110
+KPX Haltone oelinefinalswash -115
+KPX Haltone Aaltone -220
+KPX Haltone Baltone -40
+KPX Haltone Caltone -50
+KPX Haltone Daltone -100
+KPX Haltone Ealtone -50
+KPX Haltone Galtone -70
+KPX Haltone Kaltone -70
+KPX Haltone Laltone -40
+KPX Haltone Maltone -200
+KPX Haltone Naltone -100
+KPX Haltone Oaltone -70
+KPX Haltone Paltone -80
+KPX Haltone Raltone -130
+KPX Haltone Saltone -60
+KPX Haltone Valtone -50
+KPX Haltone Waltone -50
+KPX Haltone Xaltone -120
+KPX Haltone Zaltone -70
+KPX Haltone AEaltone -220
+KPX Haltone Halttwo -95
+KPX Haltone Malttwo -220
+KPX Haltone Oslashaltone -70
+KPX Haltone elinefinalswash -125
+KPX Haltone nlinefinalswash -75
+KPX Haltone tlinefinalswash -95
+KPX Haltone Esmallalt -125
+KPX Haltone Lsmallalt -130
+KPX Haltone Tsmallalt -130
+KPX Haltone sp -95
+KPX Haltone us -110
+KPX Kaltone ampersand -55
+KPX Kaltone parenright 80
+KPX Kaltone comma -100
+KPX Kaltone hyphen -80
+KPX Kaltone period -100
+KPX Kaltone colon -90
+KPX Kaltone semicolon -90
+KPX Kaltone question 40
+KPX Kaltone A -100
+KPX Kaltone B -50
+KPX Kaltone C -100
+KPX Kaltone D -50
+KPX Kaltone E -50
+KPX Kaltone F -50
+KPX Kaltone G -110
+KPX Kaltone H -50
+KPX Kaltone I -50
+KPX Kaltone K -50
+KPX Kaltone L -50
+KPX Kaltone M -100
+KPX Kaltone N -20
+KPX Kaltone O -100
+KPX Kaltone P -50
+KPX Kaltone Q -50
+KPX Kaltone R -50
+KPX Kaltone S -90
+KPX Kaltone T -30
+KPX Kaltone U -40
+KPX Kaltone V -20
+KPX Kaltone W -20
+KPX Kaltone X -30
+KPX Kaltone Z -70
+KPX Kaltone a -140
+KPX Kaltone e -165
+KPX Kaltone i -140
+KPX Kaltone n -140
+KPX Kaltone o -170
+KPX Kaltone r -140
+KPX Kaltone u -140
+KPX Kaltone w -235
+KPX Kaltone y -200
+KPX Kaltone AE -100
+KPX Kaltone ae -140
+KPX Kaltone oslash -170
+KPX Kaltone ellipsis -100
+KPX Kaltone oe -170
+KPX Kaltone endash -80
+KPX Kaltone emdash -80
+KPX Kaltone quotedblright 70
+KPX Kaltone quoteright 70
+KPX Kaltone quotesinglbase -100
+KPX Kaltone quotedblbase -100
+KPX Kaltone dotlessi -140
+KPX Kaltone hyphenlining -190
+KPX Kaltone endashlining -190
+KPX Kaltone emdashlining -190
+KPX Kaltone parenrightlining 30
+KPX Kaltone Asmall -140
+KPX Kaltone Esmall -170
+KPX Kaltone Hsmall -140
+KPX Kaltone Ismall -140
+KPX Kaltone Lsmall -140
+KPX Kaltone Nsmall -150
+KPX Kaltone Osmall -170
+KPX Kaltone Rsmall -140
+KPX Kaltone Ssmall -170
+KPX Kaltone Tsmall -200
+KPX Kaltone Usmall -190
+KPX Kaltone Vsmall -250
+KPX Kaltone Wsmall -190
+KPX Kaltone Ysmall -180
+KPX Kaltone AEsmall -140
+KPX Kaltone OEsmall -170
+KPX Kaltone Oslashsmall -170
+KPX Kaltone ij -140
+KPX Kaltone Th -20
+KPX Kaltone as -140
+KPX Kaltone es -165
+KPX Kaltone is -140
+KPX Kaltone dotlessis -140
+KPX Kaltone ns -140
+KPX Kaltone nt -140
+KPX Kaltone ntlinefinalswash -140
+KPX Kaltone aelinefinalswash -140
+KPX Kaltone oelinefinalswash -170
+KPX Kaltone Aaltone -260
+KPX Kaltone Baltone -80
+KPX Kaltone Caltone -100
+KPX Kaltone Daltone -90
+KPX Kaltone Ealtone -70
+KPX Kaltone Galtone -100
+KPX Kaltone Kaltone -70
+KPX Kaltone Maltone -290
+KPX Kaltone Naltone -140
+KPX Kaltone Oaltone -100
+KPX Kaltone Paltone -80
+KPX Kaltone Raltone -80
+KPX Kaltone Taltone -20
+KPX Kaltone Valtone -80
+KPX Kaltone Waltone -80
+KPX Kaltone Xaltone -185
+KPX Kaltone AEaltone -260
+KPX Kaltone Halttwo -130
+KPX Kaltone Malttwo -310
+KPX Kaltone Oslashaltone -100
+KPX Kaltone elinefinalswash -165
+KPX Kaltone nlinefinalswash -140
+KPX Kaltone Esmallalt -150
+KPX Kaltone Lsmallalt -100
+KPX Kaltone Tsmallalt -210
+KPX Kaltone us -140
+KPX Laltone ampersand 70
+KPX Laltone parenright 60
+KPX Laltone comma -80
+KPX Laltone hyphen -20
+KPX Laltone period -80
+KPX Laltone colon -80
+KPX Laltone semicolon -80
+KPX Laltone A -70
+KPX Laltone a -70
+KPX Laltone e -50
+KPX Laltone h -50
+KPX Laltone i -40
+KPX Laltone l -40
+KPX Laltone o -55
+KPX Laltone u -60
+KPX Laltone AE -70
+KPX Laltone ae -70
+KPX Laltone oslash -55
+KPX Laltone ellipsis -80
+KPX Laltone oe -55
+KPX Laltone endash -20
+KPX Laltone emdash -20
+KPX Laltone quotedblright 55
+KPX Laltone quoteright 55
+KPX Laltone quotesinglbase -80
+KPX Laltone quotedblbase -80
+KPX Laltone hyphenlining -80
+KPX Laltone endashlining -80
+KPX Laltone emdashlining -80
+KPX Laltone parenrightlining 40
+KPX Laltone Asmall -60
+KPX Laltone Esmall -60
+KPX Laltone Hsmall -60
+KPX Laltone Ismall -60
+KPX Laltone Jsmall -20
+KPX Laltone Lsmall -60
+KPX Laltone Osmall -70
+KPX Laltone Tsmall -50
+KPX Laltone Usmall -90
+KPX Laltone Vsmall -30
+KPX Laltone Wsmall -30
+KPX Laltone Ysmall -70
+KPX Laltone AEsmall -60
+KPX Laltone OEsmall -70
+KPX Laltone Oslashsmall -70
+KPX Laltone ij -40
+KPX Laltone ll -40
+KPX Laltone as -70
+KPX Laltone es -50
+KPX Laltone is -40
+KPX Laltone dotlessis -40
+KPX Laltone aelinefinalswash -70
+KPX Laltone oelinefinalswash -55
+KPX Laltone Aaltone -150
+KPX Laltone Baltone -20
+KPX Laltone Daltone -40
+KPX Laltone Maltone -190
+KPX Laltone Valtone -80
+KPX Laltone Waltone -80
+KPX Laltone AEaltone -150
+KPX Laltone Malttwo -160
+KPX Laltone elinefinalswash -50
+KPX Laltone Esmallalt -50
+KPX Laltone Lsmallalt -60
+KPX Laltone Tsmallalt -140
+KPX Laltone us -60
+KPX Maltone exclam 90
+KPX Maltone ampersand 40
+KPX Maltone parenright 150
+KPX Maltone comma 10
+KPX Maltone period 10
+KPX Maltone colon 20
+KPX Maltone semicolon 20
+KPX Maltone question 110
+KPX Maltone a -30
+KPX Maltone b -30
+KPX Maltone c -45
+KPX Maltone d -40
+KPX Maltone e -50
+KPX Maltone g -40
+KPX Maltone i -40
+KPX Maltone m -25
+KPX Maltone o -45
+KPX Maltone r -25
+KPX Maltone s -20
+KPX Maltone u -40
+KPX Maltone y -55
+KPX Maltone ae -30
+KPX Maltone oslash -45
+KPX Maltone ellipsis 10
+KPX Maltone oe -45
+KPX Maltone quotedblright 170
+KPX Maltone quoteright 170
+KPX Maltone quotesinglbase 10
+KPX Maltone quotedblbase 10
+KPX Maltone dotlessi -40
+KPX Maltone parenrightlining 130
+KPX Maltone Asmall -65
+KPX Maltone Bsmall -60
+KPX Maltone Csmall -60
+KPX Maltone Dsmall -60
+KPX Maltone Esmall -60
+KPX Maltone Fsmall -60
+KPX Maltone Gsmall -60
+KPX Maltone Ismall -50
+KPX Maltone Jsmall -35
+KPX Maltone Ksmall -30
+KPX Maltone Lsmall -60
+KPX Maltone Msmall -35
+KPX Maltone Nsmall -60
+KPX Maltone Osmall -50
+KPX Maltone Psmall -30
+KPX Maltone Qsmall -40
+KPX Maltone Rsmall -60
+KPX Maltone Ssmall -60
+KPX Maltone Tsmall -80
+KPX Maltone Usmall -65
+KPX Maltone Vsmall -45
+KPX Maltone Wsmall -45
+KPX Maltone Ysmall -50
+KPX Maltone AEsmall -65
+KPX Maltone OEsmall -50
+KPX Maltone Oslashsmall -50
+KPX Maltone gg -40
+KPX Maltone ij -40
+KPX Maltone as -30
+KPX Maltone es -50
+KPX Maltone ct -45
+KPX Maltone ctlinefinalswash -45
+KPX Maltone is -40
+KPX Maltone dotlessis -40
+KPX Maltone st -20
+KPX Maltone stlinefinalswash -20
+KPX Maltone aelinefinalswash -30
+KPX Maltone oelinefinalswash -45
+KPX Maltone Aaltone -145
+KPX Maltone Daltone -40
+KPX Maltone Maltone -85
+KPX Maltone Raltone -40
+KPX Maltone Valtone -10
+KPX Maltone Waltone -10
+KPX Maltone Xaltone -65
+KPX Maltone AEaltone -145
+KPX Maltone Malttwo -90
+KPX Maltone elinefinalswash -50
+KPX Maltone mlinefinalswash -25
+KPX Maltone Esmallalt -40
+KPX Maltone Lsmallalt -30
+KPX Maltone Tsmallalt -80
+KPX Maltone sp -20
+KPX Maltone us -40
+KPX Naltone ampersand -70
+KPX Naltone parenright 80
+KPX Naltone comma -150
+KPX Naltone hyphen -110
+KPX Naltone period -150
+KPX Naltone colon -180
+KPX Naltone semicolon -180
+KPX Naltone question 40
+KPX Naltone A -200
+KPX Naltone B -40
+KPX Naltone C -120
+KPX Naltone D -40
+KPX Naltone E -40
+KPX Naltone F -40
+KPX Naltone G -100
+KPX Naltone H -40
+KPX Naltone I -40
+KPX Naltone K -40
+KPX Naltone L -40
+KPX Naltone M -70
+KPX Naltone N -40
+KPX Naltone O -100
+KPX Naltone P -40
+KPX Naltone Q -50
+KPX Naltone R -40
+KPX Naltone S -70
+KPX Naltone T -30
+KPX Naltone U -40
+KPX Naltone V -40
+KPX Naltone W -40
+KPX Naltone X -40
+KPX Naltone Y 10
+KPX Naltone Z -20
+KPX Naltone a -210
+KPX Naltone e -205
+KPX Naltone g -140
+KPX Naltone i -175
+KPX Naltone n -170
+KPX Naltone o -205
+KPX Naltone r -170
+KPX Naltone u -190
+KPX Naltone y -113
+KPX Naltone AE -200
+KPX Naltone ae -210
+KPX Naltone oslash -205
+KPX Naltone ellipsis -150
+KPX Naltone oe -205
+KPX Naltone endash -110
+KPX Naltone emdash -110
+KPX Naltone quotedblright 100
+KPX Naltone quoteright 100
+KPX Naltone quotesinglbase -150
+KPX Naltone quotedblbase -150
+KPX Naltone dotlessi -175
+KPX Naltone hyphenlining -90
+KPX Naltone endashlining -90
+KPX Naltone emdashlining -90
+KPX Naltone parenrightlining 30
+KPX Naltone Asmall -170
+KPX Naltone Csmall -170
+KPX Naltone Esmall -170
+KPX Naltone Gsmall -170
+KPX Naltone Hsmall -170
+KPX Naltone Ismall -170
+KPX Naltone Jsmall -135
+KPX Naltone Ksmall -170
+KPX Naltone Msmall -180
+KPX Naltone Nsmall -165
+KPX Naltone Osmall -175
+KPX Naltone Qsmall -20
+KPX Naltone Rsmall -170
+KPX Naltone Ssmall -210
+KPX Naltone Tsmall -200
+KPX Naltone Usmall -175
+KPX Naltone Vsmall -195
+KPX Naltone Wsmall -195
+KPX Naltone Ysmall -170
+KPX Naltone Zsmall -180
+KPX Naltone AEsmall -170
+KPX Naltone OEsmall -175
+KPX Naltone Oslashsmall -175
+KPX Naltone gg -140
+KPX Naltone ij -175
+KPX Naltone Th -60
+KPX Naltone as -210
+KPX Naltone es -205
+KPX Naltone is -175
+KPX Naltone dotlessis -175
+KPX Naltone ns -170
+KPX Naltone nt -170
+KPX Naltone ntlinefinalswash -170
+KPX Naltone aelinefinalswash -210
+KPX Naltone oelinefinalswash -205
+KPX Naltone Aaltone -315
+KPX Naltone Baltone -110
+KPX Naltone Caltone -130
+KPX Naltone Daltone -130
+KPX Naltone Ealtone -75
+KPX Naltone Galtone -100
+KPX Naltone Kaltone -60
+KPX Naltone Laltone -60
+KPX Naltone Maltone -260
+KPX Naltone Naltone -200
+KPX Naltone Oaltone -100
+KPX Naltone Paltone -130
+KPX Naltone Raltone -140
+KPX Naltone Taltone -60
+KPX Naltone Valtone -75
+KPX Naltone Waltone -75
+KPX Naltone Xaltone -340
+KPX Naltone AEaltone -315
+KPX Naltone Halttwo -80
+KPX Naltone Malttwo -260
+KPX Naltone Oslashaltone -100
+KPX Naltone elinefinalswash -205
+KPX Naltone nlinefinalswash -170
+KPX Naltone Esmallalt -210
+KPX Naltone Lsmallalt -200
+KPX Naltone Tsmallalt -205
+KPX Naltone us -190
+KPX Oaltone comma -70
+KPX Oaltone hyphen 25
+KPX Oaltone period -70
+KPX Oaltone A -60
+KPX Oaltone M -20
+KPX Oaltone S -10
+KPX Oaltone T -20
+KPX Oaltone V -35
+KPX Oaltone W -30
+KPX Oaltone X -50
+KPX Oaltone a -35
+KPX Oaltone b -20
+KPX Oaltone c -25
+KPX Oaltone d -20
+KPX Oaltone e -25
+KPX Oaltone g -20
+KPX Oaltone h -20
+KPX Oaltone i -20
+KPX Oaltone k -20
+KPX Oaltone l -20
+KPX Oaltone q -20
+KPX Oaltone s -30
+KPX Oaltone t -15
+KPX Oaltone x -25
+KPX Oaltone AE -60
+KPX Oaltone ae -35
+KPX Oaltone ellipsis -70
+KPX Oaltone endash 25
+KPX Oaltone emdash 25
+KPX Oaltone quotesinglbase -70
+KPX Oaltone quotedblbase -70
+KPX Oaltone Asmall -25
+KPX Oaltone Bsmall -20
+KPX Oaltone Dsmall -20
+KPX Oaltone Esmall -20
+KPX Oaltone Fsmall -20
+KPX Oaltone Hsmall -20
+KPX Oaltone Ismall -20
+KPX Oaltone Ksmall -20
+KPX Oaltone Lsmall -20
+KPX Oaltone Msmall -15
+KPX Oaltone Nsmall -15
+KPX Oaltone Psmall -20
+KPX Oaltone Qsmall -10
+KPX Oaltone Rsmall -20
+KPX Oaltone Ssmall -15
+KPX Oaltone Xsmall -10
+KPX Oaltone Zsmall -20
+KPX Oaltone AEsmall -25
+KPX Oaltone gg -20
+KPX Oaltone ij -20
+KPX Oaltone ll -20
+KPX Oaltone as -35
+KPX Oaltone es -25
+KPX Oaltone ct -25
+KPX Oaltone ctlinefinalswash -25
+KPX Oaltone is -20
+KPX Oaltone dotlessis -20
+KPX Oaltone st -30
+KPX Oaltone stlinefinalswash -30
+KPX Oaltone tt -15
+KPX Oaltone ttlinefinalswash -15
+KPX Oaltone aelinefinalswash -35
+KPX Oaltone Baltone -30
+KPX Oaltone Daltone -30
+KPX Oaltone Ealtone 20
+KPX Oaltone Haltone -50
+KPX Oaltone Kaltone -60
+KPX Oaltone Maltone -130
+KPX Oaltone Naltone -40
+KPX Oaltone Raltone -20
+KPX Oaltone Valtone -60
+KPX Oaltone Waltone -60
+KPX Oaltone Xaltone -110
+KPX Oaltone Halttwo -40
+KPX Oaltone Malttwo -130
+KPX Oaltone elinefinalswash -25
+KPX Oaltone klinefinalswash -20
+KPX Oaltone tlinefinalswash -15
+KPX Oaltone Lsmallalt -40
+KPX Oaltone sp -30
+KPX Paltone exclam -20
+KPX Paltone ampersand -30
+KPX Paltone parenright -10
+KPX Paltone comma -180
+KPX Paltone period -180
+KPX Paltone colon -70
+KPX Paltone semicolon -70
+KPX Paltone question -30
+KPX Paltone A -160
+KPX Paltone B -40
+KPX Paltone C -50
+KPX Paltone D -40
+KPX Paltone E -40
+KPX Paltone F -40
+KPX Paltone G -40
+KPX Paltone H -40
+KPX Paltone I -40
+KPX Paltone J -30
+KPX Paltone K -40
+KPX Paltone L -40
+KPX Paltone M -80
+KPX Paltone N -40
+KPX Paltone O -40
+KPX Paltone P -40
+KPX Paltone Q -30
+KPX Paltone R -40
+KPX Paltone S -40
+KPX Paltone T -40
+KPX Paltone U -40
+KPX Paltone V -80
+KPX Paltone W -80
+KPX Paltone X -100
+KPX Paltone Y -40
+KPX Paltone Z -40
+KPX Paltone a -125
+KPX Paltone b -80
+KPX Paltone d -120
+KPX Paltone e -80
+KPX Paltone f -30
+KPX Paltone g -85
+KPX Paltone h -60
+KPX Paltone i -60
+KPX Paltone l -60
+KPX Paltone n -40
+KPX Paltone o -80
+KPX Paltone p -40
+KPX Paltone r -40
+KPX Paltone s -65
+KPX Paltone t -40
+KPX Paltone u -40
+KPX Paltone y -60
+KPX Paltone AE -160
+KPX Paltone ae -125
+KPX Paltone oslash -80
+KPX Paltone ellipsis -180
+KPX Paltone oe -80
+KPX Paltone quotedblright 5
+KPX Paltone quoteright 5
+KPX Paltone fi -30
+KPX Paltone fl -30
+KPX Paltone quotesinglbase -180
+KPX Paltone quotedblbase -180
+KPX Paltone hyphenlining -40
+KPX Paltone endashlining -40
+KPX Paltone emdashlining -40
+KPX Paltone parenrightlining -10
+KPX Paltone Asmall -120
+KPX Paltone Bsmall -40
+KPX Paltone Csmall -15
+KPX Paltone Dsmall -60
+KPX Paltone Esmall -60
+KPX Paltone Fsmall -60
+KPX Paltone Gsmall -15
+KPX Paltone Hsmall -60
+KPX Paltone Ismall -60
+KPX Paltone Lsmall -60
+KPX Paltone Msmall -25
+KPX Paltone Nsmall -50
+KPX Paltone Osmall -65
+KPX Paltone Psmall -60
+KPX Paltone Rsmall -60
+KPX Paltone Ssmall -65
+KPX Paltone Tsmall -50
+KPX Paltone Usmall -50
+KPX Paltone Ysmall -50
+KPX Paltone Zsmall -15
+KPX Paltone AEsmall -120
+KPX Paltone OEsmall -65
+KPX Paltone Oslashsmall -65
+KPX Paltone thorn -40
+KPX Paltone fb -30
+KPX Paltone ff -30
+KPX Paltone fh -30
+KPX Paltone fj -30
+KPX Paltone fk -30
+KPX Paltone fklinefinalswash -30
+KPX Paltone fr -30
+KPX Paltone ft -30
+KPX Paltone ftlinefinalswash -30
+KPX Paltone ffb -30
+KPX Paltone ffh -30
+KPX Paltone ffi -30
+KPX Paltone ffk -30
+KPX Paltone ffklinefinalswash -30
+KPX Paltone ffl -30
+KPX Paltone ffr -30
+KPX Paltone gg -85
+KPX Paltone ij -60
+KPX Paltone ll -60
+KPX Paltone Th -40
+KPX Paltone as -125
+KPX Paltone es -80
+KPX Paltone is -60
+KPX Paltone dotlessis -60
+KPX Paltone ns -40
+KPX Paltone nt -40
+KPX Paltone ntlinefinalswash -40
+KPX Paltone st -65
+KPX Paltone stlinefinalswash -65
+KPX Paltone tt -40
+KPX Paltone ttlinefinalswash -40
+KPX Paltone aelinefinalswash -125
+KPX Paltone oelinefinalswash -80
+KPX Paltone Aaltone -240
+KPX Paltone Baltone -60
+KPX Paltone Caltone -40
+KPX Paltone Daltone -70
+KPX Paltone Ealtone -20
+KPX Paltone Galtone -40
+KPX Paltone Haltone -30
+KPX Paltone Kaltone -40
+KPX Paltone Laltone -50
+KPX Paltone Maltone -200
+KPX Paltone Naltone -170
+KPX Paltone Oaltone -20
+KPX Paltone Paltone -30
+KPX Paltone Raltone -50
+KPX Paltone Saltone -60
+KPX Paltone Taltone -40
+KPX Paltone Valtone -40
+KPX Paltone Waltone -40
+KPX Paltone Xaltone -190
+KPX Paltone Zaltone -60
+KPX Paltone AEaltone -240
+KPX Paltone Halttwo -100
+KPX Paltone Malttwo -190
+KPX Paltone Oslashaltone -20
+KPX Paltone elinefinalswash -80
+KPX Paltone nlinefinalswash -40
+KPX Paltone tlinefinalswash -40
+KPX Paltone Esmallalt -40
+KPX Paltone Lsmallalt -100
+KPX Paltone Tsmallalt -50
+KPX Paltone sp -65
+KPX Paltone us -40
+KPX Raltone ampersand -30
+KPX Raltone parenright 50
+KPX Raltone hyphen -10
+KPX Raltone C -35
+KPX Raltone G -20
+KPX Raltone O -20
+KPX Raltone T -40
+KPX Raltone U -40
+KPX Raltone V -50
+KPX Raltone W -50
+KPX Raltone Y -40
+KPX Raltone a -25
+KPX Raltone b -30
+KPX Raltone d -30
+KPX Raltone e -70
+KPX Raltone h -40
+KPX Raltone i -25
+KPX Raltone m -20
+KPX Raltone n -40
+KPX Raltone o -80
+KPX Raltone p -100
+KPX Raltone t -30
+KPX Raltone u -50
+KPX Raltone w -40
+KPX Raltone y -70
+KPX Raltone ae -25
+KPX Raltone oslash -80
+KPX Raltone oe -80
+KPX Raltone endash -10
+KPX Raltone emdash -10
+KPX Raltone quotedblright -30
+KPX Raltone quoteright -30
+KPX Raltone hyphenlining -80
+KPX Raltone endashlining -80
+KPX Raltone emdashlining -80
+KPX Raltone parenrightlining 10
+KPX Raltone Asmall -50
+KPX Raltone Bsmall -70
+KPX Raltone Dsmall -70
+KPX Raltone Esmall -70
+KPX Raltone Hsmall -70
+KPX Raltone Ismall -70
+KPX Raltone Jsmall -70
+KPX Raltone Lsmall -70
+KPX Raltone Msmall -70
+KPX Raltone Nsmall -75
+KPX Raltone Osmall -30
+KPX Raltone Psmall -70
+KPX Raltone Rsmall -70
+KPX Raltone Ssmall -80
+KPX Raltone Tsmall -80
+KPX Raltone Usmall -55
+KPX Raltone Vsmall -75
+KPX Raltone Wsmall -75
+KPX Raltone Xsmall -70
+KPX Raltone Ysmall -80
+KPX Raltone Zsmall -80
+KPX Raltone AEsmall -50
+KPX Raltone OEsmall -30
+KPX Raltone Oslashsmall -30
+KPX Raltone thorn -100
+KPX Raltone ij -25
+KPX Raltone Th -30
+KPX Raltone as -25
+KPX Raltone es -70
+KPX Raltone is -25
+KPX Raltone dotlessis -25
+KPX Raltone ns -40
+KPX Raltone nt -40
+KPX Raltone ntlinefinalswash -40
+KPX Raltone tt -30
+KPX Raltone ttlinefinalswash -30
+KPX Raltone aelinefinalswash -25
+KPX Raltone oelinefinalswash -80
+KPX Raltone Aaltone -130
+KPX Raltone Baltone -120
+KPX Raltone Daltone -120
+KPX Raltone Ealtone -50
+KPX Raltone Faltone -70
+KPX Raltone Galtone -20
+KPX Raltone Kaltone -80
+KPX Raltone Laltone -10
+KPX Raltone Maltone -180
+KPX Raltone Naltone -100
+KPX Raltone Oaltone -20
+KPX Raltone Paltone -10
+KPX Raltone Raltone -40
+KPX Raltone Taltone -30
+KPX Raltone Valtone -70
+KPX Raltone Waltone -70
+KPX Raltone Xaltone -50
+KPX Raltone AEaltone -130
+KPX Raltone Halttwo -50
+KPX Raltone Malttwo -150
+KPX Raltone Oslashaltone -20
+KPX Raltone elinefinalswash -70
+KPX Raltone mlinefinalswash -20
+KPX Raltone nlinefinalswash -40
+KPX Raltone tlinefinalswash -30
+KPX Raltone Esmallalt -70
+KPX Raltone Lsmallalt -50
+KPX Raltone Tsmallalt -80
+KPX Raltone us -50
+KPX Saltone exclam -30
+KPX Saltone ampersand -60
+KPX Saltone comma -70
+KPX Saltone hyphen -60
+KPX Saltone period -70
+KPX Saltone colon -60
+KPX Saltone semicolon -60
+KPX Saltone question -30
+KPX Saltone A -70
+KPX Saltone B -40
+KPX Saltone C -50
+KPX Saltone D -40
+KPX Saltone E -40
+KPX Saltone F -40
+KPX Saltone G -50
+KPX Saltone H -40
+KPX Saltone I -40
+KPX Saltone K -40
+KPX Saltone L -40
+KPX Saltone M -50
+KPX Saltone N -40
+KPX Saltone O -60
+KPX Saltone P -50
+KPX Saltone Q -50
+KPX Saltone R -40
+KPX Saltone S -40
+KPX Saltone T -70
+KPX Saltone U -50
+KPX Saltone V -80
+KPX Saltone W -80
+KPX Saltone X -60
+KPX Saltone Y -50
+KPX Saltone Z -40
+KPX Saltone a -80
+KPX Saltone b -80
+KPX Saltone c -80
+KPX Saltone e -85
+KPX Saltone f -80
+KPX Saltone g -9
+KPX Saltone h -85
+KPX Saltone i -95
+KPX Saltone j -15
+KPX Saltone k -85
+KPX Saltone l -85
+KPX Saltone m -95
+KPX Saltone n -85
+KPX Saltone o -85
+KPX Saltone p -90
+KPX Saltone q -85
+KPX Saltone r -85
+KPX Saltone t -100
+KPX Saltone u -90
+KPX Saltone v -110
+KPX Saltone w -110
+KPX Saltone y -100
+KPX Saltone z -95
+KPX Saltone AE -70
+KPX Saltone ae -80
+KPX Saltone oslash -85
+KPX Saltone ellipsis -70
+KPX Saltone oe -85
+KPX Saltone endash -60
+KPX Saltone emdash -60
+KPX Saltone quotedblright -15
+KPX Saltone quoteright -15
+KPX Saltone fi -80
+KPX Saltone fl -80
+KPX Saltone quotesinglbase -70
+KPX Saltone quotedblbase -70
+KPX Saltone hyphenlining -80
+KPX Saltone endashlining -80
+KPX Saltone emdashlining -80
+KPX Saltone Asmall -80
+KPX Saltone Bsmall -95
+KPX Saltone Csmall -80
+KPX Saltone Esmall -95
+KPX Saltone Fsmall -95
+KPX Saltone Hsmall -95
+KPX Saltone Ismall -95
+KPX Saltone Jsmall -25
+KPX Saltone Ksmall -95
+KPX Saltone Lsmall -95
+KPX Saltone Msmall -85
+KPX Saltone Nsmall -95
+KPX Saltone Osmall -85
+KPX Saltone Psmall -95
+KPX Saltone Qsmall -95
+KPX Saltone Rsmall -95
+KPX Saltone Ssmall -85
+KPX Saltone Tsmall -110
+KPX Saltone Usmall -95
+KPX Saltone Vsmall -100
+KPX Saltone Wsmall -100
+KPX Saltone Ysmall -95
+KPX Saltone Zsmall -100
+KPX Saltone AEsmall -80
+KPX Saltone OEsmall -85
+KPX Saltone Oslashsmall -85
+KPX Saltone thorn -90
+KPX Saltone fb -80
+KPX Saltone ff -80
+KPX Saltone fh -80
+KPX Saltone fj -80
+KPX Saltone fk -80
+KPX Saltone fklinefinalswash -80
+KPX Saltone fr -80
+KPX Saltone ft -80
+KPX Saltone ftlinefinalswash -80
+KPX Saltone ffb -80
+KPX Saltone ffh -80
+KPX Saltone ffi -80
+KPX Saltone ffk -80
+KPX Saltone ffklinefinalswash -80
+KPX Saltone ffl -80
+KPX Saltone ffr -80
+KPX Saltone gg -9
+KPX Saltone ij -95
+KPX Saltone ll -85
+KPX Saltone Th -80
+KPX Saltone as -80
+KPX Saltone es -85
+KPX Saltone ct -80
+KPX Saltone ctlinefinalswash -80
+KPX Saltone is -95
+KPX Saltone dotlessis -95
+KPX Saltone ns -85
+KPX Saltone nt -85
+KPX Saltone ntlinefinalswash -85
+KPX Saltone tt -100
+KPX Saltone ttlinefinalswash -100
+KPX Saltone aelinefinalswash -80
+KPX Saltone oelinefinalswash -85
+KPX Saltone Aaltone -120
+KPX Saltone Baltone -110
+KPX Saltone Caltone -60
+KPX Saltone Daltone -90
+KPX Saltone Ealtone -60
+KPX Saltone Faltone -20
+KPX Saltone Galtone -70
+KPX Saltone Haltone -50
+KPX Saltone Kaltone -110
+KPX Saltone Laltone -20
+KPX Saltone Maltone -150
+KPX Saltone Naltone -120
+KPX Saltone Oaltone -60
+KPX Saltone Paltone -80
+KPX Saltone Raltone -100
+KPX Saltone Saltone -20
+KPX Saltone Taltone -80
+KPX Saltone Valtone -120
+KPX Saltone Waltone -120
+KPX Saltone Xaltone -110
+KPX Saltone Zaltone -60
+KPX Saltone AEaltone -120
+KPX Saltone Halttwo -90
+KPX Saltone Malttwo -100
+KPX Saltone Oslashaltone -60
+KPX Saltone elinefinalswash -85
+KPX Saltone klinefinalswash -85
+KPX Saltone mlinefinalswash -95
+KPX Saltone nlinefinalswash -85
+KPX Saltone tlinefinalswash -100
+KPX Saltone zlinefinalswash -95
+KPX Saltone Esmallalt -85
+KPX Saltone Lsmallalt -90
+KPX Saltone Tsmallalt -100
+KPX Saltone us -90
+KPX Taltone ampersand -105
+KPX Taltone parenright 60
+KPX Taltone comma -150
+KPX Taltone hyphen -50
+KPX Taltone period -150
+KPX Taltone colon -120
+KPX Taltone semicolon -120
+KPX Taltone A -120
+KPX Taltone C -20
+KPX Taltone G -20
+KPX Taltone M -20
+KPX Taltone O -20
+KPX Taltone Q -20
+KPX Taltone Y 40
+KPX Taltone a -165
+KPX Taltone c -165
+KPX Taltone e -175
+KPX Taltone i -70
+KPX Taltone l -20
+KPX Taltone o -155
+KPX Taltone r -120
+KPX Taltone s -135
+KPX Taltone u -140
+KPX Taltone w -170
+KPX Taltone y -150
+KPX Taltone z -133
+KPX Taltone AE -120
+KPX Taltone ae -165
+KPX Taltone oslash -155
+KPX Taltone ellipsis -150
+KPX Taltone oe -155
+KPX Taltone endash -50
+KPX Taltone emdash -50
+KPX Taltone quotedblright 55
+KPX Taltone quoteright 55
+KPX Taltone quotesinglbase -150
+KPX Taltone quotedblbase -150
+KPX Taltone dotlessi -170
+KPX Taltone hyphenlining -30
+KPX Taltone endashlining -30
+KPX Taltone emdashlining -30
+KPX Taltone parenrightlining 60
+KPX Taltone Asmall -190
+KPX Taltone Bsmall -160
+KPX Taltone Csmall -180
+KPX Taltone Esmall -160
+KPX Taltone Hsmall -160
+KPX Taltone Ismall -160
+KPX Taltone Jsmall -100
+KPX Taltone Lsmall -160
+KPX Taltone Msmall -160
+KPX Taltone Nsmall -180
+KPX Taltone Osmall -150
+KPX Taltone Rsmall -160
+KPX Taltone Ssmall -170
+KPX Taltone Usmall -170
+KPX Taltone Vsmall -100
+KPX Taltone Wsmall -170
+KPX Taltone Xsmall -150
+KPX Taltone Ysmall -170
+KPX Taltone Zsmall -160
+KPX Taltone AEsmall -190
+KPX Taltone OEsmall -150
+KPX Taltone Oslashsmall -150
+KPX Taltone ij -70
+KPX Taltone ll -20
+KPX Taltone as -165
+KPX Taltone es -175
+KPX Taltone ct -165
+KPX Taltone ctlinefinalswash -165
+KPX Taltone is -70
+KPX Taltone dotlessis -70
+KPX Taltone st -135
+KPX Taltone stlinefinalswash -135
+KPX Taltone aelinefinalswash -165
+KPX Taltone oelinefinalswash -155
+KPX Taltone Aaltone -290
+KPX Taltone Baltone -60
+KPX Taltone Caltone -70
+KPX Taltone Daltone -150
+KPX Taltone Ealtone -70
+KPX Taltone Galtone -20
+KPX Taltone Laltone -40
+KPX Taltone Maltone -110
+KPX Taltone Naltone -140
+KPX Taltone Oaltone -20
+KPX Taltone Paltone -70
+KPX Taltone Raltone -120
+KPX Taltone Saltone -60
+KPX Taltone Valtone -20
+KPX Taltone Waltone -20
+KPX Taltone Xaltone -190
+KPX Taltone AEaltone -290
+KPX Taltone Halttwo -40
+KPX Taltone Malttwo -200
+KPX Taltone Oslashaltone -20
+KPX Taltone elinefinalswash -175
+KPX Taltone zlinefinalswash -133
+KPX Taltone Esmallalt -160
+KPX Taltone Lsmallalt -190
+KPX Taltone sp -135
+KPX Taltone us -140
+KPX Valtone ampersand -25
+KPX Valtone parenright -10
+KPX Valtone comma -135
+KPX Valtone period -135
+KPX Valtone colon -45
+KPX Valtone semicolon -45
+KPX Valtone A -80
+KPX Valtone H -40
+KPX Valtone T -30
+KPX Valtone V -30
+KPX Valtone W -30
+KPX Valtone X -30
+KPX Valtone a -75
+KPX Valtone c -35
+KPX Valtone d -90
+KPX Valtone e -60
+KPX Valtone i -30
+KPX Valtone l -20
+KPX Valtone o -35
+KPX Valtone r -10
+KPX Valtone s -35
+KPX Valtone t -15
+KPX Valtone u -40
+KPX Valtone y -35
+KPX Valtone AE -80
+KPX Valtone ae -75
+KPX Valtone oslash -35
+KPX Valtone ellipsis -135
+KPX Valtone oe -35
+KPX Valtone quotedblright 35
+KPX Valtone quoteright 35
+KPX Valtone quotesinglbase -135
+KPX Valtone quotedblbase -135
+KPX Valtone parenrightlining -30
+KPX Valtone Asmall -80
+KPX Valtone Csmall -40
+KPX Valtone Dsmall -10
+KPX Valtone Esmall -30
+KPX Valtone Hsmall -20
+KPX Valtone Ismall -40
+KPX Valtone Jsmall -130
+KPX Valtone Lsmall -40
+KPX Valtone Msmall -65
+KPX Valtone Nsmall -40
+KPX Valtone Osmall -60
+KPX Valtone Rsmall -40
+KPX Valtone Ssmall -60
+KPX Valtone Tsmall -40
+KPX Valtone Usmall -40
+KPX Valtone Xsmall -50
+KPX Valtone Ysmall -30
+KPX Valtone Zsmall -60
+KPX Valtone AEsmall -80
+KPX Valtone OEsmall -60
+KPX Valtone Oslashsmall -60
+KPX Valtone ij -30
+KPX Valtone ll -20
+KPX Valtone as -75
+KPX Valtone es -60
+KPX Valtone ct -35
+KPX Valtone ctlinefinalswash -35
+KPX Valtone is -30
+KPX Valtone dotlessis -30
+KPX Valtone st -35
+KPX Valtone stlinefinalswash -35
+KPX Valtone tt -15
+KPX Valtone ttlinefinalswash -15
+KPX Valtone aelinefinalswash -75
+KPX Valtone oelinefinalswash -35
+KPX Valtone Aaltone -90
+KPX Valtone Baltone -30
+KPX Valtone Daltone -70
+KPX Valtone Ealtone -10
+KPX Valtone Maltone -145
+KPX Valtone Naltone -125
+KPX Valtone Raltone -40
+KPX Valtone Saltone -60
+KPX Valtone Xaltone -70
+KPX Valtone AEaltone -90
+KPX Valtone Halttwo -70
+KPX Valtone Malttwo -80
+KPX Valtone elinefinalswash -60
+KPX Valtone tlinefinalswash -15
+KPX Valtone Esmallalt -30
+KPX Valtone Lsmallalt -100
+KPX Valtone Tsmallalt -50
+KPX Valtone sp -35
+KPX Valtone us -40
+KPX Waltone ampersand 5
+KPX Waltone parenright -10
+KPX Waltone comma -100
+KPX Waltone period -100
+KPX Waltone colon -40
+KPX Waltone semicolon -40
+KPX Waltone A -80
+KPX Waltone H -40
+KPX Waltone V -30
+KPX Waltone W -30
+KPX Waltone X -30
+KPX Waltone a -70
+KPX Waltone d -60
+KPX Waltone e -30
+KPX Waltone h -20
+KPX Waltone i -15
+KPX Waltone m -30
+KPX Waltone o -15
+KPX Waltone r -10
+KPX Waltone s -55
+KPX Waltone t -15
+KPX Waltone u -10
+KPX Waltone y -10
+KPX Waltone AE -80
+KPX Waltone ae -70
+KPX Waltone oslash -15
+KPX Waltone ellipsis -100
+KPX Waltone oe -15
+KPX Waltone quotedblright 35
+KPX Waltone quoteright 35
+KPX Waltone quotesinglbase -100
+KPX Waltone quotedblbase -100
+KPX Waltone parenrightlining -30
+KPX Waltone Asmall -60
+KPX Waltone Csmall -20
+KPX Waltone Dsmall -10
+KPX Waltone Esmall -30
+KPX Waltone Fsmall -10
+KPX Waltone Gsmall -50
+KPX Waltone Hsmall -30
+KPX Waltone Ismall -30
+KPX Waltone Jsmall -20
+KPX Waltone Lsmall -30
+KPX Waltone Msmall -35
+KPX Waltone Nsmall -10
+KPX Waltone Osmall -20
+KPX Waltone Rsmall -30
+KPX Waltone Ssmall -10
+KPX Waltone Tsmall -10
+KPX Waltone Usmall -15
+KPX Waltone Xsmall -10
+KPX Waltone Ysmall -20
+KPX Waltone Zsmall -50
+KPX Waltone AEsmall -60
+KPX Waltone OEsmall -20
+KPX Waltone Oslashsmall -20
+KPX Waltone ij -15
+KPX Waltone as -70
+KPX Waltone es -30
+KPX Waltone is -15
+KPX Waltone dotlessis -15
+KPX Waltone st -55
+KPX Waltone stlinefinalswash -55
+KPX Waltone tt -15
+KPX Waltone ttlinefinalswash -15
+KPX Waltone aelinefinalswash -70
+KPX Waltone oelinefinalswash -15
+KPX Waltone Aaltone -60
+KPX Waltone Baltone -50
+KPX Waltone Caltone 20
+KPX Waltone Daltone -70
+KPX Waltone Ealtone -10
+KPX Waltone Maltone -145
+KPX Waltone Naltone -125
+KPX Waltone Raltone -40
+KPX Waltone Xaltone -70
+KPX Waltone AEaltone -60
+KPX Waltone Halttwo -70
+KPX Waltone Malttwo -80
+KPX Waltone elinefinalswash -30
+KPX Waltone mlinefinalswash -30
+KPX Waltone tlinefinalswash -15
+KPX Waltone Esmallalt -30
+KPX Waltone Lsmallalt -70
+KPX Waltone Tsmallalt -50
+KPX Waltone sp -55
+KPX Waltone us -10
+KPX Xaltone exclam 10
+KPX Xaltone ampersand -70
+KPX Xaltone comma -100
+KPX Xaltone hyphen -100
+KPX Xaltone period -100
+KPX Xaltone colon -100
+KPX Xaltone semicolon -100
+KPX Xaltone question 10
+KPX Xaltone A -160
+KPX Xaltone B -80
+KPX Xaltone C -120
+KPX Xaltone D -80
+KPX Xaltone E -80
+KPX Xaltone F -80
+KPX Xaltone G -110
+KPX Xaltone H -80
+KPX Xaltone I -80
+KPX Xaltone K -80
+KPX Xaltone L -80
+KPX Xaltone M -120
+KPX Xaltone N -80
+KPX Xaltone O -110
+KPX Xaltone P -70
+KPX Xaltone Q -40
+KPX Xaltone R -70
+KPX Xaltone S -60
+KPX Xaltone T -50
+KPX Xaltone U -80
+KPX Xaltone V -80
+KPX Xaltone W -80
+KPX Xaltone X -70
+KPX Xaltone Y 50
+KPX Xaltone Z -60
+KPX Xaltone a -145
+KPX Xaltone e -180
+KPX Xaltone i -170
+KPX Xaltone m -130
+KPX Xaltone r -150
+KPX Xaltone u -165
+KPX Xaltone y -210
+KPX Xaltone AE -160
+KPX Xaltone ae -145
+KPX Xaltone ellipsis -100
+KPX Xaltone endash -100
+KPX Xaltone emdash -100
+KPX Xaltone quotedblright 40
+KPX Xaltone quoteright 40
+KPX Xaltone quotesinglbase -100
+KPX Xaltone quotedblbase -100
+KPX Xaltone dotlessi -170
+KPX Xaltone hyphenlining -40
+KPX Xaltone endashlining -40
+KPX Xaltone emdashlining -40
+KPX Xaltone parenrightlining -40
+KPX Xaltone Asmall -130
+KPX Xaltone Csmall -170
+KPX Xaltone Esmall -130
+KPX Xaltone Hsmall -130
+KPX Xaltone Ismall -130
+KPX Xaltone Jsmall -70
+KPX Xaltone Msmall -120
+KPX Xaltone Nsmall -60
+KPX Xaltone Osmall -140
+KPX Xaltone Rsmall -130
+KPX Xaltone Ssmall -150
+KPX Xaltone Tsmall -190
+KPX Xaltone Usmall -130
+KPX Xaltone Ysmall -150
+KPX Xaltone AEsmall -130
+KPX Xaltone OEsmall -140
+KPX Xaltone Oslashsmall -140
+KPX Xaltone ij -170
+KPX Xaltone Th -50
+KPX Xaltone as -145
+KPX Xaltone es -180
+KPX Xaltone is -170
+KPX Xaltone dotlessis -170
+KPX Xaltone aelinefinalswash -145
+KPX Xaltone Aaltone -270
+KPX Xaltone Baltone -120
+KPX Xaltone Caltone -110
+KPX Xaltone Daltone -130
+KPX Xaltone Ealtone -80
+KPX Xaltone Galtone -80
+KPX Xaltone Haltone -60
+KPX Xaltone Kaltone -60
+KPX Xaltone Maltone -320
+KPX Xaltone Naltone -220
+KPX Xaltone Oaltone -110
+KPX Xaltone Paltone -100
+KPX Xaltone Raltone -100
+KPX Xaltone Taltone -50
+KPX Xaltone Valtone -80
+KPX Xaltone Waltone -80
+KPX Xaltone Xaltone -210
+KPX Xaltone Zaltone -20
+KPX Xaltone AEaltone -270
+KPX Xaltone Halttwo -130
+KPX Xaltone Malttwo -250
+KPX Xaltone Oslashaltone -110
+KPX Xaltone elinefinalswash -180
+KPX Xaltone mlinefinalswash -130
+KPX Xaltone Esmallalt -150
+KPX Xaltone Tsmallalt -200
+KPX Xaltone us -165
+KPX Zaltone exclam -10
+KPX Zaltone ampersand -50
+KPX Zaltone parenright 40
+KPX Zaltone comma -110
+KPX Zaltone hyphen -60
+KPX Zaltone period -110
+KPX Zaltone colon -90
+KPX Zaltone semicolon -90
+KPX Zaltone question -30
+KPX Zaltone A -120
+KPX Zaltone C -50
+KPX Zaltone G -30
+KPX Zaltone M -30
+KPX Zaltone O -50
+KPX Zaltone S -20
+KPX Zaltone V -20
+KPX Zaltone W -20
+KPX Zaltone X -20
+KPX Zaltone a -170
+KPX Zaltone e -170
+KPX Zaltone h -60
+KPX Zaltone i -130
+KPX Zaltone l -20
+KPX Zaltone o -190
+KPX Zaltone u -150
+KPX Zaltone v -75
+KPX Zaltone w -165
+KPX Zaltone y -40
+KPX Zaltone AE -120
+KPX Zaltone ae -170
+KPX Zaltone oslash -190
+KPX Zaltone ellipsis -110
+KPX Zaltone oe -190
+KPX Zaltone endash -60
+KPX Zaltone emdash -60
+KPX Zaltone quotedblright 20
+KPX Zaltone quoteright 20
+KPX Zaltone quotesinglbase -110
+KPX Zaltone quotedblbase -110
+KPX Zaltone hyphenlining -40
+KPX Zaltone endashlining -40
+KPX Zaltone emdashlining -40
+KPX Zaltone Asmall -130
+KPX Zaltone Bsmall -130
+KPX Zaltone Csmall -150
+KPX Zaltone Esmall -130
+KPX Zaltone Hsmall -130
+KPX Zaltone Ismall -130
+KPX Zaltone Jsmall -40
+KPX Zaltone Lsmall -120
+KPX Zaltone Msmall -10
+KPX Zaltone Nsmall -15
+KPX Zaltone Osmall -150
+KPX Zaltone Rsmall -130
+KPX Zaltone Ssmall -160
+KPX Zaltone Tsmall -140
+KPX Zaltone Usmall -115
+KPX Zaltone Vsmall -130
+KPX Zaltone Wsmall -100
+KPX Zaltone Ysmall -120
+KPX Zaltone AEsmall -130
+KPX Zaltone OEsmall -150
+KPX Zaltone Oslashsmall -150
+KPX Zaltone ij -130
+KPX Zaltone ll -20
+KPX Zaltone as -170
+KPX Zaltone es -170
+KPX Zaltone is -130
+KPX Zaltone dotlessis -130
+KPX Zaltone aelinefinalswash -170
+KPX Zaltone oelinefinalswash -190
+KPX Zaltone Aaltone -155
+KPX Zaltone Baltone -100
+KPX Zaltone Caltone -30
+KPX Zaltone Daltone -110
+KPX Zaltone Haltone -30
+KPX Zaltone Kaltone -70
+KPX Zaltone Maltone -205
+KPX Zaltone Naltone -125
+KPX Zaltone Oaltone -50
+KPX Zaltone Paltone -70
+KPX Zaltone Raltone -80
+KPX Zaltone Valtone -60
+KPX Zaltone Waltone -60
+KPX Zaltone Xaltone -100
+KPX Zaltone AEaltone -155
+KPX Zaltone Halttwo -100
+KPX Zaltone Malttwo -130
+KPX Zaltone Oslashaltone -50
+KPX Zaltone elinefinalswash -170
+KPX Zaltone Esmallalt -150
+KPX Zaltone Lsmallalt -140
+KPX Zaltone Tsmallalt -140
+KPX Zaltone us -150
+KPX AEaltone parenright 40
+KPX AEaltone hyphen 10
+KPX AEaltone J 30
+KPX AEaltone V -10
+KPX AEaltone W -10
+KPX AEaltone Z 10
+KPX AEaltone f -25
+KPX AEaltone v -45
+KPX AEaltone w -45
+KPX AEaltone y -30
+KPX AEaltone endash 10
+KPX AEaltone emdash 10
+KPX AEaltone fi -25
+KPX AEaltone fl -25
+KPX AEaltone hyphenlining 10
+KPX AEaltone endashlining 10
+KPX AEaltone emdashlining 10
+KPX AEaltone parenrightlining 40
+KPX AEaltone Jsmall -10
+KPX AEaltone Qsmall -10
+KPX AEaltone Tsmall -20
+KPX AEaltone Usmall -10
+KPX AEaltone Vsmall -20
+KPX AEaltone Wsmall -20
+KPX AEaltone Ysmall -30
+KPX AEaltone fb -25
+KPX AEaltone ff -25
+KPX AEaltone fh -25
+KPX AEaltone fj -25
+KPX AEaltone fk -25
+KPX AEaltone fklinefinalswash -25
+KPX AEaltone fr -25
+KPX AEaltone ft -25
+KPX AEaltone ftlinefinalswash -25
+KPX AEaltone ffb -25
+KPX AEaltone ffh -25
+KPX AEaltone ffi -25
+KPX AEaltone ffk -25
+KPX AEaltone ffklinefinalswash -25
+KPX AEaltone ffl -25
+KPX AEaltone ffr -25
+KPX AEaltone Aaltone -65
+KPX AEaltone Daltone -75
+KPX AEaltone Maltone -110
+KPX AEaltone Raltone -70
+KPX AEaltone Valtone -80
+KPX AEaltone Waltone -80
+KPX AEaltone Xaltone -65
+KPX AEaltone AEaltone -65
+KPX AEaltone Malttwo -100
+KPX AEaltone Tsmallalt -20
+KPX Halttwo ampersand -55
+KPX Halttwo parenright 100
+KPX Halttwo comma -85
+KPX Halttwo hyphen -60
+KPX Halttwo period -85
+KPX Halttwo colon -85
+KPX Halttwo semicolon -85
+KPX Halttwo question 40
+KPX Halttwo A -120
+KPX Halttwo C -70
+KPX Halttwo G -70
+KPX Halttwo H -60
+KPX Halttwo M -30
+KPX Halttwo O -70
+KPX Halttwo Q -70
+KPX Halttwo a -130
+KPX Halttwo e -155
+KPX Halttwo i -135
+KPX Halttwo n -95
+KPX Halttwo o -135
+KPX Halttwo s -115
+KPX Halttwo t -115
+KPX Halttwo u -130
+KPX Halttwo y -125
+KPX Halttwo AE -120
+KPX Halttwo ae -130
+KPX Halttwo oslash -135
+KPX Halttwo ellipsis -85
+KPX Halttwo oe -135
+KPX Halttwo endash -60
+KPX Halttwo emdash -60
+KPX Halttwo quotedblright 90
+KPX Halttwo quoteright 90
+KPX Halttwo quotesinglbase -85
+KPX Halttwo quotedblbase -85
+KPX Halttwo dotlessi -135
+KPX Halttwo parenrightlining 40
+KPX Halttwo Asmall -120
+KPX Halttwo Esmall -130
+KPX Halttwo Hsmall -120
+KPX Halttwo Ismall -120
+KPX Halttwo Osmall -130
+KPX Halttwo Ssmall -145
+KPX Halttwo Usmall -140
+KPX Halttwo Ysmall -130
+KPX Halttwo AEsmall -120
+KPX Halttwo OEsmall -130
+KPX Halttwo Oslashsmall -130
+KPX Halttwo ij -135
+KPX Halttwo as -130
+KPX Halttwo es -155
+KPX Halttwo is -135
+KPX Halttwo dotlessis -135
+KPX Halttwo ns -95
+KPX Halttwo nt -95
+KPX Halttwo ntlinefinalswash -95
+KPX Halttwo st -115
+KPX Halttwo stlinefinalswash -115
+KPX Halttwo tt -115
+KPX Halttwo ttlinefinalswash -115
+KPX Halttwo aelinefinalswash -130
+KPX Halttwo oelinefinalswash -135
+KPX Halttwo Aaltone -260
+KPX Halttwo Baltone -40
+KPX Halttwo Caltone -50
+KPX Halttwo Daltone -100
+KPX Halttwo Ealtone -60
+KPX Halttwo Galtone -70
+KPX Halttwo Kaltone -70
+KPX Halttwo Laltone -40
+KPX Halttwo Maltone -250
+KPX Halttwo Naltone -100
+KPX Halttwo Oaltone -70
+KPX Halttwo Paltone -80
+KPX Halttwo Raltone -140
+KPX Halttwo Saltone -60
+KPX Halttwo Valtone -40
+KPX Halttwo Waltone -40
+KPX Halttwo Xaltone -130
+KPX Halttwo Zaltone -20
+KPX Halttwo AEaltone -260
+KPX Halttwo Halttwo -70
+KPX Halttwo Malttwo -250
+KPX Halttwo Oslashaltone -70
+KPX Halttwo elinefinalswash -155
+KPX Halttwo nlinefinalswash -95
+KPX Halttwo tlinefinalswash -115
+KPX Halttwo Esmallalt -130
+KPX Halttwo sp -115
+KPX Halttwo us -130
+KPX Malttwo parenright -30
+KPX Malttwo hyphen 15
+KPX Malttwo A -60
+KPX Malttwo B -70
+KPX Malttwo C -60
+KPX Malttwo D -70
+KPX Malttwo E -70
+KPX Malttwo F -70
+KPX Malttwo G -30
+KPX Malttwo H -70
+KPX Malttwo I -70
+KPX Malttwo K -70
+KPX Malttwo L -70
+KPX Malttwo M -50
+KPX Malttwo N -40
+KPX Malttwo O -30
+KPX Malttwo P -70
+KPX Malttwo Q -50
+KPX Malttwo R -60
+KPX Malttwo S -20
+KPX Malttwo T -60
+KPX Malttwo U -50
+KPX Malttwo V -90
+KPX Malttwo W -90
+KPX Malttwo X -70
+KPX Malttwo Y -70
+KPX Malttwo Z -40
+KPX Malttwo a -30
+KPX Malttwo c -30
+KPX Malttwo d -20
+KPX Malttwo e -20
+KPX Malttwo f -30
+KPX Malttwo g -20
+KPX Malttwo i -30
+KPX Malttwo l -20
+KPX Malttwo n -20
+KPX Malttwo o -20
+KPX Malttwo r -20
+KPX Malttwo s -20
+KPX Malttwo t -20
+KPX Malttwo u -20
+KPX Malttwo y -20
+KPX Malttwo AE -60
+KPX Malttwo ae -30
+KPX Malttwo oslash -20
+KPX Malttwo oe -20
+KPX Malttwo endash 15
+KPX Malttwo emdash 15
+KPX Malttwo quotedblright -90
+KPX Malttwo quoteright -90
+KPX Malttwo fi -30
+KPX Malttwo fl -30
+KPX Malttwo hyphenlining -50
+KPX Malttwo endashlining -50
+KPX Malttwo emdashlining -50
+KPX Malttwo parenrightlining -60
+KPX Malttwo Asmall -50
+KPX Malttwo Bsmall -50
+KPX Malttwo Csmall -40
+KPX Malttwo Dsmall -50
+KPX Malttwo Esmall -50
+KPX Malttwo Fsmall -50
+KPX Malttwo Gsmall -40
+KPX Malttwo Hsmall -50
+KPX Malttwo Ismall -50
+KPX Malttwo Lsmall -50
+KPX Malttwo Nsmall -50
+KPX Malttwo Osmall -20
+KPX Malttwo Psmall -50
+KPX Malttwo Rsmall -50
+KPX Malttwo Ssmall -20
+KPX Malttwo Tsmall -50
+KPX Malttwo Usmall -50
+KPX Malttwo Ysmall -50
+KPX Malttwo AEsmall -50
+KPX Malttwo OEsmall -20
+KPX Malttwo Oslashsmall -20
+KPX Malttwo fb -30
+KPX Malttwo ff -30
+KPX Malttwo fh -30
+KPX Malttwo fj -30
+KPX Malttwo fk -30
+KPX Malttwo fklinefinalswash -30
+KPX Malttwo fr -30
+KPX Malttwo ft -30
+KPX Malttwo ftlinefinalswash -30
+KPX Malttwo ffb -30
+KPX Malttwo ffh -30
+KPX Malttwo ffi -30
+KPX Malttwo ffk -30
+KPX Malttwo ffklinefinalswash -30
+KPX Malttwo ffl -30
+KPX Malttwo ffr -30
+KPX Malttwo gg -20
+KPX Malttwo ij -30
+KPX Malttwo ll -20
+KPX Malttwo Th -70
+KPX Malttwo as -30
+KPX Malttwo es -20
+KPX Malttwo ct -30
+KPX Malttwo ctlinefinalswash -30
+KPX Malttwo is -30
+KPX Malttwo dotlessis -30
+KPX Malttwo ns -20
+KPX Malttwo nt -20
+KPX Malttwo ntlinefinalswash -20
+KPX Malttwo st -20
+KPX Malttwo stlinefinalswash -20
+KPX Malttwo tt -20
+KPX Malttwo ttlinefinalswash -20
+KPX Malttwo aelinefinalswash -30
+KPX Malttwo oelinefinalswash -20
+KPX Malttwo Baltone -80
+KPX Malttwo Daltone -80
+KPX Malttwo Faltone -30
+KPX Malttwo Kaltone -60
+KPX Malttwo Paltone -30
+KPX Malttwo Raltone -60
+KPX Malttwo Taltone -70
+KPX Malttwo Valtone -90
+KPX Malttwo Waltone -90
+KPX Malttwo elinefinalswash -20
+KPX Malttwo nlinefinalswash -20
+KPX Malttwo tlinefinalswash -20
+KPX Malttwo Esmallalt -30
+KPX Malttwo Tsmallalt -80
+KPX Malttwo sp -20
+KPX Malttwo us -20
+KPX vlineinitialswash comma -75
+KPX vlineinitialswash period -75
+KPX vlineinitialswash colon -15
+KPX vlineinitialswash semicolon -15
+KPX vlineinitialswash ellipsis -75
+KPX vlineinitialswash quotesinglbase -75
+KPX vlineinitialswash quotedblbase -75
+KPX wlineinitialswash comma -75
+KPX wlineinitialswash period -75
+KPX wlineinitialswash colon -15
+KPX wlineinitialswash semicolon -15
+KPX wlineinitialswash ellipsis -75
+KPX wlineinitialswash quotesinglbase -75
+KPX wlineinitialswash quotedblbase -75
+KPX zlinefinalswash hyphen -30
+KPX zlinefinalswash endash -30
+KPX zlinefinalswash emdash -30
+KPX Esmallalt parenright 20
+KPX Esmallalt hyphen 40
+KPX Esmallalt colon 20
+KPX Esmallalt semicolon 20
+KPX Esmallalt endash 40
+KPX Esmallalt emdash 40
+KPX Esmallalt quotedblright 10
+KPX Esmallalt quoteright 10
+KPX Esmallalt parenrightsmall 10
+KPX Esmallalt Csmall 15
+KPX Esmallalt Gsmall 15
+KPX Esmallalt Osmall 15
+KPX Esmallalt Qsmall 15
+KPX Esmallalt OEsmall 15
+KPX Esmallalt Oslashsmall 15
+KPX Esmallalt Esmallalt 20
+KPX Esmallalt Tsmallalt 10
+KPX Lsmallalt parenright 30
+KPX Lsmallalt hyphen -20
+KPX Lsmallalt colon 30
+KPX Lsmallalt semicolon 30
+KPX Lsmallalt endash -20
+KPX Lsmallalt emdash -20
+KPX Lsmallalt parenrightsmall 40
+KPX Lsmallalt Csmall -15
+KPX Lsmallalt Gsmall -15
+KPX Lsmallalt Osmall -10
+KPX Lsmallalt Tsmall -20
+KPX Lsmallalt Usmall -10
+KPX Lsmallalt OEsmall -10
+KPX Lsmallalt Oslashsmall -10
+KPX Lsmallalt Tsmallalt -20
+KPX Tsmallalt parenright 20
+KPX Tsmallalt comma -80
+KPX Tsmallalt hyphen -30
+KPX Tsmallalt period -80
+KPX Tsmallalt ellipsis -80
+KPX Tsmallalt endash -30
+KPX Tsmallalt emdash -30
+KPX Tsmallalt quotedblright 60
+KPX Tsmallalt quoteright 60
+KPX Tsmallalt quotesinglbase -80
+KPX Tsmallalt quotedblbase -80
+KPX Tsmallalt ampersandsmall -10
+KPX Tsmallalt parenrightsmall 30
+KPX Tsmallalt Asmall -15
+KPX Tsmallalt Csmall -10
+KPX Tsmallalt Gsmall -10
+KPX Tsmallalt Msmall -10
+KPX Tsmallalt Ssmall -5
+KPX Tsmallalt AEsmall -15
+KPX Tsmallalt Lsmallalt -30
+KPX dblslongl parenright 50
+KPX dblslongl asterisk 60
+KPX dblslongl comma -30
+KPX dblslongl period -30
+KPX dblslongl ellipsis -30
+KPX dblslongl quotedblright 55
+KPX dblslongl quoteright 55
+KPX dblslongl quotesinglbase -30
+KPX dblslongl quotedblbase -30
+KPX sp comma -55
+KPX sp period -55
+KPX sp colon -25
+KPX sp semicolon -25
+KPX sp ellipsis -55
+KPX sp quotedblright -15
+KPX sp quoteright -15
+KPX sp quotesinglbase -55
+KPX sp quotedblbase -55
+KPX us comma -30
+KPX us period -30
+KPX us ellipsis -30
+KPX us quotedblright 35
+KPX us quoteright 35
+KPX us quotesinglbase -30
+KPX us quotedblbase -30
+EndKernPairs
+EndKernData
+EndFontMetrics

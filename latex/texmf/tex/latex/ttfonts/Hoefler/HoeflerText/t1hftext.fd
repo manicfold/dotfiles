@@ -1,0 +1,35 @@
+% t1hftext.fd
+% Created by ttf2tex v0.7 on 2009-09-04 21:00:59
+% This file should be put in a tex inputs directory
+
+\ProvidesFile{t1hftext.fd}[2009/09/04 T1/hftext font definitions]
+
+\DeclareFontFamily{T1}{hftext}{}
+
+\DeclareFontShape{T1}{hftext}{m}{n} {<-> hftextr8t}{}
+\DeclareFontShape{T1}{hftext}{m}{sc}{<-> hftextrc8t}{}
+\DeclareFontShape{T1}{hftext}{m}{sl}{<-> hftextro8t}{}
+\DeclareFontShape{T1}{hftext}{m}{it}{<-> hftextri8t}{}
+
+\DeclareFontShape{T1}{hftext}{b}{n} {<-> sub * hftext/cb/n}{}
+\DeclareFontShape{T1}{hftext}{b}{sc}{<-> sub * hftext/cb/sc}{}
+\DeclareFontShape{T1}{hftext}{b}{sl}{<-> sub * hftext/cb/sl}{}
+\DeclareFontShape{T1}{hftext}{b}{it}{<-> sub * hftext/cb/it}{}
+
+\DeclareFontShape{T1}{hftext}{cb}{n} {<-> hftextc8t}{}
+\DeclareFontShape{T1}{hftext}{cb}{sc}{<-> hftextcc8t}{}
+\DeclareFontShape{T1}{hftext}{cb}{sl}{<-> hftextco8t}{}
+\DeclareFontShape{T1}{hftext}{cb}{it}{<-> hftextci8t}{}
+
+\DeclareFontShape{T1}{hftext}{eb}{n} {<-> ssub * hftext/cb/n}{}
+\DeclareFontShape{T1}{hftext}{eb}{sc}{<-> ssub * hftext/cb/sc}{}
+\DeclareFontShape{T1}{hftext}{eb}{sl}{<-> ssub * hftext/cb/sl}{}
+\DeclareFontShape{T1}{hftext}{eb}{it}{<-> ssub * hftext/cb/it}{}
+
+\DeclareFontShape{T1}{hftext}{bx}{n} {<-> sub * hftext/cb/n}{}
+\DeclareFontShape{T1}{hftext}{bx}{sc}{<-> sub * hftext/cb/sc}{}
+\DeclareFontShape{T1}{hftext}{bx}{sl}{<-> sub * hftext/cb/sl}{}
+\DeclareFontShape{T1}{hftext}{bx}{it}{<-> sub * hftext/cb/it}{}
+
+\endinput
+

@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+TOMBNAME=secrets
+TOMB="$TOMBNAME".tomb
+KEY="$TOMB".key
+TOMBDIR=~
+KEYDIR=~
+
+tomb open "$TOMBDIR/$TOMB" -k "$KEYDIR/$KEY"
+MP=$( tomb list | sed -nr \
+    -e "s:\x1B\[[0-9;]*[mK]::g"  \
+    -e "s:\[${TOMBNAME}\].*open on (.*) using.*:\1:p" \
+    )
+PWF="${MP}/pwd.txt"
+vim "$PWF"
+tomb close "$TOMBNAME"

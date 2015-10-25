@@ -1,0 +1,14 @@
+% [BEG hftext] -- Created by ttf2tex v0.7 on 2009-09-04 21:00:59
+hftextr16t      ./hftextr16.ttf         Encoding=T1-WGL4.enc
+hftextc16t      ./hftextc16.ttf         Encoding=T1-WGL4.enc
+hftextr16c      ./hftextr16.ttf         Encoding=TS1-AGL.enc
+hftextc16c      ./hftextc16.ttf         Encoding=TS1-AGL.enc
+hftextri16t     ./hftextri16.ttf        Encoding=T1-WGL4.enc
+hftextci16t     ./hftextci16.ttf        Encoding=T1-WGL4.enc
+hftextri16c     ./hftextri16.ttf        Encoding=TS1-AGL.enc
+hftextci16c     ./hftextci16.ttf        Encoding=TS1-AGL.enc
+hftextro16t     ./hftextr16.ttf         Slant=0.167 Encoding=T1-WGL4.enc
+hftextco16t     ./hftextc16.ttf         Slant=0.167 Encoding=T1-WGL4.enc
+hftextro16c     ./hftextr16.ttf         Slant=0.167 Encoding=TS1-AGL.enc
+hftextco16c     ./hftextc16.ttf         Slant=0.167 Encoding=TS1-AGL.enc
+% [END hftext] -- Created by ttf2tex v0.7 on 2009-09-04 21:00:59

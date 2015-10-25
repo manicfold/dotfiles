@@ -1,0 +1,304 @@
+% TS1-AGL.enc
+% Created by ttf2tex v0.7 on 2009-09-04 21:00:59
+% This file should be put in a tex inputs directory
+%
+% Note: This encoding vector was installed by ttf2tex
+%       v0.7.
+%
+%       Future versions of ttf2tex may ship with an
+%       updated version of this file.
+%
+%       This file is still more or less experimental.
+%
+% Originally written by D. van Dok <d.vandoc@ecn.nl>
+% Modified and enhanced by Werner Lemberg <wl@gnu.org>
+%
+% Version 0.1  2001-02-15
+%
+% Glyph names follow the Adobe Glyph List (AGL); WGL4 glyph
+% name variants (mostly for older fonts) as documented in
+% the TrueType specification are as follows.
+%
+%   Omega          -> Ohm
+%   lira           -> afii08941
+%   mu             -> mu1
+%   periodcentered -> middot
+%
+% Glyph names marked with "?" are uncertain; any improvements welcome
+
+/TS1Encoding [          % now 256 chars follow
+% 0x00
+  /Grave                % CAPITAL GRAVE ACCENT (AGL)
+  /Acute                % CAPITAL ACUTE ACCENT (AGL)
+  /.notdef              % CAPITAL CIRCUMFLEX ACCENT
+  /.notdef              % CAPITAL TILDE ACCENT
+  /Dieresis             % CAPITAL DIAERESIS (AGL)
+  /Hungarumlaut         % CAPITAL DOUBLE ACUTE ACCENT (AGL)
+  /.notdef              % CAPITAL RING ACCENT
+  /Caron                % CAPITAL CARON (AGL)
+  /.notdef              % CAPITAL BREVE ACCENT
+  /Macron               % CAPITAL MACRON (AGL)
+  /.notdef              % CAPITAL DOT ABOVE ACCENT
+  /cedilla              % CAPITAL CEDILLA (AGL, WGL4)
+  /ogonek               % CAPITAL OGONEK (AGL, WGL4)
+  /quotesinglbase       % SINGLE LOW-9 QUOTATION MARK (AGL, WGL4)
+  /.notdef
+  /.notdef
+% 0x10
+  /.notdef
+  /.notdef
+  /quotedblbase         % DOUBLE LOW-9 QUOTATION MARK (AGL, WGL4)
+  /.notdef
+  /.notdef
+  /.notdef              % 2/3 em dash
+  /threequartersemdash  % THREE QUARTERS EM DASH (AGL)
+  /.notdef              % capital compound word mark
+  /arrowleft            % LEFTWARDS ARROW (AGL, WGL4)
+  /arrowright           % RIGHTWARDS ARROW (AGL, WGL4)
+  /uni2040              % ? TIE ACCENT (AGL)
+  /.notdef              % ? CAPITAL TIE ACCENT
+  /.notdef              % ? TIE ACCENT (variant)
+  /.notdef              % ? CAPITAL TIE ACCENT (variant)
+  /.notdef
+  /.notdef              % lowercase ascender compound word mark
+% 0x20
+  /uni0180              % LATIN SMALL LETTER B WITH STROKE (AGL)
+  /.notdef
+  /.notdef
+  /.notdef
+  /dollar               % DOLLAR SIGN (AGL, WGL4)
+  /.notdef
+  /.notdef
+  /quotesingle          % APOSTROPHE (AGL, WGL4)
+  /.notdef
+  /.notdef
+  /asterisk             % ASTERISK (AGL, WGL4)
+  /.notdef
+  /comma                % COMMA (AGL, WGL4)
+  /.notdef              % HYPHEN (glyph variant with two strokes)
+  /period               % FULL STOP (AGL, WGL4)
+  /fraction             % ? FRACTION SLASH (AGL, WGL4) or "/slash"
+% 0x30
+  /zerooldstyle         % OLDSTYLE DIGIT ZERO (AGL)
+  /oneoldstyle          % OLDSTYLE DIGIT ONE (AGL)
+  /twooldstyle          % OLDSTYLE DIGIT TWO (AGL)
+  /threeoldstyle        % OLDSTYLE DIGIT THREE (AGL)
+  /fouroldstyle         % OLDSTYLE DIGIT FOUR (AGL)
+  /fiveoldstyle         % OLDSTYLE DIGIT FIVE (AGL)
+  /sixoldstyle          % OLDSTYLE DIGIT SIX (AGL)
+  /sevenoldstyle        % OLDSTYLE DIGIT SEVEN (AGL)
+  /eightoldstyle        % OLDSTYLE DIGIT EIGHT (AGL)
+  /nineoldstyle         % OLDSTYLE DIGIT NINE (AGL)
+  /.notdef
+  /.notdef
+  /angleleft            % LEFT-POINTING ANGLE BRACKET (AGL)
+  /minus                % MINUS SIGN (AGL, WGL4)
+  /angleright           % RIGHT-POINTING ANGLE BRACKET (AGL)
+  /.notdef
+% 0x40
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /uni2127              % INVERTED OHM SIGN (AGL)
+  /.notdef
+  /circle               % WHITE CIRCLE (AGL, WGL4)
+% 0x50
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /Omega                % OHM SIGN (AGL, WGL4 -> "/Ohm")
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef              % OPENING DOUBLE SQUARE BRACKET
+  /.notdef
+  /.notdef              % CLOSING DOUBLE SQUARE BRACKET
+  /arrowup              % UPWARDS ARROW (AGL, WGL4)
+  /arrowdown            % DOWNWARDS ARROW (AGL, WGL4)
+% 0x60
+  /grave                % GRAVE ACCENT (AGL, WGL4)
+  /.notdef
+  /.notdef              % BORN
+  /.notdef              % DIVORCED
+  /.notdef              % DIED
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef              % LEAF
+  /.notdef              % MARRIED
+  /musicalnote          % EIGTH NOTE (AGL, WGL4)
+  /.notdef
+% 0x70
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /asciitilde           % TILDE (AGL, WGL4)
+  /.notdef              % HYPHEN (glyph variant with two strokes)
+% 0x80
+  /breve                % BREVE (AGL, WGL4)
+  /caron                % CARON (AGL, WGL4)
+  /hungarumlaut         % DOUBLE ACUTE ACCENT (AGL, WGL4)
+  /dblGrave             % CAPITAL GRAVE DOUBLE ACCENT (AGL)
+  /dagger               % DAGGER (AGL, WGL4)
+  /daggerdbl            % DOUBLE DAGGER (AGL, WGL4)
+  /.notdef              % double vertical bar
+  /perthousand          % PER MILLE SIGN (AGL, WGL4)
+  /bullet               % BULLET (AGL, WGL4)
+  /uni2103              % DEGREE CELSIUS (AGL)
+  /dollaroldstyle       % OLDSTYLE DOLLAR SIGN (AGL)
+  /centoldstyle         % OLDSTYLE CENT SIGN (AGL)
+  /florin               % LATIN SMALL LETTER F WITH HOOK (AGL, WGL4)
+  /colonmonetary        % COLON SIGN (AGL)
+  /uni20A9              % WON SIGN (AGL)
+  /uni20A6              % NAIRA SIGN (AGL)
+% 0x90
+  /.notdef              % ? LATIN CAPITAL LETTER G WITH VERTICAL STROKE (guarani)
+  /.notdef              % ? LATIN CAPITAL LETTER P WITH STROKE (peso)
+  /lira                 % LIRA SIGN (AGL, WGL4 -> "/afii08941")
+  /prescription         % ? RECIPE (AGL)
+  /uni203D              % INTERROBANG (AGL)
+  /.notdef              % INTERROBANG INVERTED
+  /dong                 % DONG SIGN (AGL)
+  /trademark            % TRADE MARK SIGN (AGL, WGL4)
+  /uni2031              % PER TEN THOUSAND SIGN (AGL)
+  /.notdef              % ? PILCROW SIGN (glyph variant)
+  /uni0E3F              % THAI CURRENCY SYMBOL BAHT (AGL)
+  /afii61352            % NUMERO SIGN (AGL, WGL4)
+  /.notdef              % PERCENT SIGN (glyph variant)
+  /estimated            % ESTIMATED SYMBOL (AGL, WGL4)
+  /openbullet           % WHITE BULLET (AGL, WGL4)
+  /uni2120              % SERVICE MARK (AGL)
+% 0xA0
+  /uni2045              % LEFT SQUARE BRACKET WITH SQUILL (AGL)
+  /uni2046              % RIGHT SQUARE BRACKET WITH SQUILL (AGL)
+  /cent                 % CENT SIGN (AGL, WGL4)
+  /sterling             % POUND SIGN (AGL, WGL4)
+  /currency             % CURRENCY SIGN (AGL, WGL4)
+  /yen                  % YEN SIGN (AGL, WGL4)
+  /brokenbar            % BROKEN BAR (AGL, WGL4)
+  /section              % SECTION SIGN (AGL, WGL4)
+  /dieresis             % DIAERESIS (AGL, WGL4)
+  /copyright            % COPYRIGHT SIGN (AGL, WGL4)
+  /ordfeminine          % FEMININE ORDINAL INDICATOR (AGL, WGL4)
+  /.notdef              % COPYLEFT SIGN
+  /logicalnot           % NOT SIGN (AGL, WGL4)
+  /uni2117              % SOUND RECORDING COPYRIGHT (AGL)
+  /registered           % REGISTERED SIGN (AGL, WGL4)
+  /macron               % MACRON (AGL, WGL4)
+% 0xB0
+  /degree               % DEGREE SIGN (AGL, WGL4)
+  /plusminus            % PLUS-MINUS SIGN (AGL, WGL4)
+  /twosuperior          % SUPERSCRIPT TWO (AGL, WGL4)
+  /threesuperior        % SUPERSCRIPT THREE (AGL, WGL4)
+  /acute                % ACUTE ACCENT (AGL, WGL4)
+  /mu                   % MICRO SIGN (AGL, WGL4 -> "/mu1")
+  /paragraph            % PILCROW SIGN (AGL, WGL4)
+  /periodcentered       % MIDDLE DOT (AGL, WGL4 -> "/middot")
+  /uni203B              % REFERENCE MARK
+  /onesuperior          % SUPERSCRIPT ONE (AGL, WGL4)
+  /ordmasculine         % MASCULINE ORDINAL INDICATOR (AGL, WGL4)
+  /radical              % SQUARE ROOT (AGL, WGL4)
+  /onequarter           % VULGAR FRACTION ONE QUARTER (AGL, WGL4)
+  /onehalf              % VULGAR FRACTION ONE HALF (AGL, WGL4)
+  /threequarters        % VULGAR FRACTION THREE QUARTERS (AGL, WGL4)
+  /Euro                 % EURO SIGN (AGL)
+% 0xC0
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+% 0xD0
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /multiply             % MULTIPLICATION SIGN (AGL, WGL4)
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+% 0xE0
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+% 0xF0
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /divide               % DIVISION SIGN (AGL, WGL4)
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+  /.notdef
+] def
+
+% eof

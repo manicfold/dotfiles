@@ -1,0 +1,17 @@
+% [BEG hftext] -- Created by ttf2tex v0.7 on 2009-09-04 21:00:59
+hftextr16t      HoeflerText-Regular                                     <T1-WGL4.enc <hftextr16.ttf
+hftextc16t      HoeflerText-Black                                       <T1-WGL4.enc <hftextc16.ttf
+hftextr16c      HoeflerText-Regular                                     <TS1-AGL.enc <hftextr16.ttf
+hftextc16c      HoeflerText-Black                                       <TS1-AGL.enc <hftextc16.ttf
+hftextri16t     HoeflerText-Italic                                      <T1-WGL4.enc <hftextri16.ttf
+hftextci16t     HoeflerText-BlackItalic                                 <T1-WGL4.enc <hftextci16.ttf
+hftextri16c     HoeflerText-Italic                                      <TS1-AGL.enc <hftextri16.ttf
+hftextci16c     HoeflerText-BlackItalic                                 <TS1-AGL.enc <hftextci16.ttf
+% Note: When this version of ttf2tex was released, pdfTeX did not support slanting of
+%       TrueType fonts. The relevant lines below are therefore commented out. See the
+%       ttf2tex manual and the pdfTeX documentation for details.
+% hftextro16t   HoeflerText-Regular             "0.167 SlantFont"       <T1-WGL4.enc <hftextr16.ttf
+% hftextco16t   HoeflerText-Black               "0.167 SlantFont"       <T1-WGL4.enc <hftextc16.ttf
+% hftextro16c   HoeflerText-Regular             "0.167 SlantFont"       <TS1-AGL.enc <hftextr16.ttf
+% hftextco16c   HoeflerText-Black               "0.167 SlantFont"       <TS1-AGL.enc <hftextc16.ttf
+% [END hftext] -- Created by ttf2tex v0.7 on 2009-09-04 21:00:59

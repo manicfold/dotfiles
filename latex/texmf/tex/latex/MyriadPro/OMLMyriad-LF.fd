@@ -1,0 +1,19 @@
+\ProvidesFile{OMLMyriad-LF.fd}[2004/09/20 font definitions for OML/Myriad-LF.]
+\DeclareFontFamily{OML}{Myriad-LF}{}
+\DeclareFontShape{OML}{Myriad-LF}{m}{n}{
+   <-> MyriadPro-Regular-7m}{}
+\DeclareFontShape{OML}{Myriad-LF}{m}{it}{
+   <-> MyriadPro-It-7m}{}
+\DeclareFontShape{OML}{Myriad-LF}{b}{n}{
+   <-> MyriadPro-Bold-7m}{}
+\DeclareFontShape{OML}{Myriad-LF}{b}{it}{
+   <-> MyriadPro-BoldIt-7m}{}
+
+\DeclareFontShape{OML}{Myriad-LF}{m} {sl}{<->ssub * Myriad-LF/m/it}{}
+\DeclareFontShape{OML}{Myriad-LF}{b} {sl}{<->ssub * Myriad-LF/b/it}{}
+\DeclareFontShape{OML}{Myriad-LF}{bx}{n}{<->ssub * Myriad-LF/b/n}{}
+\DeclareFontShape{OML}{Myriad-LF}{bx}{it}{<->ssub * Myriad-LF/b/it}{}
+\DeclareFontShape{OML}{Myriad-LF}{bx}{sl}{<->ssub * Myriad-LF/b/it}{}
+
+\endinput
+% vim:set ft=tex:

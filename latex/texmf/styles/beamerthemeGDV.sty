@@ -1,0 +1,32 @@
+\ProvidesPackageRCS $Header: /cvsroot/latex-beamer/latex-beamer/themes/theme/beamerthemeGDV.sty,v 1.8 2004/10/07 20:53:10 tantau Exp $
+
+% Copyright 2003 by Till Tantau <tantau@users.sourceforge.net>
+%
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 2.
+
+
+\mode<presentation>
+
+\useoutertheme[footline=authortitle]{miniframes}
+\useoutertheme[subsection=false]{smoothbars}
+\useinnertheme[shadow=false]{rounded}
+\usecolortheme{orchid}
+\usecolortheme{whale}
+
+\xdefinecolor{uniblue}{rgb}{0.24,0.45,0.72}
+
+\usecolortheme[named=uniblue]{structure}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamerfont{block title}{size={}}
+
+\setbeamertemplate{frametitle}{%
+    \colouredline{structure}%
+    {\color{white}\textbf{\insertframetitle}%
+    \hfill\includegraphics[height=0.8cm]{luh-logo-outline}\rule[-0.1cm]{0cm}{0.7cm}}%
+}
+
+\setbeamertemplate{footline}[frame number]
+
+\mode<all>

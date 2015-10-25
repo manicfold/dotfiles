@@ -1,0 +1,176 @@
+\message{Mathematische Symbole und Makros (PDF/non-PDF), 22.12.2006}
+%
+% FEATURES:
+%       Lädt AMS-Mathematikpakete (amssymb und amsmath) und definiert noch
+%       einige weitere Symbole und Funktionen:
+%
+%       \N, \Z, \Q, \R, \C, \K, \Pro    -  Mengen
+%       
+%       \ada, \adb, \adc, \ade, \adf,   -  Frakturbuchstaben
+%       \adg, \adp, \adt, \adv, \adw, 
+%       \adx, \ady, \adz, 
+%       \adA, \adB, \adC, \adD, \adE, 
+%       \adF, \adG, \adL, \adM, \adN, 
+%       \adP, \adR, \adS, \adT, \adU, 
+%       \adV, \adY
+%
+%       \nullvec                        - Fraktur 0
+%       \Diff                           - D
+%
+%       Mathematische Funktionen
+%       \Sign                           - Vorzeichen
+%       \Spur                           - Spur
+%       \Rang                           - Rang einer Matrix
+%
+%       \vec{a}                         - Vektorschreibweise von a
+%       \vtwo{x_1}{x_2}                 - Vektor mit zwei Koordinaten
+%       \vthree{x_1}{x_2}{x_3}          - Vektor mit drei Koordinaten
+%       \bico{a}{b}                     - Binomialkoeffizien „a über b“
+%       \scalprod{a}{b}                 - Skalarprodukt mit spitzen Klammern
+%       \norm{a}                        - Normierungsstriche um a
+%
+%       Abkürzungen:
+%       \bea	\bea*	                - \begin{eqnarray} bzw. \begin{eqnarray*}
+%	\beq    \eeq	                - \begin{equation}
+%	\bs		                - Backslash
+%	\disp		                - Displaystyle
+%	\eea	\eea*	                - \end{eqnarray} bzw. \end{eqnarray*}
+%	\end		                - \end{equation}
+%	\eps		                - \varepsilon
+%	\lf		                - Linke untere Gau"s-Klammer
+%	\lt		                - Linke obere Gau"s-Klammer
+%	\rf		                - Rechte untere Gau"s-Klammer
+%	\rt		                - Rechte obere Gau"s-Klammer
+%	\vphi		                - \varphi
+%	\vtheta	                        - \vartheta
+%	\onto	                        - \rightarrow
+%
+
+% --------------------           PDF-Version?           ----------------------
+\usepackage{ifthen}		% erlaubt if-then-Konstrukte
+\newboolean{pdfversion}   
+\setboolean{pdfversion}{true}	% setze boolschen Schalter auf true
+
+% --------------------------------------------------------------------- Mengen
+\ifthenelse{\boolean{pdfversion}}
+  {\providecommand{\K}{\mathbb{K}}}
+  {\providecommand{\K}{\mathbbm{K}}}
+\ifthenelse{\boolean{pdfversion}}
+  {\providecommand{\N}{\mathbb{N}}}
+  {\providecommand{\N}{\mathbbm{N}}}
+\ifthenelse{\boolean{pdfversion}}
+  {\providecommand{\Q}{\mathbb{Q}}}
+  {\providecommand{\Q}{\mathbbm{Q}}}
+\ifthenelse{\boolean{pdfversion}}
+  {\providecommand{\Pro}{\mathbb{P}}}
+  {\providecommand{\Pro}{\mathbbm{P}}}
+\ifthenelse{\boolean{pdfversion}}
+% {\providecommand{\R}{\textbf{R}}}
+  {\providecommand{\R}{\mathbb{R}}}
+  {\providecommand{\R}{\mathbbm{R}}}
+\ifthenelse{\boolean{pdfversion}}
+  {\providecommand{\Z}{\mathbb{Z}}}
+  {\providecommand{\Z}{\mathbbm{Z}}}
+\ifthenelse{\boolean{pdfversion}}
+  {\providecommand{\C}{\mathbb{C}}}
+  {\providecommand{\C}{\mathbbm{C}}}
+  
+\providecommand{\ada}{\mathfrak{a}}
+\providecommand{\adb}{\mathfrak{b}}
+\providecommand{\adc}{\mathfrak{c}}
+\providecommand{\ade}{\mathfrak{e}}
+\providecommand{\adf}{\mathfrak{f}}
+\providecommand{\adg}{\mathfrak{g}}
+\providecommand{\adp}{\mathfrak{p}}
+\providecommand{\adt}{\mathfrak{t}}
+\providecommand{\adv}{\mathfrak{v}}
+\providecommand{\adw}{\mathfrak{w}}
+\providecommand{\adx}{\mathfrak{x}}
+\providecommand{\ady}{\mathfrak{y}}
+\providecommand{\adz}{\mathfrak{z}}
+\providecommand{\adA}{\mathfrak{A}}
+\providecommand{\adB}{\mathfrak{B}}
+\providecommand{\adC}{\mathfrak{C}}
+\providecommand{\adD}{\mathfrak{D}}
+\providecommand{\adE}{\mathfrak{E}}
+\providecommand{\adF}{\mathfrak{F}}
+\providecommand{\adG}{\mathfrak{G}}
+\providecommand{\adL}{\mathfrak{L}}
+\providecommand{\adM}{\mathfrak{M}}
+\providecommand{\adN}{\mathfrak{N}}
+\providecommand{\adP}{\mathfrak{P}}
+\providecommand{\adR}{\mathfrak{R}}
+\providecommand{\adS}{\mathfrak{S}}
+\providecommand{\adT}{\mathfrak{T}}
+\providecommand{\adU}{\mathfrak{U}}
+\providecommand{\adV}{\mathfrak{V}}
+\providecommand{\adY}{\mathfrak{Y}}
+
+\providecommand{\nullvec}{\mathfrak{0}}
+\providecommand{\Lagrangian}{\mathcal{L}}
+
+% ---------------------------------------------------------------- Operatoren %  
+\DeclareMathOperator{\sign}{\operatorname{sign}}
+\DeclareMathOperator{\spur}{\operatorname{Spur}}
+\DeclareMathOperator{\rang}{\operatorname{Rang}}
+\DeclareMathOperator{\gradient}{\operatorname{grad}}
+\DeclareMathOperator{\divergence}{\operatorname{div}}
+\DeclareMathOperator{\tdiff}{\operatorname{D}}
+\DeclareMathOperator{\id}{\operatorname{id}}
+\DeclareMathOperator{\vol}{\operatorname{vol}}
+\DeclareMathOperator{\cov}{\operatorname{cov}}
+\DeclareMathOperator{\cross}{\times}
+\DeclareMathOperator{\MAT}{\operatorname{MAT}}
+\DeclareMathOperator{\MA}{\operatorname{MA}}
+
+% ------------------------------------------------------------------ Kommandos 
+\renewcommand{\vec}[1]{\mathbf{#1}}
+
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\bico}[2]{\begin{pmatrix}#1\\#2\end{pmatrix}}
+\providecommand{\spr}[2]{\left\langle #1 , #2 \right\rangle}
+\providecommand{\difffrac}[1]{\frac{\partial}{\partial #1}}
+\providecommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\providecommand{\dd}[2]{ {\frac{\diff #1}{\diff #2}} }
+
+\providecommand{\vectortwo}[2]{\begin{pmatrix} #1 \\ #2 \end{pmatrix}}
+\providecommand{\vectorttwo}[2]{\begin{pmatrix} #1 & #2 \end{pmatrix}}
+\providecommand{\vectorthree}[3]{\begin{pmatrix} #1 \\ #2 \\ #3 \end{pmatrix}}
+\providecommand{\vtwo}[2]{\vectortwo{#1}{#2}}
+\providecommand{\vthree}[3]{\vectorthree{#1}{#2}{#3}}
+
+\providecommand{\matrixtwo}[4]{\begin{pmatrix} #1 & #2 \\ #3 & #4 \end{pmatrix}}
+\providecommand{\transpose}{^\mathrm{T}}
+\providecommand{\varmat}[1]{\underline{#1}}
+
+\providecommand{\diff}{\mathrm{d}}
+
+% ---------------------------------------------------------------- Abkürzungen
+\providecommand{\bs}{\,\backslash\,}
+
+\providecommand{\bea}{\@ifstar{\begin{eqnarray*}}{\begin{eqnarray}}}
+\providecommand{\eea}{\@ifstar{\end{eqnarray*}}{\end{eqnarray}}}
+\providecommand{\beq}{\begin{equation}}
+\providecommand{\eeq}{\end{equation}}
+
+\providecommand{\eps}{\varepsilon}
+\providecommand{\vtheta}{\vartheta}
+\providecommand{\vphi}{\varphi}
+
+\providecommand{\lf}{\left\lfloor}
+\providecommand{\rf}{\right\rfloor}
+\providecommand{\lt}{\left\lceil}
+\providecommand{\rt}{\right\rceil}
+
+\providecommand{\onto}{\rightarrow}
+
+\providecommand{\vX}{\vec{X}}
+\providecommand{\vx}{\vec{x}}
+\providecommand{\ve}{\vec{e}}
+\providecommand{\vu}{\vec{u}}
+\providecommand{\vchi}{\vec{\chi}}
+
+% ------------------------------------------------------ Sätze und Definitionen
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{lemma}{Lemma}

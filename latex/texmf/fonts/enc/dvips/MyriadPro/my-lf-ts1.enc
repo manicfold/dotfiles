@@ -1,0 +1,128 @@
+% TS1 Encoding
+%
+/MinionPro-TS1Encoding [          % now 256 chars follow
+% 0x00
+  /Grave /Acute
+  /uniEFF7 /unitEFF5 % /capitalcircumflex /capitaltilde
+  /Dieresis /Hungarumlaut
+  /uniEFF3 % /capitalring
+  /Caron /Macron
+  /uniEFED % /capitaldotaccent
+  /cedilla /ogonek
+  /.notdef
+  /.notdef % /textquotestraightbase
+  /.notdef /.notdef
+% 0x10
+  /.notdef /.notdef
+  /.notdef % /textquotestraightdblbase
+  /.notdef /.notdef
+  /.notdef % /texttwelveudash
+  /threequatersemdash
+  /.notdef /.notdef /.notdef % /textcapitalcompwordmark /textleftarrow /textrightarrow
+  /cyrflex /cyrFlex /cyrflex /cyrFlex /.notdef
+  /.notdef % /textascendercompwordmark
+% 0x20
+  /.notdef % /textblank
+  /.notdef /.notdef /.notdef
+  /dollar
+  /.notdef /.notdef
+  /quotesingle
+  /.notdef /.notdef
+  /.notdef % /textasteriskcentered
+  /.notdef
+  /comma
+  /.notdef % /textdblhyphen
+  /.notdef
+  /fraction
+% 0x30
+  /zerooldstyle /oneoldstyle /twooldstyle /threeoldstyle /fouroldstyle
+  /fiveoldstyle /sixoldstyle /sevenoldstyle /eightoldstyle /nineoldstyle
+  /.notdef /.notdef
+  /.notdef % /textlangle
+  /minus
+  /.notdef % /textrangle
+  /.notdef
+% 0x40
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef % /textmho
+  /.notdef
+  /.notdef % /textbigcircle
+% 0x50
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /Omega
+  /.notdef /.notdef /.notdef
+  /.notdef % /textlbrackdbl
+  /.notdef
+  /.notdef % /textrbrackdbl
+  /.notdef % /textuparrow
+  /.notdef % /textdownarrow
+% 0x60
+  /grave
+  /.notdef
+  /.notdef % /textborn
+  /.notdef % /textdivorced
+  /dagger
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef % /textleaf /textmarried /textmusicalnote
+  /.notdef
+% 0x70
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /tilde
+  /.notdef % /textdblhyphenchar
+% 0x80
+  /breve /caron /hungarumault /dblgrave /dagger /daggerdbl
+  /.notdef % /textbardbl
+  /perthousand
+  /bullet
+  /.notdef % /textcelsius
+  /dollaroldstyle
+  /centoldstyle
+  /florin
+  /colonmonetary
+  /textwon
+  /textnaira
+% 0x90
+  /.notdef % /textguarani
+  /peseta
+  /lira
+  /.notdef /.notdef /.notdef /.notdef % /textrecipe /textinterrobang /textinterrobangdown /textdong
+  /trademark
+  /.notdef % /textpertenthousand
+  /paragraph
+  /.notdef % /textbaht
+  /afii61352 % /textnumero
+  /.notdef % /textdiscount
+  /estimated
+  /.notdef /.notdef % /textopenbullet /textservicemark
+% 0xA0
+  /.notdef /.notdef % /textlquill /textrquill
+  /cent /sterling /currency /yen /brokenbar /section
+  /dieresis
+  /copyright /ordfeminine
+  /.notdef % /textcopyleft
+  /logicalnot
+  /.notdef % /textcircledP
+  /registered
+  /macron
+% 0xB0
+  /degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph
+  /periodcentered
+  /.notdef % /referencemark
+  /onesuperior /ordmasculine /radical /onequarter /onehalf /threequarters /Euro
+% 0xC0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xD0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /multiply
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xE0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xF0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /divide
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+] def

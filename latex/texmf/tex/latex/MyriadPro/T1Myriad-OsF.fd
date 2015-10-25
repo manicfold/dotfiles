@@ -1,0 +1,23 @@
+\ProvidesFile{T1Myriad-OsF.fd}[2004/10/15 font definitions for T1/Myriad-OsF.]
+\DeclareFontFamily{T1}{Myriad-OsF}{}
+\DeclareFontShape{T1}{Myriad-OsF}{m}{n}{
+   <-> MyriadPro-Regular-OSF-8t}{}
+\DeclareFontShape{T1}{Myriad-OsF}{m}{it}{
+   <-> MyriadPro-It-OSF-8t}{}
+\DeclareFontShape{T1}{Myriad-OsF}{b}{n}{
+   <-> MyriadPro-Bold-OSF-8t}{}
+\DeclareFontShape{T1}{Myriad-OsF}{b}{it}{
+   <-> MyriadPro-BoldIt-OSF-8t}{}
+
+\DeclareFontShape{T1}{Myriad-OsF}{m}{sc}{<->ssub * Myriad-OsF/m/n}{}
+\DeclareFontShape{T1}{Myriad-OsF}{m}{sl}{<->ssub * Myriad-OsF/m/it}{}
+\DeclareFontShape{T1}{Myriad-OsF}{b}{sc}{<->ssub * Myriad-OsF/b/n}{}
+\DeclareFontShape{T1}{Myriad-OsF}{b}{sl}{<->ssub * Myriad-OsF/b/it}{}
+
+\DeclareFontShape{T1}{Myriad-OsF}{bx}{n}{<->ssub * Myriad-OsF/b/n}{}
+\DeclareFontShape{T1}{Myriad-OsF}{bx}{it}{<->ssub * Myriad-OsF/b/it}{}
+\DeclareFontShape{T1}{Myriad-OsF}{bx}{sc}{<->ssub * Myriad-OsF/b/n}{}
+\DeclareFontShape{T1}{Myriad-OsF}{bx}{sl}{<->ssub * Myriad-OsF/b/it}{}
+
+\endinput
+% vim:set ft=tex:
