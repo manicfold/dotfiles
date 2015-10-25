@@ -1,6 +1,6 @@
 " -----------------------------------------------------------------------------
 " Filename: .vimrc
-" Modified: So 25 Okt 2015, 20:41
+" Modified: So 25 Okt 2015, 21:29
 " See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 
@@ -106,6 +106,7 @@ let g:UltiSnipsEditSplit="vertical"
 syntax enable
 set bg=dark
 set t_Co=256
+let base16colorspace=256  " Access colors present in 256 colorspace
 colorscheme base16-eighties 
 "set rtp+=~/.vim/bundle/vim-colors-solarized
 "colorscheme solarized

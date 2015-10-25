@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------------------
 # $HOME/.bashrc
-# Modified: Sa 26 Sep 2015, 21:34
+# Modified: So 25 Okt 2015, 21:32
 # -----------------------------------------------------------------------------
 
 # set the default filemask
@@ -84,6 +84,10 @@ if [ "$TERM" != "linux" ]; then
 elif [ -f ~/.bash_prompt ]; then
     . ~/.bash_prompt
 fi
+
+# ---------------------------------------------------------------- Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/base16-eighties.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 # ------------------------------------------------------------Alias definitions
 if [ -f ~/.bash_aliases ]; then
