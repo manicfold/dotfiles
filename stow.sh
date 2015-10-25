@@ -32,6 +32,12 @@ main() {
             fi
         
             dir=${array[1]}
+
+            if [ ! -x $dir ]; then 
+               echo "Creating directory: $dir";
+               eval "mkdir -p $dir";
+            fi
+
             eval "stow --verbose=1 -t $dir $flag $package"
         else
             echo "Error: directory \"$package\" not found"

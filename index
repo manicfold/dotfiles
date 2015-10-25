@@ -1,5 +1,6 @@
+base16-shell: ~/.config/base16-shell
 bash: ~
-bin: ~
+bin: ~/bin
 byobu: ~
 config: ~
 conky: ~
