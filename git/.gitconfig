@@ -12,3 +12,4 @@
 	ci = commit
 	br = branch
 	st = status
+   di = diff

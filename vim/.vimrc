@@ -11,29 +11,47 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Bundle 'chriskempson/base16-vim'
+" File browser
 Bundle 'scrooloose/nerdtree'
+" Color theme
+Bundle 'NLKNguyen/papercolor-theme'
+" Automatic completion with Tab
 Bundle 'ervandew/supertab'
+" Automatic formatting of table structure
 Bundle 'godlygeek/tabular'
+" Code overview (methods / members)
 Bundle 'vim-scripts/taglist.vim'
-Bundle 'SirVer/ultisnips'
+" ToDo list from code comments
+Bundle 'vim-scripts/TaskList.vim'
+" Commenting
+Bundle 'tomtom/tcomment_vim'
+" Pimped status and buffer bars
 Bundle 'bling/vim-airline'
+" Kill buffer w/o closing window
 Bundle 'qpkorr/vim-bufkill'
+" Switch between .h/.cpp
 Bundle 'derekwyatt/vim-fswitch'
+" Git support
 Bundle 'tpope/vim-fugitive'
+" Basic configuration
 Bundle 'tpope/vim-sensible'
+" Snippets
 Bundle 'honza/vim-snippets'
-Bundle 'gmarik/Vundle.vim'
+" Automatic completion
 Bundle 'Valloric/YouCompleteMe'
-
-"Bundle 'altercation/vim-colors-solarized'
+" Ultimate snipping solution
+Bundle 'SirVer/ultisnips'
+" let Vundle manage itself
+Bundle 'gmarik/Vundle.vim'
+" File templates
+Bundle 'aperezdc/vim-template'
 
 call vundle#end()            " required
 
 " ------------------------------------------------------------------ Formatting
 " based on filetype
 filetype plugin indent on
-au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 3>/dev/null
+au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
 set nowrap
 set tabstop     =3
@@ -71,7 +89,10 @@ set number
 set statusline=%f%m%h%r%w%y[%l/%L,%c%V]%=[%{&fo}]%y[%{&ff}][%{&fenc==\"\"?&enc:&fenc}]
 set ruler           " Show the line and column number of the cursor position,
                     " separated by a comma.
+
+" --------------------------------------------------------------------- GUI-Vim
 set guifont=Envy\ Code\ R\ for\ Powerline\ 11
+set guioptions-=rL
 
 " ------------------------------------------------------------------- Searching
 set nohlsearch      " When there is a previous search pattern, highlight all
@@ -85,8 +106,9 @@ set ignorecase      " Ignore case in search patterns.
 set smartcase       " Override the 'ignorecase' option if the search pattern
                     " contains upper case characters.
 " ----------------------------------------------------------- tags & completion
-"set tags=~/.vimtags
+set tags += ~/.vim/tags/cpp
 
+" ------------------------------------------------------------------ Completion
 "set omnifunc=syntaxcomplete#Complete
 "set completeopt=longest,menuone
 " make YCM compatible with UltiSnips (using supertab)
@@ -104,34 +126,21 @@ let g:UltiSnipsEditSplit="vertical"
 
 " ---------------------------------------------------------------------- Colors
 syntax enable
-set bg=dark
+set bg=light
 set t_Co=256
-let base16colorspace=256  " Access colors present in 256 colorspace
-colorscheme base16-eighties 
-"set rtp+=~/.vim/bundle/vim-colors-solarized
-"colorscheme solarized
-"call togglebg#map("<F4>")
+colorscheme PaperColor
+
 " Mark columns 80 and 120+
 "let &colorcolumn=join(range(81,999),",")
 let &colorcolumn="80,".join(range(120,999),",")
 set cursorline
-
-" -------------------------------------------------------------- basic mappings
-let mapleader=","
-map <Shift-Enter> O<Esc>
-map <Enter> o<Esc>
-" move by display lines instead of logical lines
-nmap <silent> j gj
-nmap <silent> k gk
-
-" Map <F5> to turn spelling on (VIM 7.0+)
-map <F5> :setlocal spell! spelllang=en_us<cr>
 
 " --------------------------------------------------------------------- airline
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_powerline_fonts=0
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='PaperColor'
 
 " --------------------------------------------------------------------- Folding
 set foldmethod           =syntax
@@ -143,22 +152,16 @@ let perl_extended_vars   =1
 let perl_sync_dist       =250
 let g:xml_syntax_folding =1
 
-" -------------------------------------------------------------------- Nerdtree
-nnoremap <silent> <F7> :NERDTreeToggle<CR>
-
 " --------------------------------------------------------------------- Taglist
 let Tlist_Use_Right_Window = 1
 let Tlist_Show_One_File    = 1
-nnoremap <silent> <F8> :TlistToggle<CR>
 
-" --------------------------------------------------------------------- FSwitch
-nnoremap <silent> <F3> :FSHere<CR>
+" -------------------------------------------------------------------  Tasklist
+let g:tlWindowPosition=1                      " display at bottom
+let g:tlTokenList = ['TODO', 'FIXME', 'XXX']  " search tags
 
-" --------------------------------------------------------------------- BufKill
-nnoremap <silent> <F6> :BD<CR>
-nnoremap <silent> <C-Up> :bp<CR>
-nnoremap <silent> <C-Down> :bn<CR>
-
+" -------------------------------------------------------------------- fugitive
+set diffopt+=vertical
 
 " ------------------------------------------------------------- Extern programs
 " IMPORTANT: grep will sometimes skip displaying the file name if you
@@ -166,12 +169,6 @@ nnoremap <silent> <C-Down> :bn<CR>
 " program to alway generate a file-name.
 set grepprg=grep\ -nH\ $*
 
-
-" """""""""""""""""""""""""""""""" GPG editing
-let g:GPGPreferArmor=1
-let g:GPGDefaultRecipients=["philipp.blanke@googlemail.com"]
-let g:GPGPreferSymmetric=1
-let g:GPGUsePipes=1
 
 " ------------------------------------------------------------------- Functions
 " If buffer modified, update any 'Modified: ' in the first 20 lines.
@@ -181,11 +178,47 @@ function! LastModified()
   if &modified
     let save_cursor = getpos(".")
     let n = min([20, line("$")])
-    exe '1,' . n . 's#^\(.\{,10}Modified: \).*#\1' .
+    exe '1,' . n . 's#^\(.\{,20}Modified:\s\+\).*#\1' .
           \ strftime('%a %d %b %Y, %H:%M') . '#e'
-    exe '1,' . n . 's#^\(.\{,10}Last Change: \).*#\1' .
+    exe '1,' . n . 's#^\(.\{,20}Last Change:\s\+\).*#\1' .
+          \ strftime('%a %d %b %Y, %H:%M') . '#e'
+    exe '1,' . n . 's#^\(.\{,20}@date\s\+\).*#\1' .
           \ strftime('%a %d %b %Y, %H:%M') . '#e'
     call setpos('.', save_cursor)
   endif
 endfun
+function! ToggleBg()
+   let &bg = ( &bg == "dark" ? "light" : "dark" )
+endfun
 autocmd BufWritePre * call LastModified()
+
+" ----------------------------------------------------------- Keyboard mappings
+let mapleader=","
+map <Shift-Enter> O<Esc>
+map <Enter> o<Esc>
+" move by display lines instead of logical lines
+nmap <silent> j gj
+nmap <silent> k gk
+
+
+nnoremap <silent> <C-Up> :bp<CR>             " Previous buffer (bufkill)
+nnoremap <silent> <C-Down> :bn<CR>           " Next buffer (bufkill)
+
+nnoremap <silent> <F3> :FSHere<CR>           " Toggle h / cpp (FSwitch)
+nnoremap <silent> <F4> :call ToggleBg()<CR>  " Toggle background lightness
+nnoremap <silent> <F5> :setlocal spell! spelllang=en_us<cr> " Toggle spellcheck
+nnoremap <silent> <F6> :BD<CR>               " Close buffer (bufkill)
+nnoremap <silent> <F7> :NERDTreeToggle<CR>   " Toggle Nerdtree
+nnoremap <silent> <F8> :TlistToggle<CR>      " Toggle Taglist
+nnoremap <silent> <F9> :TaskList<CR>         " Open TaskList window
+nnoremap <silent> <F10> :e ~/.vimrc<CR>      " Open Settings
+
+" ------------------------------------------------------------ Private settings
+source ~/.vim/private
+
+" ----------------------------------------------------------------- GPG editing
+let g:GPGPreferArmor=1
+let g:GPGDefaultRecipients=["philipp.blanke@googlemail.com"]
+let g:GPGPreferSymmetric=1
+let g:GPGUsePipes=1
+

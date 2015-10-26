@@ -3,6 +3,9 @@
 # Modified: So 25 Okt 2015, 21:32
 # -----------------------------------------------------------------------------
 
+# If not running interactively, don't do anything
+[ -z "$PS1" ] && return
+
 # set the default filemask
 umask 022
 
@@ -12,14 +15,10 @@ umask 022
 #   TEXINPUT variable; Paths are ':' separated;
 #   double trailing slash indicates this directory is
 #   to be search recursively )
-#   export TEXINPUTS=".:~/path/to/add//:"
 export TEXINPUTS=".:~/texmf//:"
 
-# FOAM setup
-#ONCE=0
-#if [ $ONCE -eq 0 ]; then
-#    . $HOME/OpenFOAM/OpenFOAM-1.4.1/.OpenFOAM-1.4.1/bashrc
-#fi
+LC_ALL=en_US.UTF-8
+LANG=en_US.UTF-8
 
 EDITOR="vim"
 GPG_TTY="tty"
@@ -34,10 +33,10 @@ if [ -d "${HOME}/.gem/ruby/1.9.1/bin" ] ; then
    PATH="${HOME}/.gem/ruby/1.9.1/bin:${PATH}"
 fi
 
-export PATH LD_LIBRARY_PATH EDITOR GPG_TTY
+export LC_ALL LANG PATH LD_LIBRARY_PATH EDITOR GPG_TTY
 
 # ------------------------------------------------------------------ Completion
-if [ -f /etc/bash_completion ]; then
+if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
  . /etc/bash_completion
 fi
 
@@ -67,22 +66,24 @@ shopt -s extglob      # Necessary for programmable completion
 unset MAILCHECK
 
 export TIMEFORMAT=$'\nreal %3R\tuser %3U\tsys %3S\tpcpu %P\n'
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=10000
+HISTFILESIZE=20000
+# don't put duplicate lines or lines starting with space in the history.
+HISTCONTROL=ignoreboth
+
 export HISTIGNORE="&:bg:fg:ll:h"
 
 # ---------------------------------------------------------------- Color Prompt
-function _update_ps1() {
-   if [ -f ~/bin/powerline-shell.py ]; then
-      PS1="$(~/bin/powerline-shell.py $? 2> /dev/null)"
-   else
-      echo "Powershell missing."
-      PS1='\u@\h:\w\$ '
-   fi
-}
+export PROMPT_DIRTRIM=3
 
 if [ "$TERM" != "linux" ]; then
-   PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+   GIT_PROMPT_FETCH_REMOTE_STATUS=0
+#   GIT_PROMPT_THEME_NAME="Custom"
+   source ~/.bash-git-prompt/gitprompt.sh
 elif [ -f ~/.bash_prompt ]; then
-    . ~/.bash_prompt
+    source ~/.bash_prompt
 fi
 
 # ---------------------------------------------------------------- Base16 Shell
@@ -94,18 +95,22 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# tailoring 'less'
+# -------------------------------------------------------------tailoring 'less'
 export PAGER=less
 export LESSCHARSET='utf-8'
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
-#export LESSOPEN='|/usr/bin/lesspipe.sh %s 2>&-'
-# Use this if lesspipe.sh exists.
-#export LESS='-i -w  -z-4 -g -e -M -X -F -R -P%t?f%f \
-#:stdin .?pb%pb\%:?lbLine %lb:?bbByte %bb:-...'
+
+export XMLLINT_INDENT='   '
 
 # ------------------------------------------------------------------- Functions
-# Files & strings ------------------------------------------------------------
+# find in source files --------------------------------------------------------
+function find-c () {
+   find . \( -iname "*.[hc]" -o -iname "*.hpp" -o -iname "*.cpp" \) -exec grep -n $1 {} +
+}
+
+
+# Files & strings -------------------------------------------------------------
 
 # Find a file with a pattern in name:
 function ff()
@@ -219,4 +224,9 @@ function xtitle ()
 	    ;;
     esac
 }
+
+# ---------------------------------------------------------- Local definitions
+if [ -f ~/.bashrc.local ]; then
+   source .bashrc.local
+fi
 

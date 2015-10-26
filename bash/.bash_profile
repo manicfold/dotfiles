@@ -1,26 +1,15 @@
-# login definitions for the bash
+# ~/.profile: executed by the command interpreter for login shells.
+# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
+# exists.
+# see /usr/share/doc/bash/examples/startup-files for examples.
+# the files are located in the bash-doc package.
 
-export LANG='en_US.utf8'
-#export LANG='de_DE.utf8'
-export USERNAME='Philipp Blanke'
-export PATH=~/bin:$PATH
-#export CVSROOT=":pserver:blanke@cvs.gdv.uni-hannover.de:/var/repos/intern"
-# for openoffice with darkthemes:
-#export SAL_USE_VCLPLUGIN=gen
-
-# set up the editor for SVN
-if [ -x /usr/bin/nano ]; then
-  SVN_EDITOR="/usr/bin/nano";
-elif [ -x /usr/bin/pico ]; then
-  SVN_EDITOR="/usr/bin/pico";
-else
-  SVN_EDITOR="/usr/bin/vi";
-fi
-export SVN_EDITOR;
-
-# Source local definitions
-if [ -f $HOME/.bashrc ]; then
-  . $HOME/.bashrc
+# if running bash
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+	. "$HOME/.bashrc"
+   fi
 fi
 
 _byobu_sourced=1 . /usr/bin/byobu-launch

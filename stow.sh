@@ -18,7 +18,7 @@ main() {
     case "$0" in
         *restow*) flag=--restow;;
         *unstow*) flag=--delete;;
-        *stow*)   flag=--stow;;
+        *stow*)   flag= ;;
         *)        echo "Error!"; return 1;;
     esac
         
