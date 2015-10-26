@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------------------
 # $HOME/.bashrc
-# Modified: So 25 Okt 2015, 21:32
+# Modified: Mon 26 Oct 2015, 13:40
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
@@ -80,6 +80,7 @@ export PROMPT_DIRTRIM=3
 
 if [ "$TERM" != "linux" ]; then
    GIT_PROMPT_FETCH_REMOTE_STATUS=0
+   GIT_PROMPT_STATUS_COMMAND=gitstatus.sh
 #   GIT_PROMPT_THEME_NAME="Custom"
    source ~/.bash-git-prompt/gitprompt.sh
 elif [ -f ~/.bash_prompt ]; then
@@ -226,7 +227,7 @@ function xtitle ()
 }
 
 # ---------------------------------------------------------- Local definitions
-if [ -f ~/.bashrc.local ]; then
-   source .bashrc.local
+if [ -f "${HOME}/.bashrc.local" ]; then
+   source "${HOME}/.bashrc.local"
 fi
 
