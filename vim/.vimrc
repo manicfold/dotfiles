@@ -1,52 +1,55 @@
 " -----------------------------------------------------------------------------
 " Filename: .vimrc
-" Modified: So 25 Okt 2015, 21:29
+" Modified: Mon 02 Nov 2015, 11:02
 " See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 
 " ---------------------------------------------------------------------- Vundle
-set nocompatible
-filetype off
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" File browser
-Bundle 'scrooloose/nerdtree'
-" Color theme
-Bundle 'NLKNguyen/papercolor-theme'
-" Automatic completion with Tab
-Bundle 'ervandew/supertab'
-" Automatic formatting of table structure
-Bundle 'godlygeek/tabular'
-" Code overview (methods / members)
-Bundle 'vim-scripts/taglist.vim'
-" ToDo list from code comments
-Bundle 'vim-scripts/TaskList.vim'
-" Commenting
-Bundle 'tomtom/tcomment_vim'
-" Pimped status and buffer bars
-Bundle 'bling/vim-airline'
-" Kill buffer w/o closing window
-Bundle 'qpkorr/vim-bufkill'
-" Switch between .h/.cpp
-Bundle 'derekwyatt/vim-fswitch'
-" Git support
-Bundle 'tpope/vim-fugitive'
-" Basic configuration
-Bundle 'tpope/vim-sensible'
-" Snippets
-Bundle 'honza/vim-snippets'
-" Automatic completion
-Bundle 'Valloric/YouCompleteMe'
-" Ultimate snipping solution
-Bundle 'SirVer/ultisnips'
-" let Vundle manage itself
-Bundle 'gmarik/Vundle.vim'
-" File templates
-Bundle 'aperezdc/vim-template'
-
-call vundle#end()            " required
+" set nocompatible
+" filetype off
+"
+" set rtp+=~/.vim/bundle/Vundle.vim
+" call vundle#begin()
+"
+" " File browser
+" Bundle 'scrooloose/nerdtree'
+" " Color theme
+" Bundle 'NLKNguyen/papercolor-theme'
+" " Automatic completion with Tab
+" Bundle 'ervandew/supertab'
+" " Automatic formatting of table structure
+" Bundle 'godlygeek/tabular'
+" " Code overview (methods / members)
+" Bundle 'vim-scripts/taglist.vim'
+" " ToDo list from code comments
+" Bundle 'vim-scripts/TaskList.vim'
+" " Commenting
+" Bundle 'tomtom/tcomment_vim'
+" " Pimped status and buffer bars
+" Bundle 'bling/vim-airline'
+" " Kill buffer w/o closing window
+" Bundle 'qpkorr/vim-bufkill'
+" " Switch between .h/.cpp
+" Bundle 'derekwyatt/vim-fswitch'
+" " Git support
+" Bundle 'tpope/vim-fugitive'
+" " Basic configuration
+" Bundle 'tpope/vim-sensible'
+" " Snippets
+" Bundle 'honza/vim-snippets'
+" " Automatic completion
+" Bundle 'Valloric/YouCompleteMe'
+" " Ultimate snipping solution
+" Bundle 'SirVer/ultisnips'
+" " let Vundle manage itself
+" Bundle 'gmarik/Vundle.vim'
+" " File templates
+" Bundle 'aperezdc/vim-template'
+"
+" call vundle#end()            " required
 
 " ------------------------------------------------------------------ Formatting
 " based on filetype
@@ -89,6 +92,7 @@ set number
 set statusline=%f%m%h%r%w%y[%l/%L,%c%V]%=[%{&fo}]%y[%{&ff}][%{&fenc==\"\"?&enc:&fenc}]
 set ruler           " Show the line and column number of the cursor position,
                     " separated by a comma.
+set so=5
 
 " --------------------------------------------------------------------- GUI-Vim
 set guifont=Envy\ Code\ R\ for\ Powerline\ 11
@@ -136,11 +140,13 @@ let &colorcolumn="80,".join(range(120,999),",")
 set cursorline
 
 " --------------------------------------------------------------------- airline
-let g:airline_left_sep=''
-let g:airline_right_sep=''
-let g:airline_powerline_fonts=0
+" let g:airline_left_sep=''
+" let g:airline_right_sep=''
+let g:airline_detect_modified=1
+let g:airline_detect_paste=1
+let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='PaperColor'
+let g:airline_theme='papercolor'
 
 " --------------------------------------------------------------------- Folding
 set foldmethod           =syntax
@@ -214,11 +220,7 @@ nnoremap <silent> <F9> :TaskList<CR>         " Open TaskList window
 nnoremap <silent> <F10> :e ~/.vimrc<CR>      " Open Settings
 
 " ------------------------------------------------------------ Private settings
-source ~/.vim/private
-
-" ----------------------------------------------------------------- GPG editing
-let g:GPGPreferArmor=1
-let g:GPGDefaultRecipients=["philipp.blanke@googlemail.com"]
-let g:GPGPreferSymmetric=1
-let g:GPGUsePipes=1
+if filereadable( "~/.vimrc.local")
+   source ~/.vimrc.local
+endif
 

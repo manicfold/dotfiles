@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------------------
 # $HOME/.bashrc
-# Modified: Mon 26 Oct 2015, 13:40
+# Modified: Wed 28 Oct 2015, 08:03
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
@@ -87,10 +87,6 @@ elif [ -f ~/.bash_prompt ]; then
     source ~/.bash_prompt
 fi
 
-# ---------------------------------------------------------------- Base16 Shell
-BASE16_SHELL="$HOME/.config/base16-shell/base16-eighties.dark.sh"
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
-
 # ------------------------------------------------------------Alias definitions
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
@@ -107,7 +103,7 @@ export XMLLINT_INDENT='   '
 # ------------------------------------------------------------------- Functions
 # find in source files --------------------------------------------------------
 function find-c () {
-   find . \( -iname "*.[hc]" -o -iname "*.hpp" -o -iname "*.cpp" \) -exec grep -n $1 {} +
+   find . \( -iname "*.[hc]" -o -iname "*.hpp" -o -iname "*.cpp" \) -exec grep -n "$1" {} +
 }
 
 
