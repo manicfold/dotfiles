@@ -1,55 +1,12 @@
 " -----------------------------------------------------------------------------
 " Filename: .vimrc
-" Modified: Mon 02 Nov 2015, 11:02
+" Modified: Mon 02 Nov 2015, 11:40
 " See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 
 " ---------------------------------------------------------------------- Vundle
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
-
-" set nocompatible
-" filetype off
-"
-" set rtp+=~/.vim/bundle/Vundle.vim
-" call vundle#begin()
-"
-" " File browser
-" Bundle 'scrooloose/nerdtree'
-" " Color theme
-" Bundle 'NLKNguyen/papercolor-theme'
-" " Automatic completion with Tab
-" Bundle 'ervandew/supertab'
-" " Automatic formatting of table structure
-" Bundle 'godlygeek/tabular'
-" " Code overview (methods / members)
-" Bundle 'vim-scripts/taglist.vim'
-" " ToDo list from code comments
-" Bundle 'vim-scripts/TaskList.vim'
-" " Commenting
-" Bundle 'tomtom/tcomment_vim'
-" " Pimped status and buffer bars
-" Bundle 'bling/vim-airline'
-" " Kill buffer w/o closing window
-" Bundle 'qpkorr/vim-bufkill'
-" " Switch between .h/.cpp
-" Bundle 'derekwyatt/vim-fswitch'
-" " Git support
-" Bundle 'tpope/vim-fugitive'
-" " Basic configuration
-" Bundle 'tpope/vim-sensible'
-" " Snippets
-" Bundle 'honza/vim-snippets'
-" " Automatic completion
-" Bundle 'Valloric/YouCompleteMe'
-" " Ultimate snipping solution
-" Bundle 'SirVer/ultisnips'
-" " let Vundle manage itself
-" Bundle 'gmarik/Vundle.vim'
-" " File templates
-" Bundle 'aperezdc/vim-template'
-"
-" call vundle#end()            " required
 
 " ------------------------------------------------------------------ Formatting
 " based on filetype
@@ -110,7 +67,7 @@ set ignorecase      " Ignore case in search patterns.
 set smartcase       " Override the 'ignorecase' option if the search pattern
                     " contains upper case characters.
 " ----------------------------------------------------------- tags & completion
-set tags += ~/.vim/tags/cpp
+set tags+=~/.vim/tags/cpp
 
 " ------------------------------------------------------------------ Completion
 "set omnifunc=syntaxcomplete#Complete
@@ -130,7 +87,7 @@ let g:UltiSnipsEditSplit="vertical"
 
 " ---------------------------------------------------------------------- Colors
 syntax enable
-set bg=light
+set bg=dark
 set t_Co=256
 colorscheme PaperColor
 
