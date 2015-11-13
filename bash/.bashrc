@@ -1,11 +1,13 @@
+# vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 # -----------------------------------------------------------------------------
-# $HOME/.bashrc
-# Modified: Wed 28 Oct 2015, 08:03
+# Filename: .bashrc
+# Modified: Thu 12 Nov 2015, 15:25
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
+# Globals -----------------------------------------------------------------{{{
 # set the default filemask
 umask 022
 
@@ -34,21 +36,21 @@ if [ -d "${HOME}/.gem/ruby/1.9.1/bin" ] ; then
 fi
 
 export LC_ALL LANG PATH LD_LIBRARY_PATH EDITOR GPG_TTY
-
-# ------------------------------------------------------------------ Completion
+# }}}
+# Completion --------------------------------------------------------------{{{
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
  . /etc/bash_completion
 fi
-
-# --------------------------------------------------------------- Shell options
-ulimit -S -c 0        # Don't want any coredumps
+# }}}
+# Shell options -----------------------------------------------------------{{{
 #set -o notify
 #set -o noclobber
 #set -o ignoreeof
 #set -o nounset
 #set -o xtrace        # Useful for debuging
 
-# Enable options:
+#shopt -u mailwarn
+
 #shopt -s cdspell
 #shopt -s cdable_vars
 #shopt -s checkhash
@@ -60,9 +62,8 @@ shopt -s checkwinsize
 shopt -s histappend histreedit histverify
 shopt -s extglob      # Necessary for programmable completion
 
+ulimit -S -c 0        # Don't want any coredumps
 # Disable options:
-#shopt -u mailwarn
-# I don't want my shell to warn me of incoming mail
 unset MAILCHECK
 
 export TIMEFORMAT=$'\nreal %3R\tuser %3U\tsys %3S\tpcpu %P\n'
@@ -71,12 +72,15 @@ export TIMEFORMAT=$'\nreal %3R\tuser %3U\tsys %3S\tpcpu %P\n'
 HISTSIZE=10000
 HISTFILESIZE=20000
 # don't put duplicate lines or lines starting with space in the history.
-HISTCONTROL=ignoreboth
+export HISTCONTROL=ignoreboth
 
 export HISTIGNORE="&:bg:fg:ll:h"
-
-# ---------------------------------------------------------------- Color Prompt
+# }}}
+# Colors +  Prompt----------------------------------------------------------{{{
 export PROMPT_DIRTRIM=3
+
+BASE16_SHELL="$HOME/.config/base16-shell/base16-ocean.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 if [ "$TERM" != "linux" ]; then
    GIT_PROMPT_FETCH_REMOTE_STATUS=0
@@ -86,13 +90,13 @@ if [ "$TERM" != "linux" ]; then
 elif [ -f ~/.bash_prompt ]; then
     source ~/.bash_prompt
 fi
-
-# ------------------------------------------------------------Alias definitions
+# }}}
+# Alias definitions --------------------------------------------------------{{{
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
-
-# -------------------------------------------------------------tailoring 'less'
+# }}}
+# tailoring 'less' ---------------------------------------------------------{{{
 export PAGER=less
 export LESSCHARSET='utf-8'
 # make less more friendly for non-text input files, see lesspipe(1)
@@ -100,15 +104,13 @@ export LESSCHARSET='utf-8'
 
 export XMLLINT_INDENT='   '
 
-# ------------------------------------------------------------------- Functions
+# Functions --------------------------------------------------------------- {{{
 # find in source files --------------------------------------------------------
 function find-c () {
    find . \( -iname "*.[hc]" -o -iname "*.hpp" -o -iname "*.cpp" \) -exec grep -n "$1" {} +
 }
-
-
+# }}}
 # Files & strings -------------------------------------------------------------
-
 # Find a file with a pattern in name:
 function ff()
 { find . -type f -iname '*'$*'*' -ls ; }
@@ -190,9 +192,8 @@ function swap()
     mv "$2" "$1"
     mv $TMPFILE "$2"
 }
-
-
-# Process/system --------------------------------------------------------------
+# }}}
+# Process/system ----------------------------------------------------------{{{
 
 function my_ps()
 { ps $@ -u $USER -o pid,%cpu,%mem,bsdtime,command ; }
@@ -221,9 +222,9 @@ function xtitle ()
 	    ;;
     esac
 }
-
-# ---------------------------------------------------------- Local definitions
+# }}}
+# Local definitions ------------------------------------------------------{{{
 if [ -f "${HOME}/.bashrc.local" ]; then
    source "${HOME}/.bashrc.local"
 fi
-
+# }}}

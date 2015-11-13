@@ -12,6 +12,7 @@ display_help() {
 
 main() {
    mode=s
+   flag=""
 
    case "$1" in
       -h|--help) display_help; return 1

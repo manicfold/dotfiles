@@ -19,12 +19,6 @@
 [submodule "vim/.vim/bundle/tcomment_vim"]
 	path = vim/.vim/bundle/tcomment_vim
 	url = https://github.com/tomtom/tcomment_vim.git
-[submodule "vim/.vim/bundle/vim-airline"]
-	path = vim/.vim/bundle/vim-airline
-	url = https://github.com/bling/vim-airline.git
-[submodule "vim/.vim/bundle/vim-bufkill"]
-	path = vim/.vim/bundle/vim-bufkill
-	url = https://github.com/qpkorr/vim-bufkill.git
 [submodule "vim/.vim/bundle/vim-fswitch"]
 	path = vim/.vim/bundle/vim-fswitch
 	url = https://github.com/derekwyatt/vim-fswitch.git
@@ -37,9 +31,6 @@
 [submodule "vim/.vim/bundle/vim-snippets"]
 	path = vim/.vim/bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
-[submodule "vim/.vim/bundle/vim-template"]
-	path = vim/.vim/bundle/vim-template
-	url = https://github.com/aperezdc/vim-template.git
 [submodule "bash/.bash-git-prompt"]
 	path = bash/.bash-git-prompt
 	url = https://github.com/magicmonty/bash-git-prompt
@@ -58,3 +49,18 @@
 [submodule "vim/.vim/bundle/tlib_vim"]
 	path = vim/.vim/bundle/tlib_vim
 	url = https://github.com/tomtom/tlib_vim
+[submodule "vim/.vim/bundle/vim-bufkill"]
+	path = vim/.vim/bundle/vim-bufkill
+	url = https://github.com/qpkorr/vim-bufkill.git
+[submodule "vim/.vim/bundle/vim-template"]
+	path = vim/.vim/bundle/vim-template
+	url = https://github.com/aperezdc/vim-template.git
+[submodule "vim/.vim/bundle/lightline.vim"]
+	path = vim/.vim/bundle/lightline.vim
+	url = https://github.com/itchyny/lightline.vim.git
+[submodule "vim/.vim/bundle/base16-vim"]
+	path = vim/.vim/bundle/base16-vim
+	url = https://github.com/chriskempson/base16-vim.git
+[submodule "vim/.vim/bundle/vim-airline"]
+	path = vim/.vim/bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
