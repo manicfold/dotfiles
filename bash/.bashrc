@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Thu 12 Nov 2015, 15:25
+# Modified: Tue 17 Nov 2015, 13:10
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
@@ -79,7 +79,7 @@ export HISTIGNORE="&:bg:fg:ll:h"
 # Colors +  Prompt----------------------------------------------------------{{{
 export PROMPT_DIRTRIM=3
 
-BASE16_SHELL="$HOME/.config/base16-shell/base16-ocean.dark.sh"
+BASE16_SHELL="$HOME/.config/base16-shell/base16-papercolor.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 if [ "$TERM" != "linux" ]; then

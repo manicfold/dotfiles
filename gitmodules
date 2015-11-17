@@ -64,3 +64,6 @@
 [submodule "vim/.vim/bundle/vim-airline"]
 	path = vim/.vim/bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
+[submodule "vim/.vim/bundle/vim-cpp-enhanced-highlight"]
+	path = vim/.vim/bundle/vim-cpp-enhanced-highlight
+	url = https://github.com/octol/vim-cpp-enhanced-highlight.git

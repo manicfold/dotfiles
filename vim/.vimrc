@@ -1,7 +1,7 @@
 " vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 " -----------------------------------------------------------------------------
 " Filename: .vimrc
-" Modified: Fri 13 Nov 2015, 13:51
+" Modified: Tue 17 Nov 2015, 13:13
 " See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 
@@ -54,6 +54,7 @@ set so=5
 "   " Normal mode: blinking block
 "   let &t_EI .= "\e[1 q"
 " endif
+:set fillchars+=vert:│
 "}}}
 " Statusline  {{{ 
 " set statusline=%f%m%h%r%w%y[%l/%L,%c%V]%=[%{&fo}]%y[%{&ff}][%{&fenc==\"\"?&enc:&fenc}]
@@ -69,7 +70,8 @@ let g:airline_detect_modified=1
 let g:airline_detect_paste=1
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='base16'
+" let g:airline_theme='base16'
+let g:airline_theme='papercolor'
 "}}}
 " GUI-Vim  {{{ 
 set guifont=Envy\ Code\ R\ 10
@@ -80,7 +82,8 @@ syntax enable
 set bg=dark
 set t_Co=256
 let base16colorspace=256
-colorscheme base16-ocean
+colorscheme PaperColor
+" colorscheme base16-ocean
 
 " Mark columns 80 and 120+
 "let &colorcolumn=join(range(81,999),",")
@@ -169,8 +172,8 @@ function! ToggleBg()
       colorscheme PaperColor
    else
       let &bg = "dark"
-      let g:airline_theme='base16'
-      colorscheme base16-ocean
+      let g:airline_theme='papercolor'
+      colorscheme PaperColor
    endif
    " let &bg = ( &bg == "dark" ? "light" : "dark" )
 endfun
