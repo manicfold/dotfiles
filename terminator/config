@@ -4,8 +4,8 @@
   focus = system
   title_transmit_fg_color = "#2b303b"
   title_inactive_fg_color = "#b8b8b8"
-  title_receive_bg_color = "#a3be8c"
-  title_transmit_bg_color = "#b483ad"
+  title_receive_bg_color = "#a9d100"
+  title_transmit_bg_color = "#f5006c"
   title_receive_fg_color = "#2b303b"
   tab_position = bottom
   title_inactive_bg_color = "#2b303b"
@@ -14,7 +14,7 @@
   [[default]]
     use_system_font = False
     font = Envy Code R for Powerline 11
-    background_color = "#2b303b"
+    background_color = "#1d1f21"
     scrollbar_position = hidden
     foreground_color = "#e0e0e0"
 [layouts]
