@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------------------
 # $HOME/.bash_aliases
-# Modified: Fr 04 Sep 2015, 17:27
+# Modified: Fri 13 Nov 2015, 14:19
 # -----------------------------------------------------------------------------
 
 alias rm='rm -i'
@@ -47,6 +47,8 @@ alias more='less'
 
 alias top='xtitle Processes on $HOST && top'
 alias make='xtitle Making $(basename $PWD) ; make'
+
+alias cls='printf "\033c"'
 
 # alert via osd-notify
 # Add an "alert" alias for long running commands.  Use like so:
