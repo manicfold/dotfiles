@@ -1,10 +1,7 @@
 /**
- * @addtogroup ai_sw_update
- * @{
- *
  * @file       %FFILE%
  * @author     %USER% <%MAIL%>
- * @date       %FDATE%
+ * @date       Tue 08 Dec 2015, 16:43
  * @copyright  %LICENSE%
  * @brief      Description
  */
@@ -15,6 +12,3 @@
 %HERE%
 
 #endif
-/** @} */
-
-

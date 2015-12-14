@@ -1,7 +1,7 @@
 " vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 " -----------------------------------------------------------------------------
 " Filename: .vimrc
-" Modified: Tue 17 Nov 2015, 13:13
+" Modified: Wed 18 Nov 2015, 15:08
 " See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 
@@ -74,7 +74,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='papercolor'
 "}}}
 " GUI-Vim  {{{ 
-set guifont=Envy\ Code\ R\ 10
+set guifont=Envy\ Code\ R\ for\ Powerline\ 11
 set guioptions-=rL
 "}}}
 " Colors  {{{
@@ -202,7 +202,7 @@ nnoremap <silent> <F9> :TaskList<CR>         " Open TaskList window
 nnoremap <silent> <F10> :e ~/.vimrc<CR>      " Open Settings
 "}}}
 " Private settings {{{ 
-if filereadable( "~/.vimrc.local")
+if filereadable( $HOME . "/.vimrc.local")
    source ~/.vimrc.local
 endif
 "}}}

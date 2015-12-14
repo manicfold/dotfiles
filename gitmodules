@@ -67,3 +67,9 @@
 [submodule "vim/.vim/bundle/vim-cpp-enhanced-highlight"]
 	path = vim/.vim/bundle/vim-cpp-enhanced-highlight
 	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
+[submodule "vim/.vim/bundle/vim-signature"]
+	path = vim/.vim/bundle/vim-signature
+	url = https://github.com/kshenoy/vim-signature.git
+[submodule "vim/.vim/bundle/vim-sneak"]
+	path = vim/.vim/bundle/vim-sneak
+	url = https://github.com/justinmk/vim-sneak
