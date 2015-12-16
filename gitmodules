@@ -1,6 +1,3 @@
-[submodule "vim/.vim/bundle/nerdtree"]
-	path = vim/.vim/bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
 [submodule "vim/.vim/bundle/papercolor-theme"]
 	path = vim/.vim/bundle/papercolor-theme
 	url = https://github.com/NLKNguyen/papercolor-theme.git
