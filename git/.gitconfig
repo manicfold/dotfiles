@@ -4,9 +4,10 @@
 [push]
 	default = simple
 [diff]
-    tool = meld
+   tool = meld
+	external = git-meld
 [merge]
-    tool = meld
+   tool = meld
 [alias]
 	co = checkout
 	ci = commit
