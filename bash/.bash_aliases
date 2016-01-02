@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------------------
 # $HOME/.bash_aliases
-# Modified: Fri 13 Nov 2015, 14:19
+# Modified: Thu 17 Dec 2015, 13:08
 # -----------------------------------------------------------------------------
 
 alias rm='rm -i'
@@ -55,3 +55,11 @@ alias cls='printf "\033c"'
 #   sleep 10; alert
 alias alert_helper='history | tail -n1 | sed -e "s/^\s*[0-9]\+\s*//" -e "s/;\s*alert$//"'
 alias alert='notify-send -i ~/.icons/elementary-xfce/apps/48/gnome-terminal.svg "Finished $(alert_helper)" "[`[ $? == 0 ] && echo Success || echo Failed`]"'
+
+gvim () {
+   if pgrep gvim ; then 
+      command gvim --remote-silent "$@"
+   else
+      command gvim "$@"
+   fi
+}

@@ -1,7 +1,7 @@
 " vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 " -----------------------------------------------------------------------------
 " Filename: .vimrc
-" Modified: Fri 11 Dec 2015, 22:15
+" Modified: Sat 02 Jan 2016, 21:35
 " See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 
@@ -56,7 +56,7 @@ set so=5
 " endif
 :set fillchars+=vert:│
 "}}}
-" Statusline  {{{ 
+" Statusline  {{{
 " set statusline=%f%m%h%r%w%y[%l/%L,%c%V]%=[%{&fo}]%y[%{&ff}][%{&fenc==\"\"?&enc:&fenc}]
 let g:airline_left_sep=''
 let g:airline_right_sep=''
@@ -74,8 +74,10 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='papercolor'
 "}}}
 " GUI-Vim  {{{ 
+
 set guifont=Envy\ Code\ R\ for\ Powerline\ 11
 set guioptions=agi
+
 "}}}
 " Colors  {{{
 syntax enable
@@ -89,18 +91,27 @@ colorscheme PaperColor
 "let &colorcolumn=join(range(81,999),",")
 let &colorcolumn="80,".join(range(120,999),",")
 set cursorline
+
+hi link SneakPluginTarget Type
+hi link SneakPluginScope Function
+hi link SneakStreakTarget Type
+hi link SneakStreakMask Function
 "}}}
-" Searching  {{{
-set nohlsearch      " When there is a previous search pattern, highlight all
+" Search / Replace {{{
+set hlsearch        " When there is a previous search pattern, highlight all
                     " its matches.
- 
+set showmatch
 set incsearch       " While typing a search command, show immediately where the
                     " so far typed pattern matches.
- 
+
 set ignorecase      " Ignore case in search patterns.
- 
+
 set smartcase       " Override the 'ignorecase' option if the search pattern
                     " contains upper case characters.
+
+set gdefault        " Tack a 'g' on regexes, i.e., '%s/search/replace/g'
+
+let g:sneak#streak = 1
 "}}}
 " Completion  {{{
 "set omnifunc=syntaxcomplete#Complete
@@ -117,7 +128,7 @@ set smartcase       " Override the 'ignorecase' option if the search pattern
 " " If you want :UltiSnipsEdit to split your window.
 " let g:UltiSnipsEditSplit="vertical"
 "}}}
-" Folding  {{{ 
+" Folding  {{{
 set foldmethod           =syntax
 set foldlevelstart       =99
 let perl_fold            =1
@@ -127,24 +138,24 @@ let perl_extended_vars   =1
 let perl_sync_dist       =250
 let g:xml_syntax_folding =1
 "}}}
-" Taglist  {{{ 
+" Taglist  {{{
 let Tlist_Use_Right_Window = 1
 let Tlist_Show_One_File    = 1
 "}}}
-" Tasklist  {{{ 
+" Tasklist  {{{
 let g:tlWindowPosition=1                      " display at bottom
 let g:tlTokenList = ['TODO', 'FIXME', 'XXX']  " search tags
 "}}}
-" Fugitive  {{{ 
+" Fugitive  {{{
 set diffopt+=vertical
 "}}}
-" Extern programs {{{ 
+" Extern programs {{{
 " IMPORTANT: grep will sometimes skip displaying the file name if you
-" search in a singe file. This will confuse Latex-Suite. Set your grep
+" search in a single file. This will confuse Latex-Suite. Set your grep
 " program to alway generate a file-name.
 set grepprg=grep\ -nH\ $*
 "}}}
-" Functions  {{{ 
+" Functions  {{{
 " If buffer modified, update any 'Modified: ' in the first 20 lines.
 " 'Modified: ' can have up to 10 characters before (they are retained).
 " Restores cursor and window position using save_cursor variable.
@@ -166,43 +177,54 @@ autocmd BufWritePre * call LastModified()
 
 " Toggle the background color between light and dark
 function! ToggleBg()
-   if ( &bg == "dark" )
-      let &bg = "light"
-      let g:airline_theme='papercolor'
-      colorscheme PaperColor
-   else
-      let &bg = "dark"
-      let g:airline_theme='papercolor'
-      colorscheme PaperColor
-   endif
-   " let &bg = ( &bg == "dark" ? "light" : "dark" )
+   let &bg = ( &bg == "dark" ? "light" : "dark" )
 endfun
+
+" Convenient command to see the difference between the current buffer and the
+" file it was loaded from, thus the changes you made.
+command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
+        \ | wincmd p | diffthis
+
 "}}}
-" Keyboard mappings {{{ 
-let mapleader=","
+" Keyboard mappings {{{
+let mapleader=" "
+"
 " move by display lines instead of logical lines
 nmap <silent> j gj
 nmap <silent> k gk
 " move between windows
-nnoremap <C-Up> <C-w>k
-nnoremap <C-Down> <C-w>j
-nnoremap <C-Left> <C-w>h
-nnoremap <C-Right> <C-w>l
+nnoremap <C-k> <C-w>k
+nnoremap <C-j> <C-w>j
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
 
-nnoremap <silent> <S-Tab> :bp<CR>            " Previous buffer (bufkill)
-nnoremap <silent> <Tab> :bn<CR>              " Next buffer (bufkill)
+nmap f <Plug>Sneak_s
+nmap F <Plug>Sneak_S
+xmap f <Plug>Sneak_s
+xmap F <Plug>Sneak_S
+omap f <Plug>Sneak_s
+omap F <Plug>Sneak_S
 
-nnoremap <silent> <F3> :FSHere<CR>           " Toggle h / cpp (FSwitch)
-nnoremap <silent> <F4> :call ToggleBg()<CR>  " Toggle background lightness
-nnoremap <silent> <F5> :setlocal spell! spelllang=en_us<cr> " Toggle spellcheck
-nnoremap <silent> <F6> :BD<CR>               " Close buffer (bufkill)
-nnoremap <silent> <F7> :NERDTreeToggle<CR>   " Toggle Nerdtree
-nnoremap <silent> <F8> :TlistToggle<CR>      " Toggle Taglist
-nnoremap <silent> <F9> :TaskList<CR>         " Open TaskList window
-nnoremap <silent> <F10> :e ~/.vimrc<CR>      " Open Settings
-"}}}
-" Private settings {{{ 
-if filereadable( "~/.vimrc.local")
-   source ~/.vimrc.local
+cnoremap <c-n> <CR>n/<c-p>                               " goto next occurence w/o leaving search mode
+"nnoremap <esc> :noh<cr><esc>                             " <esc> disables search highlighting
+nnoremap <S-Tab> :up! <bar> bp<CR>                       " Previous buffer (bufkill)
+nnoremap <Tab> :up! <bar> bn<CR>                         " Next buffer (bufkill)
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>         " clean up whitespace
+nnoremap <leader>b :CtrlPBuffer<cr>                      " Buffer search
+nnoremap <leader>b :call ToggleBg()<CR>                  " Toggle background lightness
+nnoremap <leader>Q :q<CR>                                " Quit buffer
+nnoremap <leader>q :BD<CR>                               " Close buffer (bufkill)
+nnoremap <leader>s :up <bar> FSHere<CR>                  " Switch h / cpp (FSwitch)
+nnoremap <leader>T :TlistToggle<CR>                      " Toggle Taglist
+nnoremap <leader>v :e ~/.vimrc<CR>                       " Open Settings
+nnoremap <leader>w <C-w>v<C-w>l                          " open a split window and go there
+nnoremap <leader>z :setlocal spell! spelllang=en_us<cr>  " Toggle spellcheck
+
+" }}}
+" Private settings {{{
+
+if filereadable( $HOME."/.vimrc.local")
+   source $HOME/.vimrc.local
 endif
+
 "}}}
