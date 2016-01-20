@@ -52,6 +52,7 @@
 [submodule "vim/.vim/bundle/vim-template"]
 	path = vim/.vim/bundle/vim-template
 	url = https://github.com/aperezdc/vim-template.git
+   ignore = dirty
 [submodule "vim/.vim/bundle/lightline.vim"]
 	path = vim/.vim/bundle/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
