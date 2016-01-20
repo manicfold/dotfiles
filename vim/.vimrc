@@ -1,7 +1,7 @@
 " vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 " -----------------------------------------------------------------------------
 " Filename: .vimrc
-" Modified: Wed 23 Dec 2015, 14:09
+" Modified: Tue 19 Jan 2016, 13:22
 " See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 
@@ -48,7 +48,7 @@ set number
 set ruler           " Show the line and column number of the cursor position,
                     " separated by a comma.
 set so=5
-" if &term =~ "xterm"
+" if &term =~ "screen"
 "   " Insert mode: blinking underscore
 "   let &t_SI .= "\e[3 q"
 "   " Normal mode: blinking block
@@ -69,13 +69,13 @@ let g:airline_right_sep=''
 let g:airline_detect_modified=1
 let g:airline_detect_paste=1
 let g:airline_powerline_fonts=1
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 0
 " let g:airline_theme='base16'
 let g:airline_theme='papercolor'
 "}}}
 " GUI-Vim  {{{
 set guifont=Envy\ Code\ R\ for\ Powerline\ 11
-set guioptions-=rL
+set guioptions=agit
 "}}}
 " Colors  {{{
 syntax enable
@@ -204,7 +204,6 @@ omap f <Plug>Sneak_s
 omap F <Plug>Sneak_S
 
 cnoremap <c-n> <CR>n/<c-p>                               " goto next occurence w/o leaving search mode
-nnoremap <esc> :noh<cr><esc>                             " <esc> disables search highlighting
 nnoremap <S-Tab> :up! <bar> bp<CR>                       " Previous buffer (bufkill)
 nnoremap <Tab> :up! <bar> bn<CR>                         " Next buffer (bufkill)
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>         " clean up whitespace
@@ -219,8 +218,8 @@ nnoremap <leader>w <C-w>v<C-w>l                          " open a split window a
 nnoremap <leader>z :setlocal spell! spelllang=en_us<cr>  " Toggle spellcheck
 
 " }}}
-                                                         " Private settings {{{
-if filereadable( $HOME .                                 " /.vimrc.local                               " )
+" Private settings {{{
+if filereadable( $HOME . "/.vimrc.local" )
    source ~/.vimrc.local
 endif
 "}}}
