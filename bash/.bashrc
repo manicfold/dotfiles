@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Tue 17 Nov 2015, 13:10
+# Modified: Tue 02 Feb 2016, 14:53
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
@@ -101,9 +101,11 @@ export PAGER=less
 export LESSCHARSET='utf-8'
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
-
+export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+export LESS=' -R '
 export XMLLINT_INDENT='   '
 
+# }}}
 # Functions --------------------------------------------------------------- {{{
 # find in source files --------------------------------------------------------
 function find-c () {

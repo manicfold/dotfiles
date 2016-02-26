@@ -1,0 +1,77 @@
+#!/bin/bash
+
+if [ $# -lt 1 ]; then
+   echo "Usage: $0 <module>"
+   exit 1
+fi
+
+module=$1
+
+gitmod=.gitmodules
+gitconf=.git/config
+
+[ -e .gitmodules ] || { echo "No .gitmodules found."; exit 1; }
+[ -e .git/config ] || { echo "No .git/config found."; exit 1; }
+
+# rebase to realpath
+gitmod=$(basename $(realpath $gitmod))
+
+# check if this module exists
+if ! grep $module $gitmod; then
+   echo "Submodule $module is not installed."
+   exit 1
+fi
+
+
+# determine the line of the submodule in .gitmodules
+mod_line=$(grep -n "\[submodule .*$module.*\]" $gitmod | cut -f1 -d:)
+mod_line_p=$((mod_line+1))
+# determine the line of the next submodule, to delete all lines between.
+mod_line_end=$(grep -n "\[submodule" $gitmod | cut -f1 -d: | grep -A1 $mod_line | tail -n1)
+# if there is no module after this, delete to the end of the file
+if [ $mod_line -eq $mod_line_end ]; then mod_line_end=$(wc -l $gitmod); fi
+
+# determine the line of the submodule in .git/config
+conf_line=$(grep -n "\[submodule .*$module.*\]" $gitconf | cut -f1 -d:)
+conf_line_end=$((conf_line + 1))
+
+# fetch path from file
+mod_path=$(sed -n "$mod_line_p p" $gitmod | grep -oP '\w*path = \K.*')
+
+
+# delete from .gitmodules
+if ! sed "$mod_line,$mod_line_end d" $gitmod; then
+   echo "Could not delete lines $mod_line - $mod_line_end from gitmodules."
+   exit 1
+fi
+
+if ! git add $gitmod; then
+   echo "Could not check in $gitmod"
+   exit 1
+fi
+
+# delete from .git/config
+if ! sed "$conf_line,$conf_line_end d" $gitconf; then
+   echo "Could not delete lines $conf_line - $conf_line_end from gitmodules."
+   exit 1
+fi
+
+if ! git rm --cached $mod_path; then
+   echo "Could not remove cached files from git."
+   exit 1
+fi
+
+if ! rm -rf .git/modules/$mod_path; then
+   echo "Could not remove module from internal git storage."
+fi
+
+if ! git submit -m "Deleted submodule $MODULE"; then
+   echo "Could not check in changed $GITMOD file."
+   exit 1
+fi
+
+if ! rm -rf $MOD_PATH; then
+  echo "Could not remove module path $PATH"
+  exit 1
+fi
+
