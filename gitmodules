@@ -71,11 +71,8 @@
 [submodule "vim/.vim/bundle/vim-sneak"]
 	path = vim/.vim/bundle/vim-sneak
 	url = https://github.com/justinmk/vim-sneak
-[submodule "vim/.vim/bundle/ctrlp.vim"]
-	path = vim/.vim/bundle/ctrlp.vim
-	url = https://github.com/ctrlpvim/ctrlp.vim.git
-	path = vim/.vim/bundle/vim-markdown
-	url = https://github.com/plasticboy/vim-markdown.git
-[submodule "vim/.vim/bundle/ack.vim"]
 	path = vim/.vim/bundle/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
+[submodule "vim/.vim/bundle/vim-filebeagle"]
+	path = vim/.vim/bundle/vim-filebeagle
+	url = https://github.com/jeetsukumaran/vim-filebeagle.git
