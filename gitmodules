@@ -73,3 +73,9 @@
 	url = https://github.com/justinmk/vim-sneak
 	path = vim/.vim/bundle/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
+[submodule "vim/.vim/bundle/vim-dirvish"]
+	path = vim/.vim/bundle/vim-dirvish
+	url = https://github.com/justinmk/vim-dirvish.git
+[submodule "vim/.vim/bundle/vim-bufferlist"]
+	path = vim/.vim/bundle/vim-bufferlist
+	url = https://github.com/roblillack/vim-bufferlist
