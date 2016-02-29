@@ -3,7 +3,7 @@
 #- %FFILE%
 #- Copyright (C) Robert Bosch Car Multimedia GmbH
 #- %USER% <%MAIL%>
-#- Last Change: %FDATE%
+#- Last Change: Thu 04 Feb 2016, 10:46
 
 ## 
 ## USAGE: %FFILE%  
@@ -15,12 +15,13 @@ version=$(grep "^#- "  "${BASH_SOURCE[0]}" | cut -c 4-)
 usage() {  echo "$usage"; }
 version() { echo "$version"; }
 
-for i in "$@"; do
-   case $i in
+while (( "$#" )); do
+   case $1 in
       -v|--version) version; exit 0 ;;
       -h|--help) usage; exit 0 ;;
       *) usage; exit 1 ;;
    esac
+   shift
 done
 
 err="\e[37;1;41m  KO  \e[0m"

@@ -1,7 +1,7 @@
 " vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 " -----------------------------------------------------------------------------
 " Filename: .vimrc
-" Modified: Tue 19 Jan 2016, 13:22
+" Modified: Mon 29 Feb 2016, 09:31
 " See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 
@@ -74,12 +74,12 @@ let g:airline#extensions#tabline#enabled = 0
 let g:airline_theme='papercolor'
 "}}}
 " GUI-Vim  {{{
-set guifont=Envy\ Code\ R\ for\ Powerline\ 11
+set guifont=Envy\ Code\ R\ for\ Powerline\ 10
 set guioptions=agit
 "}}}
 " Colors  {{{
 syntax enable
-set bg=dark
+set bg=light
 set t_Co=256
 let base16colorspace=256
 colorscheme PaperColor
@@ -110,21 +110,6 @@ set smartcase       " Override the 'ignorecase' option if the search pattern
 set gdefault        " Tack a 'g' on regexes, i.e., '%s/search/replace/g'
 
 let g:sneak#streak = 1
-"}}}
-" Completion  {{{
-"set omnifunc=syntaxcomplete#Complete
-"set completeopt=longest,menuone
-" make YCM compatible with UltiSnips (using supertab)
-" let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-" let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-" let g:SuperTabDefaultCompletionType = '<C-n>'
-
-" better key bindings for UltiSnipsExpandTrigger
-" let g:UltiSnipsExpandTrigger = "<tab>"
-" let g:UltiSnipsJumpForwardTrigger = "<tab>"
-" let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
-" " If you want :UltiSnipsEdit to split your window.
-" let g:UltiSnipsEditSplit="vertical"
 "}}}
 " Folding  {{{
 set foldmethod           =syntax
@@ -180,7 +165,7 @@ endfun
 
 " Convenient command to see the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
-command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
+command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
         \ | wincmd p | diffthis
 
 "}}}
@@ -196,6 +181,12 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+nnoremap <C-s> :w!<CR>
+inoremap <C-s> <Esc>:w!<CR>i
+
+" paste without copying the selected text "_ is the black hole register
+vnoremap p "_dp
+
 nmap f <Plug>Sneak_s
 nmap F <Plug>Sneak_S
 xmap f <Plug>Sneak_s
@@ -203,20 +194,31 @@ xmap F <Plug>Sneak_S
 omap f <Plug>Sneak_s
 omap F <Plug>Sneak_S
 
-cnoremap <c-n> <CR>n/<c-p>                               " goto next occurence w/o leaving search mode
-nnoremap <S-Tab> :up! <bar> bp<CR>                       " Previous buffer (bufkill)
-nnoremap <Tab> :up! <bar> bn<CR>                         " Next buffer (bufkill)
-nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>         " clean up whitespace
-nnoremap <leader>b :CtrlPBuffer<cr>                      " Buffer search
-nnoremap <leader>b :call ToggleBg()<CR>                  " Toggle background lightness
-nnoremap <leader>Q :q<CR>                                " Quit buffer
-nnoremap <leader>q :BD<CR>                               " Close buffer (bufkill)
-nnoremap <leader>s :up <bar> FSHere<CR>                  " Switch h / cpp (FSwitch)
-nnoremap <leader>T :TlistToggle<CR>                      " Toggle Taglist
-nnoremap <leader>v :e ~/.vimrc<CR>                       " Open Settings
-nnoremap <leader>w <C-w>v<C-w>l                          " open a split window and go there
-nnoremap <leader>z :setlocal spell! spelllang=en_us<cr>  " Toggle spellcheck
-
+" goto next occurence w/o leaving search mode
+cnoremap <c-n> <CR>n/<c-p>
+" Previous buffer (bufkill)
+nnoremap <S-Tab> :up! <bar>bp<CR>
+" Next buffer (bufkill)
+nnoremap <Tab> :up! <bar>bn<CR>
+" clean up whitespace
+nnoremap <leader>c :%s/\s\+$//<cr>:let @/=''<cr>
+" Toggle background lightness
+nnoremap <leader>l :call ToggleBg()<CR>
+" Close window
+nnoremap <leader>Q :q<CR>
+" Close buffer (bufkill)
+nnoremap <leader>q :BD<CR>
+" Switch h / cpp (FSwitch)
+nnoremap <leader>s :up <bar> FSHere<CR>
+" Toggle Taglist
+nnoremap <leader>T :TlistToggle<CR>
+" Open Settings
+nnoremap <leader>v :e ~/.vimrc<CR>
+" open a split window and go there
+nnoremap <leader>w <C-w>v<C-w>l
+nnoremap <leader>W :sp<cr> <C-w>j
+" Toggle spellcheck
+nnoremap <leader>z :setlocal spell! spelllang=en_us<cr>
 " }}}
 " Private settings {{{
 if filereadable( $HOME . "/.vimrc.local" )
