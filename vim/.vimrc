@@ -1,7 +1,7 @@
 " vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 " -----------------------------------------------------------------------------
 " Filename: .vimrc
-" Modified: Mon 29 Feb 2016, 09:31
+" Modified: Wed 02 Mar 2016, 16:27
 " See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 
@@ -132,6 +132,28 @@ let g:tlTokenList = ['TODO', 'FIXME', 'XXX']  " search tags
 " Fugitive  {{{
 set diffopt+=vertical
 "}}}
+" Dirvish {{{
+let g:dirvish_relative_paths = 1
+
+augroup my_dirvish_events
+   autocmd!
+   " Map CTRL-R to reload the Dirvish buffer.
+   autocmd FileType dirvish nnoremap <buffer> <C-R> :<C-U>Dirvish %<CR>
+
+   " Map gh to hide "hidden" files.
+   autocmd FileType dirvish nnoremap <buffer> gh 
+            \ :g@\v/\.[^\/]+/?$@d<cr>
+
+   autocmd FileType dirvish nnoremap <buffer><silent> h
+            \ :Dirvish %:h:h<CR>
+   autocmd FileType dirvish nnoremap <buffer><silent> l
+            \ :<C-U>.call dirvish#open('edit', 0)<CR>
+   autocmd FileType dirvish nnoremap <buffer><silent> o
+            \ :<C-U>.call dirvish#open('vsplit', 0)<CR>
+augroup END
+
+
+" }}}
 " Extern programs {{{
 " IMPORTANT: grep will sometimes skip displaying the file name if you
 " search in a single file. This will confuse Latex-Suite. Set your grep
@@ -186,6 +208,7 @@ inoremap <C-s> <Esc>:w!<CR>i
 
 " paste without copying the selected text "_ is the black hole register
 vnoremap p "_dp
+vnoremap P "_dP
 
 nmap f <Plug>Sneak_s
 nmap F <Plug>Sneak_S
@@ -201,7 +224,7 @@ nnoremap <S-Tab> :up! <bar>bp<CR>
 " Next buffer (bufkill)
 nnoremap <Tab> :up! <bar>bn<CR>
 " clean up whitespace
-nnoremap <leader>c :%s/\s\+$//<cr>:let @/=''<cr>
+nnoremap <leader>c :%s/\s\+$//<CR>:let @/=''<CR>
 " Toggle background lightness
 nnoremap <leader>l :call ToggleBg()<CR>
 " Close window
@@ -216,9 +239,19 @@ nnoremap <leader>T :TlistToggle<CR>
 nnoremap <leader>v :e ~/.vimrc<CR>
 " open a split window and go there
 nnoremap <leader>w <C-w>v<C-w>l
-nnoremap <leader>W :sp<cr> <C-w>j
+nnoremap <leader>W :sp<CR> <C-w>j
 " Toggle spellcheck
-nnoremap <leader>z :setlocal spell! spelllang=en_us<cr>
+nnoremap <leader>z :setlocal spell! spelllang=en_us<CR>
+
+" Use return and backspace to navigate help pages more easy
+nnoremap <buffer> <CR> <C-]>
+nnoremap <buffer> <BS> <C-T>
+" open list of buffers
+nnoremap <leader>b :call BufferList()<CR>
+
+" use Dirvish instead of netrw
+nnoremap - :Dirvish %:p:h<CR>
+
 " }}}
 " Private settings {{{
 if filereadable( $HOME . "/.vimrc.local" )

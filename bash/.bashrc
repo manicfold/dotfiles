@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Tue 02 Feb 2016, 14:53
+# Modified: Wed 02 Mar 2016, 11:17
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
@@ -61,6 +61,7 @@ shopt -s checkwinsize
 #shopt -s cmdhist
 shopt -s histappend histreedit histverify
 shopt -s extglob      # Necessary for programmable completion
+shopt -s direxpand    # expand variables containing directories
 
 ulimit -S -c 0        # Don't want any coredumps
 # Disable options:

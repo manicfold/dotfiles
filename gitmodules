@@ -79,3 +79,9 @@
 [submodule "vim/.vim/bundle/vim-bufferlist"]
 	path = vim/.vim/bundle/vim-bufferlist
 	url = https://github.com/roblillack/vim-bufferlist
+[submodule "vim/.vim/bundle/ack.vim"]
+	path = vim/.vim/bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim
+[submodule "vim/.vim/bundle/tselectbuffer_vim"]
+	path = vim/.vim/bundle/tselectbuffer_vim
+	url = https://github.com/tomtom/tselectbuffer_vim.git
