@@ -76,10 +76,6 @@
 [submodule "vim/.vim/bundle/vim-dirvish"]
 	path = vim/.vim/bundle/vim-dirvish
 	url = https://github.com/justinmk/vim-dirvish.git
-[submodule "vim/.vim/bundle/vim-bufferlist"]
-	path = vim/.vim/bundle/vim-bufferlist
-	url = https://github.com/roblillack/vim-bufferlist
-[submodule "vim/.vim/bundle/ack.vim"]
 	path = vim/.vim/bundle/ack.vim
 	url = https://github.com/mileszs/ack.vim
 [submodule "vim/.vim/bundle/tselectbuffer_vim"]
