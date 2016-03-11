@@ -75,3 +75,6 @@
 	url = https://github.com/mileszs/ack.vim.git
 	path = vim/.vim/bundle/tselectbuffer_vim
 	url = https://github.com/tomtom/tselectbuffer_vim.git
+[submodule "vim/.vim/bundle/vim-vinegar"]
+	path = vim/.vim/bundle/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar
