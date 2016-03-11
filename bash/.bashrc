@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Wed 02 Mar 2016, 11:17
+# Modified: Thu 10 Mar 2016, 16:13
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
@@ -10,6 +10,10 @@
 # Globals -----------------------------------------------------------------{{{
 # set the default filemask
 umask 022
+
+# disable Ctrl-S on the TTY which produces XOFF, after which the TTY does not
+# accept keystrokes anymore until Ctrl-Q (XON) is pressed.
+stty -ixon
 
 # LaTeX setup
 # ( The trailing colon indicates the standard search
@@ -108,12 +112,6 @@ export XMLLINT_INDENT='   '
 
 # }}}
 # Functions --------------------------------------------------------------- {{{
-# find in source files --------------------------------------------------------
-function find-c () {
-   find . \( -iname "*.[hc]" -o -iname "*.hpp" -o -iname "*.cpp" \) -exec grep -n "$1" {} +
-}
-# }}}
-# Files & strings -------------------------------------------------------------
 # Find a file with a pattern in name:
 function ff()
 { find . -type f -iname '*'$*'*' -ls ; }
@@ -121,32 +119,6 @@ function ff()
 # Find a file with pattern $1 in name and Execute $2 on it:
 function fe()
 { find . -type f -iname '*'$1'*' -exec "${2:-file}" {} \;  ; }
-
-# find pattern in a set of files and highlight them:
-function fstr()
-{
-    OPTIND=1
-    local case=""
-    local usage="fstr: find string in files.
-Usage: fstr [-i] \"pattern\" [\"filename pattern\"] "
-    while getopts :it opt
-    do
-        case "$opt" in
-        i) case="-i " ;;
-        *) echo "$usage"; return;;
-        esac
-    done
-    shift $(( $OPTIND - 1 ))
-    if [ "$#" -lt 1 ]; then
-        echo "$usage"
-        return;
-    fi
-    local SMSO=$(tput smso)
-    local RMSO=$(tput rmso)
-    find . -type f -name "${2:-*}" -print0 |
-    xargs -0 grep -sn ${case} "$1" 2>&- | \
-    sed "s/$1/${SMSO}\0${RMSO}/gI" | more
-}
 
 # move filenames to lowercase
 function lowercase()
@@ -187,6 +159,7 @@ function uppercase()
         fi
     done
 }
+
 # swap 2 filenames around
 function swap()
 {

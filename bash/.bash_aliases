@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------------------
 # $HOME/.bash_aliases
-# Modified: Thu 17 Dec 2015, 13:08
+# Modified: Thu 10 Mar 2016, 09:47
 # -----------------------------------------------------------------------------
 
 alias rm='rm -i'
@@ -41,7 +41,6 @@ alias lc='ls -lcr'		        # sort by change time
 alias lu='ls -lur'		        # sort by access time   
 alias lt='ls -ltr'              # sort by date
 alias lm='ls -al |more'         # pipe through 'more'
-alias tree='tree -Csu'		    # nice alternative to 'ls'
 
 alias more='less'
 
@@ -49,6 +48,7 @@ alias top='xtitle Processes on $HOST && top'
 alias make='xtitle Making $(basename $PWD) ; make'
 
 alias cls='printf "\033c"'
+alias hex='printf "%X\n" '
 
 # alert via osd-notify
 # Add an "alert" alias for long running commands.  Use like so:

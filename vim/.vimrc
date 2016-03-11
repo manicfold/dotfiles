@@ -1,7 +1,7 @@
 " vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 " -----------------------------------------------------------------------------
 " Filename: .vimrc
-" Modified: Wed 02 Mar 2016, 16:27
+" Modified: Thu 10 Mar 2016, 16:15
 " See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 
@@ -45,9 +45,7 @@ set cino+=g0,t0,:0,N-s
 " Interface  {{{
 set mouse=a
 set number
-set ruler           " Show the line and column number of the cursor position,
-                    " separated by a comma.
-set so=5
+set so=3
 " if &term =~ "screen"
 "   " Insert mode: blinking underscore
 "   let &t_SI .= "\e[3 q"
@@ -73,17 +71,14 @@ let g:airline#extensions#tabline#enabled = 0
 " let g:airline_theme='base16'
 let g:airline_theme='papercolor'
 "}}}
-" GUI-Vim  {{{
-set guifont=Envy\ Code\ R\ for\ Powerline\ 10
-set guioptions=agit
-"}}}
 " Colors  {{{
 syntax enable
-set bg=light
+set bg=dark
+if has('gui_running')
+   set bg=light
+endif
 set t_Co=256
-let base16colorspace=256
 colorscheme PaperColor
-" colorscheme base16-ocean
 
 " Mark columns 80 and 120+
 "let &colorcolumn=join(range(81,999),",")
@@ -132,26 +127,12 @@ let g:tlTokenList = ['TODO', 'FIXME', 'XXX']  " search tags
 " Fugitive  {{{
 set diffopt+=vertical
 "}}}
-" Dirvish {{{
-let g:dirvish_relative_paths = 1
+" netrw {{{
+let g:netrw_preview = 1
 
-augroup my_dirvish_events
-   autocmd!
-   " Map CTRL-R to reload the Dirvish buffer.
-   autocmd FileType dirvish nnoremap <buffer> <C-R> :<C-U>Dirvish %<CR>
-
-   " Map gh to hide "hidden" files.
-   autocmd FileType dirvish nnoremap <buffer> gh 
-            \ :g@\v/\.[^\/]+/?$@d<cr>
-
-   autocmd FileType dirvish nnoremap <buffer><silent> h
-            \ :Dirvish %:h:h<CR>
-   autocmd FileType dirvish nnoremap <buffer><silent> l
-            \ :<C-U>.call dirvish#open('edit', 0)<CR>
-   autocmd FileType dirvish nnoremap <buffer><silent> o
-            \ :<C-U>.call dirvish#open('vsplit', 0)<CR>
+augroup netrw_mapping
+    autocmd filetype netrw nnoremap <buffer> q :BW<CR>
 augroup END
-
 
 " }}}
 " Extern programs {{{
@@ -205,6 +186,8 @@ nnoremap <C-l> <C-w>l
 
 nnoremap <C-s> :w!<CR>
 inoremap <C-s> <Esc>:w!<CR>i
+nnoremap <C-q> :q<CR>
+inoremap <C-q> <Esc>:q<CR>
 
 " paste without copying the selected text "_ is the black hole register
 vnoremap p "_dp
@@ -247,10 +230,10 @@ nnoremap <leader>z :setlocal spell! spelllang=en_us<CR>
 nnoremap <buffer> <CR> <C-]>
 nnoremap <buffer> <BS> <C-T>
 " open list of buffers
-nnoremap <leader>b :call BufferList()<CR>
+nnoremap <leader>b :TSelectBuffer<CR>
 
-" use Dirvish instead of netrw
-nnoremap - :Dirvish %:p:h<CR>
+" use netrw
+nnoremap - :Explore<CR>
 
 " }}}
 " Private settings {{{

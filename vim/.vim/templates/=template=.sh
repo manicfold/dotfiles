@@ -3,11 +3,16 @@
 #- %FFILE%
 #- Copyright (C) Robert Bosch Car Multimedia GmbH
 #- %USER% <%MAIL%>
-#- Last Change: Thu 04 Feb 2016, 10:46
+#- Last Change: Tue 08 Mar 2016, 09:51
 
 ## 
 ## USAGE: %FFILE%  
 ##        
+
+set -o errexit    # exit if a command fails
+set -o nounset    # exit if variable is not declared
+set -o pipefail   # return exit code of last failed command in pipe
+#set -o xtrace     # debug traces on
 
 usage=$(grep "^## " "${BASH_SOURCE[0]}" | cut -c 4-)
 version=$(grep "^#- "  "${BASH_SOURCE[0]}" | cut -c 4-)
@@ -24,9 +29,9 @@ while (( "$#" )); do
    shift
 done
 
-err="\e[37;1;41m  KO  \e[0m"
-ok="\e[37;1;42m  OK  \e[0m"
-inf="\e[37;1;43m INFO \e[0m"
+print_err() { echo -e "\e[37;1;41m ERR \e[0m" "$1"; }
+print_ok()  { echo -e "\e[37;1;42m OK  \e[0m" "$1"; }
+print_inf() { echo -e "\e[37;1;43m INF \e[0m" "$1"; }
 
 # -----------------------------------------------------------------------------
 
