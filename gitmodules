@@ -71,7 +71,8 @@
 [submodule "vim/.vim/bundle/vim-sneak"]
 	path = vim/.vim/bundle/vim-sneak
 	url = https://github.com/justinmk/vim-sneak
+[submodule "vim/.vim/bundle/ack.vim"]
 	path = vim/.vim/bundle/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
-	path = vim/.vim/bundle/tselectbuffer_vim
-	url = https://github.com/tomtom/tselectbuffer_vim.git
+	path = vim/.vim/bundle/unite.vim
+	url = https://github.com/Shougo/unite.vim
