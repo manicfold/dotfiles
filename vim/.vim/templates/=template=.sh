@@ -3,7 +3,7 @@
 #- %FFILE%
 #- Copyright (C) Robert Bosch Car Multimedia GmbH
 #- %USER% <%MAIL%>
-#- Last Change: Tue 08 Mar 2016, 09:51
+#- Last Change: Wed 13 Apr 2016, 11:13
 
 ## 
 ## USAGE: %FFILE%  
@@ -19,6 +19,11 @@ version=$(grep "^#- "  "${BASH_SOURCE[0]}" | cut -c 4-)
 
 usage() {  echo "$usage"; }
 version() { echo "$version"; }
+print_err() { echo "|ERR|" "$@"; }
+print_ok()  { echo "|OK |" "$@"; }
+print_inf() { echo "|INF|" "$@"; }
+
+# -----------------------------------------------------------------------------
 
 while (( "$#" )); do
    case $1 in
@@ -28,12 +33,6 @@ while (( "$#" )); do
    esac
    shift
 done
-
-print_err() { echo -e "\e[37;1;41m ERR \e[0m" "$1"; }
-print_ok()  { echo -e "\e[37;1;42m OK  \e[0m" "$1"; }
-print_inf() { echo -e "\e[37;1;43m INF \e[0m" "$1"; }
-
-# -----------------------------------------------------------------------------
 
 
 %HERE%
