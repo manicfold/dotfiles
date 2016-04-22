@@ -71,6 +71,12 @@ let g:airline#extensions#tabline#enabled = 0
 " let g:airline_theme='base16'
 let g:airline_theme='papercolor'
 "}}}
+" GUI-Vim  {{{ 
+
+set guifont=Envy\ Code\ R\ for\ Powerline\ 11
+set guioptions=agi
+
+"}}}
 " Colors  {{{
 syntax enable
 set bg=dark
@@ -247,6 +253,6 @@ nnoremap <leader>f :Unite file<CR>
 " }}}
 " Private settings {{{
 if filereadable( $HOME . "/.vimrc.local" )
-   source ~/.vimrc.local
+   source $HOME/.vimrc.local
 endif
 "}}}
