@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Fri 15 Apr 2016, 09:47
+# Modified: Fri 22 Apr 2016, 11:19
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
@@ -35,8 +35,8 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-if [ -d "${HOME}/.gem/ruby/1.9.1/bin" ] ; then
-   PATH="${HOME}/.gem/ruby/1.9.1/bin:${PATH}"
+if [ -d "${HOME}/.gem/ruby/*/bin" ] ; then
+   PATH="${HOME}/.gem/ruby/*/bin:${PATH}"
 fi
 
 PATH="${HOME}/cov-analysis-linux-8.0.0/bin:${PATH}"
