@@ -1,7 +1,7 @@
 " vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 " -----------------------------------------------------------------------------
 " Filename: .vimrc
-" Modified: Sat 02 Jan 2016, 21:35
+" Modified: Wed 20 Apr 2016, 11:28
 " See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 
@@ -45,10 +45,8 @@ set cino+=g0,t0,:0,N-s
 " Interface  {{{
 set mouse=a
 set number
-set ruler           " Show the line and column number of the cursor position,
-                    " separated by a comma.
-set so=5
-" if &term =~ "xterm"
+set so=3
+" if &term =~ "screen"
 "   " Insert mode: blinking underscore
 "   let &t_SI .= "\e[3 q"
 "   " Normal mode: blinking block
@@ -69,7 +67,7 @@ let g:airline_right_sep=''
 let g:airline_detect_modified=1
 let g:airline_detect_paste=1
 let g:airline_powerline_fonts=1
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 0
 " let g:airline_theme='base16'
 let g:airline_theme='papercolor'
 "}}}
@@ -82,10 +80,11 @@ set guioptions=agi
 " Colors  {{{
 syntax enable
 set bg=dark
+if has('gui_running')
+   set bg=light
+endif
 set t_Co=256
-let base16colorspace=256
 colorscheme PaperColor
-" colorscheme base16-ocean
 
 " Mark columns 80 and 120+
 "let &colorcolumn=join(range(81,999),",")
@@ -113,21 +112,6 @@ set gdefault        " Tack a 'g' on regexes, i.e., '%s/search/replace/g'
 
 let g:sneak#streak = 1
 "}}}
-" Completion  {{{
-"set omnifunc=syntaxcomplete#Complete
-"set completeopt=longest,menuone
-" make YCM compatible with UltiSnips (using supertab)
-" let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-" let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-" let g:SuperTabDefaultCompletionType = '<C-n>'
-
-" better key bindings for UltiSnipsExpandTrigger
-" let g:UltiSnipsExpandTrigger = "<tab>"
-" let g:UltiSnipsJumpForwardTrigger = "<tab>"
-" let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
-" " If you want :UltiSnipsEdit to split your window.
-" let g:UltiSnipsEditSplit="vertical"
-"}}}
 " Folding  {{{
 set foldmethod           =syntax
 set foldlevelstart       =99
@@ -137,6 +121,8 @@ let sh_fold_enabled      =1
 let perl_extended_vars   =1
 let perl_sync_dist       =250
 let g:xml_syntax_folding =1
+
+autocmd FileType sh setlocal foldmarker={{{,}}} foldlevel=0 foldmethod=marker
 "}}}
 " Taglist  {{{
 let Tlist_Use_Right_Window = 1
@@ -149,6 +135,14 @@ let g:tlTokenList = ['TODO', 'FIXME', 'XXX']  " search tags
 " Fugitive  {{{
 set diffopt+=vertical
 "}}}
+" netrw {{{
+let g:netrw_preview = 1
+
+augroup netrw_mapping
+    autocmd filetype netrw nnoremap <buffer> q :BW<CR>
+augroup END
+
+" }}}
 " Extern programs {{{
 " IMPORTANT: grep will sometimes skip displaying the file name if you
 " search in a single file. This will confuse Latex-Suite. Set your grep
@@ -182,8 +176,12 @@ endfun
 
 " Convenient command to see the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
-command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
+command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
         \ | wincmd p | diffthis
+
+function! RemoveShellEscapes()
+   exe '%s#\[[0-9;]*m##'
+endfun
 
 "}}}
 " Keyboard mappings {{{
@@ -198,6 +196,15 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+nnoremap <C-s> :w!<CR>
+inoremap <C-s> <Esc>:w!<CR>i
+nnoremap <C-q> :q<CR>
+inoremap <C-q> <Esc>:q<CR>
+
+" paste without copying the selected text "_ is the black hole register
+vnoremap p "_dp
+vnoremap P "_dP
+
 nmap f <Plug>Sneak_s
 nmap F <Plug>Sneak_S
 xmap f <Plug>Sneak_s
@@ -205,26 +212,47 @@ xmap F <Plug>Sneak_S
 omap f <Plug>Sneak_s
 omap F <Plug>Sneak_S
 
-cnoremap <c-n> <CR>n/<c-p>                               " goto next occurence w/o leaving search mode
-"nnoremap <esc> :noh<cr><esc>                             " <esc> disables search highlighting
-nnoremap <S-Tab> :up! <bar> bp<CR>                       " Previous buffer (bufkill)
-nnoremap <Tab> :up! <bar> bn<CR>                         " Next buffer (bufkill)
-nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>         " clean up whitespace
-nnoremap <leader>b :CtrlPBuffer<cr>                      " Buffer search
-nnoremap <leader>b :call ToggleBg()<CR>                  " Toggle background lightness
-nnoremap <leader>Q :q<CR>                                " Quit buffer
-nnoremap <leader>q :BD<CR>                               " Close buffer (bufkill)
-nnoremap <leader>s :up <bar> FSHere<CR>                  " Switch h / cpp (FSwitch)
-nnoremap <leader>T :TlistToggle<CR>                      " Toggle Taglist
-nnoremap <leader>v :e ~/.vimrc<CR>                       " Open Settings
-nnoremap <leader>w <C-w>v<C-w>l                          " open a split window and go there
-nnoremap <leader>z :setlocal spell! spelllang=en_us<cr>  " Toggle spellcheck
+" goto next occurence w/o leaving search mode
+cnoremap <c-n> <CR>n/<c-p>
+" Previous buffer (bufkill)
+nnoremap <S-Tab> :up! <bar>bp<CR>
+" Next buffer (bufkill)
+nnoremap <Tab> :up! <bar>bn<CR>
+" clean up whitespace
+nnoremap <leader>c :%s/\s\+$//<CR>:let @/=''<CR>
+" Toggle background lightness
+nnoremap <leader>l :call ToggleBg()<CR>
+" Close window
+nnoremap <leader>Q :q<CR>
+" Close buffer (bufkill)
+nnoremap <leader>q :BD<CR>
+" Switch h / cpp (FSwitch)
+nnoremap <leader>s :up <bar> FSHere<CR>
+" Toggle Taglist
+nnoremap <leader>T :TlistToggle<CR>
+" Open Settings
+nnoremap <leader>v :e ~/.vimrc<CR>
+" open a split window and go there
+nnoremap <leader>w <C-w>v<C-w>l
+nnoremap <leader>W :sp<CR> <C-w>j
+" Toggle spellcheck
+nnoremap <leader>z :setlocal spell! spelllang=en_us<CR>
+" repair netrw
+nnoremap <leader>r :set modifiable<CR> :set nu<CR>
+
+" Use return and backspace to navigate help pages more easy
+nnoremap <buffer> <CR> <C-]>
+nnoremap <buffer> <BS> <C-T>
+" open list of buffers
+nnoremap <leader>b :Unite buffer<CR>
+nnoremap <leader>f :Unite file<CR>
+
+" use netrw
+" nnoremap - :Explore<CR>
 
 " }}}
 " Private settings {{{
-
-if filereadable( $HOME."/.vimrc.local")
+if filereadable( $HOME . "/.vimrc.local" )
    source $HOME/.vimrc.local
 endif
-
 "}}}

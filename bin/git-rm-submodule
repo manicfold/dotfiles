@@ -1,0 +1,108 @@
+#! /bin/bash
+#
+#- git-rm-submodule
+#- Philipp Blanke <philipp.blanke@googlemail.com>
+#- Last Change: Thu 14 Apr 2016, 17:06
+
+## USAGE: git-rm-submodule <module> 
+##        
+
+set -o errexit    # exit if a command fails
+set -o nounset    # exit if variable is not declared
+set -o pipefail   # return exit code of last failed command in pipe
+# set -o xtrace     # debug traces on
+
+usage=$(grep "^## " "${BASH_SOURCE[0]}" | cut -c 4-)
+version=$(grep "^#- "  "${BASH_SOURCE[0]}" | cut -c 4-)
+
+usage() {  echo "$usage"; }
+version() { echo "$version"; }
+print_err() { echo "|ERR|" "$@"; }
+print_ok()  { echo "|OK |" "$@"; }
+print_inf() { echo "|INF|" "$@"; }
+
+# -----------------------------------------------------------------------------
+
+module=""
+if [ $# -lt 1 ]; then
+   usage
+   exit 1
+fi
+while (( "$#" )); do
+   case $1 in
+      -v|--version) version; exit 0 ;;
+      -h|--help) usage; exit 0 ;;
+      *) module=$1 ;;
+   esac
+   shift
+done
+
+gitmod=.gitmodules
+gitconf=.git/config
+
+[ -e .gitmodules ] || { echo "No .gitmodules found."; exit 1; }
+[ -e .git/config ] || { echo "No .git/config found."; exit 1; }
+
+# rebase to realpath
+gitmod=$(basename $(realpath $gitmod))
+
+# check if this module exists
+if ! grep $module $gitmod; then
+   print_err "Submodule $module is not installed."
+   exit 1
+fi
+
+
+# determine the line of the submodule in .gitmodules
+mod_line=$(grep -n "\[submodule .*$module.*\]" $gitmod | cut -f1 -d':')
+mod_line_p=$((mod_line+1))
+# determine the line of the next submodule, to delete all lines between.
+mod_line_end=$(grep -n "\[submodule" $gitmod | cut -f1 -d: | grep -A1 $mod_line | tail -n1)
+mod_line_end=$((mod_line_end - 1))
+# if there is no module after this, delete to the end of the file
+if [ $mod_line -eq $mod_line_end ]; then mod_line_end=$(wc -l $gitmod | cut -f1 -d' '); fi
+
+# determine the line of the submodule in .git/config
+conf_line=$(grep -n "\[submodule .*$module.*\]" $gitconf | cut -f1 -d:)
+conf_line_end=$((conf_line + 1))
+
+# fetch path from file
+mod_path=$(sed -n "$mod_line_p p" $gitmod | grep -oP '\w*path = \K.*')
+
+
+# delete from .gitmodules
+if ! sed -i.orig "$mod_line,$mod_line_end d" $gitmod; then
+   print_err "Could not delete lines $mod_line - $mod_line_end from gitmodules."
+   exit 1
+fi
+
+if ! git add $gitmod; then
+   print_err "Could not check in $gitmod"
+   exit 1
+fi
+
+# delete from .git/config
+if ! sed -i.orig "$conf_line,$conf_line_end d" $gitconf; then
+   print_err "Could not delete lines $conf_line - $conf_line_end from gitmodules."
+   exit 1
+fi
+
+if ! git rm --cached $mod_path; then
+   print_err "Could not remove cached files from git."
+   exit 1
+fi
+
+if ! rm -rf .git/modules/$mod_path; then
+   print_err "Could not remove module from internal git storage."
+fi
+
+if ! git ci -m "Deleted submodule $module"; then
+   print_err "Could not check in changed $gitmod file."
+   exit 1
+fi
+
+if ! rm -rf $mod_path; then
+  print_err "Could not remove module path $path"
+  exit 1
+fi
+

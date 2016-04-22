@@ -36,10 +36,10 @@
 	url = https://github.com/FromtonRouge/OmniCppComplete
 [submodule "vim/.vim/bundle/vim-addon-mw-utils"]
 	path = vim/.vim/bundle/vim-addon-mw-utils
-	url = https://github.com/marcweber/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
 [submodule "vim/.vim/bundle/vim-snipmate"]
 	path = vim/.vim/bundle/vim-snipmate
-	url = https://github.com/garbas/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git
 [submodule "vim/.vim/bundle/vim-pathogen"]
 	path = vim/.vim/bundle/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
@@ -52,6 +52,7 @@
 [submodule "vim/.vim/bundle/vim-template"]
 	path = vim/.vim/bundle/vim-template
 	url = https://github.com/aperezdc/vim-template.git
+   ignore = dirty
 [submodule "vim/.vim/bundle/lightline.vim"]
 	path = vim/.vim/bundle/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
@@ -70,9 +71,14 @@
 [submodule "vim/.vim/bundle/vim-sneak"]
 	path = vim/.vim/bundle/vim-sneak
 	url = https://github.com/justinmk/vim-sneak
-[submodule "vim/.vim/bundle/ctrlp.vim"]
-	path = vim/.vim/bundle/ctrlp.vim
-	url = https://github.com/ctrlpvim/ctrlp.vim.git
-[submodule "vim/.vim/bundle/vim-vinegar"]
-	path = vim/.vim/bundle/vim-vinegar
-	url = https://github.com/tpope/vim-vinegar.git
+[submodule "vim/.vim/bundle/ack.vim"]
+	path = vim/.vim/bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "vim/.vim/bundle/unite.vim"]
+	path = vim/.vim/bundle/unite.vim
+	url = https://github.com/Shougo/unite.vim
+[submodule "gnome-terminal/papercolor"]
+	path = gnome-terminal/papercolor
+	url = https://github.com/NLKNguyen/papercolor.git
+	path = vim/.vim/bundle/vim-json
+	url = https://github.com/elzr/vim-json

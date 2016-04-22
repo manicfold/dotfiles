@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Tue 17 Nov 2015, 13:10
+# Modified: Fri 15 Apr 2016, 09:47
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
@@ -10,6 +10,10 @@
 # Globals -----------------------------------------------------------------{{{
 # set the default filemask
 umask 022
+
+# disable Ctrl-S on the TTY which produces XOFF, after which the TTY does not
+# accept keystrokes anymore until Ctrl-Q (XON) is pressed.
+stty -ixon
 
 # LaTeX setup
 # ( The trailing colon indicates the standard search
@@ -34,6 +38,8 @@ fi
 if [ -d "${HOME}/.gem/ruby/1.9.1/bin" ] ; then
    PATH="${HOME}/.gem/ruby/1.9.1/bin:${PATH}"
 fi
+
+PATH="${HOME}/cov-analysis-linux-8.0.0/bin:${PATH}"
 
 export LC_ALL LANG PATH LD_LIBRARY_PATH EDITOR GPG_TTY
 # }}}
@@ -61,6 +67,7 @@ shopt -s checkwinsize
 #shopt -s cmdhist
 shopt -s histappend histreedit histverify
 shopt -s extglob      # Necessary for programmable completion
+shopt -s direxpand    # expand variables containing directories
 
 ulimit -S -c 0        # Don't want any coredumps
 # Disable options:
@@ -101,16 +108,12 @@ export PAGER=less
 export LESSCHARSET='utf-8'
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
-
+export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+export LESS=' -R '
 export XMLLINT_INDENT='   '
 
-# Functions --------------------------------------------------------------- {{{
-# find in source files --------------------------------------------------------
-function find-c () {
-   find . \( -iname "*.[hc]" -o -iname "*.hpp" -o -iname "*.cpp" \) -exec grep -n "$1" {} +
-}
 # }}}
-# Files & strings -------------------------------------------------------------
+# Functions --------------------------------------------------------------- {{{
 # Find a file with a pattern in name:
 function ff()
 { find . -type f -iname '*'$*'*' -ls ; }
@@ -118,32 +121,6 @@ function ff()
 # Find a file with pattern $1 in name and Execute $2 on it:
 function fe()
 { find . -type f -iname '*'$1'*' -exec "${2:-file}" {} \;  ; }
-
-# find pattern in a set of files and highlight them:
-function fstr()
-{
-    OPTIND=1
-    local case=""
-    local usage="fstr: find string in files.
-Usage: fstr [-i] \"pattern\" [\"filename pattern\"] "
-    while getopts :it opt
-    do
-        case "$opt" in
-        i) case="-i " ;;
-        *) echo "$usage"; return;;
-        esac
-    done
-    shift $(( $OPTIND - 1 ))
-    if [ "$#" -lt 1 ]; then
-        echo "$usage"
-        return;
-    fi
-    local SMSO=$(tput smso)
-    local RMSO=$(tput rmso)
-    find . -type f -name "${2:-*}" -print0 |
-    xargs -0 grep -sn ${case} "$1" 2>&- | \
-    sed "s/$1/${SMSO}\0${RMSO}/gI" | more
-}
 
 # move filenames to lowercase
 function lowercase()
@@ -184,6 +161,7 @@ function uppercase()
         fi
     done
 }
+
 # swap 2 filenames around
 function swap()
 {
