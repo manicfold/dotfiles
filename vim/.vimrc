@@ -1,7 +1,7 @@
 " vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 " -----------------------------------------------------------------------------
 " Filename: .vimrc
-" Modified: Wed 13 Apr 2016, 11:03
+" Modified: Wed 20 Apr 2016, 11:28
 " See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 
@@ -172,6 +172,10 @@ endfun
 " file it was loaded from, thus the changes you made.
 command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
         \ | wincmd p | diffthis
+
+function! RemoveShellEscapes()
+   exe '%s#\[[0-9;]*m##'
+endfun
 
 "}}}
 " Keyboard mappings {{{
