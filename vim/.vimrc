@@ -1,7 +1,7 @@
 " vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 " -----------------------------------------------------------------------------
 " Filename: .vimrc
-" Modified: Wed 20 Apr 2016, 11:28
+" Modified: Mon 25 Apr 2016, 12:50
 " See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 
@@ -46,12 +46,8 @@ set cino+=g0,t0,:0,N-s
 set mouse=a
 set number
 set so=3
-" if &term =~ "screen"
-"   " Insert mode: blinking underscore
-"   let &t_SI .= "\e[3 q"
-"   " Normal mode: blinking block
-"   let &t_EI .= "\e[1 q"
-" endif
+" let &t_SI = "\<Esc>[4 q"
+" let &t_EI = "\<Esc>[2 q"
 :set fillchars+=vert:│
 "}}}
 " Statusline  {{{

@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------------------
 # $HOME/.bash_aliases
-# Modified: Mon 11 Apr 2016, 15:12
+# Modified: Mon 25 Apr 2016, 11:31
 # -----------------------------------------------------------------------------
 
 alias rm='rm -i'
@@ -49,6 +49,8 @@ alias make='xtitle Making $(basename $PWD) ; make'
 
 alias cls='printf "\033c"'
 alias hex='printf "%X\n" '
+
+alias tmux='tmux -2 '
 
 # alert via osd-notify
 # Add an "alert" alias for long running commands.  Use like so:

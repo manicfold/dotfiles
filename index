@@ -10,5 +10,6 @@ git: ~
 latex: ~
 signature: ~
 terminator: ~/.config/terminator
+tmux: ~
 vim: ~
 zsh: ~
