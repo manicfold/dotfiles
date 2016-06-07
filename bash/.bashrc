@@ -1,7 +1,7 @@
-# vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
+# vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Mon 25 Apr 2016, 11:29
+# Modified: Tue 31 May 2016, 07:37
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
@@ -89,14 +89,14 @@ export PROMPT_DIRTRIM=3
 BASE16_SHELL="$HOME/.config/base16-shell/base16-papercolor.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
-if [ "$TERM" != "linux" ]; then
-   GIT_PROMPT_FETCH_REMOTE_STATUS=0
-   GIT_PROMPT_STATUS_COMMAND=gitstatus.sh
+#if [ "$TERM" != "linux" ]; then
+#   GIT_PROMPT_FETCH_REMOTE_STATUS=0
+#   GIT_PROMPT_STATUS_COMMAND=gitstatus.sh
 #   GIT_PROMPT_THEME_NAME="Custom"
-   source ~/.bash-git-prompt/gitprompt.sh
-elif [ -f ~/.bash_prompt ]; then
+#   source ~/.bash-git-prompt/gitprompt.sh
+#elif [ -f ~/.bash_prompt ]; then
     source ~/.bash_prompt
-fi
+#fi
 # }}}
 # Alias definitions --------------------------------------------------------{{{
 if [ -f ~/.bash_aliases ]; then

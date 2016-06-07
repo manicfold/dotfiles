@@ -1,7 +1,7 @@
 " vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 " -----------------------------------------------------------------------------
 " Filename: .vimrc
-" Modified: Mon 25 Apr 2016, 12:50
+" Modified: Tue 07 Jun 2016, 13:36
 " See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 
@@ -186,7 +186,6 @@ let mapleader=" "
 " move by display lines instead of logical lines
 nmap <silent> j gj
 nmap <silent> k gk
-" move between windows
 " nnoremap <C-k> <C-w>k
 " nnoremap <C-j> <C-w>j
 " nnoremap <C-h> <C-w>h
@@ -200,6 +199,8 @@ inoremap <C-q> <Esc>:q<CR>
 " paste without copying the selected text "_ is the black hole register
 vnoremap p "_dp
 vnoremap P "_dP
+" search for selected text with //
+vnoremap // y/<C-R>"<CR>
 
 nmap f <Plug>Sneak_s
 nmap F <Plug>Sneak_S
@@ -239,12 +240,9 @@ nnoremap <leader>r :set modifiable<CR> :set nu<CR>
 " Use return and backspace to navigate help pages more easy
 nnoremap <buffer> <CR> <C-]>
 nnoremap <buffer> <BS> <C-T>
-" open list of buffers
-nnoremap <leader>b :Unite buffer<CR>
-nnoremap <leader>f :Unite file<CR>
 
 " use netrw
-" nnoremap - :Explore<CR>
+nnoremap - :e %:p:h<CR>
 
 " }}}
 " Private settings {{{

@@ -1,156 +1,96 @@
-# Setup a nice prompt
-function myprompt 
-{
-    # set color names
-    # normal
-    local BK="\[\e[30m\]" 	# black
-    local BL="\[\e[0;34m\]" 	# blue
-    local GR="\[\e[0;32m\]"   # green
-    local CY="\[\e[0;36m\]" 	# cyan
-    local RD="\[\e[0;31m\]" 	# red
-    local PL="\[\e[0;35m\]"  	# purple
-    local BR="\[\e[0;33m\]"  	# brown
-    local GY="\[\e[1;30m\]"  	# grey
-    
-    # enhanced
-    local eGY="\[\e[0;37m\]" 	# light gray
-    local eBL="\[\e[1;34m\]" 	# light blue
-    local eGR="\[\e[1;32m\]" 	# light green
-    local eCY="\[\e[1;36m\]" 	# light cyan
-    local eRD="\[\e[1;31m\]" 	# light red
-    local ePL="\[\e[1;35m\]" 	# light purple
-    local eYW="\[\e[1;33m\]" 	# yellow
-    local eWT="\[\e[1;37m\]" 	# white
-    
-    # background
-    local bBK="\[\e[40m\]" 	# black
-    local bRD="\[\e[41m\]" 	# red
-    local bGR="\[\e[42m\]" 	# green
-    local bYW="\[\e[43m\]" 	# yellow
-    local bBL="\[\e[44m\]" 	# blue
-    local bMA="\[\e[45m\]" 	# magenta
-    local bCY="\[\e[46m\]" 	# cyan
-    local bWT="\[\e[47m\]" 	# white
-
-    # special
-    local sUN="\[\e[4m\]" 	# underscore
-    local sBN="\[\e[5m\]" 	# blink
-    local sIN="\[\e[7m\]" 	# invert
-    local sHD="\[\e[8m\]" 	# hidden
-    
-    # reset to teminal default
-    local NRML="\[\e[0m\]"	# normal term color
-
-    # what user am i?
-    local me=`whoami`
-    # setup user-based colors schemes.
-    # play around in here for global settings
-    # or create ~/.mprc for local override. 
-    case $me in
-        root) # system god
-	    local UCHR="# "		# root prompt character
-	    local BKGR=$bRD		# background color
-    	local UCLR=$eYW		# root prompt color
-	    local NCLR=$PL		# username color
-	    local ATCLR=$CY		# @ sign color
-	    local HCLR=$eBL		# host name color
-    	local BRKT=$eBL		# bracket color
-	    local PARN=$CY		# parens color
-	    local DCLR=$CY		# dash color		
-	    local SCLR=$CY		# slash color
-	    local TCLR=$eBL		# time color
-	    local COCLR=$BL		# colon color	
-	    local DTCLR=$eBL		# date color	
-	    local DIR=$eCY		# current directory color
-	    local TXT=$NRML		# root text color
-	    local CCHR="->"		# line continuation character
-	    local CCLR=$GY		# line continuation character color
-	;;
-	*) # mere mortals
-	    local UCHR=">"		# user prompt character
-	    local BKGR=$sIN		# background color
-	    local EBGR=$bRD		# background color on error
-	    local UCLR=$eWT		# user prompt color
-	    local NCLR=$eBL		# username color
-	    local ATCLR=$CY		# @ sign color
-	    local HCLR=$eBL		# host name color
-	    local BRKT=$eBL		# bracket color
-	    local PARN=$CY		# parens color
-	    local DCLR=$CY		# dash color
-	    local SCLR=$CY		# slash color
-	    local TCLR=$eBL		# time color
-	    local COCLR=$BL		# colon color
-	    local DTCLR=$eBL		# date color	
-	    local DIR=$CY		   # current directory color
-	    local TXT=$NRML		# user text color
-	    local CCHR="-> "		# line continuation character
-	    local CCLR=$GY		# line continuation character color
-	;;
-    esac
+# vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
+# -----------------------------------------------------------------------------
+# Filename: .bash_prompt
+# Modified: Tue 31 May 2016, 14:04
+# -----------------------------------------------------------------------------
 
 
-    # whew! finally, the prompts!
-    local PROMPT_STYLE=$1
-    case $PROMPT_STYLE in
-	mystyle)
-	    PS1="\`[ \$? = 0 ] && echo '$sIN' || echo '$bRD$BK'\`\t \u@\h:\$PWD\n$UCHR$NRML "
-	    PS2="$BKGR> $NRML "
-	;;
-	vms)
-	    # looks like: [/usr/src/linux]#
-	    PS1="$BRKT[$DIR\$(getPWD)$BRKT]$UCLR$UCHR$TXT"
-	    PS2="$CCLR$CCHR$TXT"
-	;;
-	giles) # named after Giles Orr - bash prompt god.
-	    # looks like: (root@host.company.com)-(12:34 PM  / Mon Nov 27)
-	    #	          [/lib/modules]#
-	    PS1="$PARN($NCLR\u$ATCLR@$HCLR\H$PARN)$DCLR-$PARN($TCLR\$(date '+%I')$COCLR:$TCLR\$(date '+%M %p') $SCLR/ $DTCLR\d$PARN)\n$BRKT[$DIR\$(getPWD)$BRKT]$UCLR$UCHR$TXT"
-	    PS2="$CCLR$CCHR$TXT"
-	;;
-	router)
-	    # just the specified prompt character and text color 
-	    PS1="$UCLR$UCHR$TXT"
-	    PS2=""
-	;;
-	-h | --help)
-	    echo
-	    echo myprompt: a multi-mode color prompt generator
-	    echo usage: [myprompt \| mp] [vms \| giles \| router \| -h \| --help]
-	    echo 
-	    echo Source and call from .bashrc with parameters
-	    echo to modify the color and layout of the bash prompt.
-	    echo
-	    echo Or call without parameters to set the 
-	    echo prompt to user@host:/directory$
-	    echo 
-	;;
-        *) # generic
-	    # looks like: root@mybox:~#
-	    # with everything in the same user text color 
-	    PS1="$TXT\u@\h:\$(getPWD)$UCHR"
-	    PS2="$CCHR"
-	;;
-    esac
-}
-
-function getPWD
+function shortPWD
 {
    # How many characters of the $PWD should be kept
    # courtesy Giles Orr's bash prompt HOWTO (tweaked to be a function)  
-   local pwd_length=40
-   if [ $(echo -n $PWD | wc -c | tr -d " ") -gt $pwd_length ]
-   then
-	   newPWD=...$(echo -n $PWD | sed -e "s/.*\(.\{$pwd_length\}\)/\1/")
-#"
-   else
-      newPWD=$(echo -n $PWD)
-   fi
-   echo $newPWD
+   # local pwd_length=60
+   # if [ $(echo -n $PWD | wc -c | tr -d " ") -gt $pwd_length ]; then
+   #    newPWD=...$(echo -n $PWD | sed -e "s/.*\(.\{$pwd_length\}\)/\1/")
+   # else
+   #    newPWD=$(echo -n $PWD)
+   # fi
+   # echo $newPWD
+   local Pre= Name="$PWD" Length="64";
+   [[ "$Name" != "${Name#$HOME/}" || -z "${Name#$HOME}" ]] && \
+      Pre+='~' Name="${Name#$HOME}" Length=$[Length-1];
+   ((${#Name} > $Length)) && \
+      Name="/...${Name:$[${#Name}-Length+4]}";
+   echo "$Pre$Name"
 }
 
+function exitCode
+{
+   local Res=$?
+   local Green="\e[0;32m"
+   local Red="\e[0;31m"
 
-#set the prompt
-#myprompt mystyle;
-PS1="\`[ \$? = 0 ] && echo '\[\e[7m\]' || echo '\[\e[41m\]\[\e[30m\]'\`\t \u@\h:\$PWD\n>\[\e[0m\] "
-export PS1;
+   if [[ $Res == 0 ]]; then
+      echo -e "${Green}✔"
+   else
+      echo -e "${Red}✘ -${Res}"
+   fi
+}
+
+function projectName
+{
+   [[ -n "${_SOFTWARE_VERSION}" ]] && \
+      printf "%*s" $COLUMNS "${_SOFTWARE_VERSION}"
+      # echo " [${_SOFTWARE_VERSION}]" 
+}
+
+# Setup a nice prompt
+function myprompt 
+{
+   local Black="\[\e[30m\]"
+   local Blue="\[\e[0;34m\]"
+   local Green="\[\e[0;32m\]"
+   local Cyan="\[\e[0;36m\]"
+   local Red="\[\e[0;31m\]"
+   local Purple="\[\e[0;35m\]"
+   local Orange="\[\e[0;33m\]"
+   local Gray="\[\e[1;30m\]"
+
+   local BoldGray="\[\e[0;37m\]"
+   local BoldBlue="\[\e[1;34m\]"
+   local BoldGray="\[\e[1;32m\]"
+   local BoldCyan="\[\e[1;36m\]"
+   local BoldRed="\[\e[1;31m\]"
+   local BoldPurple="\[\e[1;35m\]"
+   local BoldOrange="\[\e[1;33m\]"
+   local BoldWhite="\[\e[1;37m\]"
+
+   local BgBlack="\[\e[40m\]"
+   local BgRed="\[\e[41m\]"
+   local BgGreen="\[\e[42m\]"
+   local BgOrange="\[\e[43m\]"
+   local BgBlue="\[\e[44m\]"
+   local BgPurple="\[\e[45m\]"
+   local BgCyan="\[\e[46m\]"
+   local BgWhite="\[\e[47m\]"
+
+   local Underscore="\[\e[4m\]"
+   local Blink="\[\e[5m\]"
+   local Invert="\[\e[7m\]"
+   local Hidden="\[\e[8m\]"
+
+   # reset to teminal default
+   local Default="\[\e[0m\]"
+
+
+   # PS1="\`[ \$? = 0 ] && echo '$sIN' || echo '$bRD$Black'\`\t \u@\h:\$PWD\n$UCHR$Default "
+   # \[$(tput sc; rightprompt; tput rc)\]
+   PS1="${Purple}\[\$(tput sc; projectName; tput rc)\]${Default}┌─ \$(exitCode) ${Default}\t${BoldBlue} \$(shortPWD) ${Default}\n└─⧐  "
+   PS2="$Default >"
+}
+
+myprompt
+# PS1="\`[ \$? = 0 ] && echo '\[\e[7m\]' || echo '\[\e[41m\]\[\e[30m\]'\`\t \u@\h:\$PWD\n>\[\e[0m\] "
+export PS1
+export PS2
 
