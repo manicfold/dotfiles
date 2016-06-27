@@ -1,21 +1,51 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bash_prompt
-# Modified: Tue 31 May 2016, 14:04
+# Modified: Mon 13 Jun 2016, 15:56
 # -----------------------------------------------------------------------------
 
 
+# colors {{{
+# local Black="\[\e[30m\]"
+# local Blue="\[\e[0;34m\]"
+# local Green="\[\e[0;32m\]"
+# local Cyan="\[\e[0;36m\]"
+# local Red="\[\e[0;31m\]"
+# local Purple="\[\e[0;35m\]"
+# local Orange="\[\e[0;33m\]"
+# local Gray="\[\e[1;30m\]"
+#
+# local BoldGray="\[\e[0;37m\]"
+# local BoldBlue="\[\e[1;34m\]"
+# local BoldGray="\[\e[1;32m\]"
+# local BoldCyan="\[\e[1;36m\]"
+# local BoldRed="\[\e[1;31m\]"
+# local BoldPurple="\[\e[1;35m\]"
+# local BoldOrange="\[\e[1;33m\]"
+# local BoldWhite="\[\e[1;37m\]"
+#
+# local BgBlack="\[\e[40m\]"
+# local BgRed="\[\e[41m\]"
+# local BgGreen="\[\e[42m\]"
+# local BgOrange="\[\e[43m\]"
+# local BgBlue="\[\e[44m\]"
+# local BgPurple="\[\e[45m\]"
+# local BgCyan="\[\e[46m\]"
+# local BgWhite="\[\e[47m\]"
+#
+# local Underscore="\[\e[4m\]"
+# local Blink="\[\e[5m\]"
+# local Invert="\[\e[7m\]"
+# local Hidden="\[\e[8m\]"
+
+# reset to teminal default
+# local Default="\[\e[0m\]"
+# }}}
+
+export PROMPT_DIRTRIM=3
+
 function shortPWD
 {
-   # How many characters of the $PWD should be kept
-   # courtesy Giles Orr's bash prompt HOWTO (tweaked to be a function)  
-   # local pwd_length=60
-   # if [ $(echo -n $PWD | wc -c | tr -d " ") -gt $pwd_length ]; then
-   #    newPWD=...$(echo -n $PWD | sed -e "s/.*\(.\{$pwd_length\}\)/\1/")
-   # else
-   #    newPWD=$(echo -n $PWD)
-   # fi
-   # echo $newPWD
    local Pre= Name="$PWD" Length="64";
    [[ "$Name" != "${Name#$HOME/}" || -z "${Name#$HOME}" ]] && \
       Pre+='~' Name="${Name#$HOME}" Length=$[Length-1];
@@ -33,64 +63,36 @@ function exitCode
    if [[ $Res == 0 ]]; then
       echo -e "${Green}✔"
    else
-      echo -e "${Red}✘ -${Res}"
+      echo -e "${Red}✘"
    fi
 }
 
 function projectName
 {
    [[ -n "${_SOFTWARE_VERSION}" ]] && \
-      printf "%*s" $COLUMNS "${_SOFTWARE_VERSION}"
-      # echo " [${_SOFTWARE_VERSION}]" 
+      printf "%*s" $(($COLUMNS-5)) "${_SOFTWARE_VERSION}"
 }
 
-# Setup a nice prompt
-function myprompt 
+function myprompt()
 {
-   local Black="\[\e[30m\]"
-   local Blue="\[\e[0;34m\]"
-   local Green="\[\e[0;32m\]"
-   local Cyan="\[\e[0;36m\]"
-   local Red="\[\e[0;31m\]"
    local Purple="\[\e[0;35m\]"
-   local Orange="\[\e[0;33m\]"
-   local Gray="\[\e[1;30m\]"
-
-   local BoldGray="\[\e[0;37m\]"
    local BoldBlue="\[\e[1;34m\]"
-   local BoldGray="\[\e[1;32m\]"
-   local BoldCyan="\[\e[1;36m\]"
-   local BoldRed="\[\e[1;31m\]"
-   local BoldPurple="\[\e[1;35m\]"
-   local BoldOrange="\[\e[1;33m\]"
-   local BoldWhite="\[\e[1;37m\]"
-
-   local BgBlack="\[\e[40m\]"
-   local BgRed="\[\e[41m\]"
-   local BgGreen="\[\e[42m\]"
-   local BgOrange="\[\e[43m\]"
-   local BgBlue="\[\e[44m\]"
-   local BgPurple="\[\e[45m\]"
-   local BgCyan="\[\e[46m\]"
-   local BgWhite="\[\e[47m\]"
-
-   local Underscore="\[\e[4m\]"
-   local Blink="\[\e[5m\]"
-   local Invert="\[\e[7m\]"
-   local Hidden="\[\e[8m\]"
-
-   # reset to teminal default
+   local Cyan="\[\e[0;36m\]"
    local Default="\[\e[0m\]"
 
-
-   # PS1="\`[ \$? = 0 ] && echo '$sIN' || echo '$bRD$Black'\`\t \u@\h:\$PWD\n$UCHR$Default "
-   # \[$(tput sc; rightprompt; tput rc)\]
-   PS1="${Purple}\[\$(tput sc; projectName; tput rc)\]${Default}┌─ \$(exitCode) ${Default}\t${BoldBlue} \$(shortPWD) ${Default}\n└─⧐  "
-   PS2="$Default >"
+   local GitBranch=""
+   if declare -F __git_ps1 &> /dev/null; then
+      # GIT_PS1_SHOWDIRTYSTATE=true
+      # GIT_PS1_SHOWUNTRACKEDFILES=true
+      GitBranch="${Cyan}\$(__git_ps1 \" (%s)\")"
+   fi
+   PS1="┌─ \$(exitCode) ${Purple}\[\$(tput sc; projectName; tput rc)\]${Default}\t${BoldBlue} \$(shortPWD)${GitBranch}${Default}\n└> "
+   PS2="─> "
 }
 
 myprompt
-# PS1="\`[ \$? = 0 ] && echo '\[\e[7m\]' || echo '\[\e[41m\]\[\e[30m\]'\`\t \u@\h:\$PWD\n>\[\e[0m\] "
+
+export GIT_PS1_SHOWDIRTYSTATE
+export GIT_PS1_SHOWUNTRACKEDFILES
 export PS1
 export PS2
-

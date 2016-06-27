@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Tue 31 May 2016, 07:37
+# Modified: Fri 10 Jun 2016, 15:27
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
@@ -82,26 +82,6 @@ HISTFILESIZE=20000
 export HISTCONTROL=ignoreboth
 
 export HISTIGNORE="&:bg:fg:ll:h"
-# }}}
-# Colors +  Prompt----------------------------------------------------------{{{
-export PROMPT_DIRTRIM=3
-
-BASE16_SHELL="$HOME/.config/base16-shell/base16-papercolor.dark.sh"
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
-
-#if [ "$TERM" != "linux" ]; then
-#   GIT_PROMPT_FETCH_REMOTE_STATUS=0
-#   GIT_PROMPT_STATUS_COMMAND=gitstatus.sh
-#   GIT_PROMPT_THEME_NAME="Custom"
-#   source ~/.bash-git-prompt/gitprompt.sh
-#elif [ -f ~/.bash_prompt ]; then
-    source ~/.bash_prompt
-#fi
-# }}}
-# Alias definitions --------------------------------------------------------{{{
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
 # }}}
 # tailoring 'less' ---------------------------------------------------------{{{
 export PAGER=less
@@ -196,10 +176,28 @@ function xtitle ()
     case "$TERM" in
         *term | rxvt)
             echo -n -e "\033]0;$*\007" ;;
-        *)  
+        *)
 	    ;;
     esac
 }
+# }}}
+# Colors +  Prompt----------------------------------------------------------{{{
+BASE16_SHELL="$HOME/.config/base16-shell/base16-papercolor.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
+#if [ "$TERM" != "linux" ]; then
+#   GIT_PROMPT_FETCH_REMOTE_STATUS=0
+#   GIT_PROMPT_STATUS_COMMAND=gitstatus.sh
+#   GIT_PROMPT_THEME_NAME="Custom"
+#   source ~/.bash-git-prompt/gitprompt.sh
+if [ -f ~/.bash_prompt ]; then
+    source ~/.bash_prompt
+fi
+# }}}
+# Alias definitions --------------------------------------------------------{{{
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
 # }}}
 # Local definitions ------------------------------------------------------{{{
 if [ -f "${HOME}/.bashrc.local" ]; then

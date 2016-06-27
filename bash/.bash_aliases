@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------------------
 # $HOME/.bash_aliases
-# Modified: Mon 25 Apr 2016, 11:31
+# Modified: Fri 10 Jun 2016, 11:27
 # -----------------------------------------------------------------------------
 
 alias rm='rm -i'
@@ -51,6 +51,7 @@ alias cls='printf "\033c"'
 alias hex='printf "%X\n" '
 
 alias tmux='tmux -2 '
+alias _setenv='. ~/bin/set_env.sh'
 
 # alert via osd-notify
 # Add an "alert" alias for long running commands.  Use like so:
@@ -65,3 +66,4 @@ gvim () {
       command gvim "$@"
    fi
 }
+alias perl_cli="rlwrap perl -d -e 1"
