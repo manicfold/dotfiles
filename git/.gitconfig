@@ -1,6 +1,5 @@
 [user]
-	name = blp4hi
-	email = Philipp.Blanke@de.bosch.com
+	name = manicfold
 [diff]
 	guitool = meld
 	tool = vimdiff
@@ -12,8 +11,6 @@
 	br = branch
 	st = status
 	di = diff
-[http]
-	proxy = https://localhost:3128
 [core]
 	editor = vim
 	bigFileThreshold = 100m
@@ -21,17 +18,10 @@
 	ui = true
 [pull]
 	rebase = true
-[url "ssh://gitolite@si0vmc0298.de.bosch.com/"]
-	insteadOf = gitserver:
-[url "ssh://blp4hi@rb-cmcr1p.apps.intranet.bosch.com:29418/"]
-	insteadOf = gerrit:
 [guitool "rm"]
 	cmd = rm $FILENAME
 	noconsole = yes
 	needsfile = yes
 	argprompt = yes
-[gitreview]
-	username = blp4hi
-[mergetool]
 [difftool]
 	prompt = false
