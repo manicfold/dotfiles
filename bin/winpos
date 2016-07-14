@@ -6,11 +6,10 @@ workarea='s/^.*_NET_WORKAREA[_REGION]*\(CARDINAL\) = ([0-9]+), ([0-9]+), ([0-9]+
 if [ $XDG_CURRENT_DESKTOP == "Unity" ]; then
    workarea='s/^_UNITY_NET_WORKAREA_REGION\(CARDINAL\) = ([0-9]+), ([0-9]+), ([0-9]+), ([0-9]+)$/x=\1;y=\2;w=\3;h=\4;/p'
 fi
-
 eval $( \
     xprop -root | sed -nr \
         -e "$workarea" \
-        -e 's/_NET_ACTIVE_WINDOW\(WINDOW\): window id # (0x.*)/a=\1;/p')
+        -e 's/_NET_ACTIVE_WINDOW\(WINDOW\): window id # (0x[0-9a-f]*).*/a=\1;/p')
 
 [[ -z "$a" ]] && exit 1
 
@@ -26,6 +25,7 @@ case "$1" in
     northeast ) ((x=x+w-w2)); ((w=w2)); ((h=h2));; 
     southwest ) ((y=y+h-h2)); ((w=w2)); ((h=h2));;
     southeast ) ((x=x+w-w2)); ((y=y+h-h2)); ((w=w2)); ((h=h2));; 
+    * ) echo "Unknown region."; exit 1;;
 esac
 
 wmctrl -i -r "$a" -e 0,$x,$y,$w,$h

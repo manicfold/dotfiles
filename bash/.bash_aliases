@@ -1,16 +1,7 @@
 # -----------------------------------------------------------------------------
 # $HOME/.bash_aliases
-# Modified: Mon 04 Jul 2016, 11:17
+# Modified: Thu 14 Jul 2016, 23:47
 # -----------------------------------------------------------------------------
-
-
-gvim () {
-   if pgrep gvim ; then 
-      command gvim --remote-silent "$@"
-   else
-      command gvim "$@"
-   fi
-}
 
 alias rm='rm -i'
 alias cp='cp -i'
@@ -69,4 +60,6 @@ alias alert_helper='history | tail -n1 | sed -e "s/^\s*[0-9]\+\s*//" -e "s/;\s*a
 alias alert='notify-send -i ~/.icons/elementary-xfce/apps/48/gnome-terminal.svg "Finished $(alert_helper)" "[`[ $? == 0 ] && echo Success || echo Failed`]"'
 
 alias perl_cli="rlwrap perl -d -e 1"
-alias build_prj_overall='buildproduct --os=linux --env=gen3armmake --buildmode=build --mode=release prj_overall 2>&1 | tee $_SWBUILDROOT/build_$(date +"%Y-%m-%d_%H-%M").log; alert'
+
+alias spotify-rip-album="spotify-ripper -l -f {artist}/{album}/{idx}-{track_name}.{ext}"
+alias spotify-rip-playlist="spotify-ripper -l -f {playlist}/{idx}-{artist}-{track_name}.{ext}"

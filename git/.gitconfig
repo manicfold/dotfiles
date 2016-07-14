@@ -4,6 +4,8 @@
 [diff]
 	guitool = meld
 	tool = vimdiff
+[push]
+	default = simple
 [merge]
 	tool = vimdiff
 [alias]

@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Fri 08 Jul 2016, 23:26
+# Modified: Thu 14 Jul 2016, 23:46
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
@@ -31,22 +31,17 @@ GPG_TTY="tty"
 LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib/"
 
 # set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
+[ -d "$HOME/bin" ] && PATH="$HOME/bin:$PATH"
 
-if [ -d "${HOME}/.gem/ruby/*/bin" ] ; then
-   PATH="${HOME}/.gem/ruby/*/bin:${PATH}"
-fi
-
-PATH="${HOME}/cov-analysis-linux-8.0.0/bin:${PATH}"
+[ -d "${HOME}/.gem/ruby/*/bin" ] && PATH="${HOME}/.gem/ruby/*/bin:${PATH}"
 
 export LC_ALL LANG PATH LD_LIBRARY_PATH EDITOR GPG_TTY
 # }}}
 # Completion --------------------------------------------------------------{{{
-if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
- . /etc/bash_completion
-fi
+[ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
+# if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+#  . /etc/bash_completion
+# fi
 # }}}
 # Shell options -----------------------------------------------------------{{{
 #set -o notify
@@ -198,17 +193,14 @@ source "$HOME/.config/nvim/bundle/gruvbox/gruvbox_256palette.sh"
 #   GIT_PROMPT_STATUS_COMMAND=gitstatus.sh
 #   GIT_PROMPT_THEME_NAME="Custom"
 #   source ~/.bash-git-prompt/gitprompt.sh
-if [ -f ~/.bash_prompt ]; then
-    source ~/.bash_prompt
-fi
+[ -f ~/.bash_prompt ] && source ~/.bash_prompt
+
 # }}}
 # Alias definitions --------------------------------------------------------{{{
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
+[ -f ~/.bash_aliases ] && source ~/.bash_aliases
+
 # }}}
 # Local definitions ------------------------------------------------------{{{
-if [ -f "${HOME}/.bashrc.local" ]; then
-   source "${HOME}/.bashrc.local"
-fi
+[ -f "${HOME}/.bashrc.local" ] && source "${HOME}/.bashrc.local"
+
 # }}}
