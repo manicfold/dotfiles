@@ -1,5 +1,6 @@
 [user]
 	name = manicfold
+	email = philipp.blanke@googlemail.com
 [diff]
 	guitool = meld
 	tool = vimdiff
@@ -12,7 +13,7 @@
 	st = status
 	di = diff
 [core]
-	editor = vim
+	editor = nvim
 	bigFileThreshold = 100m
 [color]
 	ui = true
