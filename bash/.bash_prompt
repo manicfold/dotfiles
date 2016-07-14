@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bash_prompt
-# Modified: Mon 13 Jun 2016, 15:56
+# Modified: Fri 01 Jul 2016, 12:51
 # -----------------------------------------------------------------------------
 
 
@@ -61,9 +61,9 @@ function exitCode
    local Red="\e[0;31m"
 
    if [[ $Res == 0 ]]; then
-      echo -e "${Green}✔"
+      echo -e "${Green}$Res"
    else
-      echo -e "${Red}✘"
+      echo -e "${Red}$Res"
    fi
 }
 

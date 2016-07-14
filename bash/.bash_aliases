@@ -1,7 +1,16 @@
 # -----------------------------------------------------------------------------
 # $HOME/.bash_aliases
-# Modified: Fri 10 Jun 2016, 11:27
+# Modified: Mon 04 Jul 2016, 11:17
 # -----------------------------------------------------------------------------
+
+
+gvim () {
+   if pgrep gvim ; then 
+      command gvim --remote-silent "$@"
+   else
+      command gvim "$@"
+   fi
+}
 
 alias rm='rm -i'
 alias cp='cp -i'
@@ -59,11 +68,5 @@ alias _setenv='. ~/bin/set_env.sh'
 alias alert_helper='history | tail -n1 | sed -e "s/^\s*[0-9]\+\s*//" -e "s/;\s*alert$//"'
 alias alert='notify-send -i ~/.icons/elementary-xfce/apps/48/gnome-terminal.svg "Finished $(alert_helper)" "[`[ $? == 0 ] && echo Success || echo Failed`]"'
 
-gvim () {
-   if pgrep gvim ; then 
-      command gvim --remote-silent "$@"
-   else
-      command gvim "$@"
-   fi
-}
 alias perl_cli="rlwrap perl -d -e 1"
+alias build_prj_overall='buildproduct --os=linux --env=gen3armmake --buildmode=build --mode=release prj_overall 2>&1 | tee $_SWBUILDROOT/build_$(date +"%Y-%m-%d_%H-%M").log; alert'

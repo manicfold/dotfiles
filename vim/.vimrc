@@ -1,13 +1,32 @@
 " vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 " -----------------------------------------------------------------------------
-" Filename: .vimrc
-" Modified: Tue 07 Jun 2016, 13:36
+" Filename: init.vim
+" Modified: Tue 12 Jul 2016, 17:54
 " See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 
-" Bundle {{{
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
+" Plugs (Bundles) {{{
+call plug#begin('~/.config/nvim/bundle')
+Plug 'tpope/vim-sensible'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+" Plug 'NLKNguyen/papercolor-theme'
+Plug 'morhetz/gruvbox'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'tomtom/tcomment_vim'
+Plug 'kshenoy/vim-signature'
+Plug 'qpkorr/vim-bufkill'
+Plug 'godlygeek/tabular'
+Plug 'aperezdc/vim-template'
+Plug 'derekwyatt/vim-fswitch'
+Plug 'c9s/perlomni.vim'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'powerman/vim-plugin-AnsiEsc'
+function! DoRemote(arg)
+  UpdateRemotePlugins
+endfunction
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+call plug#end()
 " }}}
 " Formatting {{{
 " based on filetype
@@ -64,8 +83,8 @@ let g:airline_detect_modified=1
 let g:airline_detect_paste=1
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 0
-" let g:airline_theme='base16'
-let g:airline_theme='papercolor'
+let g:airline_theme='gruvbox'
+" let g:airline_theme='papercolor'
 "}}}
 " GUI-Vim  {{{ 
 
@@ -74,13 +93,16 @@ set guioptions=agi
 
 "}}}
 " Colors  {{{
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 syntax enable
 set bg=dark
 if has('gui_running')
    set bg=light
 endif
 set t_Co=256
-colorscheme PaperColor
+" colorscheme PaperColor
+let g:gruvbox_italic=1
+colorscheme gruvbox
 
 " Mark columns 80 and 120+
 "let &colorcolumn=join(range(81,999),",")
@@ -109,16 +131,36 @@ set gdefault        " Tack a 'g' on regexes, i.e., '%s/search/replace/g'
 let g:sneak#streak = 1
 "}}}
 " Folding  {{{
-set foldmethod           =syntax
-set foldlevelstart       =99
-let perl_fold            =1
-let perl_fold_blocks     =1
+set nofoldenable
+autocmd Syntax c,cpp,vim,xml,html,xhtml,lua setlocal foldenable
+autocmd Syntax c,cpp,vim,xml,html,xhtml,lua setlocal foldmethod     =syntax
+autocmd Syntax c,cpp,vim,xml,html,xhtml,lua setlocal foldlevelstart =1
+
 let sh_fold_enabled      =1
-let perl_extended_vars   =1
-let perl_sync_dist       =250
+
+" let perl_fold            =0
+" let perl_fold_blocks     =0
+" let perl_extended_vars   =0
+" let perl_sync_dist       =0
+
 let g:xml_syntax_folding =1
 
 autocmd FileType sh setlocal foldmarker={{{,}}} foldlevel=0 foldmethod=marker
+"}}}
+" Completion {{{
+let g:deoplete#enable_at_startup = 1
+" Define keyword
+if !exists('g:deoplete#keyword_patterns')
+    let g:deoplete#keyword_patterns = {}
+endif
+
+let g:deoplete#auto_completion_start_length = 1
+let g:deoplete#sources = {}
+let g:deoplete#sources._ = []
+
+" deoplete tab-complete
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+
 "}}}
 " Taglist  {{{
 let Tlist_Use_Right_Window = 1
@@ -138,6 +180,10 @@ augroup netrw_mapping
     autocmd filetype netrw nnoremap <buffer> q :BW<CR>
 augroup END
 
+" }}}
+" Perl {{{
+" automatically browse perl documentation when pressing 'K'
+au FileType perl setlocal keywordprg=perldoc\ -T\ -f
 " }}}
 " Extern programs {{{
 " IMPORTANT: grep will sometimes skip displaying the file name if you
@@ -196,18 +242,17 @@ inoremap <C-s> <Esc>:w!<CR>i
 nnoremap <C-q> :q<CR>
 inoremap <C-q> <Esc>:q<CR>
 
+nmap <silent><Return> o<Esc>
+
 " paste without copying the selected text "_ is the black hole register
 vnoremap p "_dp
 vnoremap P "_dP
 " search for selected text with //
 vnoremap // y/<C-R>"<CR>
 
-nmap f <Plug>Sneak_s
-nmap F <Plug>Sneak_S
-xmap f <Plug>Sneak_s
-xmap F <Plug>Sneak_S
-omap f <Plug>Sneak_s
-omap F <Plug>Sneak_S
+" tag jumping
+nmap ö <C-]>
+nmap ä <C-t>
 
 " goto next occurence w/o leaving search mode
 cnoremap <c-n> <CR>n/<c-p>
@@ -228,7 +273,7 @@ nnoremap <leader>s :up <bar> FSHere<CR>
 " Toggle Taglist
 nnoremap <leader>T :TlistToggle<CR>
 " Open Settings
-nnoremap <leader>v :e ~/.vimrc<CR>
+nnoremap <leader>v :e ~/.config/nvim/init.vim<CR>
 " open a split window and go there
 nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <leader>W :sp<CR> <C-w>j
@@ -246,7 +291,7 @@ nnoremap - :e %:p:h<CR>
 
 " }}}
 " Private settings {{{
-if filereadable( $HOME . "/.vimrc.local" )
-   source $HOME/.vimrc.local
+if filereadable( $HOME . "/.config/nvim/local.vim" )
+   source $HOME/.config/nvim/local.vim
 endif
 "}}}

@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Fri 10 Jun 2016, 15:27
+# Modified: Fri 08 Jul 2016, 23:26
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
@@ -84,13 +84,20 @@ export HISTCONTROL=ignoreboth
 export HISTIGNORE="&:bg:fg:ll:h"
 # }}}
 # tailoring 'less' ---------------------------------------------------------{{{
-export PAGER=less
 export LESSCHARSET='utf-8'
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
-export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
-export LESS=' -R '
 export XMLLINT_INDENT='   '
+export PAGER=less
+export LESS=" -RSMgIsw "
+    # R - Raw color codes in output (don't remove color codes)
+    # S - Don't wrap lines, just cut off too long text
+    # M - Long prompts ("Line X of Y")
+    # ~ - Don't show those weird ~ symbols on lines after EOF
+    # g - Highlight results when searching with slash key (/)
+    # I - Case insensitive search
+    # s - Squeeze empty lines to one
+    # w - Highlight first line after PgDn
 
 # }}}
 # Functions --------------------------------------------------------------- {{{
@@ -182,8 +189,9 @@ function xtitle ()
 }
 # }}}
 # Colors +  Prompt----------------------------------------------------------{{{
-BASE16_SHELL="$HOME/.config/base16-shell/base16-papercolor.dark.sh"
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+# BASE16_SHELL="$HOME/.config/base16-shell/base16-papercolor.dark.sh"
+# [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+source "$HOME/.config/nvim/bundle/gruvbox/gruvbox_256palette.sh"
 
 #if [ "$TERM" != "linux" ]; then
 #   GIT_PROMPT_FETCH_REMOTE_STATUS=0
