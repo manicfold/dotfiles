@@ -1,12 +1,14 @@
 bash: ~
 bin: ~/bin
+config: ~
 dircolors: ~
 fonts: ~
 git: ~
-gtkit: ~
+gtk: ~
 i3: ~/.config/i3
 latex: ~
 nvim: ~/.config/nvim
 signature: ~
 tmux: ~
 vim: ~
+X: ~
