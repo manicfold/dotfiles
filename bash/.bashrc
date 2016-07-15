@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Fri 15 Jul 2016, 13:42
+# Modified: Fri 15 Jul 2016, 14:14
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
@@ -152,6 +152,9 @@ function swap()
     mv "$2" "$1"
     mv $TMPFILE "$2"
 }
+
+function bkup()
+{ mv "$1" "$1.orig" }
 # }}}
 # Process/system ----------------------------------------------------------{{{
 
@@ -183,24 +186,14 @@ function xtitle ()
     esac
 }
 # }}}
-# Colors +  Prompt----------------------------------------------------------{{{
-# BASE16_SHELL="$HOME/.config/base16-shell/base16-papercolor.dark.sh"
-# [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
-source "$HOME/.config/nvim/bundle/gruvbox/gruvbox_256palette.sh"
+# source other files -------------------------------------------------------{{{
 
-#if [ "$TERM" != "linux" ]; then
-#   GIT_PROMPT_FETCH_REMOTE_STATUS=0
-#   GIT_PROMPT_STATUS_COMMAND=gitstatus.sh
-#   GIT_PROMPT_THEME_NAME="Custom"
-#   source ~/.bash-git-prompt/gitprompt.sh
+[ -f "$HOME/.config/nvim/bundle/gruvbox/gruvbox_256palette.sh" ] && source "$HOME/.config/nvim/bundle/gruvbox/gruvbox_256palette.sh"
+
 [ -f ~/.bash_prompt ] && source ~/.bash_prompt
 
-# }}}
-# Alias definitions --------------------------------------------------------{{{
 [ -f ~/.bash_aliases ] && source ~/.bash_aliases
 
-# }}}
-# Local definitions ------------------------------------------------------{{{
 [ -f "${HOME}/.bashrc.local" ] && source "${HOME}/.bashrc.local"
 
 # }}}
