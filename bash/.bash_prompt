@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bash_prompt
-# Modified: Fri 01 Jul 2016, 12:51
+# Modified: Fri 15 Jul 2016, 13:46
 # -----------------------------------------------------------------------------
 
 
@@ -44,6 +44,9 @@
 
 export PROMPT_DIRTRIM=3
 
+GitPromptSh=/usr/share/git/completion/git-prompt.sh
+[ -f "$GitPromptSh" ] && . "$GitPromptSh" 
+
 function shortPWD
 {
    local Pre= Name="$PWD" Length="64";
@@ -82,9 +85,7 @@ function myprompt()
 
    local GitBranch=""
    if declare -F __git_ps1 &> /dev/null; then
-      # GIT_PS1_SHOWDIRTYSTATE=true
-      # GIT_PS1_SHOWUNTRACKEDFILES=true
-      GitBranch="${Cyan}\$(__git_ps1 \" (%s)\")"
+      GitBranch="${Cyan}\$(__git_ps1)"
    fi
    PS1="┌─ \$(exitCode) ${Purple}\[\$(tput sc; projectName; tput rc)\]${Default}\t${BoldBlue} \$(shortPWD)${GitBranch}${Default}\n└> "
    PS2="─> "

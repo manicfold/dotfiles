@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Thu 14 Jul 2016, 23:46
+# Modified: Fri 15 Jul 2016, 13:42
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
