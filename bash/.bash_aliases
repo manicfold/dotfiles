@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------------------
 # $HOME/.bash_aliases
-# Modified: Fri 15 Jul 2016, 13:41
+# Modified: Fri 15 Jul 2016, 13:50
 # -----------------------------------------------------------------------------
 
 alias rm='rm -i'
@@ -63,3 +63,5 @@ alias perl_cli="rlwrap perl -d -e 1"
 
 alias spotify-rip-album="spotify-ripper -l -f {artist}/{album}/{idx}-{track_name}.{ext}"
 alias spotify-rip-playlist="spotify-ripper -l -f {playlist}/{idx}-{artist}-{track_name}.{ext}"
+
+alias vim="nvim"
