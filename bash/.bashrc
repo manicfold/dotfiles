@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Fri 15 Jul 2016, 14:14
+# Modified: Fri 15 Jul 2016, 14:17
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
@@ -154,7 +154,7 @@ function swap()
 }
 
 function bkup()
-{ mv "$1" "$1.orig" }
+{ mv "$1" "$1.orig"; }
 # }}}
 # Process/system ----------------------------------------------------------{{{
 
