@@ -1,7 +1,7 @@
 " vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 " -----------------------------------------------------------------------------
 " Filename: init.vim
-" Modified: Tue 12 Jul 2016, 17:54
+" Modified: Fri 15 Jul 2016, 16:56
 " See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 
@@ -27,6 +27,10 @@ function! DoRemote(arg)
 endfunction
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 call plug#end()
+" }}}
+" NVim Environment Variables {{{
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 " }}}
 " Formatting {{{
 " based on filetype
@@ -86,14 +90,7 @@ let g:airline#extensions#tabline#enabled = 0
 let g:airline_theme='gruvbox'
 " let g:airline_theme='papercolor'
 "}}}
-" GUI-Vim  {{{ 
-
-set guifont=Envy\ Code\ R\ for\ Powerline\ 11
-set guioptions=agi
-
-"}}}
 " Colors  {{{
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 syntax enable
 set bg=dark
 if has('gui_running')

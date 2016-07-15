@@ -18,9 +18,9 @@
 #define base0E #afdf00
 #define base0F #00af5f
 
-*.foreground:   base05
+*.foreground:   base07
 *.background:   base00
-*.cursorColor:  base05
+*.cursorColor:  base07
 
 *.color0:       base00
 *.color1:       base0D
@@ -29,7 +29,7 @@
 *.color4:       base0C
 *.color5:       base08
 *.color6:       base0A
-*.color7:       base05
+*.color7:       base0F
 
 *.color8:       base03
 *.color9:       base0D
@@ -57,34 +57,45 @@
 ! Last Modified: 6 Sep 2014
 ! -----------------------------------------------------------------------------
 
-! ! hard contrast: *background: #1d2021
-! *background: #282828
-! ! soft contrast: *background: #32302f
-! *foreground: #ebdbb2
-! ! Black + DarkGrey
-! *color0:  #282828
-! *color8:  #928374
-! ! DarkRed + Red
-! *color1:  #cc241d
-! *color9:  #fb4934
-! ! DarkGreen + Green
-! *color2:  #98971a
-! *color10: #b8bb26
-! ! DarkYellow + Yellow
-! *color3:  #d79921
-! *color11: #fabd2f
-! ! DarkBlue + Blue
-! *color4:  #458588
-! *color12: #83a598
-! ! DarkMagenta + Magenta
-! *color5:  #b16286
-! *color13: #d3869b
-! ! DarkCyan + Cyan
-! *color6:  #689d6a
-! *color14: #8ec07c
-! ! LightGrey + White
-! *color7:  #a89984
-! *color15: #ebdbb2
+! #define DarkBlack    #1d2021
+! #define Black        #282828
+! #define LightBlack   #32302f
+! #define DarkGrey     #928374
+! #define Red          #fb4934
+! #define DarkRed      #cc241d
+! #define Green        #b8bb26
+! #define DarkGreen    #98971a
+! #define Yellow       #fabd2f
+! #define DarkYellow   #d79921
+! #define Blue         #83a598
+! #define DarkBlue     #458588
+! #define Magenta      #d3869b
+! #define DarkMagenta  #b16286
+! #define Cyan         #8ec07c
+! #define DarkCyan     #689d6a
+! #define White        #ebdbb2
+! #define LightGrey    #a89984
+!
+! ! *background: LightBlack
+! *background: Black
+! ! *background: DarkBlack
+! *foreground: White
+! *color0:  Black 
+! *color8:  DarkGrey
+! *color1:  DarkRed
+! *color9:  Red
+! *color2:  DarkGreen
+! *color10: Green
+! *color3:  DarkYellow
+! *color11: Yellow
+! *color4:  DarkBlue
+! *color12: Blue
+! *color5:  DarkMagenta
+! *color13: Magenta
+! *color6:  DarkCyan
+! *color14: Cyan
+! *color7:  LightGrey
+! *color15: White
 
 ! ------------------------------------------------------------------------- Xft
 Xft.autohint: 0

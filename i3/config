@@ -7,21 +7,25 @@ font pango:Fira Mono, FontAwesome 12
 focus_follows_mouse no
 
 # border / titlebar
-new_window pixel 1
+new_window 1pixel
+smart_borders on
+smart_gaps on
+gaps inner 5
+gaps outer 0
 
 # Color settings
-# <colorclass> <border> <background> <text> <indicator> <child_border>
-client.focused          #282D37 #268BD2 #FFFFFF #FFFFFF
+# <colorclass>          <border><bg>    <text>  <in'tor> <child_border>
+client.focused          #268BD2 #282D37 #FFFFFF #FFFFFF
 client.focused_inactive #282D37 #282D37 #B7B7B7 #B7B7B7
 client.unfocused        #282D37 #282D37 #B7B7B7 #B7B7B7
-client.urgent           #268BD2 #268BD2 #FFFFFF #FFFFFF
+client.urgent           #990000 #FFFFFF #FFFFFF #FFFFFF
 
 # Workspaces ----------------------------------------------------------------
 set $ws1 "1: "
 set $ws2 "2: "
-set $ws3 "3"
+set $ws3 "3: "
 set $ws4 "4"
-set $ws5 "5"
+set $ws5 "5: "
 set $ws6 "6"
 
 # Keyboard mappings ---------------------------------------------------------
@@ -31,8 +35,8 @@ set $mod Mod4
 floating_modifier $mod
 
 # start a terminal
-# bindsym $mod+Return exec gnome-terminal -e "tmux -2"
-bindsym $mod+Return exec urxvt -e "tmux"
+bindsym $mod+Return exec termite -e tmux
+# bindsym $mod+Return exec gnome-terminal -e tmux
 #bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
@@ -108,6 +112,12 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
+# volume control
+bindsym $mod+Up    exec --no-startup-id amixer -q set Master 4%+
+bindsym $mod+Down  exec --no-startup-id amixer -q set Master 4%-
+bindsym $mod+Left  exec --no-startup-id amixer -q set Master toggle
+bindsym $mod+Right exec --no-startup-id amixer -q set Master toggle
+
 # move to next / previous workspace
 bindsym $mod+Ctrl+h workspace prev
 bindsym $mod+Ctrl+l workspace next
@@ -151,6 +161,11 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+   i3bar_command i3bar -t
+   # status_command /home/philipp/bin/i3status_plus
+   # status_command i3status -c "${HOME}"/.config/i3/status.conf
+   status_command i3blocks -c "${HOME}/.config/i3/blocks.conf"
+
    position top
    colors {
       # Whole color settings
@@ -164,14 +179,12 @@ bar {
       inactive_workspace #333333 #222222 #888888
       urgent_workspace   #aa0000 #990000 #ffffff
    }
-   # status_command /home/philipp/bin/i3status_plus
-   status_command i3status -c "${HOME}"/.config/i3/status.conf
 }
 
 # Start further programs
-exec --no-startup-id setxkbmap -option caps:escape
 exec --no-startup-id xrdb "${HOME}"/.Xresources
-# exec --no-startup-id gnome-settings-daemon
-# exec --no-startup-id compton
+exec --no-startup-id /usr/libexec/gnome-settings-daemon
+exec --no-startup-id compton
 # exec --no-startup-id nm-applet
-exec --no-startup-id feh --bg-fill /home/blp4hi/Pictures/IMG-20150825-WA0000.jpg
+exec --no-startup-id feh --bg-fill /home/philipp/Pictures/Domino.soft.jpg
+exec --no-startup-id setxkbmap -option caps:escape
