@@ -15,8 +15,12 @@
 #of a patent, utility model or design.
 ###################################################################
 
-#- USAGE: %FFILE%  
+#- USAGE: %FFILE% [OPTIONS] 
 #-        
+#- OPTIONS 
+#-
+#-    -h|help         Display this help
+#-    -v|--version    Display version of the script
 
 set -o errexit    # exit if a command fails
 set -o nounset    # exit if variable is not declared

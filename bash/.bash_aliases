@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------------------
 # $HOME/.bash_aliases
-# Modified: Mon 04 Jul 2016, 11:17
+# Modified: Thu 21 Jul 2016, 10:55
 # -----------------------------------------------------------------------------
 
 
@@ -20,13 +20,11 @@ alias mv='mv -i'
 alias mkdir='mkdir -p'
 
 alias h='history'
-alias j='jobs -l'
-alias r='rlogin'
 alias which='type -all'
 alias ..='cd ..'
 alias path='echo -e ${PATH//:/\\n}'
 alias du='du -kh'
-alias df='df -kTh'
+alias dfh='df -kTh'
 
 # nice process view
 alias psc='ps xawf -eo pid,user,cgroup,args'
@@ -70,3 +68,6 @@ alias alert='notify-send -i ~/.icons/elementary-xfce/apps/48/gnome-terminal.svg 
 
 alias perl_cli="rlwrap perl -d -e 1"
 alias build_prj_overall='buildproduct --os=linux --env=gen3armmake --buildmode=build --mode=release prj_overall 2>&1 | tee $_SWBUILDROOT/build_$(date +"%Y-%m-%d_%H-%M").log; alert'
+
+# when exiting ranger, go to the last directory you were in
+alias r='ranger --choosedir=$HOME/.rangerdir; cd $(cat $HOME/.rangerdir); rm -f $HOME/.rangerdir'
