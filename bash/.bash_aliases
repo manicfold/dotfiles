@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------------------
 # $HOME/.bash_aliases
-# Modified: Fri 15 Jul 2016, 13:50
+# Modified: Thu 21 Jul 2016, 22:36
 # -----------------------------------------------------------------------------
 
 alias rm='rm -i'
@@ -11,8 +11,6 @@ alias mv='mv -i'
 alias mkdir='mkdir -p'
 
 alias h='history'
-alias j='jobs -l'
-alias r='rlogin'
 alias which='type -all'
 alias ..='cd ..'
 alias path='echo -e ${PATH//:/\\n}'
@@ -65,3 +63,6 @@ alias spotify-rip-album="spotify-ripper -l -f {artist}/{album}/{idx}-{track_name
 alias spotify-rip-playlist="spotify-ripper -l -f {playlist}/{idx}-{artist}-{track_name}.{ext}"
 
 alias vim="nvim"
+
+# when exiting ranger, go to the last directory you were in
+alias r='ranger --choosedir=$HOME/.rangerdir; cd $(cat $HOME/.rangerdir); rm -f $HOME/.rangerdir'
