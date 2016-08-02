@@ -23,12 +23,19 @@ client.unfocused        #282D37 #282D37 #B7B7B7 #B7B7B7
 client.urgent           #990000 #FFFFFF #FFFFFF #FFFFFF
 
 # Workspaces ----------------------------------------------------------------
-set $ws1 "1: "
-set $ws2 "2: "
+set $ws1 "1: "
+set $ws2 "2: "
 set $ws3 "3: "
-set $ws4 "4"
+set $ws4 "4: "
 set $ws5 "5: "
 set $ws6 "6"
+
+# Assign applications to workspaces -----------------------------------------
+assign [class="Firefox"] $ws2
+assign [class="nautilus"] $ws3
+assign [class="spotify"] $ws4
+assign [class="Spotify"] $ws4
+assign [class="VirtualBox"] $ws5
 
 # Window modes --------------------------------------------------------------
 for_window [class="Oblogout"] fullscreen enable
@@ -69,7 +76,6 @@ bindsym $mod+Shift+l move right
 
 # split in horizontal orientation
 bindsym $mod+s split h
-
 # split in vertical orientation
 bindsym $mod+Shift+v split v
 
@@ -134,8 +140,10 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 # bindsym $mod+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 # bindsym $mod+q exec ~/bin/i3-exit
-bindsym $mod+q exec oblogout
-for_window [class="I3-exit" instance="i3-exit"] floating enable
+# for_window [class="I3-exit" instance="i3-exit"] floating enable
+bindsym $mod+q exec --no-startup-d oblogout
+
+bindsym $mod+p exec --no-startup-id $HOME/.config/i3/i3lock-extra -o $HOME/.config/i3/pass.png -s -p
 
 
 # resize window (you can also use the mouse for that)
@@ -194,3 +202,4 @@ exec --no-startup-id compton
 # exec --no-startup-id nm-applet
 exec --no-startup-id feh --bg-fill /home/philipp/Pictures/Domino.soft.jpg
 exec --no-startup-id setxkbmap -option caps:escape
+exec termite -e tmux
