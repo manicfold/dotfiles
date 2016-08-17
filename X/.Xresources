@@ -167,3 +167,6 @@ rofi.color-active:                   base00,base0C,base00,base02,base0C
 rofi.color-window:                   base00,base05
 ! Separator style (none, dash, solid)
 rofi.separator-style:                solid
+
+rofi.fuzzy:                          true
+rofi.modi:                           window,ssh,run

@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Fri 08 Jul 2016, 23:26
+# Modified: Wed 03 Aug 2016, 14:09
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
@@ -157,6 +157,25 @@ function swap()
     mv "$2" "$1"
     mv $TMPFILE "$2"
 }
+
+function bkup()
+{
+   local orig="${1}.orig"
+   if [ -e "$orig" ]; then
+      echo "Backup file already exists: $orig"
+      return 1
+   fi
+   if [ ! -e "$1" ]; then
+      echo "No such file: $1"
+      return 1
+   fi
+   if [ -d "$1" ]; then
+      echo "Can only backup files."
+      return 1
+   fi
+   cp "$1" "$orig"
+}
+
 # }}}
 # Process/system ----------------------------------------------------------{{{
 
@@ -192,6 +211,10 @@ function xtitle ()
 # BASE16_SHELL="$HOME/.config/base16-shell/base16-papercolor.dark.sh"
 # [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 source "$HOME/.config/nvim/bundle/gruvbox/gruvbox_256palette.sh"
+
+if [ -f ~/.dircolors ]; then
+   eval "$(dircolors -b ~/.dircolors)"
+fi
 
 #if [ "$TERM" != "linux" ]; then
 #   GIT_PROMPT_FETCH_REMOTE_STATUS=0
