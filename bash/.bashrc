@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Wed 03 Aug 2016, 14:09
+# Modified: Wed 12 Oct 2016, 13:12
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
@@ -23,6 +23,8 @@ stty -ixon
 #   to be search recursively )
 export TEXINPUTS=".:~/texmf//:"
 
+HOST=$(hostname)
+
 LC_ALL=en_US.UTF-8
 LANG=en_US.UTF-8
 
@@ -41,7 +43,7 @@ fi
 
 PATH="${HOME}/cov-analysis-linux-8.0.0/bin:${PATH}"
 
-export LC_ALL LANG PATH LD_LIBRARY_PATH EDITOR GPG_TTY
+export LC_ALL LANG PATH LD_LIBRARY_PATH EDITOR GPG_TTY HOST
 # }}}
 # Completion --------------------------------------------------------------{{{
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then

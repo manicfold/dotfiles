@@ -1,7 +1,7 @@
 " vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 " -----------------------------------------------------------------------------
 " Filename: init.vim
-" Modified: Tue 16 Aug 2016, 17:15
+" Modified: Wed 12 Oct 2016, 16:32
 " See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 " reload this file when saving
@@ -12,17 +12,14 @@ call plug#begin('~/.config/nvim/bundle')
 Plug 'tpope/vim-sensible'                 " standard config
 Plug 'itchyny/lightline.vim'              " status bar
 Plug 'shinchu/lightline-gruvbox.vim'      " status bar color
-" Plug 'vim-airline/vim-airline'            " nice status bar
-" Plug 'vim-airline/vim-airline-themes'     " color schemes
-" Plug 'NLKNguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'                    " color scheme
-" Plug 'nanotech/jellybeans.vim'             " color scheme
+" Plug 'NLKNguyen/papercolor-theme'         " color scheme
 Plug 'christoomey/vim-tmux-navigator'     " switch between panes
 Plug 'tomtom/tcomment_vim'                " easy un/commenting
 Plug 'kshenoy/vim-signature'              " display / navigate marks
 Plug 'qpkorr/vim-bufkill'                 " kill buffer without closing window
 Plug 'godlygeek/tabular'                  " align columns
-" Plug 'tommcdo/vim-lion'                   " align columns
+Plug 'vim-scripts/taglist.vim'            " list of functions / variables
 Plug 'aperezdc/vim-template'              " templates for file types
 Plug 'derekwyatt/vim-fswitch'             " switch C header/implementation
 Plug 'ludovicchabant/vim-gutentags'       " automatically create tag files
@@ -93,13 +90,13 @@ set guioptions=agi
 "}}}
 
 " Colors  {{{
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 syntax enable
 set bg=dark
 set t_Co=256
 let g:gruvbox_italic=1
 colorscheme gruvbox
-" colorscheme jellybeans
+" colorscheme PaperColor
 
 " Mark columns 80 and 120+
 "let &colorcolumn=join(range(81,999),",")
@@ -148,10 +145,10 @@ inoremap <silent><expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 " disable autocomplete
 " let g:deoplete#disable_auto_complete = 1
 " UltiSnips config
-let g:UltiSnipsSnippetsDir        = '~/.nvim/UltiSnips/'
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+" let g:UltiSnipsSnippetsDir        = '~/.nvim/UltiSnips/'
+" let g:UltiSnipsExpandTrigger="<tab>"
+" let g:UltiSnipsJumpForwardTrigger="<tab>"
+" let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 "}}}
 
 " Taglist  {{{
@@ -164,11 +161,16 @@ let g:tlWindowPosition=1                      " display at bottom
 let g:tlTokenList = ['TODO', 'FIXME', 'XXX']  " search tags
 "}}}
 
+" Templates {{{
+let g:templates_directory = [ '~/.config/nvim/templates' ]
+"}}}
+"
 " Fugitive  {{{
 " set diffopt+=vertical
 "}}}
 
 " Sessions {{{
+let g:session_autoload=0
 let g:session_directory="~/.config/nvim/sessions"
 " }}}
 
@@ -184,13 +186,6 @@ augroup END
 " automatically browse perl documentation when pressing 'K'
 au FileType perl setlocal keywordprg=perldoc\ -T\ -f
 " }}}
-
-" Extern programs {{{
-" IMPORTANT: grep will sometimes skip displaying the file name if you
-" search in a single file. This will confuse Latex-Suite. Set your grep
-" program to alway generate a file-name.
-set grepprg=grep\ -nH\ $*
-"}}}
 
 " Functions  {{{
 " If buffer modified, update any 'Modified: ' in the first 20 lines.
@@ -225,6 +220,10 @@ command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 function! RemoveShellEscapes()
    exe '%s#\[[0-9;]*m##'
 endfun
+
+" Easily GREP current word in current file.
+command! GREP :execute 'vimgrep '.expand('<cword>').' '.expand('%') | :copen | :cc
+
 "}}}
 
 " Keyboard mappings {{{
@@ -255,8 +254,8 @@ vnoremap P "_dP
 vnoremap // y/<C-R>"<CR>
 
 " tag jumping
-nmap ö <C-]>
-nmap ä <C-t>
+nmap ö :cnext<CR>
+nmap ä :cprev<CR>
 
 " goto next occurence w/o leaving search mode
 cnoremap <c-n> <CR>n/<c-p>

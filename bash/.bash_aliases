@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------------------
 # $HOME/.bash_aliases
-# Modified: Thu 21 Jul 2016, 10:55
+# Modified: Thu 15 Sep 2016, 11:09
 # -----------------------------------------------------------------------------
 
 
@@ -67,7 +67,7 @@ alias alert_helper='history | tail -n1 | sed -e "s/^\s*[0-9]\+\s*//" -e "s/;\s*a
 alias alert='notify-send -i ~/.icons/elementary-xfce/apps/48/gnome-terminal.svg "Finished $(alert_helper)" "[`[ $? == 0 ] && echo Success || echo Failed`]"'
 
 alias perl_cli="rlwrap perl -d -e 1"
-alias build_prj_overall='buildproduct --os=linux --env=gen3armmake --buildmode=build --mode=release prj_overall 2>&1 | tee $_SWBUILDROOT/build_$(date +"%Y-%m-%d_%H-%M").log; alert'
+alias build_prj_overall='buildproduct --os=linux --env=gen3armmake --buildmode=build --mode=release prj_overall 2>&1 | tee $_SWBUILDROOT/generated/logfiles/build_$(date +"%Y-%m-%d_%H-%M").log; alert'
 
 # when exiting ranger, go to the last directory you were in
 alias r='ranger --choosedir=$HOME/.rangerdir; cd $(cat $HOME/.rangerdir); rm -f $HOME/.rangerdir'
