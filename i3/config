@@ -3,7 +3,7 @@
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # font pango:DejaVu Sans Mono, Font Awesome 9
-font pango:FiraMono, FontAwesome 11
+font pango:Envy Code R, FontAwesome 11
 
 focus_follows_mouse no
 
@@ -61,21 +61,21 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # split in horizontal orientation
-bindsym $mod+s split h
+bindsym $mod+w split h
 
 # split in vertical orientation
-bindsym $mod+Shift+v split v
+bindsym $mod+Shift+w split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+Shift+s layout stacking
-bindsym $mod+Shift+w layout tabbed
+bindsym $mod+Shift+t layout tabbed
 bindsym $mod+Shift+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+f floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+n focus mode_toggle
@@ -122,6 +122,7 @@ bindsym $mod+Shift+r restart
 # bindsym $mod+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 bindsym $mod+q exec ~/bin/i3-exit
 for_window [class="I3-exit" instance="i3-exit"] floating enable
+for_window [class="Gcr-prompter" instance="gcr-prompter"] floating enable
 for_window [class="gcalctool"] floating enable
 
 
@@ -169,7 +170,7 @@ bar {
    }
    # status_command /home/philipp/bin/i3status_plus
    # status_command i3status -c "${HOME}"/.config/i3/status.conf
-   status_command i3blocks
+   status_command i3blocks -c "${HOME}/.config/i3/blocks.conf"
 }
 
 # Start Programs ------------------------------------------------------------

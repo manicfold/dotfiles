@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Wed 12 Oct 2016, 13:12
+# Modified: Fri 28 Oct 2016, 12:15
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
@@ -86,12 +86,13 @@ export HISTCONTROL=ignoreboth
 export HISTIGNORE="&:bg:fg:ll:h"
 # }}}
 # tailoring 'less' ---------------------------------------------------------{{{
+# 'screen' termcap uses italics as standout (highlight). we want inverse colors.
+export LESS_TERMCAP_so=$'\E[30;43m'
+export LESS_TERMCAP_se=$'\E[39;49m'
 export LESSCHARSET='utf-8'
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
-export XMLLINT_INDENT='   '
-export PAGER=less
-export LESS=" -RSMgIsw "
+export LESS=" -RSMgIsw~ "
     # R - Raw color codes in output (don't remove color codes)
     # S - Don't wrap lines, just cut off too long text
     # M - Long prompts ("Line X of Y")
@@ -100,6 +101,8 @@ export LESS=" -RSMgIsw "
     # I - Case insensitive search
     # s - Squeeze empty lines to one
     # w - Highlight first line after PgDn
+export XMLLINT_INDENT='   '
+export PAGER=less
 
 # }}}
 # Functions --------------------------------------------------------------- {{{

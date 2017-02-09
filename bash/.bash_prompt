@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bash_prompt
-# Modified: Thu 01 Sep 2016, 15:26
+# Modified: Wed 16 Nov 2016, 11:42
 # -----------------------------------------------------------------------------
 
 
@@ -88,7 +88,8 @@ function myprompt()
       # GIT_PS1_SHOWUNTRACKEDFILES=true
       GitBranch="${Cyan}\$(__git_ps1 \" (%s)\")"
    fi
-   PS1="┌─ \$(exitCode) ${Purple}\[\$(tput sc; projectName; tput rc)\]${Default}\t ${BgOrange}${Black}${HOST}${Default} ${BoldBlue}\$(shortPWD)${GitBranch}${Default}\n└> "
+   PS1="┌ \$(exitCode) ${Purple}\[\$(tput sc; projectName; tput rc)\]${Default}\$(shortPWD)${GitBranch}${Default}\n└> "
+   # PS1="┌─ \$(exitCode) ${Purple}\[\$(tput sc; projectName; tput rc)\]${Default}\t ${BgOrange}${Black}${HOST}${Default} ${BoldBlue}\$(shortPWD)${GitBranch}${Default}\n└> "
    PS2="─> "
 }
 

@@ -1,19 +1,19 @@
-" vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 " -----------------------------------------------------------------------------
 " Filename: init.vim
-" Modified: Wed 12 Oct 2016, 16:32
-" See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
+" Modified: Wed 08 Feb 2017, 15:41
+" See:      http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 " reload this file when saving
 autocmd! bufwritepost init.vim source %
 
-" Plugs (Bundles) {{{
+" Plugs (Bundles) {{{1
 call plug#begin('~/.config/nvim/bundle')
 Plug 'tpope/vim-sensible'                 " standard config
+Plug 'tpope/vim-surround'                 " quoting / parenthesizing
+Plug 'tpope/vim-repeat'                   " add . support to other plugs
 Plug 'itchyny/lightline.vim'              " status bar
 Plug 'shinchu/lightline-gruvbox.vim'      " status bar color
 Plug 'morhetz/gruvbox'                    " color scheme
-" Plug 'NLKNguyen/papercolor-theme'         " color scheme
 Plug 'christoomey/vim-tmux-navigator'     " switch between panes
 Plug 'tomtom/tcomment_vim'                " easy un/commenting
 Plug 'kshenoy/vim-signature'              " display / navigate marks
@@ -24,9 +24,10 @@ Plug 'aperezdc/vim-template'              " templates for file types
 Plug 'derekwyatt/vim-fswitch'             " switch C header/implementation
 Plug 'ludovicchabant/vim-gutentags'       " automatically create tag files
 Plug 'powerman/vim-plugin-AnsiEsc'        " display shell escapes
-Plug 'SirVer/ultisnips'                   " snippet insertion
-Plug 'honza/vim-snippets'                 " snippet data
 Plug 'jlanzarotta/bufexplorer'            " list buffers
+Plug 'Shougo/neosnippet.vim'              " snippets from Shougo
+Plug 'Shougo/neosnippet-snippets'         " snippet data from Shougo
+Plug 'honza/vim-snippets'                 " snippet data
 Plug 'xolox/vim-misc'                     " requirement of vim-session
 Plug 'xolox/vim-session'                  " save and load sessions
 function! DoRemote(arg)
@@ -34,12 +35,27 @@ function! DoRemote(arg)
 endfunction
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 call plug#end()
-" }}}
 
-" Formatting {{{
+" Folding  {{{1
+syntax enable
+set nofoldenable
+let g:xml_syntax_folding =1
+let g:sh_fold_enabled =1
+autocmd Syntax c,cpp,vim,xml,html,xhtml,lua setlocal foldenable
+autocmd Syntax c,cpp,vim,xml,html,xhtml,lua setlocal foldmethod     =syntax
+autocmd Syntax c,cpp,vim,xml,html,xhtml,lua setlocal foldlevelstart =1
+autocmd FileType sh setlocal foldenable "foldmarker={{{,}}} foldlevel=0 foldmethod=marker
+
+" let perl_fold            =0
+" let perl_fold_blocks     =0
+" let perl_extended_vars   =0
+" let perl_sync_dist       =0
+
+" Formatting {{{1
 " based on filetype
 filetype plugin indent on
-au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
+" indent xml with special command
+au FileType xml setlocal equalprg=xmlindent\ -i3\ -l78
 
 set nowrap
 set tabstop     =3
@@ -67,31 +83,25 @@ set formatoptions=rcq
 
 set cino+=g0,t0,:0,N-s
 " }}}
-
-" Interface  {{{
+" Interface  {{{1
 set mouse=a
 set number
 set so=3
+set visualbell
 " let &t_SI = "\<Esc>[4 q"
 " let &t_EI = "\<Esc>[2 q"
 :set fillchars+=vert:│
-"}}}
-
-" Statusline  {{{
 " set statusline                         =%f%m%h%r%w%y[%l/%L,%c%V]%=[%{&fo}]%y[%{&ff}][%{&fenc==\"\"?&enc:&fenc}]
 let g:lightline = {
       \ 'colorscheme': 'gruvbox',
       \ }
-"}}}
 
-" GUI-Vim  {{{ 
-set guifont   =Envy\ Code\ R\ for\ Powerline\ 11
-set guioptions=agi
-"}}}
+" Clipboard {{{1
+" always yank directly to system clipboard
+set clipboard=unnamed
 
-" Colors  {{{
+" Colors  {{{1
 " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-syntax enable
 set bg=dark
 set t_Co=256
 let g:gruvbox_italic=1
@@ -102,9 +112,8 @@ colorscheme gruvbox
 "let &colorcolumn=join(range(81,999),",")
 let &colorcolumn="80,".join(range(120,999),",")
 set cursorline
-"}}}
 
-" Search / Replace {{{
+" Search / Replace {{{1
 set hlsearch        " Highlight prevoius search pattern
 set showmatch
 set incsearch       " Highlight while typing search
@@ -112,82 +121,109 @@ set ignorecase      " Ignore case in search patterns.
 set smartcase       " Override the 'ignorecase' option if the search pattern
                     " contains upper case characters.
 set gdefault        " Tack a 'g' on regexes, i.e., '%s/search/replace/g'
-"}}}
+" remap the super star, so it does not jump to the next occurence
+nnoremap * *``
+augroup auto_quickfix_open
+    autocmd!
+    autocmd QuickFixCmdPost [^l]* cwindow
+    autocmd QuickFixCmdPost l*    lwindow
+augroup END
 
-" Folding  {{{
-set nofoldenable
-autocmd Syntax c,cpp,vim,xml,html,xhtml,lua setlocal foldenable
-autocmd Syntax c,cpp,vim,xml,html,xhtml,lua setlocal foldmethod     =syntax
-autocmd Syntax c,cpp,vim,xml,html,xhtml,lua setlocal foldlevelstart =1
-
-let sh_fold_enabled      =1
-" let perl_fold            =0
-" let perl_fold_blocks     =0
-" let perl_extended_vars   =0
-" let perl_sync_dist       =0
-let g:xml_syntax_folding =1
-autocmd FileType sh setlocal foldmarker={{{,}}} foldlevel=0 foldmethod=marker
-"}}}
-
-" Completion {{{
+" Completion {{{1
 let g:deoplete#enable_at_startup = 1
+
+let g:deoplete#sources={}
+let g:deoplete#sources._=['buffer', 'file', 'neosnippet']
+
 " Define keyword
 if !exists('g:deoplete#keyword_patterns')
     let g:deoplete#keyword_patterns = {}
 endif
 
 let g:deoplete#auto_completion_start_length = 3
-let g:deoplete#sources = {}
-let g:deoplete#sources._ = []
 
-" deoplete tab-complete
-inoremap <silent><expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><s-tab> pumvisible() ? "\<C-p>" : "\<TAB>"
 " disable autocomplete
 " let g:deoplete#disable_auto_complete = 1
+
 " UltiSnips config
-" let g:UltiSnipsSnippetsDir        = '~/.nvim/UltiSnips/'
+" let g:UltiSnipsSnippetsDir         = '~/.nvim/UltiSnips/'
+"
 " let g:UltiSnipsExpandTrigger="<tab>"
 " let g:UltiSnipsJumpForwardTrigger="<tab>"
 " let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-"}}}
 
-" Taglist  {{{
+" Plugin key-mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+" Inside a completion menu, we jump to the next item.
+" If there is a snippet to expand, expand it.
+" If we are inside a snippet, tab jumps to the next mark.
+" If none of the above matches we just call our usual 'tab'.
+" function! s:neosnippet_complete()
+"    if pumvisible()
+"       return "\<c-n>"
+"    else
+"       if neosnippet#expandable_or_jumpable() 
+"          return "\<Plug>(neosnippet_expand_or_jump)"
+"       endif
+"       return "\<tab>"
+"    endif
+" endfunction
+
+" imap <expr><TAB> <SID>neosnippet_complete()
+
+" In a completion list, TAB goes to the next item.
+" In a snippet context, TAB jumps to the next mark.
+imap <silent><expr><TAB>
+         \ pumvisible() ? "\<C-n>" :
+         \ neosnippet#expandable_or_jumpable() ?
+         \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+" smap <silent><expr><TAB> 
+"  \ neosnippet#expandable_or_jumpable() ? 
+"  \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+" Enable snipMate compatibility feature.
+let g:neosnippet#enable_snipmate_compatibility = 1
+
+" Taglist  {{{1
 let Tlist_Use_Right_Window = 1
 let Tlist_Show_One_File    = 1
-"}}}
 
-" Tasklist  {{{
+" Tasklist  {{{1
 let g:tlWindowPosition=1                      " display at bottom
 let g:tlTokenList = ['TODO', 'FIXME', 'XXX']  " search tags
-"}}}
 
-" Templates {{{
+" Templates {{{1
 let g:templates_directory = [ '~/.config/nvim/templates' ]
-"}}}
-"
-" Fugitive  {{{
-" set diffopt+=vertical
-"}}}
 
-" Sessions {{{
+" Fugitive  {{{1
+" set diffopt+=vertical
+
+" Diff {{{1
+set diffopt+=iwhite
+" }}}
+" Sessions {{{1
 let g:session_autoload=0
 let g:session_directory="~/.config/nvim/sessions"
 " }}}
-
-" netrw {{{
-let g:netrw_preview = 1
+" netrw {{{1
+let g:netrw_preview   = 1
+let g:netrw_liststyle = 1
+let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
+let g:netrw_hide      = 1
 
 augroup netrw_mapping
     autocmd filetype netrw nnoremap <buffer> q :BW<CR>
 augroup END
 " }}}
-
-" Perl {{{
+" Perl {{{1
 " automatically browse perl documentation when pressing 'K'
 au FileType perl setlocal keywordprg=perldoc\ -T\ -f
 " }}}
-
-" Functions  {{{
+" Functions  {{{1
 " If buffer modified, update any 'Modified: ' in the first 20 lines.
 " 'Modified: ' can have up to 10 characters before (they are retained).
 " Restores cursor and window position using save_cursor variable.
@@ -224,9 +260,7 @@ endfun
 " Easily GREP current word in current file.
 command! GREP :execute 'vimgrep '.expand('<cword>').' '.expand('%') | :copen | :cc
 
-"}}}
-
-" Keyboard mappings {{{
+" Keyboard mappings {{{1
 let mapleader=" "
 "
 " move by display lines instead of logical lines
@@ -244,8 +278,6 @@ nnoremap <C-s> :w!<CR>
 inoremap <C-s> <Esc>:w!<CR>i
 nnoremap <C-q> :q<CR>
 inoremap <C-q> <Esc>:q<CR>
-
-nnoremap <silent><Return> o<Esc>
 
 " paste without copying the selected text "_ is the black hole register
 vnoremap p "_dp
@@ -284,6 +316,7 @@ nnoremap <leader>W :sp<CR> <C-w>j
 nnoremap <leader>z :setlocal spell! spelllang=en_us<CR>
 " repair netrw
 nnoremap <leader>r :set modifiable<CR> :set nu<CR>
+nnoremap <leader>y :let @* = expand("%:p")<CR>
 
 " Use return and backspace to navigate help pages more easy
 nnoremap <buffer> <CR> <C-]>
@@ -292,9 +325,8 @@ nnoremap <buffer> <BS> <C-T>
 " use netrw
 nnoremap - :e %:p:h<CR>
 " }}}
-
-" Private settings {{{
+" Private settings {{{1
 if filereadable( $HOME . "/.config/nvim/local.vim" )
    source $HOME/.config/nvim/local.vim
 endif
-"}}}
+" vim: set foldmethod=marker :

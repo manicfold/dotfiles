@@ -1,9 +1,7 @@
 #! /bin/bash
 #
 #- termtitle
-#- Copyright (C) Robert Bosch Car Multimedia GmbH
-#- Philipp Blanke (blp4hi) <philipp.blanke@de.bosch.com>
-#- Last Change: Tue 26 Apr 2016, 08:53
+#- Last Change: Thu 09 Feb 2017, 10:53
 
 ## USAGE: termtitle "Title"
 ##    Sets the title of the current terminal through escape codes.
