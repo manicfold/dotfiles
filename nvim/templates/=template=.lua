@@ -3,8 +3,8 @@
 -- SW-COMPONENT: Software update
 --  DESCRIPTION: Software update is responsible for updating the 
 --               firmware of the targets.
---    COPYRIGHT: (C)2016 Robert Bosch GmbH
---       AUTHOR: <%USER%> <%MAIL%>
+--    COPYRIGHT: %LICENSE%
+--       AUTHOR: %USER% <%MAIL%>
 -- 
 -- The reproduction, distribution and utilization of this file as
 -- well as the communication of its contents to others without express
