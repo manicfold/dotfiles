@@ -1,13 +1,13 @@
-# vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
+# vim: set foldmarker={{{1,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Fri 15 Jul 2016, 14:17
+# Modified: Mon 13 Feb 2017, 15:17
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-# Globals -----------------------------------------------------------------{{{
+# Globals -----------------------------------------------------------------{{{1
 # set the default filemask
 umask 022
 
@@ -36,14 +36,14 @@ LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib/"
 [ -d "${HOME}/.gem/ruby/*/bin" ] && PATH="${HOME}/.gem/ruby/*/bin:${PATH}"
 
 export LC_ALL LANG PATH LD_LIBRARY_PATH EDITOR GPG_TTY
-# }}}
-# Completion --------------------------------------------------------------{{{
+
+# Completion --------------------------------------------------------------{{{1
 [ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
 # if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 #  . /etc/bash_completion
 # fi
-# }}}
-# Shell options -----------------------------------------------------------{{{
+
+# Shell options -----------------------------------------------------------{{{1
 #set -o notify
 #set -o noclobber
 #set -o ignoreeof
@@ -60,25 +60,23 @@ shopt -s checkwinsize
 #shopt -s sourcepath
 #shopt -s no_empty_cmd_completion  # bash>=2.04 only
 #shopt -s cmdhist
-shopt -s histappend histreedit histverify
 shopt -s extglob      # Necessary for programmable completion
 shopt -s direxpand    # expand variables containing directories
-
-ulimit -S -c 0        # Don't want any coredumps
-# Disable options:
 unset MAILCHECK
 
 export TIMEFORMAT=$'\nreal %3R\tuser %3U\tsys %3S\tpcpu %P\n'
+ulimit -S -c 0        # Don't want any coredumps
 
+# History -----------------------------------------------------------------{{{1
+shopt -s histappend histreedit histverify
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=10000
 HISTFILESIZE=20000
 # don't put duplicate lines or lines starting with space in the history.
 export HISTCONTROL=ignoreboth
-
 export HISTIGNORE="&:bg:fg:ll:h"
-# }}}
-# tailoring 'less' ---------------------------------------------------------{{{
+
+# tailoring 'less' ---------------------------------------------------------{{{1
 export LESSCHARSET='utf-8'
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
@@ -94,100 +92,9 @@ export LESS=" -RSMgIsw "
     # s - Squeeze empty lines to one
     # w - Highlight first line after PgDn
 
-# }}}
-# Functions --------------------------------------------------------------- {{{
-# Find a file with a pattern in name:
-function ff()
-{ find . -type f -iname '*'$*'*' -ls ; }
-
-# Find a file with pattern $1 in name and Execute $2 on it:
-function fe()
-{ find . -type f -iname '*'$1'*' -exec "${2:-file}" {} \;  ; }
-
-# move filenames to lowercase
-function lowercase()
-{
-    for file ; do
-        filename=${file##*/}
-        case "$filename" in
-        */*) dirname==${file%/*} ;;
-        *) dirname=.;;
-        esac
-        nf=$(echo $filename | tr A-Z a-z)
-        newname="${dirname}/${nf}"
-        if [ "$nf" != "$filename" ]; then
-            mv "$file" "$newname"
-            echo "lowercase: $file --> $newname"
-        else
-            echo "lowercase: $file not changed."
-        fi
-    done
-}
-
-# move filenames to uppercase
-function uppercase()
-{
-    for file ; do
-        filename=${file##*/}
-        case "$filename" in
-        */*) dirname==${file%/*} ;;
-        *) dirname=.;;
-        esac
-        nf=$(echo $filename | tr a-z A-Z)
-        newname="${dirname}/${nf}"
-        if [ "$nf" != "$filename" ]; then
-            mv "$file" "$newname"
-            echo "uppercase: $file --> $newname"
-        else
-            echo "uppercase: $file not changed."
-        fi
-    done
-}
-
-# swap 2 filenames around
-function swap()
-{
-    local TMPFILE=tmp.$$
-    mv "$1" $TMPFILE
-    mv "$2" "$1"
-    mv $TMPFILE "$2"
-}
-
-function bkup()
-{ mv "$1" "$1.orig"; }
-# }}}
-# Process/system ----------------------------------------------------------{{{
-
-function my_ps()
-{ ps $@ -u $USER -o pid,%cpu,%mem,bsdtime,command ; }
-
-function pp()
-{ my_ps f | awk '!/awk/ && $0~var' var=${1:-".*"} ; }
 
 
-function ii()   # get current host related info
-{
-  echo -e "\nYou are logged on ${RED}$HOST"
-  echo -e "\nAdditional information:$NC " ; uname -a
-  echo -e "\n${RED}Users logged on:$NC " ; w -h
-  echo -e "\n${RED}Current date :$NC " ; date
-  echo -e "\n${RED}Machine stats :$NC " ; uptime
-  echo -e "\n${RED}Memory stats :$NC " ; free
-  echo
-}
-
-function xtitle ()
-{
-    case "$TERM" in
-        *term | rxvt)
-            echo -n -e "\033]0;$*\007" ;;
-        *)
-	    ;;
-    esac
-}
-# }}}
-# source other files -------------------------------------------------------{{{
-
+# source other files -------------------------------------------------------{{{1
 [ -f "$HOME/.config/nvim/bundle/gruvbox/gruvbox_256palette.sh" ] && source "$HOME/.config/nvim/bundle/gruvbox/gruvbox_256palette.sh"
 
 [ -f ~/.bash_prompt ] && source ~/.bash_prompt
@@ -196,4 +103,4 @@ function xtitle ()
 
 [ -f "${HOME}/.bashrc.local" ] && source "${HOME}/.bashrc.local"
 
-# }}}
+

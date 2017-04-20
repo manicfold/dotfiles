@@ -1,11 +1,11 @@
 " vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker :
 " -----------------------------------------------------------------------------
 " Filename: init.vim
-" Modified: Fri 15 Jul 2016, 16:56
+" Modified: Wed 22 Feb 2017, 15:33
 " See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 
-" Plugs (Bundles) {{{
+" Plugs (Bundles) {{{1
 call plug#begin('~/.config/nvim/bundle')
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
@@ -27,12 +27,12 @@ function! DoRemote(arg)
 endfunction
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 call plug#end()
-" }}}
-" NVim Environment Variables {{{
+
+" NVim Environment Variables {{{1
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-" }}}
-" Formatting {{{
+
+" Formatting {{{1
 " based on filetype
 filetype plugin indent on
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
@@ -64,16 +64,20 @@ set formatoptions=rcq
                     " w      A trailing non-white space ends a paragraph.
 
 set cino+=g0,t0,:0,N-s
-" }}}
-" Interface  {{{
+
+" Interface  {{{1
+set hidden  " buffers can stay in the bg without saving
 set mouse=a
 set number
 set so=3
 " let &t_SI = "\<Esc>[4 q"
 " let &t_EI = "\<Esc>[2 q"
 :set fillchars+=vert:│
-"}}}
-" Statusline  {{{
+nnoremap ' `
+nnoremap ` '
+" Clipboard {{{1
+set clipboard=unnamed
+" Statusline  {{{1
 " set statusline=%f%m%h%r%w%y[%l/%L,%c%V]%=[%{&fo}]%y[%{&ff}][%{&fenc==\"\"?&enc:&fenc}]
 let g:airline_left_sep=''
 let g:airline_right_sep=''
@@ -90,7 +94,7 @@ let g:airline#extensions#tabline#enabled = 0
 let g:airline_theme='gruvbox'
 " let g:airline_theme='papercolor'
 "}}}
-" Colors  {{{
+" Colors  {{{1
 syntax enable
 set bg=dark
 if has('gui_running')
@@ -111,7 +115,7 @@ hi link SneakPluginScope Function
 hi link SneakStreakTarget Type
 hi link SneakStreakMask Function
 "}}}
-" Search / Replace {{{
+" Search / Replace {{{1
 set hlsearch        " When there is a previous search pattern, highlight all
                     " its matches.
 set showmatch
@@ -127,7 +131,7 @@ set gdefault        " Tack a 'g' on regexes, i.e., '%s/search/replace/g'
 
 let g:sneak#streak = 1
 "}}}
-" Folding  {{{
+" Folding  {{{1
 set nofoldenable
 autocmd Syntax c,cpp,vim,xml,html,xhtml,lua setlocal foldenable
 autocmd Syntax c,cpp,vim,xml,html,xhtml,lua setlocal foldmethod     =syntax
@@ -143,8 +147,8 @@ let sh_fold_enabled      =1
 let g:xml_syntax_folding =1
 
 autocmd FileType sh setlocal foldmarker={{{,}}} foldlevel=0 foldmethod=marker
-"}}}
-" Completion {{{
+
+" Completion {{{1
 let g:deoplete#enable_at_startup = 1
 " Define keyword
 if !exists('g:deoplete#keyword_patterns')
@@ -159,36 +163,36 @@ let g:deoplete#sources._ = []
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 "}}}
-" Taglist  {{{
+" Taglist  {{{1
 let Tlist_Use_Right_Window = 1
 let Tlist_Show_One_File    = 1
 "}}}
-" Tasklist  {{{
+" Tasklist  {{{1
 let g:tlWindowPosition=1                      " display at bottom
 let g:tlTokenList = ['TODO', 'FIXME', 'XXX']  " search tags
 "}}}
-" Fugitive  {{{
+" Fugitive  {{{1
 set diffopt+=vertical
 "}}}
-" netrw {{{
+" netrw {{{1
 let g:netrw_preview = 1
 
 augroup netrw_mapping
     autocmd filetype netrw nnoremap <buffer> q :BW<CR>
 augroup END
 
-" }}}
-" Perl {{{
+
+" Perl {{{1
 " automatically browse perl documentation when pressing 'K'
 au FileType perl setlocal keywordprg=perldoc\ -T\ -f
-" }}}
-" Extern programs {{{
+
+" Extern programs {{{1
 " IMPORTANT: grep will sometimes skip displaying the file name if you
 " search in a single file. This will confuse Latex-Suite. Set your grep
 " program to alway generate a file-name.
 set grepprg=grep\ -nH\ $*
 "}}}
-" Functions  {{{
+" Functions  {{{1
 " If buffer modified, update any 'Modified: ' in the first 20 lines.
 " 'Modified: ' can have up to 10 characters before (they are retained).
 " Restores cursor and window position using save_cursor variable.
@@ -223,7 +227,7 @@ function! RemoveShellEscapes()
 endfun
 
 "}}}
-" Keyboard mappings {{{
+" Keyboard mappings {{{1
 let mapleader=" "
 "
 " move by display lines instead of logical lines
@@ -254,9 +258,9 @@ nmap ä <C-t>
 " goto next occurence w/o leaving search mode
 cnoremap <c-n> <CR>n/<c-p>
 " Previous buffer (bufkill)
-nnoremap <S-Tab> :up! <bar>bp<CR>
+nnoremap <S-Tab> :bp!<CR>
 " Next buffer (bufkill)
-nnoremap <Tab> :up! <bar>bn<CR>
+nnoremap <Tab> :bn!<CR>
 " clean up whitespace
 nnoremap <leader>c :%s/\s\+$//<CR>:let @/=''<CR>
 " Toggle background lightness
@@ -286,8 +290,10 @@ nnoremap <buffer> <BS> <C-T>
 " use netrw
 nnoremap - :e %:p:h<CR>
 
-" }}}
-" Private settings {{{
+" turn off search highlight
+nnoremap <ESC> :noh <CR>
+
+" Private settings {{{1
 if filereadable( $HOME . "/.config/nvim/local.vim" )
    source $HOME/.config/nvim/local.vim
 endif

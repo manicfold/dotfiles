@@ -9,18 +9,20 @@ font pango:Source Sans Pro, FontAwesome Bold 11
 focus_follows_mouse no
 
 # border / titlebar
-new_window 1pixel
+new_window pixel 1
 smart_borders on
 smart_gaps on
 gaps inner 5
 gaps outer 0
 
 # Color settings
-# <colorclass>          <border><bg>    <text>  <in'tor> <child_border>
-client.focused          #268BD2 #282D37 #FFFFFF #FFFFFF
-client.focused_inactive #282D37 #282D37 #B7B7B7 #B7B7B7
-client.unfocused        #282D37 #282D37 #B7B7B7 #B7B7B7
-client.urgent           #990000 #FFFFFF #FFFFFF #FFFFFF
+# <colorclass>          <border> <bg>    <text>  <in'tor> <child_border>
+client.focused          #268BD2  #282D37 #FFFFFF #FFFFFF  #268BD2
+client.focused_inactive #282D37  #282D37 #B7B7B7 #B7B7B7  #282D37
+client.unfocused        #282D37  #282D37 #B7B7B7 #B7B7B7  #282D37
+client.urgent           #990000  #FFFFFF #FFFFFF #FFFFFF  #990000
+
+client.background       #ffffff
 
 # Workspaces ----------------------------------------------------------------
 set $ws1 "1: "
@@ -30,6 +32,7 @@ set $ws4 "4: "
 set $ws5 "5: "
 set $ws6 "6"
 
+
 # Assign applications to workspaces -----------------------------------------
 assign [class="Firefox"] $ws2
 assign [class="nautilus"] $ws3
@@ -37,8 +40,12 @@ assign [class="spotify"] $ws4
 assign [class="Spotify"] $ws4
 assign [class="VirtualBox"] $ws5
 
-# Window modes --------------------------------------------------------------
-for_window [class="Oblogout"] fullscreen enable
+# Logout --------------------------------------------------------------------
+# for_window [class="Oblogout"] fullscreen enable
+# bindsym $mod+q exec --no-startup-id oblogout
+# bindsym $mod+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+for_window [class="I3-exit" instance="i3-exit"] floating enable
+bindsym $mod+q exec ~/bin/i3-exit
 
 # Keyboard mappings ---------------------------------------------------------
 set $mod Mod4
@@ -55,12 +62,12 @@ bindsym $mod+Return exec termite -e tmux
 bindsym $mod+Shift+q kill
 
 # list open windows to switch to
-bindsym $mod+Tab exec rofi -show window
+bindsym $mod+Tab exec rofi -show window 
 
 # start dmenu (a program launcher)
 # bindsym $mod+space exec --no-startup-id i3-dmenu-desktop
 # bindsym $mod+space exec --no-startup-id i3-dmenu-desktop --dmenu "dmenu -i -p 'Go for:' -fn 'Fira Mono-14'"
-bindsym $mod+space exec rofi -show run
+bindsym $mod+space exec rofi -show drun  -width 1920 -location 0 -lines 19 -bw 0 -padding 486 -separator-style none -opacity 70
 
 # change focus (vim style)
 bindsym $mod+h focus left
@@ -77,10 +84,10 @@ bindsym $mod+Shift+l move right
 # split in horizontal orientation
 bindsym $mod+s split h
 # split in vertical orientation
-bindsym $mod+Shift+v split v
+bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+Shift+s layout stacking
@@ -88,7 +95,7 @@ bindsym $mod+Shift+w layout tabbed
 bindsym $mod+Shift+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+f floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+n focus mode_toggle
@@ -137,13 +144,9 @@ bindsym $mod+Ctrl+l workspace next
 bindsym $mod+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
-# bindsym $mod+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-# bindsym $mod+q exec ~/bin/i3-exit
-# for_window [class="I3-exit" instance="i3-exit"] floating enable
-bindsym $mod+q exec --no-startup-id oblogout
 
-bindsym $mod+p exec --no-startup-id $HOME/.config/i3/i3lock-extra -p -f Source-Sans-Pro-Bold
+bindsym $mod+p exec --no-startup-id i3lock-next "Envy Code R 18"
+# bindsym $mod+p exec --no-startup-id $HOME/.config/i3/i3lock-extra -p -f Source-Sans-Pro-Bold
 # bindsym $mod+p exec --no-startup-id $HOME/.config/i3/i3lock-extra -o $HOME/.config/i3/pass.png -s -p
 
 
@@ -184,7 +187,7 @@ bar {
    position top
    colors {
       # Whole color settings
-      background #282D37
+      background #262626
       statusline #EEEEEE
       separator  #282D37
 
@@ -196,11 +199,27 @@ bar {
    }
 }
 
-# Start further programs
-exec --no-startup-id xrdb "${HOME}"/.Xresources
-exec --no-startup-id /usr/libexec/gnome-settings-daemon
-exec --no-startup-id compton
-# exec --no-startup-id nm-applet
-exec --no-startup-id feh --bg-fill /home/philipp/Pictures/Domino.soft.jpg
-exec --no-startup-id setxkbmap -option caps:escape
+exec xrandr --auto --output HDMI-0 --mode 1920x1080 --left-of DVI-I-1
+exec compton --daemon --shadow --no-dock-shadow --config "${HOME}/.config/compton.conf"
+
+workspace $ws1 output DVI-I-1
+workspace $ws3 output DVI-I-1
+workspace $ws5 output DVI-I-1
+
+workspace $ws2 output HDMI-0
+workspace $ws4 output HDMI-0
+workspace $ws6 output HDMI-0
+
+exec xrdb "${HOME}/.Xresources"
+exec setxkbmap -option caps:escape
+
+# Remap mouse buttons 6 and 7 (horizontal scroll) to mouse buttons 8 and 9.
+# Buttons 8 and 9 are used for Back and Forward in Firefox.
+exec xmodmap -e "pointer = 1 2 3 4 5 8 9 0 0"
+
+exec feh --bg-fill "${HOME}/.desktop.background"
 exec termite -e tmux
+
+# /usr/libexec/gnome-settings-daemon
+# nm-applet
+exec mpd "${HOME}/.config/mpd/mpd.conf"
