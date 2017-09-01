@@ -174,4 +174,4 @@ bar {
 }
 
 # Start Programs ------------------------------------------------------------
-exec --no-startup-id urxvt -e "tmux"
+exec --no-startup-id urxvt 

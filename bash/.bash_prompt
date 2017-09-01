@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bash_prompt
-# Modified: Wed 16 Nov 2016, 11:42
+# Modified: Wed 22 Mar 2017, 13:49
 # -----------------------------------------------------------------------------
 
 
@@ -46,7 +46,7 @@ export PROMPT_DIRTRIM=3
 
 function shortPWD
 {
-   local Pre= Name="$PWD" Length="64";
+   local Pre= Name="$PWD" Length="32";
    [[ "$Name" != "${Name#$HOME/}" || -z "${Name#$HOME}" ]] && \
       Pre+='~' Name="${Name#$HOME}" Length=$[Length-1];
    ((${#Name} > $Length)) && \

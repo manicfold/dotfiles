@@ -1,16 +1,18 @@
 " -----------------------------------------------------------------------------
 " Filename: init.vim
-" Modified: Wed 08 Feb 2017, 15:41
+" Modified: Mon 07 Aug 2017, 13:13
 " See:      http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 " reload this file when saving
 autocmd! bufwritepost init.vim source %
 
+" let g:loaded_python_provider = 1
+
 " Plugs (Bundles) {{{1
 call plug#begin('~/.config/nvim/bundle')
-Plug 'tpope/vim-sensible'                 " standard config
 Plug 'tpope/vim-surround'                 " quoting / parenthesizing
 Plug 'tpope/vim-repeat'                   " add . support to other plugs
+Plug 'tpope/vim-fugitive'                 " git support
 Plug 'itchyny/lightline.vim'              " status bar
 Plug 'shinchu/lightline-gruvbox.vim'      " status bar color
 Plug 'morhetz/gruvbox'                    " color scheme
@@ -30,6 +32,8 @@ Plug 'Shougo/neosnippet-snippets'         " snippet data from Shougo
 Plug 'honza/vim-snippets'                 " snippet data
 Plug 'xolox/vim-misc'                     " requirement of vim-session
 Plug 'xolox/vim-session'                  " save and load sessions
+Plug 'mileszs/ack.vim'                    " ack support
+Plug 'joonty/vdebug'                      " Debugger integration
 function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
@@ -46,10 +50,32 @@ autocmd Syntax c,cpp,vim,xml,html,xhtml,lua setlocal foldmethod     =syntax
 autocmd Syntax c,cpp,vim,xml,html,xhtml,lua setlocal foldlevelstart =1
 autocmd FileType sh setlocal foldenable "foldmarker={{{,}}} foldlevel=0 foldmethod=marker
 
-" let perl_fold            =0
-" let perl_fold_blocks     =0
-" let perl_extended_vars   =0
-" let perl_sync_dist       =0
+function! GetPerlFold()
+   if getline(v:lnum) =~ '^\s*sub\s'
+      return ">1"
+   elseif getline(v:lnum) =~ '\}\s*$'
+      let my_perlnum = v:lnum
+      let my_perlmax = line("$")
+      while (1)
+         let my_perlnum = my_perlnum + 1
+         if my_perlnum > my_perlmax
+            return "<1"
+         endif
+         let my_perldata = getline(my_perlnum)
+         if my_perldata =~ '^\s*\(\#.*\)\?$'
+            " do " nothing
+         elseif my_perldata =~ '^\s*sub\s'
+            return "<1"
+         else
+            return "="
+         endif
+      endwhile
+   else
+      return "="
+   endif
+endfunction
+autocmd FileType perl setlocal foldexpr=GetPerlFold()
+autocmd FileType perl setlocal foldmethod=expr
 
 " Formatting {{{1
 " based on filetype
@@ -93,12 +119,26 @@ set visualbell
 :set fillchars+=vert:│
 " set statusline                         =%f%m%h%r%w%y[%l/%L,%c%V]%=[%{&fo}]%y[%{&ff}][%{&fenc==\"\"?&enc:&fenc}]
 let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
-      \ }
+   \ 'colorscheme': 'gruvbox',
+   \ 'active': {
+   \     'left': [ [ 'mode' ],
+   \               [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
+   \ },
+   \ 'component': {
+   \     'fugitive': '%{exists("*fugitive#statusline")?fugitive#statusline():""}'
+   \ },
+   \ 'component_visible_condition': {
+   \     'fugitive': '(exists("*fugitive#statusline") && ""!=fugitive#statusline())'
+   \ }
+   \ }
 
 " Clipboard {{{1
 " always yank directly to system clipboard
 set clipboard=unnamed
+
+" Directory {{{1
+set autochdir
+" autocmd BufEnter * silent! lcd %:p:h
 
 " Colors  {{{1
 " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
@@ -121,13 +161,23 @@ set ignorecase      " Ignore case in search patterns.
 set smartcase       " Override the 'ignorecase' option if the search pattern
                     " contains upper case characters.
 set gdefault        " Tack a 'g' on regexes, i.e., '%s/search/replace/g'
-" remap the super star, so it does not jump to the next occurence
-nnoremap * *``
 augroup auto_quickfix_open
     autocmd!
     autocmd QuickFixCmdPost [^l]* cwindow
     autocmd QuickFixCmdPost l*    lwindow
 augroup END
+
+" Search for selected text, forwards or backwards.
+vnoremap <silent> * :<C-U>
+         \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+         \gvy/<C-R><C-R>=substitute(
+         \escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+         \gV:call setreg('"', old_reg, old_regtype)<CR>
+vnoremap <silent> # :<C-U>
+         \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+         \gvy?<C-R><C-R>=substitute(
+         \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+         \gV:call setreg('"', old_reg, old_regtype)<CR>
 
 " Completion {{{1
 let g:deoplete#enable_at_startup = 1
@@ -216,13 +266,18 @@ let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
 let g:netrw_hide      = 1
 
 augroup netrw_mapping
-    autocmd filetype netrw nnoremap <buffer> q :BW<CR>
+    autocmd filetype netrw nnoremap <buffer> <ESC> :bd<CR>
 augroup END
 " }}}
 " Perl {{{1
 " automatically browse perl documentation when pressing 'K'
 au FileType perl setlocal keywordprg=perldoc\ -T\ -f
-" }}}
+" Perl Debugging {{{1
+let g:vdebug_options = {}
+let g:vdebug_options["port"] = 9000
+let g:vdebug_options["break_on_open"] = 0
+
+
 " Functions  {{{1
 " If buffer modified, update any 'Modified: ' in the first 20 lines.
 " 'Modified: ' can have up to 10 characters before (they are retained).

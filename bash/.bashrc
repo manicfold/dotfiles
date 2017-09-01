@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Fri 28 Oct 2016, 12:15
+# Modified: Thu 23 Mar 2017, 14:42
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
@@ -30,7 +30,7 @@ LANG=en_US.UTF-8
 
 EDITOR="vim"
 GPG_TTY="tty"
-LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib/"
+LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib:/usr/lib/x86_64-linux-gnu"
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then

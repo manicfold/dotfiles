@@ -1,5 +1,4 @@
-#! /usr/bin/env perl
-
+#!/usr/bin/env perl
 ###################################################################
 #         FILE: %FFILE%
 # SW-COMPONENT: Software update
@@ -18,4 +17,44 @@
 use strict;
 use warnings;
 
-%HERE%
+use Getopt::Long;                   # for option parsing
+
+# --- main program ---
+__PACKAGE__->main() unless caller();
+
+sub main {
+   # parse command line arguments and setup variables
+   my %options = (
+      # -- Strings
+      example => '',
+      # -- Flags
+      usage   => 0,
+   );
+   _read_options(\%options);
+   %HERE%
+}
+
+### Function ###
+#    Purpose: Evaluate options given to the script.
+# Parameters: HashRef - Options
+#    Returns: None
+sub _read_options {
+   my ( $options_ref ) = @_;
+
+   GetOptions(
+      "example=s"  => \$options_ref->{example},
+      "usage|help" => \$options_ref->{usage},
+   ); 
+
+   # verify mandatory options
+   for my $name ( ('example') ) {
+      if (!$options_ref->{$name}) {
+         # error
+      }
+   }
+
+   # other checks 
+   if ( $options_ref->{usage} ) {
+      # usage
+   }
+}

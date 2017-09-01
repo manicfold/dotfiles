@@ -22,19 +22,19 @@
 #-    -h|help         Display this help
 #-    -v|--version    Display version of the script
 
-set -o errexit    # exit if a command fails
 set -o nounset    # exit if variable is not declared
 set -o pipefail   # return exit code of last failed command in pipe
 #set -o xtrace     # debug traces on
+#set -o errexit    # exit if a command fails
 
 usage=$(grep "^#- " "${BASH_SOURCE[0]}" | cut -c 4-)
 version=1
 
 usage() {  echo "$usage"; }
 version() { echo "$version"; }
-print_err() { echo "|ERR|" "$@"; }
-print_ok()  { echo "|OK |" "$@"; }
-print_inf() { echo "|INF|" "$@"; }
+p_err() { echo "|ERR|" "$@"; }
+p_ok()  { echo "|OK |" "$@"; }
+p_inf() { echo "|INF|" "$@"; }
 
 ###################################################################
 
