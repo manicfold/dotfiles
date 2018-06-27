@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Thu 23 Mar 2017, 14:42
+# Modified: Fri 18 May 2018, 16:07
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
@@ -30,7 +30,7 @@ LANG=en_US.UTF-8
 
 EDITOR="vim"
 GPG_TTY="tty"
-LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib:/usr/lib/x86_64-linux-gnu"
+LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/lib:/usr/local/lib:/usr/lib/x86_64-linux-gnu"
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
@@ -215,7 +215,10 @@ function xtitle ()
 # Colors +  Prompt----------------------------------------------------------{{{
 # BASE16_SHELL="$HOME/.config/base16-shell/base16-papercolor.dark.sh"
 # [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
-source "$HOME/.config/nvim/bundle/gruvbox/gruvbox_256palette.sh"
+# gruvbox colors
+if [ -f $HOME/.bash_palette.sh ]; then
+   source "$HOME/.bash_palette.sh"
+fi
 
 if [ -f ~/.dircolors ]; then
    eval "$(dircolors -b ~/.dircolors)"
