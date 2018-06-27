@@ -1,22 +1,27 @@
-[user]
-	name = manicfold
-	email = philipp.blanke@googlemail.com
 [diff]
-	guitool = meld
 	tool = vimdiff
 [push]
 	default = simple
 [merge]
-	tool = vimdiff
+	tool = kdiff3
 [alias]
 	co = checkout
 	ci = commit
 	br = branch
 	st = status
 	di = diff
+   sm = submodule
+   sshow = "!f() { git stash show stash^{/$*} -p; }; f"
+   sapply = "!f() { git stash apply stash^{/$*}; }; f"
+   base = "!f() { git describe --abbrev=0 --tags; }; f"
+   mrproper = "!f() { git clean -xdff; git reset --hard; git submodule foreach 'git clean -xdff; git reset --hard'; }; f"
 [core]
 	editor = nvim
 	bigFileThreshold = 100m
+	excludesfile = ~/.gitignore
+	pager = less -F -X
+	eol = lf
+	autocrlf = input
 [color]
 	ui = true
 [pull]
@@ -26,5 +31,16 @@
 	noconsole = yes
 	needsfile = yes
 	argprompt = yes
+[mergetool]
+	prompt = false
 [difftool]
 	prompt = false
+[difftool "vimdiff"]
+   cmd = nvim -d $LOCAL $REMOTE 
+[mergetool "vimdiff"]
+   cmd = nvim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c '$wincmd J'
+[push]
+	default = current
+
+[include]
+   path = .gitconfig.local
