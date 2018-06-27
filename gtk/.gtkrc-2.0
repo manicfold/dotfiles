@@ -1,5 +1,4 @@
-gtk-icon-theme-name = "Numix"
+gtk-icon-theme-name = "Faenza-Dark"
 gtk-theme-name = "Numix"
-# gtk-theme-name = "Arc-Dark"
 gtk-font-name = "Fira Sans 10"
 # gtk-cursor-theme-name = "pixelfun3"
