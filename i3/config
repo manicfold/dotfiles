@@ -10,12 +10,11 @@ focus_follows_mouse no
 # border / titlebar
 new_window pixel 1
 
-# Color settings
-# <colorclass> <border> <background> <text> <indicator> <child_border>
-client.focused          #282D37 #268BD2 #FFFFFF #FFFFFF
-client.focused_inactive #282D37 #282D37 #B7B7B7 #B7B7B7
-client.unfocused        #282D37 #282D37 #B7B7B7 #B7B7B7
-client.urgent           #268BD2 #268BD2 #FFFFFF #FFFFFF
+# colorclass            border  bg      text    indicator  child_border
+client.focused          #2E3436 #3399FF #FFFFFF #FFFFFF
+client.focused_inactive #2E3436 #2E3436 #B7B7B7 #B7B7B7
+client.unfocused        #2E3436 #2E3436 #B7B7B7 #B7B7B7
+client.urgent           #3399FF #3399FF #FFFFFF #FFFFFF
 
 # Workspaces ----------------------------------------------------------------
 set $ws1 "1: "
@@ -34,7 +33,7 @@ floating_modifier $mod
 
 # start a terminal
 # bindsym $mod+Return exec gnome-terminal -e "tmux -2"
-bindsym $mod+Return exec urxvt -e "tmux"
+bindsym $mod+Return exec gnome-terminal -e "tmux"
 #bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
@@ -124,6 +123,7 @@ bindsym $mod+q exec ~/bin/i3-exit
 for_window [class="I3-exit" instance="i3-exit"] floating enable
 for_window [class="Gcr-prompter" instance="gcr-prompter"] floating enable
 for_window [class="gcalctool"] floating enable
+for_window [class="Eclipse" title="^Eclipse( SDK )?$"] floating enable
 
 
 # resize window (you can also use the mouse for that)
@@ -158,13 +158,13 @@ bar {
    position top
    colors {
       # Whole color settings
-      background #282D37
+      background #2E3436
       statusline #EEEEEE
-      separator  #282D37
+      separator  #2E3436
 
       # Type             border  background font
-      focused_workspace  #008fff #268bd2 #ffffff
-      active_workspace   #333333 #268bd2 #ffffff
+      focused_workspace  #008fff #3399FF #ffffff
+      active_workspace   #333333 #3399FF #ffffff
       inactive_workspace #333333 #222222 #888888
       urgent_workspace   #aa0000 #990000 #ffffff
    }
@@ -174,4 +174,11 @@ bar {
 }
 
 # Start Programs ------------------------------------------------------------
-exec --no-startup-id urxvt 
+
+exec --no-startup-id xrdb "${HOME}"/.Xresources
+exec --no-startup-id feh --bg-fill /home/blp4hi/Pictures/IMG-20150825-WA0000.jpg
+exec --no-startup-id gnome-settings-daemon
+# exec --no-startup-id eval $((usr/bin/ssh-agent -s)
+# exec --no-startup-id SSH_ASKPASS=/usr/bin/ssh-askpass ssh-add .ssh/id_rsa .ssh/id_rsa_jenkins < /dev/null 
+exec --no-startup-id gnome-terminal
+

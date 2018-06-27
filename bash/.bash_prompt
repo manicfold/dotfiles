@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bash_prompt
-# Modified: Wed 22 Mar 2017, 13:49
+# Modified: Tue 06 Feb 2018, 13:34
 # -----------------------------------------------------------------------------
 
 
@@ -44,6 +44,14 @@
 
 export PROMPT_DIRTRIM=3
 
+Black="\[\e[30m\]"
+BgOrange="\[\e[43m\]"
+Default="\[\e[0m\]"
+ps_hostname=""
+if [[ $SESSION_TYPE == "remote"* ]]; then
+   ps_hostname="${BgOrange}${Black}${HOST}${Default}:"
+fi
+
 function shortPWD
 {
    local Pre= Name="$PWD" Length="32";
@@ -79,8 +87,6 @@ function myprompt()
    local BoldBlue="\[\e[1;34m\]"
    local Cyan="\[\e[0;36m\]"
    local Default="\[\e[0m\]"
-   local BgOrange="\[\e[43m\]"
-   local Black="\[\e[30m\]"
 
    local GitBranch=""
    if declare -F __git_ps1 &> /dev/null; then
@@ -88,8 +94,7 @@ function myprompt()
       # GIT_PS1_SHOWUNTRACKEDFILES=true
       GitBranch="${Cyan}\$(__git_ps1 \" (%s)\")"
    fi
-   PS1="┌ \$(exitCode) ${Purple}\[\$(tput sc; projectName; tput rc)\]${Default}\$(shortPWD)${GitBranch}${Default}\n└> "
-   # PS1="┌─ \$(exitCode) ${Purple}\[\$(tput sc; projectName; tput rc)\]${Default}\t ${BgOrange}${Black}${HOST}${Default} ${BoldBlue}\$(shortPWD)${GitBranch}${Default}\n└> "
+   PS1="┌[\$(exitCode)${Default}]${Purple}\[\$(tput sc; projectName; tput rc)\] ${ps_hostname}${Default}\$(shortPWD)${GitBranch}${Default}\n└> "
    PS2="─> "
 }
 

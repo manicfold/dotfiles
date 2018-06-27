@@ -64,6 +64,7 @@ Xft.lcdfilter: lcddefault
 XTerm*locale: true
 XTerm*faceName: Envy Code R for Powerline:size=10:antialias=false
 XTerm*faceSize: 10
+XTerm*eightBitInput: false
 
 ! ----------------------------------------------------------------------- urxvt
 
