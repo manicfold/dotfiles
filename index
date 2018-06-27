@@ -2,7 +2,8 @@ bash: ~
 bin: ~/bin
 config: ~
 dircolors: ~
-fonts: ~
+emacs: ~/.emacs.d
+fonts: ~/.fonts
 git: ~
 gtk: ~
 i3: ~/.config/i3
