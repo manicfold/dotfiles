@@ -1,8 +1,7 @@
 /******************************************************************
  *         FILE: %FFILE%
- * SW-COMPONENT: Software update
- *  DESCRIPTION: Software update is responsible for updating the 
- *               firmware of the targets.
+ * SW-COMPONENT: Knowledge Model
+ *  DESCRIPTION: 
  *    COPYRIGHT: %LICENSE%
  *       AUTHOR: %USER% <%MAIL%>
  * 
@@ -12,9 +11,6 @@
  * payment of damages. All rights reserved in the event of the grant
  * of a patent, utility model or design.
  *****************************************************************/
-
-/* @brief      %HERE%
- */
 
 #ifndef %GUARD%
 #define %GUARD%

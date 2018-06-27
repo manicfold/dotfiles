@@ -1,12 +1,16 @@
 " -----------------------------------------------------------------------------
 " Filename: init.vim
-" Modified: Mon 07 Aug 2017, 13:13
+" Modified: Fri 08 Jun 2018, 08:39
 " See:      http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 " reload this file when saving
-autocmd! bufwritepost init.vim source %
+autocmd! bufwritepost init.vim 
+   \ source % |
+   \ call LightlineReload()
 
 " let g:loaded_python_provider = 1
+" let g:python_host_prog="/home/blp4hi/.neovim_python/bin/python"
+let g:python3_host_prog="/home/blp4hi/.neovim_python/bin/python"
 
 " Plugs (Bundles) {{{1
 call plug#begin('~/.config/nvim/bundle')
@@ -14,26 +18,28 @@ Plug 'tpope/vim-surround'                 " quoting / parenthesizing
 Plug 'tpope/vim-repeat'                   " add . support to other plugs
 Plug 'tpope/vim-fugitive'                 " git support
 Plug 'itchyny/lightline.vim'              " status bar
-Plug 'shinchu/lightline-gruvbox.vim'      " status bar color
-Plug 'morhetz/gruvbox'                    " color scheme
+Plug 'NLKNguyen/papercolor-theme'         " color theme
+Plug 'morhetz/gruvbox'         " color theme
 Plug 'christoomey/vim-tmux-navigator'     " switch between panes
 Plug 'tomtom/tcomment_vim'                " easy un/commenting
 Plug 'kshenoy/vim-signature'              " display / navigate marks
 Plug 'qpkorr/vim-bufkill'                 " kill buffer without closing window
 Plug 'godlygeek/tabular'                  " align columns
+Plug 'ludovicchabant/vim-gutentags'       " automatically create tag files
 Plug 'vim-scripts/taglist.vim'            " list of functions / variables
 Plug 'aperezdc/vim-template'              " templates for file types
 Plug 'derekwyatt/vim-fswitch'             " switch C header/implementation
-Plug 'ludovicchabant/vim-gutentags'       " automatically create tag files
 Plug 'powerman/vim-plugin-AnsiEsc'        " display shell escapes
 Plug 'jlanzarotta/bufexplorer'            " list buffers
 Plug 'Shougo/neosnippet.vim'              " snippets from Shougo
 Plug 'Shougo/neosnippet-snippets'         " snippet data from Shougo
 Plug 'honza/vim-snippets'                 " snippet data
-Plug 'xolox/vim-misc'                     " requirement of vim-session
-Plug 'xolox/vim-session'                  " save and load sessions
+" Plug 'xolox/vim-misc'                     " requirement of vim-session
+" Plug 'xolox/vim-session'                  " save and load sessions
 Plug 'mileszs/ack.vim'                    " ack support
-Plug 'joonty/vdebug'                      " Debugger integration
+Plug 'stefandtw/quickfix-reflector.vim'   " edit directly in the qf window
+" Plug 'vim-syntastic/syntastic'            " syntax checker
+" Plug 'joonty/vdebug'                      " Debugger integration
 function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
@@ -109,6 +115,20 @@ set formatoptions=rcq
 
 set cino+=g0,t0,:0,N-s
 " }}}
+" Colors  {{{1
+" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set t_Co=256
+set bg=dark
+let g:PaperColor_Theme_Options = {
+  \   'theme': {
+  \     'default': {
+  \       'allow_bold': 1,
+  \       'allow_italic': 1
+  \     }
+  \   }
+  \ }
+colorscheme PaperColor
+
 " Interface  {{{1
 set mouse=a
 set number
@@ -117,9 +137,7 @@ set visualbell
 " let &t_SI = "\<Esc>[4 q"
 " let &t_EI = "\<Esc>[2 q"
 :set fillchars+=vert:│
-" set statusline                         =%f%m%h%r%w%y[%l/%L,%c%V]%=[%{&fo}]%y[%{&ff}][%{&fenc==\"\"?&enc:&fenc}]
 let g:lightline = {
-   \ 'colorscheme': 'gruvbox',
    \ 'active': {
    \     'left': [ [ 'mode' ],
    \               [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
@@ -132,21 +150,19 @@ let g:lightline = {
    \ }
    \ }
 
+function! LightlineReload()
+  call lightline#init()
+  call lightline#colorscheme()
+  call lightline#update()
+endfunction
+
 " Clipboard {{{1
 " always yank directly to system clipboard
 set clipboard=unnamed
 
 " Directory {{{1
-set autochdir
+" set autochdir
 " autocmd BufEnter * silent! lcd %:p:h
-
-" Colors  {{{1
-" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-set bg=dark
-set t_Co=256
-let g:gruvbox_italic=1
-colorscheme gruvbox
-" colorscheme PaperColor
 
 " Mark columns 80 and 120+
 "let &colorcolumn=join(range(81,999),",")
@@ -181,66 +197,30 @@ vnoremap <silent> # :<C-U>
 
 " Completion {{{1
 let g:deoplete#enable_at_startup = 1
-
-let g:deoplete#sources={}
-let g:deoplete#sources._=['buffer', 'file', 'neosnippet']
-
-" Define keyword
-if !exists('g:deoplete#keyword_patterns')
-    let g:deoplete#keyword_patterns = {}
-endif
-
 let g:deoplete#auto_completion_start_length = 3
-
-inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<TAB>"
-inoremap <expr><s-tab> pumvisible() ? "\<C-p>" : "\<TAB>"
-" disable autocomplete
-" let g:deoplete#disable_auto_complete = 1
-
-" UltiSnips config
-" let g:UltiSnipsSnippetsDir         = '~/.nvim/UltiSnips/'
-"
-" let g:UltiSnipsExpandTrigger="<tab>"
-" let g:UltiSnipsJumpForwardTrigger="<tab>"
-" let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-
-" Plugin key-mappings.
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-k>     <Plug>(neosnippet_expand_target)
-
-" Inside a completion menu, we jump to the next item.
-" If there is a snippet to expand, expand it.
-" If we are inside a snippet, tab jumps to the next mark.
-" If none of the above matches we just call our usual 'tab'.
-" function! s:neosnippet_complete()
-"    if pumvisible()
-"       return "\<c-n>"
-"    else
-"       if neosnippet#expandable_or_jumpable() 
-"          return "\<Plug>(neosnippet_expand_or_jump)"
-"       endif
-"       return "\<tab>"
-"    endif
-" endfunction
-
-" imap <expr><TAB> <SID>neosnippet_complete()
-
-" In a completion list, TAB goes to the next item.
-" In a snippet context, TAB jumps to the next mark.
+" In a completion list, <tab> goes to the next item, 
+" <shift><tab> goes to the last item.
+" In a snippet context, <tab> jumps to the next mark.
+inoremap <silent><expr><S-TAB>
+   \ pumvisible() ? "\<C-p>" : "\<TAB>"
 imap <silent><expr><TAB>
-         \ pumvisible() ? "\<C-n>" :
-         \ neosnippet#expandable_or_jumpable() ?
-         \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-" smap <silent><expr><TAB> 
-"  \ neosnippet#expandable_or_jumpable() ? 
-"  \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-" Enable snipMate compatibility feature.
-let g:neosnippet#enable_snipmate_compatibility = 1
+   \ pumvisible() ? "\<C-n>" :
+   \ neosnippet#expandable_or_jumpable() ?
+   \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+smap <silent><expr><TAB> 
+    \ neosnippet#expandable_or_jumpable() ? 
+    \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+imap <silent><expr><CR>
+   \ pumvisible() ? 
+   \ deoplete#mappings#close_popup()."\<Plug>(neosnippet_expand_or_jump)"
+   \ : "\<CR>"
 
 " Taglist  {{{1
 let Tlist_Use_Right_Window = 1
 let Tlist_Show_One_File    = 1
+autocmd BufWritePost *.cpp :TlistUpdate
+autocmd BufWritePost *.c :TlistUpdate
+autocmd BufWritePost *.h :TlistUpdate
 
 " Tasklist  {{{1
 let g:tlWindowPosition=1                      " display at bottom
@@ -250,7 +230,7 @@ let g:tlTokenList = ['TODO', 'FIXME', 'XXX']  " search tags
 let g:templates_directory = [ '~/.config/nvim/templates' ]
 
 " Fugitive  {{{1
-" set diffopt+=vertical
+set diffopt+=vertical
 
 " Diff {{{1
 set diffopt+=iwhite
@@ -278,6 +258,17 @@ let g:vdebug_options["port"] = 9000
 let g:vdebug_options["break_on_open"] = 0
 
 
+" Syntax check {{{1
+" let g:syntastic_enable_perl_checker = 1
+" let g:syntastic_perl_checkers=['perl']
+" let g:syntastic_enable_balloons = 1
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_loc_list_height=5
+" let g:syntastic_auto_loc_list=1
+" let g:syntastic_enable_signs=1
+" let g:syntastic_error_symbol="E→"
+" let g:syntastic_warning_symbol="W→"
+
 " Functions  {{{1
 " If buffer modified, update any 'Modified: ' in the first 20 lines.
 " 'Modified: ' can have up to 10 characters before (they are retained).
@@ -301,6 +292,7 @@ autocmd BufWritePre * call LastModified()
 " Toggle the background color between light and dark
 function! ToggleBg()
    let &bg = ( &bg == "dark" ? "light" : "dark" )
+   call LightlineReload()
 endfun
 
 " Convenient command to see the difference between the current buffer and the
@@ -341,8 +333,10 @@ vnoremap P "_dP
 vnoremap // y/<C-R>"<CR>
 
 " tag jumping
-nmap ö :cnext<CR>
-nmap ä :cprev<CR>
+nmap ö <C-e>
+nmap Ö <C-d>
+nmap ä <C-y>
+nmap Ä <C-u>
 
 " goto next occurence w/o leaving search mode
 cnoremap <c-n> <CR>n/<c-p>

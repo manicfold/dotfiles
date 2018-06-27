@@ -2,9 +2,8 @@
 
 ###################################################################
 #         FILE: %FFILE%
-# SW-COMPONENT: Software update
-#  DESCRIPTION: Software update is responsible for updating the 
-#               firmware of the targets.
+# SW-COMPONENT: Knowledge Model
+#  DESCRIPTION: 
 #    COPYRIGHT: %LICENSE%
 #       AUTHOR: %USER% <%MAIL%>
 #
