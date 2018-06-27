@@ -200,7 +200,7 @@ bar {
 }
 
 exec xrandr --auto --output HDMI-0 --mode 1920x1080 --left-of DVI-I-1
-exec compton --daemon --shadow --no-dock-shadow --config "${HOME}/.config/compton.conf"
+exec compton --daemon --config "${HOME}/.config/compton.conf"
 
 workspace $ws1 output DVI-I-1
 workspace $ws3 output DVI-I-1

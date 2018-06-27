@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{1,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Mon 13 Feb 2017, 15:17
+# Modified: Tue 12 Jun 2018, 20:10
 # -----------------------------------------------------------------------------
 
 # If not running interactively, don't do anything
@@ -25,15 +25,32 @@ export TEXINPUTS=".:~/texmf//:"
 
 LC_ALL=en_US.UTF-8
 LANG=en_US.UTF-8
+LANGUAGE=en_US.UTF-8
 
 EDITOR="vim"
 GPG_TTY="tty"
 LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib/"
 
-# set PATH so it includes user's private bin if it exists
-[ -d "$HOME/bin" ] && PATH="$HOME/bin:$PATH"
+AddPath() {
+   found=false
+   for i in $(echo $PATH | tr ':' ' '); do
+      if [ "$1" == "$i" ]; then
+         found=true
+         break
+      fi
+   done
 
-[ -d "${HOME}/.gem/ruby/*/bin" ] && PATH="${HOME}/.gem/ruby/*/bin:${PATH}"
+   if ! $found; then
+      export PATH="$1:$PATH"
+   fi
+}
+
+# set PATH so it includes user's private bin if it exists
+[ -d "$HOME/bin" ] && AddPath "$HOME/bin"
+
+for d in ${HOME}/.gem/ruby/*/bin; do
+   AddPath "$d"
+done
 
 export LC_ALL LANG PATH LD_LIBRARY_PATH EDITOR GPG_TTY
 
@@ -92,7 +109,10 @@ export LESS=" -RSMgIsw "
     # s - Squeeze empty lines to one
     # w - Highlight first line after PgDn
 
-
+# Python local environment setup (pyenv) -----------------------------------{{{1
+export PATH="/home/philipp/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # source other files -------------------------------------------------------{{{1
 [ -f "$HOME/.config/nvim/bundle/gruvbox/gruvbox_256palette.sh" ] && source "$HOME/.config/nvim/bundle/gruvbox/gruvbox_256palette.sh"
@@ -103,4 +123,7 @@ export LESS=" -RSMgIsw "
 
 [ -f "${HOME}/.bashrc.local" ] && source "${HOME}/.bashrc.local"
 
+set -a # automatically export all sourced variables
+[ -f $HOME/.config/user-dirs.dirs ] && source $HOME/.config/user-dirs.dirs
+set +a
 

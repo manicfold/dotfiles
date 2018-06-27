@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bash_prompt
-# Modified: Fri 15 Jul 2016, 13:46
+# Modified: Sat 12 Aug 2017, 13:34
 # -----------------------------------------------------------------------------
 
 
@@ -80,6 +80,7 @@ function myprompt()
 {
    local Purple="\[\e[0;35m\]"
    local BoldBlue="\[\e[1;34m\]"
+   local BoldOrange="\[\e[1;33m\]"
    local Cyan="\[\e[0;36m\]"
    local Default="\[\e[0m\]"
 
@@ -87,7 +88,10 @@ function myprompt()
    if declare -F __git_ps1 &> /dev/null; then
       GitBranch="${Cyan}\$(__git_ps1)"
    fi
-   PS1="┌─ \$(exitCode) ${Purple}\[\$(tput sc; projectName; tput rc)\]${Default}\t${BoldBlue} \$(shortPWD)${GitBranch}${Default}\n└> "
+   if [ "$SSH_CONNECTION" ]; then
+      Host="${BoldOrange}\\h"
+   fi
+   PS1="┌─ \$(exitCode) ${Purple}\[\$(tput sc; projectName; tput rc)\]${Default}\t @${Host} ${BoldBlue}\$(shortPWD)${GitBranch}${Default}\n└> "
    PS2="─> "
 }
 

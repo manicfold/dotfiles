@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------------------
 # $HOME/.bash_aliases
-# Modified: Tue 01 Nov 2016, 17:01
+# Modified: Sat 09 Sep 2017, 12:13
 # -----------------------------------------------------------------------------
 
 alias rm='rm -i'
@@ -66,3 +66,4 @@ alias vim="nvim"
 
 # when exiting ranger, go to the last directory you were in
 alias r='ranger --choosedir=$HOME/.rangerdir; cd "$(cat $HOME/.rangerdir)"; rm -f $HOME/.rangerdir'
+
