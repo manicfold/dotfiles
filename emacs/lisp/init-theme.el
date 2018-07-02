@@ -1,3 +1,9 @@
+(use-package powerline
+  :ensure t)
+(setq powerline-default-separator 'slant)
+(powerline-default-theme)
+
+
 (use-package material-theme
   :ensure t)
 
@@ -21,6 +27,5 @@
        
 (evil-leader/set-key
   "L"  'philipp/cycle-theme)
-
 
 (provide 'init-theme)

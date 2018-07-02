@@ -3,13 +3,17 @@
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (load custom-file 'noerror)
 
+;; personal information
+(setq personal-file (expand-file-name "personal.el" user-emacs-directory))
+(load personal-file 'noerror)
+
 ;; add "lisp" subdirectory to path
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
 ;; store backup files in a central directory
 (setq backup_directory (expand-file-name "saves" user-emacs-directory))
 (unless (file-directory-p backup_directory) (mkdir backup_directory))
-(setq backup-directory-alist `(("." . backup_directory)))
+(setq backup-directory-alist (list (cons "." backup_directory)))
 
 ;; Package setup ---------------------------------------------------------------
 (package-initialize)
@@ -35,6 +39,9 @@
 
 (use-package helm
   :ensure t)
+(use-package helm-ag
+  :ensure t
+  :requires helm)
 
 (use-package org
   :ensure t)
@@ -42,14 +49,6 @@
 (require 'init-evil)
 (require 'init-theme)
 (require 'init-completion)
-
-;; setup powerline
-; (add-to-list 'load-path "~/.emacs.d/vendor/emacs-powerline")
-; (require 'powerline)
-(use-package powerline
-  :ensure t)
-(use-package powerline-evil
-  :ensure t)
 
 (use-package fill-column-indicator
   :ensure t
@@ -61,3 +60,13 @@
   )
 
 (show-paren-mode 1)
+(global-hl-line-mode 1)
+(setq-default c-basic-offset 3)
+
+;; open all .h files in C++ mode
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+;; auto-enable hide-show mode for C/C++ files
+(add-hook 'c-mode-common-hook #'hs-minor-mode)
+
+;; multi-window / single-window quickswitch
+(winner-mode 1)

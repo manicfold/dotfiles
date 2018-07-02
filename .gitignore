@@ -2,3 +2,4 @@ vim/.vim/tags
 vim/.vim/.netrwhist
 tags
 gtk/.config/gtk-3.0/bookmarks
+emacs/personal.el

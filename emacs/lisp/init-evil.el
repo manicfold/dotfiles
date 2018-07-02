@@ -6,9 +6,13 @@
     ":"  'eval-expression
     "b"  'helm-mini             ;; Switch to another buffer
     "B"  'magit-blame-toggle
+    "c"  'ff-find-other-file
+    "e" 'helm-find-files
     "f"  'helm-imenu            ;; Jump to function in buffer
     "g"  'magit-status
     "l"  'whitespace-mode       ;; Show invisible characters
+    "o" 'delete-other-windows
+    "O" 'winner-undo
     "p"  'helm-show-kill-ring
     "q"  'kill-this-buffer
     "S"  'delete-trailing-whitespace
@@ -87,6 +91,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
   :ensure t
   :config
   (add-hook 'evil-mode-hook 'air--config-evil)
+  (add-hook 'c++-mode-hook #'(lambda () (modify-syntax-entry ?_ "w")))
   (evil-mode t))
 
 (use-package evil-leader
