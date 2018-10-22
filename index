@@ -10,6 +10,7 @@ i3: ~/.config/i3
 latex: ~
 nvim: ~/.config/nvim
 signature: ~
+spacemacs: ~
 tmux: ~
 vim: ~
 X: ~
