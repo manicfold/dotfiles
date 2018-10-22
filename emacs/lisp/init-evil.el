@@ -4,10 +4,12 @@
   (evil-leader/set-leader "<SPC>")
   (evil-leader/set-key
     ":"  'eval-expression
-    "b"  'helm-mini             ;; Switch to another buffer
+    ;; "b"  'buffer-menu           ;; Switch to another buffer
+    "b"  'helm-buffers-list     ;; Switch to another buffer
     "B"  'magit-blame-toggle
     "c"  'ff-find-other-file
-    "e" 'helm-find-files
+    "e"  'helm-find-files
+    "E"  'projectile-find-file
     "f"  'helm-imenu            ;; Jump to function in buffer
     "g"  'magit-status
     "l"  'whitespace-mode       ;; Show invisible characters
@@ -15,10 +17,12 @@
     "O" 'winner-undo
     "p"  'helm-show-kill-ring
     "q"  'kill-this-buffer
+    "r"  'revert-buffer
     "S"  'delete-trailing-whitespace
     ;; "t"  'gtags-reindex
     ;; "T"  'gtags-find-tag
-    "w"  'save-buffer
+    "<SPC>"  'save-buffer
+    "y"  'magit-show-refs-popup
     "x"  'helm-M-x
     )
 
@@ -66,6 +70,10 @@
   (evil-define-key 'normal global-map (kbd "C-j")     'windmove-down)
   (evil-define-key 'normal global-map (kbd "C-k")     'windmove-up)
   (evil-define-key 'normal global-map (kbd "C-l")     'windmove-right)
+  (evil-define-key 'normal global-map (kbd "ö")       'evil-scroll-down)
+  (evil-define-key 'normal global-map (kbd "ä")       'evil-scroll-up)
+  (evil-define-key 'normal global-map (kbd "<RET>")   'rtags-find-symbol-at-point)
+  (evil-define-key 'normal global-map (kbd "S-<RET>")   'rtags-location-stack-back)
 
   (defun minibuffer-keyboard-quit ()
     "Abort recursive edit.
@@ -130,10 +138,10 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 ;;   :ensure t
 ;;   :requires evil)
 
-(use-package evil-visual-mark-mode
-  :ensure t
-  :requires evil
-  :config (evil-visual-mark-mode 1))
+;; (use-package evil-visual-mark-mode
+;;   :ensure t
+;;   :requires evil
+;;   :config (evil-visual-mark-mode 1))
 
 (use-package evil-magit
   :ensure t

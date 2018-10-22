@@ -1,33 +1,21 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Fri 18 May 2018, 16:07
+# Modified: Wed 29 Aug 2018, 13:47
 # -----------------------------------------------------------------------------
 
-# If not running interactively, don't do anything
-[ -z "$PS1" ] && return
-
-# Globals -----------------------------------------------------------------{{{
-# set the default filemask
-umask 022
+# directly exit, if we are not on an interactive shell
+[[ $- == *i* ]] || return
 
 # disable Ctrl-S on the TTY which produces XOFF, after which the TTY does not
 # accept keystrokes anymore until Ctrl-Q (XON) is pressed.
 stty -ixon
 
-# LaTeX setup
-# ( The trailing colon indicates the standard search
-#   path should be appended to the user specified
-#   TEXINPUT variable; Paths are ':' separated;
-#   double trailing slash indicates this directory is
-#   to be search recursively )
-export TEXINPUTS=".:~/texmf//:"
-
+umask 022
 HOST=$(hostname)
 
 LC_ALL=en_US.UTF-8
 LANG=en_US.UTF-8
-
 EDITOR="vim"
 GPG_TTY="tty"
 LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/lib:/usr/local/lib:/usr/lib/x86_64-linux-gnu"
@@ -38,12 +26,37 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 if [ -d "${HOME}/.gem/ruby/*/bin" ] ; then
-   PATH="${HOME}/.gem/ruby/*/bin:${PATH}"
+    PATH="${HOME}/.gem/ruby/*/bin:${PATH}"
 fi
 
-PATH="${HOME}/cov-analysis-linux-8.0.0/bin:${PATH}"
+export HOST LC_ALL LANG LD_LIBRARY_PATH EDITOR GPG_TTY PATH
 
-export LC_ALL LANG PATH LD_LIBRARY_PATH EDITOR GPG_TTY HOST
+# LaTeX setup --------------------------------------------------------------{{{
+# The trailing colon indicates the standard search
+# path should be appended to the user specified
+# TEXINPUT variable; Paths are ':' separated;
+# double trailing slash indicates this directory is
+# to be search recursively
+export TEXINPUTS=".:~/texmf//:"
+# }}}
+# tailoring 'less' ---------------------------------------------------------{{{
+# 'screen' termcap uses italics as standout (highlight). we want inverse colors.
+export LESS_TERMCAP_so=$'\E[30;43m'
+export LESS_TERMCAP_se=$'\E[39;49m'
+export LESSCHARSET='utf-8'
+# make less more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+export LESS=" -RSMgIsw~ "
+# R - Raw color codes in output (don't remove color codes)
+# S - Don't wrap lines, just cut off too long text
+# M - Long prompts ("Line X of Y")
+# ~ - Don't show those weird ~ symbols on lines after EOF
+# g - Highlight results when searching with slash key (/)
+# I - Case insensitive search
+# s - Squeeze empty lines to one
+# w - Highlight first line after PgDn
+export XMLLINT_INDENT='   '
+export PAGER=less
 # }}}
 # Completion --------------------------------------------------------------{{{
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
@@ -51,14 +64,21 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 # }}}
 # Shell options -----------------------------------------------------------{{{
+export TIMEFORMAT=$'\nreal %3R\tuser %3U\tsys %3S\tpcpu %P\n'
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=10000
+HISTFILESIZE=20000
+# don't put duplicate lines or lines starting with space in the history.
+export HISTCONTROL=ignoreboth
+export HISTIGNORE="&:bg:fg:ll:h"
+
 #set -o notify
 #set -o noclobber
 #set -o ignoreeof
 #set -o nounset
 #set -o xtrace        # Useful for debuging
-
 #shopt -u mailwarn
-
 #shopt -s cdspell
 #shopt -s cdable_vars
 #shopt -s checkhash
@@ -70,40 +90,9 @@ shopt -s checkwinsize
 shopt -s histappend histreedit histverify
 shopt -s extglob      # Necessary for programmable completion
 shopt -s direxpand    # expand variables containing directories
-
 ulimit -S -c 0        # Don't want any coredumps
 # Disable options:
 unset MAILCHECK
-
-export TIMEFORMAT=$'\nreal %3R\tuser %3U\tsys %3S\tpcpu %P\n'
-
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=10000
-HISTFILESIZE=20000
-# don't put duplicate lines or lines starting with space in the history.
-export HISTCONTROL=ignoreboth
-
-export HISTIGNORE="&:bg:fg:ll:h"
-# }}}
-# tailoring 'less' ---------------------------------------------------------{{{
-# 'screen' termcap uses italics as standout (highlight). we want inverse colors.
-export LESS_TERMCAP_so=$'\E[30;43m'
-export LESS_TERMCAP_se=$'\E[39;49m'
-export LESSCHARSET='utf-8'
-# make less more friendly for non-text input files, see lesspipe(1)
-[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
-export LESS=" -RSMgIsw~ "
-    # R - Raw color codes in output (don't remove color codes)
-    # S - Don't wrap lines, just cut off too long text
-    # M - Long prompts ("Line X of Y")
-    # ~ - Don't show those weird ~ symbols on lines after EOF
-    # g - Highlight results when searching with slash key (/)
-    # I - Case insensitive search
-    # s - Squeeze empty lines to one
-    # w - Highlight first line after PgDn
-export XMLLINT_INDENT='   '
-export PAGER=less
-
 # }}}
 # Functions --------------------------------------------------------------- {{{
 # Find a file with a pattern in name:

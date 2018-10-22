@@ -9,6 +9,7 @@
 
 ;; add "lisp" subdirectory to path
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+;; (add-to-list 'load-path "/usr/local/share/emacs/site-lisp/rtags")
 
 ;; store backup files in a central directory
 (setq backup_directory (expand-file-name "saves" user-emacs-directory))
@@ -37,14 +38,31 @@
 (use-package magit
   :ensure t)
 
+(use-package projectile
+  :ensure t
+  )
 (use-package helm
-  :ensure t)
+  :ensure t
+  :config
+  (helm-mode 1)
+  (define-key helm-find-files-map "\t" 'helm-execute-persistent-action)
+  )
 (use-package helm-ag
   :ensure t
   :requires helm)
+(use-package helm-projectile
+  :ensure t
+  :config
+  (setq projectile-completion-system 'helm)
+  (helm-projectile-on)
+  )
 
-(use-package org
-  :ensure t)
+(use-package rtags
+  :ensure t
+  :config
+  (add-hook 'c-mode-hook 'rtags-start-process-unless-running)
+  (add-hook 'c++-mode-hook 'rtags-start-process-unless-running)
+  )
 
 (require 'init-evil)
 (require 'init-theme)
@@ -70,3 +88,24 @@
 
 ;; multi-window / single-window quickswitch
 (winner-mode 1)
+
+;; highlight beyond 80 columns
+(setq-default
+ whitespace-line-column 80
+ whitespace-style       '(face lines-tail))
+(add-hook 'prog-mode-hook #'whitespace-mode)
+
+;; enable line numbers, when programming
+(add-hook 'prog-mode-hook 'linum-mode)
+
+;; add a A4 class to org export
+;; load this only when the org latex package is loaded
+(with-eval-after-load 'ox-latex
+  (add-to-list 'org-latex-classes
+               '("articleA4"
+                 "\\documentclass[11pt,a4paper]{article}"
+                 ("\\section{%s}" . "\\section*{%s}")
+                 ("\\subsection{%s}" . "\\subsection*{%s}")
+                 ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                 ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                 ("\\subparagraph{%s}" . "\\subparagraph*{%s}"))))

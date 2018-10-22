@@ -1,6 +1,6 @@
 " -----------------------------------------------------------------------------
 " Filename: init.vim
-" Modified: Fri 08 Jun 2018, 08:39
+" Modified: Fri 07 Sep 2018, 09:02
 " See:      http://vimdoc.sourceforge.net/htmldoc/options.html for details
 " -----------------------------------------------------------------------------
 " reload this file when saving
@@ -25,7 +25,7 @@ Plug 'tomtom/tcomment_vim'                " easy un/commenting
 Plug 'kshenoy/vim-signature'              " display / navigate marks
 Plug 'qpkorr/vim-bufkill'                 " kill buffer without closing window
 Plug 'godlygeek/tabular'                  " align columns
-Plug 'ludovicchabant/vim-gutentags'       " automatically create tag files
+" Plug 'ludovicchabant/vim-gutentags'       " automatically create tag files
 Plug 'vim-scripts/taglist.vim'            " list of functions / variables
 Plug 'aperezdc/vim-template'              " templates for file types
 Plug 'derekwyatt/vim-fswitch'             " switch C header/implementation
@@ -344,6 +344,8 @@ cnoremap <c-n> <CR>n/<c-p>
 nnoremap <S-Tab> :up! <bar>bp<CR>
 " Next buffer (bufkill)
 nnoremap <Tab> :up! <bar>bn<CR>
+"nnoremap <leader><Space> :w!<CR>
+nnoremap <leader>fs :w!<CR>
 " clean up whitespace
 nnoremap <leader>c :%s/\s\+$//<CR>:let @/=''<CR>
 " Toggle background lightness
