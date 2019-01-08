@@ -4,7 +4,6 @@
 # Modified: Tue 11 Sep 2018, 13:52
 # -----------------------------------------------------------------------------
 
-
 # colors {{{
 # local Black="\[\e[30m\]"
 # local Blue="\[\e[0;34m\]"
@@ -48,8 +47,8 @@ Black="\[\e[30m\]"
 BgOrange="\[\e[43m\]"
 Default="\[\e[0m\]"
 ps_hostname=""
-if [[ $SESSION_TYPE == "remote"* ]]; then
-   ps_hostname="${BgOrange}${Black}${HOST}${Default}:"
+if [[ $SESSION_TYPE == "remote/ssh" ]]; then
+   ps_hostname="${BgOrange}${Black}$(hostname)${Default}:"
 fi
 
 function shortPWD
