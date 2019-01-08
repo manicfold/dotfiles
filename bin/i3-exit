@@ -22,16 +22,18 @@ class i3_exit:
     def reboot_action(self,btn):
         self.disable_buttons()
         self.status.set_label("Rebooting, please standby...")
-        os.system("dbus-send --system --print-reply  \
-                --dest=org.freedesktop.login1 /org/freedesktop/login1  \
-                org.freedesktop.login1.Manager.Restart boolean:true")
+        os.system("systemctl reboot")
+        # os.system("dbus-send --system --print-reply  \
+        #         --dest=org.freedesktop.login1 /org/freedesktop/login1  \
+        #         org.freedesktop.login1.Manager.Restart boolean:true")
 
     def shutdown_action(self,btn):
         self.disable_buttons()
         self.status.set_label("Shutting down, please standby...")
-        os.system("dbus-send --system --print-reply \
-                --dest=org.freedesktop.login1 /org/freedesktop/login1 \
-                org.freedesktop.login1.Manager.PowerOff boolean:true")
+        os.system("systemctl shutdown")
+        # os.system("dbus-send --system --print-reply \
+        #         --dest=org.freedesktop.login1 /org/freedesktop/login1 \
+        #         org.freedesktop.login1.Manager.PowerOff boolean:true")
 
     def create_window(self):
         self.window = gtk.Window()

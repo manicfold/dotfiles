@@ -1,11 +1,11 @@
 # -----------------------------------------------------------------------------
 # $HOME/.bash_aliases
-# Modified: Tue 22 Aug 2017, 10:02
+# Modified: Fri 02 Nov 2018, 07:54
 # -----------------------------------------------------------------------------
 
 
 gvim () {
-   if pgrep gvim ; then 
+   if pgrep gvim ; then
       command gvim --remote-silent "$@"
    else
       command gvim "$@"
@@ -44,15 +44,12 @@ alias ll='ls -l'
 alias la='ls -Al'               # show hidden files
 alias lx='ls -lXB'              # sort by extension
 alias lk='ls -lSr'              # sort by size
-alias lc='ls -lcr'		        # sort by change time  
-alias lu='ls -lur'		        # sort by access time   
+alias lc='ls -lcr'		        # sort by change time
+alias lu='ls -lur'		        # sort by access time
 alias lt='ls -ltr'              # sort by date
 alias lm='ls -al |more'         # pipe through 'more'
 
 alias more='less'
-
-alias top='xtitle Processes on $HOST && top'
-alias make='xtitle Making $(basename $PWD) ; make'
 
 alias cls='printf "\033c"'
 alias hex='printf "%X\n" '
@@ -70,5 +67,3 @@ alias perl_cli="rlwrap perl -d -e 1"
 
 # when exiting ranger, go to the last directory you were in
 alias r='ranger --choosedir=$HOME/.rangerdir; cd $(cat $HOME/.rangerdir); rm -f $HOME/.rangerdir'
-
-alias dltviewer='cd /usr/share/dltviewer/ && . dltviewer.sh&'

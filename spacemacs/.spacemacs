@@ -56,13 +56,16 @@ values."
      spell-checking
      syntax-checking
      version-control
+     vinegar
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages '(
-                                      yasnippet-snippets)
+                                      yasnippet-snippets
+                                      color-theme-sanityinc-tomorrow
+                                      groovy-mode)
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
    ;; A list of packages that will not be installed and loaded.
@@ -136,18 +139,21 @@ values."
    ;; with 2 themes variants, one dark and one light)
    ;; dotspacemacs-themes '(spacemacs-dark
    ;;                       spacemacs-light)
-   dotspacemacs-themes '(material
-                         material-light)
+   ;; dotspacemacs-themes '(material
+   ;;                       material-light)
+   dotspacemacs-themes '(sanityinc-tomorrow-night
+                         sanityinc-tomorrow-day)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   ;; dotspacemacs-default-font '("Source Code Pro"
    dotspacemacs-default-font '("Envy Code R for Powerline"
+   ;; dotspacemacs-default-font '("Hack"
+   ;; dotspacemacs-default-font '("Iosevka Regular"
                                :size 13
                                :weight normal
                                :width normal
-                               :powerline-scale 1.8)
+                               :powerline-scale 1.5)
    ;; The leader key
    dotspacemacs-leader-key "SPC"
    ;; The key used for Emacs commands (M-x) (after pressing on the leader key).
@@ -302,6 +308,10 @@ values."
    ;; delete only whitespace for changed lines or `nil' to disable cleanup.
    ;; (default nil)
    dotspacemacs-whitespace-cleanup 'trailing
+   ;; can be 'spacemacs, 'all-the-icons, 'custom, 'vim-powerline or
+   ;; 'vanilla or a list with `car' one of the previous values and properties
+   ;; one of the following: `:separator' or `:separator-scale'
+   dotspacemacs-mode-line-theme 'vim-powerline
    ))
 
 (defun dotspacemacs/user-init ()
@@ -311,7 +321,7 @@ values."
    This function is mostly useful for variables that need to be set
    before packages are loaded. If you are unsure, you should try in setting them in
    `dotspacemacs/user-config' first."
-  (setq exec-path-from-shell-check-startup-files nil)
+  ;; (setq exec-path-from-shell-check-startup-files nil)
   )
 
 (defun my/org-mode-hook ()
@@ -344,42 +354,66 @@ you should place your code here."
   (evil-define-key 'normal global-map (kbd "C-l") #'windmove-right)
   (evil-define-key 'normal global-map (kbd "ö")   #'evil-scroll-down)
   (evil-define-key 'normal global-map (kbd "ä")   #'evil-scroll-up)
+  (evil-define-key 'normal global-map (kbd "gb")  #'evil-jump-backward)
+  (evil-define-key 'normal helm-buffer-map (kbd "C-d")  #'helm-buffer-run-kill-buffers)
+
   ;; don't show images in org mode by default
   (setq org-startup-with-inline-images nil)
+
   (add-hook 'org-mode-hook 'my/org-mode-hook)
   (add-hook 'c++-mode-hook 'my/c++-mode-hook)
   (add-hook 'c++-mode-hook 'fci-mode)
   (add-hook 'prog-mode-hook 'fci-mode)
+
   ;; treat underscore as a word character for motions
   (add-hook 'prog-mode-hook #'(lambda () (modify-syntax-entry ?_ "w")))
-  ;; (add-to-list 'company-c-headers-path-system "/usr/include/c++/5/")
-  ;; indentation
+
+  ;; indentation settings
   (setq tab-width 3)
   (setq c-basic-offset 3)
   (setq cperl-indent-level 3)
   (setq indent-tabs-mode nil)
+
+  ;; repair problem in smartparens
+  ;; (setq-default sp-escape-quotes-after-inser nil)
+  ;; if successful, hide the compilation window after two seconds
+  (setq compilation-finish-function
+        (lambda (buf str)
+          (if (null (string-match ".*exited abnormally.*" str))
+              ;;no errors, make the compilation window go away in a few seconds
+              (progn
+                (run-at-time
+                 "2 sec" nil 'delete-windows-on
+                 (get-buffer-create "*compilation*"))
+                (message "No Compilation Errors!")))))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
+(defun dotspacemacs/emacs-custom-settings ()
+  "Emacs custom settings.
+This is an auto-generated function, do not modify its content directly, use
+Emacs customize menu instead.
+This function is called at the very end of Spacemacs initialization."
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ansi-color-names-vector
-   ["#0a0814" "#f2241f" "#67b11d" "#b1951d" "#4f97d7" "#a31db1" "#28def0" "#b2b2b2"])
  '(evil-want-Y-yank-to-eol nil)
  '(package-selected-packages
    (quote
-    (treepy graphql git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter diff-hl web-mode tagedit slim-mode scss-mode sass-mode pug-mode helm-css-scss haml-mode emmet-mode company-web web-completion-data markdown-toc mmm-mode markdown-mode gh-md yapfify pyvenv pytest pyenv-mode py-isort pip-requirements live-py-mode hy-mode helm-pydoc cython-mode company-anaconda anaconda-mode pythonic flycheck-pos-tip pos-tip flycheck stickyfunc-enhance srefactor yasnippet-snippets disaster company-c-headers cmake-mode clang-format org-projectile org-category-capture org-present org-pomodoro alert log4e gntp org-mime org-download htmlize helm-company helm-c-yasnippet gnuplot fuzzy flyspell-correct-helm flyspell-correct company-tern dash-functional tern company-statistics company auto-yasnippet auto-dictionary ac-ispell auto-complete smeargle orgit magit-gitflow helm-gitignore gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link evil-magit magit magit-popup git-commit ghub with-editor web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor yasnippet multiple-cursors js2-mode js-doc coffee-mode ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline powerline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox spinner org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hydra hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation helm-themes helm-swoop helm-projectile helm-mode-manager helm-make projectile pkg-info epl helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree eval-sexp-fu highlight elisp-slime-nav dumb-jump f dash s diminish define-word column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async)))
+    (symon string-inflection spaceline-all-the-icons all-the-icons memoize prettier-js pippel pipenv password-generator overseer org-brain nameless magit-svn json-navigator hierarchy importmagic epc ctable concurrent deferred impatient-mode helm-xref helm-rtags helm-purpose window-purpose imenu-list google-c-style gitignore-templates flycheck-rtags evil-org evil-lion evil-goggles evil-cleverparens paredit editorconfig counsel-projectile counsel swiper ivy company-rtags rtags centered-cursor-mode browse-at-remote font-lock+ dotenv-mode groovy-mode color-theme-sanityinc-tomorrow tomorrow-day-theme tomorow-day-theme tommorow-day-theme molokai-theme monokai-theme treepy graphql git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter diff-hl web-mode tagedit slim-mode scss-mode sass-mode pug-mode helm-css-scss haml-mode emmet-mode company-web web-completion-data markdown-toc mmm-mode markdown-mode gh-md yapfify pyvenv pytest pyenv-mode py-isort pip-requirements live-py-mode hy-mode helm-pydoc cython-mode company-anaconda anaconda-mode pythonic flycheck-pos-tip pos-tip flycheck stickyfunc-enhance srefactor yasnippet-snippets disaster company-c-headers cmake-mode clang-format org-projectile org-category-capture org-present org-pomodoro alert log4e gntp org-mime org-download htmlize helm-company helm-c-yasnippet gnuplot fuzzy flyspell-correct-helm flyspell-correct company-tern dash-functional tern company-statistics company auto-yasnippet auto-dictionary ac-ispell auto-complete smeargle orgit magit-gitflow helm-gitignore gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link evil-magit magit magit-popup git-commit ghub with-editor web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor yasnippet multiple-cursors js2-mode js-doc coffee-mode ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline powerline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox spinner org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hydra hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation helm-themes helm-swoop helm-projectile helm-mode-manager helm-make projectile pkg-info epl helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree eval-sexp-fu highlight elisp-slime-nav dumb-jump f dash s diminish define-word column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async)))
  '(safe-local-variable-values
    (quote
-    ((helm-make-arguments . "-j")
+    ((eval setq projectile-project-compilation-dir "_build-x86-64")
+     (projectile-project-name . "Knowledge Model")
+     (helm-make-arguments . "-j")
      (helm-make-build-dir . "_build-x86-64")))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((((class color) (min-colors 89)) (:foreground "#ffffff" :background "#263238" :family "Envy Code R for Powerline" :foundry "ENVY" :slant normal :weight normal :height 98 :width normal)))))
+ )
+)

@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Wed 29 Aug 2018, 13:47
+# Modified: Fri 26 Oct 2018, 18:00
 # -----------------------------------------------------------------------------
 
 # directly exit, if we are not on an interactive shell
@@ -12,7 +12,7 @@
 stty -ixon
 
 umask 022
-HOST=$(hostname)
+# HOST=$(hostname)
 
 LC_ALL=en_US.UTF-8
 LANG=en_US.UTF-8
@@ -55,13 +55,12 @@ export LESS=" -RSMgIsw~ "
 # I - Case insensitive search
 # s - Squeeze empty lines to one
 # w - Highlight first line after PgDn
-export XMLLINT_INDENT='   '
 export PAGER=less
 # }}}
 # Completion --------------------------------------------------------------{{{
-if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
- . /etc/bash_completion
-fi
+# if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+#  . /etc/bash_completion
+# fi
 # }}}
 # Shell options -----------------------------------------------------------{{{
 export TIMEFORMAT=$'\nreal %3R\tuser %3U\tsys %3S\tpcpu %P\n'
@@ -209,17 +208,8 @@ if [ -f $HOME/.bash_palette.sh ]; then
    source "$HOME/.bash_palette.sh"
 fi
 
-if [ -f ~/.dircolors ]; then
-   eval "$(dircolors -b ~/.dircolors)"
-fi
-
-#if [ "$TERM" != "linux" ]; then
-#   GIT_PROMPT_FETCH_REMOTE_STATUS=0
-#   GIT_PROMPT_STATUS_COMMAND=gitstatus.sh
-#   GIT_PROMPT_THEME_NAME="Custom"
-#   source ~/.bash-git-prompt/gitprompt.sh
 if [ -f ~/.bash_prompt ]; then
-    source ~/.bash_prompt
+   source ~/.bash_prompt
 fi
 # }}}
 # Alias definitions --------------------------------------------------------{{{

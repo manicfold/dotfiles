@@ -33,7 +33,8 @@ floating_modifier $mod
 
 # start a terminal
 # bindsym $mod+Return exec gnome-terminal -e "tmux -2"
-bindsym $mod+Return exec gnome-terminal -e "tmux"
+# bindsym $mod+Return exec gnome-terminal -e "tmux"
+bindsym $mod+Return exec gnome-terminal --hide-menubar -e "env TERM=screen-256color-italic tmux"
 #bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
@@ -180,5 +181,5 @@ exec --no-startup-id feh --bg-fill /home/blp4hi/Pictures/IMG-20150825-WA0000.jpg
 exec --no-startup-id gnome-settings-daemon
 # exec --no-startup-id eval $((usr/bin/ssh-agent -s)
 # exec --no-startup-id SSH_ASKPASS=/usr/bin/ssh-askpass ssh-add .ssh/id_rsa .ssh/id_rsa_jenkins < /dev/null 
-exec --no-startup-id gnome-terminal
+exec --no-startup-id gnome-terminal --hide-menubar -e "env TERM=screen-256color-italic tmux"
 
