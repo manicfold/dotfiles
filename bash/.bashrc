@@ -1,7 +1,7 @@
 # vim: set foldmarker={{{,}}} foldlevel=0 foldmethod=marker syn=sh :
 # -----------------------------------------------------------------------------
 # Filename: .bashrc
-# Modified: Mon 25 Mar 2019, 10:29
+# Modified: Fri 12 Jul 2019, 23:33
 # -----------------------------------------------------------------------------
 
 # directly exit, if we are not on an interactive shell
@@ -12,24 +12,20 @@
 stty -ixon
 
 umask 022
-# HOST=$(hostname)
+
+WantColor=true
+if [ -n "${INSIDE_EMACS+x}" ]; then
+   WantColor=false
+fi
 
 LC_ALL=en_US.UTF-8
 LANG=en_US.UTF-8
 EDITOR="vim"
 GPG_TTY="tty"
 LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/lib:/usr/local/lib:/usr/lib/x86_64-linux-gnu"
-
 # set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
-
-if [ -d "${HOME}/.gem/ruby/*/bin" ] ; then
-    PATH="${HOME}/.gem/ruby/*/bin:${PATH}"
-fi
-
-export HOST LC_ALL LANG LD_LIBRARY_PATH EDITOR GPG_TTY PATH
+[ -d "$HOME/bin" ] && PATH="$HOME/bin"${PATH:+:$PATH}
+export LC_ALL LANG LD_LIBRARY_PATH EDITOR GPG_TTY PATH
 
 # LaTeX setup --------------------------------------------------------------{{{
 # The trailing colon indicates the standard search
@@ -227,44 +223,53 @@ function xtitle ()
 # BASE16_SHELL="$HOME/.config/base16-shell/base16-papercolor.dark.sh"
 # [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 # gruvbox colors
-if [ -f $HOME/.bash_palette.sh ]; then
-    source "$HOME/.bash_palette.sh"
+
+CDefault=
+CBlack=
+CBlue=
+CGreen=
+CCyan=
+CRed=
+CPurple=
+CBoldWhite=
+
+if $WantColor; then
+   if [ -f $HOME/.bash_palette.sh ]; then
+       source "$HOME/.bash_palette.sh"
+   fi
+   CBgOrange="\e[43m"
+   # reset to teminal default
+   CDefault="\e[0m"
+   CBlack="\e[30m"
+   CBlue="\e[0;34m"
+   CGreen="\e[0;32m"
+   CCyan="\e[0;36m"
+   CRed="\e[0;31m"
+   CPurple="\e[0;35m"
+   CBoldWhite="\e[1;37m"
+   CBgOrange="\e[43m"
+   # COrange="\e[0;33m"
+   # CGray="\e[1;30m"
+   # BoldGray="\e[0;37m"
+   # BoldBlue="\e[1;34m"
+   # BoldGray="\e[1;32m"
+   # BoldCyan="\e[1;36m"
+   # BoldRed="\e[1;31m"
+   # BoldPurple="\e[1;35m"
+   # BoldOrange="\e[1;33m"
+   # BgBlack="\e[40m"
+   # BgRed="\e[41m"
+   # BgGreen="\e[42m"
+   # BgBlue="\e[44m"
+   # BgPurple="\e[45m"
+   # BgCyan="\e[46m"
+   # BgWhite="\e[47m"
+   # Underscore="\e[4m"
+   # Blink="\e[5m"
+   # Invert="\e[7m"
+   # Hidden="\e[8m"
 fi
 
-CBlack="\e[30m"
-CBlue="\e[0;34m"
-CGreen="\e[0;32m"
-CCyan="\e[0;36m"
-CRed="\e[0;31m"
-CPurple="\e[0;35m"
-# COrange="\e[0;33m"
-# CGray="\e[1;30m"
-#
-# BoldGray="\e[0;37m"
-# BoldBlue="\e[1;34m"
-# BoldGray="\e[1;32m"
-# BoldCyan="\e[1;36m"
-# BoldRed="\e[1;31m"
-# BoldPurple="\e[1;35m"
-# BoldOrange="\e[1;33m"
-CBoldWhite="\e[1;37m"
-#
-# BgBlack="\e[40m"
-# BgRed="\e[41m"
-# BgGreen="\e[42m"
-CBgOrange="\e[43m"
-# BgBlue="\e[44m"
-# BgPurple="\e[45m"
-# BgCyan="\e[46m"
-# BgWhite="\e[47m"
-#
-# Underscore="\e[4m"
-# Blink="\e[5m"
-# Invert="\e[7m"
-# Hidden="\e[8m"
-
-# reset to teminal default
-CDefault="\e[0m"
 # }}}
 # Prompt -------------------------------------------------------------------{{{
 
@@ -281,7 +286,7 @@ function exitCode
 
 function projectName
 {
-    [ -n "${_SOFTWARE_VERSION}" ] && echo -e " ${CBoldWhite}${_SOFTWARE_VERSION}${CDefault}"
+    [ -n "${_SOFTWARE_VERSION+x}" ] && echo -e " ${CBoldWhite}${_SOFTWARE_VERSION}${CDefault}"
 }
 
 function myprompt()
