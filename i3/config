@@ -17,8 +17,9 @@ client.unfocused        #2E3436 #2E3436 #B7B7B7 #B7B7B7
 client.urgent           #3399FF #3399FF #FFFFFF #FFFFFF
 
 # Workspaces ----------------------------------------------------------------
-set $ws1 "1: "
-set $ws2 "2: "
+# use FontAwesome unicode characters by inserting them with ctrl-v uXXXX
+set $ws1 "1: "
+set $ws2 "2: "
 set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
@@ -178,7 +179,7 @@ bar {
 
 exec --no-startup-id xrdb "${HOME}"/.Xresources
 exec --no-startup-id feh --bg-fill /home/blp4hi/Pictures/IMG-20150825-WA0000.jpg
-exec --no-startup-id gnome-settings-daemon
+#exec --no-startup-id gnome-settings-daemon
 # exec --no-startup-id eval $((usr/bin/ssh-agent -s)
 # exec --no-startup-id SSH_ASKPASS=/usr/bin/ssh-askpass ssh-add .ssh/id_rsa .ssh/id_rsa_jenkins < /dev/null 
 exec --no-startup-id gnome-terminal --hide-menubar -e "env TERM=screen-256color-italic tmux"
