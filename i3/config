@@ -9,6 +9,7 @@ focus_follows_mouse no
 
 # border / titlebar
 new_window pixel 1
+hide_edge_borders both
 
 # colorclass            border  bg      text    indicator  child_border
 client.focused          #2E3436 #3399FF #FFFFFF #FFFFFF
@@ -160,7 +161,7 @@ bar {
    position top
    colors {
       # Whole color settings
-      background #2E3436
+      background #252525
       statusline #EEEEEE
       separator  #2E3436
 
@@ -178,9 +179,9 @@ bar {
 # Start Programs ------------------------------------------------------------
 
 exec --no-startup-id xrdb "${HOME}"/.Xresources
+# exec --no-startup-id ssh-add
 exec --no-startup-id feh --bg-fill /home/blp4hi/Pictures/IMG-20150825-WA0000.jpg
 #exec --no-startup-id gnome-settings-daemon
-# exec --no-startup-id eval $((usr/bin/ssh-agent -s)
-# exec --no-startup-id SSH_ASKPASS=/usr/bin/ssh-askpass ssh-add .ssh/id_rsa .ssh/id_rsa_jenkins < /dev/null 
+exec --no-startup-id eval $(usr/bin/ssh-agent -s)
+exec --no-startup-id SSH_ASKPASS=/usr/bin/ssh-askpass ssh-add .ssh/id_rsa .ssh/id_rsa_jenkins < /dev/null 
 exec --no-startup-id gnome-terminal --hide-menubar -e "env TERM=screen-256color-italic tmux"
-

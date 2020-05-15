@@ -1,7 +1,7 @@
 #! /bin/bash
 #
 #- termtitle
-#- Last Change: Thu 09 Feb 2017, 10:53
+#- Last Change: Mon 02 Mar 2020, 09:39
 
 ## USAGE: termtitle "Title"
 ##    Sets the title of the current terminal through escape codes.
@@ -12,11 +12,8 @@ set -o nounset    # exit if variable is not declared
 set -o pipefail   # return exit code of last failed command in pipe
 #set -o xtrace     # debug traces on
 
-usage=$(grep "^## " "${BASH_SOURCE[0]}" | cut -c 4-)
-version=$(grep "^#- "  "${BASH_SOURCE[0]}" | cut -c 4-)
-
-usage() {  echo "$usage"; }
-version() { echo "$version"; }
+usage() { grep "^## " "${BASH_SOURCE[0]}" | cut -c 4-; }
+version() { grep "^#- "  "${BASH_SOURCE[0]}" | cut -c 4-; }
 
 set_title()
 {
